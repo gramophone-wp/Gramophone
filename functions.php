@@ -31,7 +31,8 @@ add_action( 'wp_enqueue_scripts', 'theme_js' );
 function register_theme_menus() {
 	register_nav_menus(
 		array(
-			'header-menu'	=> __( 'Header Menu' )
+			'header-menu'	=> __( 'Header Menu' ),
+			'footer-menu'   => __( 'Footer Menu' )
 		)
 	);
 }
