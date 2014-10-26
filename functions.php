@@ -66,7 +66,7 @@ add_theme_support( 'post-thumbnails' );
 add_theme_support( 'menus' );
 
 
-require_once locate_template('/inc/class-tgm-plugin-activation.php');
+require_once locate_template('/inc/plugins/class-tgm-plugin-activation.php');
 
 /**
  * Register the required plugins for this theme.
