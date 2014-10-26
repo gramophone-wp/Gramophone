@@ -1,4 +1,3 @@
-=====
 BigBooty
 =====
 
@@ -13,6 +12,7 @@ Version
 ----------
 
 **v0.1 - 0.9**
+
 BigBooty is *not* fit for the wild
 
 
