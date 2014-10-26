@@ -1,9 +1,9 @@
-<div class="col-md-3 sidebar sidebar-offcanvas">
+<div class="col-md-3 sidebar-offcanvas" id="sidebar">
 
 	<?php if ( ! dynamic_sidebar( 'page' ) ): ?>
 
-	<h3>Sidebar Setup</h3>
-	<p>Please add widgets to the page sidebar to have them display here.</p>	
+	<h3>Sidebar</h3>
+	<p>Oh! It looks like you haven't set up your sidebar yet!</p>	
 
 	<?php endif; ?>
 	
