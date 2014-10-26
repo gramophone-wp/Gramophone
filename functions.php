@@ -137,4 +137,11 @@ function my_theme_register_required_plugins() {
 }
 
 
+function alter_footer_admin () 
+{
+	echo "A <a href='https://github.com/pjhampton/BigBooty' target='_blank'>BigBooty</a> &hearts;'in Theme | ...Designed by you! <strong>:-)</strong></p>";
+}
+add_filter('admin_footer_text', 'alter_footer_admin');
+
+
 ?>
