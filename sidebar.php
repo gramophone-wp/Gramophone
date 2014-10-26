@@ -2,7 +2,7 @@
 
 	<?php if ( ! dynamic_sidebar( 'page' ) ): ?>
 
-	<h3>Sidebar</h3>
+	<h3>Sidebar (Page)</h3>
 	<p>Oh! It looks like you haven't set up your sidebar yet!</p>	
 
 	<?php endif; ?>
