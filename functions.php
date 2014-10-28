@@ -1,4 +1,13 @@
 <?php
+/*
+Author: Who Am I? (Rename Me)
+URL: https://github.com/pjhampton/BigBooty
+*/
+
+
+// Admin Customisations
+require_once( 'lib/framework/admin.php' );
+
 
 function theme_styles() 
 {
@@ -135,13 +144,6 @@ function my_theme_register_required_plugins() {
 	tgmpa( $plugins, $config );
  
 }
-
-
-function alter_footer_admin () 
-{
-	echo "A <a href='https://github.com/pjhampton/BigBooty' target='_blank'>BigBooty</a> &hearts;'in Theme | ...Designed by you! <strong>:-)</strong></p>";
-}
-add_filter('admin_footer_text', 'alter_footer_admin');
 
 
 ?>
