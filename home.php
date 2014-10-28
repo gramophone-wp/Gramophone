@@ -20,6 +20,7 @@
 
         ?>
 
+        <?php if ($the_query->have_posts()): ?>
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
@@ -60,6 +61,7 @@
             <span class="glyphicon glyphicon-chevron-right"></span>
           </a>
         </div>
+        <?php endif; ?>
 
 
 
