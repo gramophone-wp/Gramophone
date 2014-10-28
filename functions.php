@@ -8,11 +8,14 @@ URL: https://github.com/pjhampton/BigBooty
 // Admin Customisations
 require_once( 'lib/framework/admin.php' );
 
+// Loads External Libraries - MOVE THIS!
+require_once locate_template('inc/plugins/class-tgm-plugin-activation.php');
 
 function theme_styles() 
 {
 
 	wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/lib/css/bootstrap.min.css' );
+	wp_enqueue_style( 'bigbooty_css', get_template_directory_uri() . '/lib/css/bigbooty.css' );	
 	wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css' );
 
 }
@@ -75,7 +78,7 @@ add_theme_support( 'post-thumbnails' );
 add_theme_support( 'menus' );
 
 
-require_once locate_template('/inc/plugins/class-tgm-plugin-activation.php');
+
 
 /**
  * Register the required plugins for this theme.
