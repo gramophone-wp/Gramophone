@@ -29,10 +29,10 @@ BigBooty is *not fit* for the wild
 Contributing
 ----------
 
-Please see /docs/CONTRIBUTING.md
+Please see [CONTRIBUTING.md](https://github.com/pjhampton/BigBooty/blob/master/docs/CONTRIBUTING.md)
 
 
 Licience
 ----------
 
-Just like WordPress & Twitter Bootstrap 3, BigBooty is released under the GPL v3. Please see /docs/LICENCE for further details. Have Fun!
+Just like WordPress & Twitter Bootstrap 3, BigBooty is released under the GPL v3. Please see [LICENCE.md](https://github.com/pjhampton/BigBooty/blob/master/docs/LICENCE.md) for further details. Have Fun!
