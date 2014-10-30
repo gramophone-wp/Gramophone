@@ -1,5 +1,7 @@
 <?php
 
+require_once locate_template('inc/plugins/class-tgm-plugin-activation.php');
+
 // Admin Customisations
 require_once( 'lib/framework/admin.php' );
 

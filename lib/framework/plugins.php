@@ -4,18 +4,15 @@
  * Register the required plugins for this theme.
  *
  */
+
  
 add_action( 'tgmpa_register', 'my_theme_register_required_plugins' );
  
 function my_theme_register_required_plugins() {
  
-	/**
-	 * Array of plugin arrays. Required keys are name and slug.
-	 * If the source is NOT from the .org repo, then source is also required.
-	 */
 	$plugins = array(
  
-		// Require ACF
+
 		array(
 			'name'     				=> 'Bootstrap 3 Shortcodes',
 			'slug'     				=> 'bootstrap-3-shortcodes',
