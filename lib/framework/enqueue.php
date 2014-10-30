@@ -1,8 +1,14 @@
 <?php
 
+
+/*
+ * Add your theme stylesheets here!
+ *
+ * http://codex.wordpress.org/Function_Reference/wp_enqueue_style
+*/
+
 function bigbooty_styles() 
 {
-
 	wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/lib/css/bootstrap.min.css' );
 	wp_enqueue_style( 'bigbooty_css', get_template_directory_uri() . '/lib/css/bigbooty.css' );	
 	wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css' );
@@ -11,9 +17,14 @@ function bigbooty_styles()
 add_action( 'wp_enqueue_scripts', 'bigbooty_styles' );
 
 
+/*
+ * Add your theme scripts here!
+ *
+ * http://codex.wordpress.org/Function_Reference/wp_enqueue_script
+*/
+
 function bigbooty_js() 
 {
-
 	global $wp_scripts;
 
 	wp_register_script( 'html5_shiv', 'https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js', '', '', false );
@@ -25,7 +36,6 @@ function bigbooty_js()
 	wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/lib/js/bootstrap.min.js', array('jquery'), '', true );
 	wp_enqueue_script( 'theme_js', get_template_directory_uri() . '/lib/js/theme.js', array('jquery', 'bootstrap_js'), '', true );
 	// Add more scripts here!
-
 }
 add_action( 'wp_enqueue_scripts', 'bigbooty_js' );
 
