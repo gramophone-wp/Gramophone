@@ -1,8 +1,14 @@
 <?php
 
+/*
+ * Add your sidebar & widget areas here!
+ *
+ * http://codex.wordpress.org/Function_Reference/register_sidebar
+ * 
+*/
+
 function create_widget( $name, $id, $description ) 
 {
-
 	register_sidebar(array(
 		'name' => __( $name ),	 
 		'id' => $id, 
@@ -12,7 +18,6 @@ function create_widget( $name, $id, $description )
 		'before_title' => '<h3>',
 		'after_title' => '</h3>'
 	));
-
 }
 
 // Register New Widgets Below
