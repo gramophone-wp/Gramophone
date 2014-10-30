@@ -14,7 +14,6 @@ function bigbooty_styles()
 	wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css' );
 	// Add more styles here!
 }
-add_action( 'wp_enqueue_scripts', 'bigbooty_styles' );
 
 
 /*
@@ -37,6 +36,9 @@ function bigbooty_js()
 	wp_enqueue_script( 'theme_js', get_template_directory_uri() . '/lib/js/theme.js', array('jquery', 'bootstrap_js'), '', true );
 	// Add more scripts here!
 }
+
+
+add_action( 'wp_enqueue_scripts', 'bigbooty_styles' );
 add_action( 'wp_enqueue_scripts', 'bigbooty_js' );
 
 ?>
