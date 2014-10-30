@@ -138,3 +138,9 @@ article.post {
   padding: 20px 0 10px 0;
   margin: 40px 0 0 0;
 }
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
