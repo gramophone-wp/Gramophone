@@ -12,11 +12,13 @@ Requirements
 Installation
 ----------
 
-- Clone onto desktop
+- Clone the BigBooty Repo
 - Either upload via Theme Options
+- 
 *or*
+
 - Place in **/wp-content/themes/**
-- Then, get busy!
+- Get busy!
 
 Version
 ----------
@@ -35,4 +37,4 @@ Please see [CONTRIBUTING.md](https://github.com/pjhampton/BigBooty/blob/master/d
 Licience
 ----------
 
-Just like WordPress & Twitter Bootstrap 3, BigBooty is released under the GPL v3. Please see [LICENCE.md](https://github.com/pjhampton/BigBooty/blob/master/docs/LICENCE.md) for further details. Have Fun!
+Just like WordPress & Twitter Bootstrap 3, BigBooty is released under the GPL. Please see [LICENCE.md](https://github.com/pjhampton/BigBooty/blob/master/docs/LICENCE.md) for further details.
