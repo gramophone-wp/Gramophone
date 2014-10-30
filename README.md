@@ -14,7 +14,7 @@ Installation
 
 - Clone the BigBooty Repo
 - Either upload via Theme Options
-- 
+
 *or*
 
 - Place in **/wp-content/themes/**
