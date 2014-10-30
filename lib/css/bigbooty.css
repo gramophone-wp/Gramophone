@@ -11,6 +11,10 @@ body {
   padding-top: 50px;
 }
 
+.page-header{
+  margin: 65px 0 20px;
+}
+
 .admin-bar .navbar-fixed-top {
 	margin-top: 30px;
 }
@@ -59,8 +63,8 @@ body {
 	font-weight: bold;
 }
 
-.sidebar { 
-	margin-top: 40px;
+#sidebar { 
+	margin-top: 55px;
 	color: #444;
 }
 
