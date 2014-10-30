@@ -44,7 +44,7 @@ function register_theme_menus() {
 	register_nav_menus(
 		array(
 			'header-menu'	=> __( 'Header Menu' ),
-			'footer-menu'   => __( 'Footer Menu' ),
+			// 'footer-menu'   => __( 'Footer Menu' ),
 		)
 	);
 }
