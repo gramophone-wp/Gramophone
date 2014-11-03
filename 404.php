@@ -1,42 +1,42 @@
 <?php get_header(); ?>
 
 <div class="container">   
-    <div class="row">
-        <div class="col-md-9">
+	<div class="row">
+		<div class="col-md-9">
 
-            <div class="page-header">
-              <h1>404: OMG!</h1>
-            </div>
+			<div class="page-header">
+				<h1>404</h1>
+			</div>
 
-            <hr>
+			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+			<article class="post">
+        
+				<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+				<p><em>
+					By <?php the_author(); ?> 
+					on <?php echo the_time('l, F jS, Y');?>
+					in <?php the_category( ', ' ); ?>.
+				<a href="<?php comments_link(); ?>"><?php comments_number(); ?></a>
+				</em></p>            
 
-                <article class="post">
+			<?php the_excerpt(); ?>
+
+			</article>
             
-                    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                    <p><em>
-                        By <?php the_author(); ?> 
-                        on <?php echo the_time('l, F jS, Y');?>
-                        in <?php the_category( ', ' ); ?>.
-                    <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a>
-                    </em></p>            
-
-                <?php the_excerpt(); ?>
-
-                </article>
-            <hr>
+			<hr>
          
-            <?php endwhile; else: ?>
+			<?php endwhile; else: ?>
 
-            <p>It Doesn't look like there is any Posts!</p>
+			<p>It Doesn't look like there is any Posts!</p>
 
-            <?php endif; ?>
+			<?php endif; ?>
 
-        </div>
+		</div>
       
     <?php get_sidebar( 'blog' ); ?>
 
-    </div>
+	</div>
+</div>
 
 <?php get_footer(); ?>
