@@ -12,7 +12,7 @@ body {
 }
 
 .page-header{
-  margin: 65px 0 20px;
+  margin: 40px 0 20px;
 }
 
 .admin-bar .navbar-fixed-top {
@@ -145,4 +145,8 @@ img {
 
 .nocomments{
   display: none;
+}
+
+#bigbreadcrumbs{
+  margin-top: 80px;
 }

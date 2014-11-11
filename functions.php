@@ -10,9 +10,9 @@ require_once( 'lib/framework/enqueue.php' );
 require_once( 'lib/framework/menus.php' );
 require_once( 'lib/framework/widgets.php' );
 require_once( 'lib/framework/support.php' );
+require_once( 'lib/framework/breadcrumbs.php' );
 
 // Theme Recommended & Required Plugins
 require_once( 'lib/framework/plugins.php' );
-
 
 ?>
