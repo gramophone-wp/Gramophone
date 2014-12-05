@@ -12,20 +12,17 @@ Requirements
 Installation
 ----------
 
-- Clone the BigBooty Repo
-- Either upload via Theme Options
-
-*or*
-
-- Place in **/wp-content/themes/**
+- Clone BigBooty into **/wp-content/themes/**
+- log in ~/wp-admin
+- Set Appearance >> Theme >> BigBooty
 - Get busy!
 
 Version
 ----------
 
-**v0.1 - 0.9 (Alpha)**
+- v1.0 (Current)
+- v0.1 - 0.9 (Alpha)
 
-BigBooty is *not fit* for the wild
 
 
 Contributing
