@@ -3,7 +3,7 @@
 */
 
 body.login {
-
+	background: #6f5499;
 }
 
 body.login div#login {
@@ -19,7 +19,8 @@ body.login div#login h1 a {
 }
 
 body.login div#login form#loginform {
-
+	border-radius: 5%;
+	padding: 60px 24px 46px;
 }
 
 body.login div#login form#loginform p {
@@ -27,7 +28,8 @@ body.login div#login form#loginform p {
 }
 
 body.login div#login form#loginform p label {
-
+	color: #666;
+	font-size: 16px;
 }
 
 body.login div#login form#loginform input {
@@ -43,7 +45,7 @@ body.login div#login form#loginform input#user_pass {
 }
 
 body.login div#login form#loginform p.forgetmenot {
-
+	margin-top: 6px;
 }
 
 body.login div#login form#loginform p.forgetmenot input#rememberme {
@@ -55,21 +57,23 @@ body.login div#login form#loginform p.submit {
 }
 
 body.login div#login form#loginform p.submit input#wp-submit {
-
+	background: #6f5499;
+	border: 1px solid #6f5499;
+	padding: 0 30px;
 }
 
 body.login div#login p#nav {
-
+	text-align: center;
 }
 
 body.login div#login p#nav a {
-
+	color: #fff;
 }
 
 body.login div#login p#backtoblog {
-
+	text-align: center;
 }
 
 body.login div#login p#backtoblog a {
-	
+	color: #fff;
 }
