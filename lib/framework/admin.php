@@ -12,6 +12,16 @@ function bigbooty_login()
 add_action( 'login_enqueue_scripts', 'bigbooty_login' );
 
 
+function bigbooty_logo() { ?>
+    <style type="text/css">
+        body.login div#login h1 a {
+        	display: none;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'bigbooty_logo' );
+
+
 /*
 	Custom Admin Theme
 */
