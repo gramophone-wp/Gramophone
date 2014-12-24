@@ -20,13 +20,14 @@
 			?>
 			<p class="featured-image"><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php echo $thumbnail_meta; ?>"></p>
 
-
-			<p><em>
-			By <?php the_author(); ?> 
-			on <?php echo the_time('l, F jS, Y');?>
-			in <?php the_category( ', ' ); ?>.
-			<a href="<?php comments_link(); ?>"><?php comments_number(); ?></a>
-			</em></p>
+			<p class="post-meta">
+				By  <span class="vcard author">
+						<span class="fn"><?php the_author(); ?></span> 
+					</span>
+				on  <span class="date updated"><?php echo the_time('l, F jS, Y');?></span>
+				in <?php the_category( ', ' ); ?>.
+				<a href="<?php comments_link(); ?>" class="comments-number"><?php comments_number(); ?></a>
+			</p>
 		</div>
 
 		<?php the_content(); ?>
