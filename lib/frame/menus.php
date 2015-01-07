@@ -11,6 +11,7 @@ function register_bigbooty_menus() {
 		array(
 			'primary'	=> __( 'Primary Menu' ),
 			'footer'   => __( 'Footer Menu' ),
+			// 'misc' => __( 'Side Menu' ),
 		)
 	);
 }
