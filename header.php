@@ -40,17 +40,19 @@
 		</div>
 
 		<div class="navbar-collapse collapse pull-right">
-			<?php 
-			$menu_args = array(
-			'menu'            => 'header-menu', 
-			'container'       => 'container', 
-			'container_class' => 'container_class', 
-			'container_id'    => 'container_id',
-			'menu_class'      => 'nav navbar-nav',
-			'menu_id'         => 'menu_id',
-			'echo'            => true);
-			?>
-			<?php wp_nav_menu($menu_args);?>
+			<?php
+            wp_nav_menu( array(
+                'menu'              => 'primary',
+                'theme_location'    => 'primary',
+                'depth'             => 2,
+                'container'         => 'div',
+                'container_class'   => 'collapse navbar-collapse',
+        		'container_id'      => 'bs-example-navbar-collapse-1',
+                'menu_class'        => 'nav navbar-nav',
+                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                'walker'            => new wp_bootstrap_navwalker())
+            );
+        	?>
 		</div>
 	</div>
 </div>
