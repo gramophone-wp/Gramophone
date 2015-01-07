@@ -10,7 +10,7 @@ function register_bigbooty_menus() {
 	register_nav_menus(
 		array(
 			'primary'	=> __( 'Primary Menu' ),
-			// 'footer-menu'   => __( 'Footer Menu' ),
+			'footer'   => __( 'Footer Menu' ),
 		)
 	);
 }
