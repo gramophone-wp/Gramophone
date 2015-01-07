@@ -15,6 +15,6 @@ require_once( 'lib/frame/support.php' );
 require_once( 'lib/frame/breadcrumbs.php' );
 
 // Theme Recommended & Required Plugins
-require_once( 'lib/frame/plugins.php' );
+require_once( 'lib/frame/plugin_settings.php' );
 
 ?>
