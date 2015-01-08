@@ -39,7 +39,11 @@
 			</a>
 		</div>
 
-		<div class="navbar-collapse collapse pull-right">
+		<div class="navbar-collapse collapse">
+			<form method="get" id="search_form" action="<?php bloginfo('home'); ?>" class="navbar-form navbar-right">
+				<input type="text" class="text form-control" name="s">
+				<input type="submit" class="submit btn btn-primary" value="Search">
+			</form>
 			<?php
             wp_nav_menu( array(
                 'menu'              => 'primary',

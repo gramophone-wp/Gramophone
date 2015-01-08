@@ -20,7 +20,7 @@ Installation
 Version
 ----------
 
-- v1.0 (Current)
+- v1.0 (Current ~ Beta)
 - v0.1 - 0.9 (Alpha)
 
 
@@ -35,3 +35,10 @@ Licience
 ----------
 
 Just like WordPress & Twitter Bootstrap 3, BigBooty is released under the GPL. Please see [LICENCE.md](https://github.com/pjhampton/BigBooty/blob/master/docs/LICENCE.md) for further details.
+
+
+Special Thanks
+----------
+
+- WP-Nav-Walker
+- Plugin Include
