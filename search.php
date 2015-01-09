@@ -1,9 +1,10 @@
 <?php
 /**
+ * Summary
+ *
  * The template for displaying Search Results pages.
  *
- * @package BigBooty
- * @since BigBooty 1.0
+ * @since BigBooty 1.0.0
  */
 ?>
 
