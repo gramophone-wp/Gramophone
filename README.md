@@ -8,6 +8,12 @@ BigBooty
 - Set Appearance >> Theme >> BigBooty
 - Get busy!
 
+## Licience
+
+Just like WordPress & Twitter Bootstrap 3, BigBooty is released under the GPL. Please see [LICENCE.md](https://github.com/pjhampton/BigBooty/blob/master/docs/LICENCE.md) for further details.
+
+## Project Information
+
 ### Version
 
 - v1.0 (Current ~ Beta)
@@ -16,13 +22,3 @@ BigBooty
 ### Contributing
 
 Please see [CONTRIBUTING.md](https://github.com/pjhampton/BigBooty/blob/master/docs/CONTRIBUTING.md)
-
-### Licience
-
-Just like WordPress & Twitter Bootstrap 3, BigBooty is released under the GPL. Please see [LICENCE.md](https://github.com/pjhampton/BigBooty/blob/master/docs/LICENCE.md) for further details.
-
-
-### Special Thanks
-
-- WP-Nav-Walker
-- Plugin Include
