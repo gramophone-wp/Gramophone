@@ -10,9 +10,9 @@ BigBooty
 
 #### Licience
 
-Just like WordPress & Twitter Bootstrap 3, BigBooty is released under the GPL. Please see [LICENCE.md](https://github.com/pjhampton/BigBooty/blob/master/docs/LICENCE.md) for further details.
+[General Public Licence v2 or later](https://github.com/pjhampton/BigBooty/blob/master/docs/LICENCE.md).
 
-## Project Information
+## This Project
 
 #### Version
 
@@ -21,4 +21,8 @@ Just like WordPress & Twitter Bootstrap 3, BigBooty is released under the GPL. P
 
 #### Contributing
 
-Please see [CONTRIBUTING.md](https://github.com/pjhampton/BigBooty/blob/master/docs/CONTRIBUTING.md)
+Please see the following:
+
+- [CONTRIBUTING.md](https://github.com/pjhampton/BigBooty/blob/master/docs/CONTRIBUTING.md)
+- [Issues Tracker](https://github.com/pjhampton/BigBooty/issues)
+- [Milestones](https://github.com/pjhampton/BigBooty/milestones)
