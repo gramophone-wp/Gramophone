@@ -21,8 +21,6 @@ BigBooty
 
 #### Contributing
 
-Please see the following:
-
-- [CONTRIBUTING.md](https://github.com/pjhampton/BigBooty/blob/master/docs/CONTRIBUTING.md)
+- [How to Contribute](https://github.com/pjhampton/BigBooty/blob/master/docs/CONTRIBUTING.md)
 - [Issues Tracker](https://github.com/pjhampton/BigBooty/issues)
 - [Milestones](https://github.com/pjhampton/BigBooty/milestones)
