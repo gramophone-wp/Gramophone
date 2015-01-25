@@ -1,3 +1,14 @@
+<?php
+/**
+ * Summary
+ *
+ * The template for archives.
+ *
+ * @todo Finish Structure
+ * @since BigBooty 1.0.1
+ */
+?>
+
 <?php get_header(); ?>
 
 <div class="container">   
