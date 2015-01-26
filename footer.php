@@ -1,3 +1,14 @@
+<?php
+/**
+ * Summary
+ *
+ * The template for the footer.
+ *
+ * @todo Finish Structure
+ * @since BigBooty 1.0.1
+ */
+?>
+
 <footer class="footer">
 	<div class="container">
 		<div class="col-xs-12 col-md-6" id="copyright">
