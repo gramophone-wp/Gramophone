@@ -5,15 +5,22 @@
 	Codex: http://codex.wordpress.org/Customizing_the_Login_Form
 */
 
-function bigbooty_login() 
+function bigbooty_login_styles() 
 {
     wp_enqueue_style( 'bigbooty-login', get_template_directory_uri() . '/admin/login/login.css' );
 }
-add_action( 'login_enqueue_scripts', 'bigbooty_login' );
+add_action( 'login_enqueue_scripts', 'bigbooty_login_styles' );
+
+
+function wpse_login_enqueue_scripts() 
+{
+    wp_enqueue_script( 'login.js', get_template_directory_uri() . '/admin/login/login.js', array( 'jquery' ), 1.0 );
+}
+add_action( 'login_enqueue_scripts', 'wpse_login_enqueue_scripts', 10 );
 
 
 function bigbooty_logo() { ?>
-    <style type="text/css">
+    <style>
         body.login div#login h1 a {
         	display: none;
         }

@@ -2,13 +2,23 @@
 	Login CSS
 */
 
+#login {
+	width: 400px;
+	padding: 8% 0 0;
+	margin: auto;
+}
+
 body.login {
-	background: #6f5499;
+	background-color: #3b2f63;
+	background-image: -webkit-radial-gradient(0% bottom,rgba(118,72,160,0.7) 0,rgba(118,72,160,0) 60%),-webkit-radial-gradient(90% bottom,#523f8c 0,rgba(82,63,140,0) 40%),-webkit-radial-gradient(50% top,rgba(84,90,182,0.6) 0,rgba(84,90,182,0) 75%),-webkit-radial-gradient(right top,#794aa2 0,rgba(121,74,162,0) 57%);
+	background-image: radial-gradient(at 0 bottom,rgba(118,72,160,0.7) 0,rgba(118,72,160,0) 60%),radial-gradient(at 90% bottom,#523f8c 0,rgba(82,63,140,0) 40%),radial-gradient(at 50% top,rgba(84,90,182,0.6) 0,rgba(84,90,182,0) 75%),radial-gradient(at right top,#794aa2 0,rgba(121,74,162,0) 57%);
+	background-size: auto,auto,100% 1000px,100% 1000px;
+	background-repeat: no-repeat;
 }
 
 body.login div#login form#loginform {
-	border-radius: 5%;
-	padding: 50px 30px 50px;
+	border-radius: 8px;
+	padding: 50px 50px 50px;
 }
 
 body.login div#login form#loginform p label {
@@ -17,21 +27,56 @@ body.login div#login form#loginform p label {
 }
 
 body.login div#login form#loginform input#user_login {
-	border-radius: 6px;
+	border-radius: 4px;
 }
 
 body.login div#login form#loginform input#user_pass {
-	border-radius: 6px;
+	border-radius: 4px;
 }
 
 body.login div#login form#loginform p.forgetmenot {
 	margin-top: 6px;
 }
 
+body.login div#login form#loginform input#user_login:focus {
+  border: solid 1px #3b2f63;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: none;
+  -moz-transition: none;
+  -webkit-transition: none;
+}
+
+body.login div#login form#loginform input#user_pass:focus {
+  border: solid 1px #3b2f63;
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: none;
+  -moz-transition: none;
+  -webkit-transition: none;
+}
+
+
+.wp-core-ui .button-primary{
+	background: none;
+	border: none;
+}
+
 body.login div#login form#loginform p.submit input#wp-submit {
-	background: #6f5499;
-	border: 1px solid #6f5499;
-	padding: 0 30px;
+	width: 100%;
+	border: none;
+	border-radius: 5px;
+	font-size: 17px;
+	color: #fff;
+	background-color: #79589f;
+	background-image: -webkit-gradient(linear,right top,left bottom,color-stop(0,rgba(159,88,150,0)),color-stop(1,rgba(159,88,150,0.6)));
+	background-image: -o-linear-gradient(left bottom,rgba(159,88,150,0) 0,rgba(159,88,150,0.6) 100%);
+	background-image: -moz-linear-gradient(left bottom,rgba(159,88,150,0) 0,rgba(159,88,150,0.6) 100%);
+	background-image: -webkit-linear-gradient(left bottom,rgba(159,88,150,0) 0,rgba(159,88,150,0.6) 100%);
+	background-image: -ms-linear-gradient(left bottom,rgba(159,88,150,0) 0,rgba(159,88,150,0.6) 100%);
+	background-image: linear,to left bottom,rgba(159,88,150,0) 0,rgba(159,88,150,0.6) 100%;
 }
 
 body.login div#login p#nav {
@@ -40,12 +85,20 @@ body.login div#login p#nav {
 
 body.login div#login p#nav a {
 	color: #fff;
+	text-decoration: underline;
+	font-size: 16px;
 }
 
 body.login div#login p#backtoblog {
-	text-align: center;
+	display: none;
 }
 
-body.login div#login p#backtoblog a {
-	color: #fff;
+.wp-core-ui .button-group.button-large .button, .wp-core-ui .button.button-large {
+	height: 40px;
+	line-height: 28px;
+	padding: 0 12px 2px;
+}
+
+.forgetmenot{
+	display: none;
 }
