@@ -38,7 +38,7 @@ body.login div#login form#loginform p.forgetmenot {
 	margin-top: 6px;
 }
 
-<<<<<<< HEAD
+
 body.login div#login form#loginform input#user_login:focus {
   border: solid 1px #3b2f63;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -58,9 +58,6 @@ body.login div#login form#loginform input#user_pass:focus {
   -moz-transition: none;
   -webkit-transition: none;
 }
-
-=======
->>>>>>> FETCH_HEAD
 
 .wp-core-ui .button-primary{
 	background: none;
