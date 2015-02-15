@@ -17,4 +17,7 @@ require_once( 'lib/frame/breadcrumbs.php' );
 // Theme Recommended & Required Plugins
 require_once( 'lib/frame/plugin_settings.php' );
 
+// Theme custom post types
+require_once( 'lib/frame/customs/portfolio.php' );
+
 ?>
