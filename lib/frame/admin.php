@@ -1,9 +1,13 @@
 <?php
-
-/*
-	Custom Login Screen
-	Codex: http://codex.wordpress.org/Customizing_the_Login_Form
-*/
+/**
+ * Custom Login
+ *
+ * Custom styling for the backend
+ *
+ * @link http://codex.wordpress.org/Customizing_the_Login_Form
+ * @todo Finish Structure
+ * @since BigBooty 1.0.0
+ */
 
 function bigbooty_login_styles() 
 {

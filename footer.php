@@ -21,14 +21,15 @@
 
 <script type="application/ld+json">
 {
-   "@context": "http://schema.org",
-   "@type": "WebSite",
-   "url": "https://www.example.com/",
-   "potentialAction": {
-     "@type": "SearchAction",
-     "target": "http://example.com/?s={search_term_string}",
-     "query-input": "required name=search_term_string"
-   }
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "url": "https://www.example.com/",
+    "potentialAction": 
+    {
+        "@type": "SearchAction",
+        "target": "http://example.com/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    }
 }
 </script>
 
