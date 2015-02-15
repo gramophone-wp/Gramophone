@@ -19,7 +19,8 @@ function wpse_login_enqueue_scripts()
 add_action( 'login_enqueue_scripts', 'wpse_login_enqueue_scripts', 10 );
 
 
-function bigbooty_logo() { ?>
+function bigbooty_logo() 
+{ ?>
     <style>
         body.login div#login h1 a {
         	display: none;
