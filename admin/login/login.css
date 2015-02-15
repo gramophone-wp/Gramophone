@@ -90,6 +90,10 @@ body.login div#login p#nav a {
 	font-size: 16px;
 }
 
+body.login div#login p#nav a:hover{
+	text-decoration: none;
+}
+
 body.login div#login p#backtoblog {
 	display: none;
 }
@@ -102,4 +106,12 @@ body.login div#login p#backtoblog {
 
 .forgetmenot{
 	display: none;
+}
+
+.login #login_error {
+	border-left: 4px solid #CF9795;
+	background: #fff;
+	-webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+	border-radius: 0px 8px 8px 0px;
 }
