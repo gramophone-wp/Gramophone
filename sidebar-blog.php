@@ -1,3 +1,12 @@
+<?php
+/**
+ * Blog Sidebar
+ *
+ *
+ * @since BigBooty 1.0.1
+ */
+?>
+
 <div class="col-md-3" id="sidebar">
 
 	<?php if ( ! dynamic_sidebar( 'blog' ) ): ?>

@@ -23,6 +23,10 @@ function wpse_login_enqueue_scripts()
 add_action( 'login_enqueue_scripts', 'wpse_login_enqueue_scripts', 10 );
 
 
+/*
+	Custom Logo
+*/
+
 function bigbooty_logo() 
 { ?>
     <style>
