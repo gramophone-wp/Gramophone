@@ -49,6 +49,7 @@ body.login div#login form#loginform input#user_login:focus {
   -webkit-transition: none;
 }
 
+
 body.login div#login form#loginform input#user_pass:focus {
   border: solid 1px #3b2f63;
   box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075);
