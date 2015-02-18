@@ -4,6 +4,7 @@
  *
  * The 404 template: Something not coming in
  *
+ * @author pj hampton
  * @link http://codex.wordpress.org/Creating_an_Error_404_Page
  * @since BigBooty 1.0.0
  */
