@@ -1,9 +1,10 @@
 <?php
 /**
- * Summary
+ * search.php
  *
- * The template for displaying Search Results pages.
+ * The search results page
  *
+ * @link http://codex.wordpress.org/Creating_a_Search_Page
  * @since BigBooty 1.0.0
  */
 ?>

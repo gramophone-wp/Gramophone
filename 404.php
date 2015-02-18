@@ -1,3 +1,14 @@
+<?php
+/**
+ * 404
+ *
+ * The 404 template: Something not coming in
+ *
+ * @link http://codex.wordpress.org/Creating_an_Error_404_Page
+ * @since BigBooty 1.0.0
+ */
+?>
+
 <?php get_header(); ?>
 
 <div class="container">   

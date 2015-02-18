@@ -1,7 +1,12 @@
 <?php
-/*
-  Template Name: No Sidebar
-*/
+/**
+ * page-full.php
+ *
+ * The full width page
+ *
+ * @link http://codex.wordpress.org/Pages
+ * @since BigBooty 0.3.0
+ */
 ?>
 
 <?php get_header(); ?>

@@ -1,3 +1,14 @@
+<?php
+/**
+ * page.php
+ *
+ * The standard page
+ *
+ * @link http://codex.wordpress.org/Pages
+ * @since BigBooty 0.3.0
+ */
+?>
+
 <?php get_header(); ?>
 
 <div class="container">   

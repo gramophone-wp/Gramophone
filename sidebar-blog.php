@@ -1,9 +1,11 @@
 <?php
 /**
- * Blog Sidebar
+ * sidebar-blog.php
  *
+ * The blog sidebar
  *
- * @since BigBooty 1.0.1
+ * @link http://codex.wordpress.org/Function_Reference/get_sidebar
+ * @since BigBooty 0.3.0
  */
 ?>
 

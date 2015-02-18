@@ -1,3 +1,14 @@
+<?php
+/**
+ * Single.php
+ *
+ * The post template
+ *
+ * @link http://codex.wordpress.org/Theme_Development#Single_Post_.28single.php.29
+ * @since BigBooty 0.1.0
+ */
+?>
+
 <?php get_header(); ?>
 
 <div class="container">   
