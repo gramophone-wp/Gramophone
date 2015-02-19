@@ -154,3 +154,7 @@ img {
 article.post{
     border-bottom: 1px solid #eee;  
 }
+
+#woo{
+    margin: 40px 0 20px;
+}

@@ -19,8 +19,9 @@
         <p class="pull-right visible-xs">
             <button type="button" class="btn btn-primary btn-med" data-toggle="offcanvas">View Sidebar</button>
         </p>
-
-        <?php woocommerce_content(); ?>
+        <section id="woo">
+            <?php woocommerce_content(); ?>
+        </section>
 
         </div>
       
