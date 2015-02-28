@@ -143,6 +143,14 @@ img {
   }
 }
 
+#copyright p{
+  padding-top: 150px;
+}
+
+.footer {   
+  height: 200px;
+}
+
 .nocomments{
   display: none;
 }
