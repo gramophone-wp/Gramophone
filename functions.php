@@ -20,7 +20,4 @@ require_once( 'lib/frame/plugin_settings.php' );
 // Theme custom post types
 require_once( 'lib/frame/customs/portfolio.php' );
 
-// Add Woocommerce Support
-add_theme_support( 'woocommerce' );
-
 ?>
