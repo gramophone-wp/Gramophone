@@ -1,6 +1,7 @@
 <?php
 /**
  * Custom Login
+ * @copyright 2014 - 2015
  *
  * Custom styling for the backend
  *
@@ -21,7 +22,6 @@ function wpse_login_enqueue_scripts()
     wp_enqueue_script( 'login.js', get_template_directory_uri() . '/admin/login/login.js', array( 'jquery' ), 1.0 );
 }
 add_action( 'login_enqueue_scripts', 'wpse_login_enqueue_scripts', 10 );
-
 
 /*
 	Custom Logo

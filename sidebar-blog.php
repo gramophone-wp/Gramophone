@@ -1,6 +1,7 @@
 <?php
 /**
  * sidebar-blog.php
+ * @copyright 2014 - 2015
  *
  * The blog sidebar
  *
@@ -18,5 +19,5 @@
 	<p>Oh! It looks like you haven't set up your sidebar yet!</p>
 
 	<?php endif; ?>
-	
+
 </div>

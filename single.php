@@ -1,68 +1,70 @@
 <?php
 /**
  * Single.php
+ * @copyright 2014 - 2015
  *
- * The post template
+ * The Single Post Page
  *
  * @author pj hampton
  * @link http://codex.wordpress.org/Theme_Development#Single_Post_.28single.php.29
- * @since BigBooty 0.1.0
+ * @since BigBooty 1.0.0
  */
 ?>
 
 <?php get_header(); ?>
 
 <div class="container">   
-	<div class="row">
-		<div class="col-md-9">
+    <div class="row">
+        <div class="col-md-9">
 
-		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-		<div id="bigbreadcrumbs">
-			<?php bigbooty_breadcrumbs(); ?>
-		</div>
+        <div id="bigbreadcrumbs">
+            <?php bigbooty_breadcrumbs(); ?>
+        </div>
 
-		<div class="page-header"> 
+        <div class="page-header"> 
 
-			<h1><?php the_title(); ?></h1>
-			<?php
-				$thumbnail_id = get_post_thumbnail_id(); 
-				$thumbnail_url = wp_get_attachment_image_src( $thumbnail_id, 'thumbnail-size', true );
-				$thumbnail_meta = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true);                
-			?>
-			<p class="featured-image"><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php echo $thumbnail_meta; ?>"></p>
+            <h1><?php the_title(); ?></h1>
+            <?php
+                $thumbnail_id = get_post_thumbnail_id(); 
+                $thumbnail_url = wp_get_attachment_image_src( $thumbnail_id, 'thumbnail-size', true );
+                $thumbnail_meta = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true);                
+            ?>
 
-			<p class="post-meta">
-				By  <span class="vcard author">
-						<span class="fn"><?php the_author_link(); ?></span> 
-					</span>
-				on  <span class="date updated"><?php echo the_time('l, F jS, Y');?></span>
-				in <?php the_category( ', ' ); ?>.
-				<a href="<?php comments_link(); ?>" class="comments-number"><?php comments_number(); ?></a>
-			</p>
-		</div>
+            <p class="featured-image"><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php echo $thumbnail_meta; ?>"></p>
 
-		<?php the_content(); ?>
+            <p class="post-meta">
+                By  <span class="vcard author">
+                        <span class="fn"><?php the_author_link(); ?></span> 
+                    </span>
+                on  <span class="date updated"><?php echo the_time('l, F jS, Y');?></span>
+                in <?php the_category( ', ' ); ?>.
+                <a href="<?php comments_link(); ?>" class="comments-number"><?php comments_number(); ?></a>
+            </p>
+        </div>
 
-		<hr>
+        <?php the_content(); ?>
 
-		<?php comments_template(); ?>
+        <hr>
+
+        <?php comments_template(); ?>
 
 		<?php endwhile; else: ?>
           
-		<div class="page-header">
-			<h1>Oh no!</h1>
-		</div>
+        <div class="page-header">
+            <h1>Oh no!</h1>
+        </div>
 
-		<p>No content is appearing for this page!</p>
+        <p>No content is appearing for this page!</p>
 
-		<?php endif; ?>
+        <?php endif; ?>
 
-
-		</div>
+        </div>
       
-	<?php get_sidebar( 'blog' ); ?>
+    <?php get_sidebar( 'blog' ); ?>
 
-	</div>
+    </div>
 </div>	
+
 <?php get_footer(); ?>

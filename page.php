@@ -1,8 +1,9 @@
 <?php
 /**
  * page.php
+ * @copyright 2014 - 2015
  *
- * The standard page
+ * The Page
  *
  * @author pj hampton
  * @link http://codex.wordpress.org/Pages
@@ -16,31 +17,31 @@
     <div class="row row-offcanvas row-offcanvas-right">
         <div class="col-md-9">
 
-        <p class="pull-right visible-xs">
-            <button type="button" class="btn btn-primary btn-med" data-toggle="offcanvas">View Sidebar</button>
-        </p>
+            <p class="pull-right visible-xs">
+                <button type="button" class="btn btn-primary btn-med" data-toggle="offcanvas">View Sidebar</button>
+            </p>
 
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-        <div class="page-header">
-            <h1><?php the_title(); ?></h1>
-        </div>
+            <div class="page-header">
+                <h1><?php the_title(); ?></h1>
+            </div>
 
-        <?php the_content(); ?>
+            <?php the_content(); ?>
 
-        <?php endwhile; else: ?>
-          
-        <div class="page-header">
-            <h1>Oh no!</h1>
-        </div>
+            <?php endwhile; else: ?>
+              
+            <div class="page-header">
+                <h1>Oh no!</h1>
+            </div>
 
-        <p>No content is appearing for this page!</p>
+            <p>No content is appearing for this page!</p>
 
-        <?php endif; ?>
+            <?php endif; ?>
 
         </div>
       
-    <?php get_sidebar(); ?>
+        <?php get_sidebar(); ?>
 
     </div>
 </div>

@@ -1,37 +1,50 @@
+<?php
+/**
+ * front-page.php
+ * @copyright 2014 - 2015
+ *
+ * The search results page
+ *
+ * @author pjh
+ * @link http://codex.wordpress.org/
+ * @since BigBooty 1.0.0
+ */
+?>
+
 <?php get_header(); ?>
 
 <div class="jumbotron">
-	<div class="container">
+    <div class="container">
 
-	<h1><?php the_title(); ?></h1>
+    <h1><?php the_title(); ?></h1>
 
-	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-	<?php the_content(); ?>
+    <?php the_content(); ?>
 
-	<?php endwhile; endif; ?>
+    <?php endwhile; endif; ?>
 
-	</div>
+    </div>
 </div>
 
 <div class="container">
-	<div class="row">
-		<div class="col-md-4">
+    <div class="row">
+        <div class="col-md-4">
 
-		<?php if ( dynamic_sidebar( 'front-left' ) ); ?>
+        <?php if ( dynamic_sidebar( 'front-left' ) ); ?>
 
-		</div>
-		<div class="col-md-4">
+        </div>
+        <div class="col-md-4">
       
-		<?php if ( dynamic_sidebar( 'front-center' ) ); ?>
+        <?php if ( dynamic_sidebar( 'front-center' ) ); ?>
 
-		</div>
-		<div class="col-md-4">
+        </div>
+        <div class="col-md-4">
       
-		<?php if ( dynamic_sidebar( 'front-right' ) ); ?>
+        <?php if ( dynamic_sidebar( 'front-right' ) ); ?>
 
-		</div>
-	</div>
+        </div>
+    </div>
 </div>
 
 <?php get_footer(); ?>

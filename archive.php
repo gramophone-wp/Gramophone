@@ -1,6 +1,7 @@
 <?php
 /**
  * Summary
+ * @copyright 2014 - 2015
  *
  * The template for archives.
  *
@@ -13,48 +14,49 @@
 <?php get_header(); ?>
 
 <div class="container">   
-	<div class="row">
-		<div class="col-md-9">
+    <div class="row">
+        <div class="col-md-9">
 
-			<div class="page-header">
-				<h1><?php wp_title(''); ?></h1>
-			</div>
+            <div class="page-header">
+                <h1><?php wp_title(''); ?></h1>
+            </div>
 
-			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-			<article class="post">
-            
-				<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+            <article class="post">
+
+                <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 	            
-				<p><em>
-					By <?php the_author(); ?> 
-					on <?php echo the_time('l, F jS, Y');?>
-					in <?php the_category( ', ' ); ?>.
-					<a href="<?php comments_link(); ?>">
-						<?php comments_number(); ?>
-					</a>
-				</em></p>            
+                <p><em>
+                    By <?php the_author(); ?> 
+                    on <?php echo the_time('l, F jS, Y');?>
+                    in <?php the_category( ', ' ); ?>.
+                    <a href="<?php comments_link(); ?>">
+                    	<?php comments_number(); ?>
+                    </a>
+                </em></p>            
 
-				<?php the_excerpt(); ?>
+                <?php the_excerpt(); ?>
 
-			</article>
-			<hr>
-         
-			<?php endwhile; else: ?>
+            </article>
+			
+            <hr>
+
+            <?php endwhile; else: ?>
           
-			<div class="page-header">
-				<h1>Oh no!</h1>
-			</div>
+            <div class="page-header">
+                <h1>Oh no!</h1>
+            </div>
 
-			<p>No content is appearing for this page!</p>
+            <p>No content is appearing for this page!</p>
 
-			<?php endif; ?>
+            <?php endif; ?>
 
-		</div>
+        </div>
       
-	<?php get_sidebar( 'blog' ); ?>
+    <?php get_sidebar( 'blog' ); ?>
 
-	</div>
+    </div>
 </div>
 
 <?php get_footer(); ?>

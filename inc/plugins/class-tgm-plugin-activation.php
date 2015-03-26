@@ -10,24 +10,19 @@
  * @license   http://opensource.org/licenses/gpl-2.0.php GPL v2 or later
  * @link      https://github.com/thomasgriffin/TGM-Plugin-Activation
  */
-
 /*
     Copyright 2014 Thomas Griffin (thomasgriffinmedia.com)
-
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as
     published by the Free Software Foundation.
-
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
-
     You should have received a copy of the GNU General Public License
     along with this program; if not, write to the Free Software
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
-
 if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
     /**
      * Automatic plugin installation and activation library.
@@ -43,7 +38,6 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
      * @author  Gary Jones <gamajo.com>
      */
     class TGM_Plugin_Activation {
-
         /**
          * Holds a copy of itself, so it can be referenced by the class name.
          *
@@ -52,7 +46,6 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
          * @var TGM_Plugin_Activation
          */
         public static $instance;
-
         /**
          * Holds arrays of plugin details.
          *
@@ -61,7 +54,6 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
          * @var array
          */
         public $plugins = array();
-
         /**
          * Name of the querystring argument for the admin page.
          *
@@ -70,7 +62,6 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
          * @var string
          */
         public $menu = 'tgmpa-install-plugins';
-
         /**
          * Default absolute path to folder containing pre-packaged plugin zip files.
          *
@@ -79,7 +70,6 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
          * @var string Absolute path prefix to packaged zip file location. Default is empty string.
          */
         public $default_path = '';
-
         /**
          * Flag to show admin notices or not.
          *
@@ -88,7 +78,6 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
          * @var boolean
          */
         public $has_notices = true;
-
         /**
          * Flag to determine if the user can dismiss the notice nag.
          *
@@ -97,7 +86,6 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
          * @var boolean
          */
         public $dismissable = true;
-
         /**
          * Message to be output above nag notice if dismissable is false.
          *
@@ -106,7 +94,6 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
          * @var string
          */
         public $dismiss_msg = '';
-
         /**
          * Flag to set automatic activation of plugins. Off by default.
          *
@@ -115,7 +102,6 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
          * @var boolean
          */
         public $is_automatic = false;
-
         /**
          * Optional message to display before the plugins table.
          *
@@ -124,7 +110,6 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
          * @var string Message filtered by wp_kses_post(). Default is empty string.
          */
         public $message = '';
-
         /**
          * Holds configurable array of strings.
          *
@@ -135,7 +120,6 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
          * @var array
          */
         public $strings = array();
-
         /**
          * Holds the version of WordPress.
          *
@@ -144,7 +128,6 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
          * @var int
          */
         public $wp_version;
-
         /**
          * Adds a reference of this object to $instance, populates default strings,
          * does the tgmpa_init action hook, and hooks in the interactions to init.
@@ -154,9 +137,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
          * @see TGM_Plugin_Activation::init()
          */
         public function __construct() {
-
             self::$instance = $this;
-
             $this->strings = array(
                 'page_title'                     => __( 'Install Required Plugins', 'tgmpa' ),
                 'menu_title'                     => __( 'Install Plugins', 'tgmpa' ),
@@ -179,19 +160,14 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
                 'complete'                       => __( 'All plugins installed and activated successfully. %1$s', 'tgmpa' ),
                 'dismiss'                        => __( 'Dismiss this notice', 'tgmpa' ),
             );
-
             // Set the current WordPress version.
             global $wp_version;
             $this->wp_version = $wp_version;
-
             // Announce that the class is ready, and pass the object (for advanced use).
             do_action_ref_array( 'tgmpa_init', array( $this ) );
-
             // When the rest of WP has loaded, kick-start the rest of the class.
             add_action( 'init', array( $this, 'init' ) );
-
         }
-
         /**
          * Initialise the interactions between this class and WordPress.
          *
@@ -204,25 +180,19 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
          * @see TGM_Plugin_Activation::styles()
          */
         public function init() {
-
             do_action( 'tgmpa_register' );
             // After this point, the plugins should be registered and the configuration set.
-
             // Proceed only if we have plugins to handle.
             if ( $this->plugins ) {
                 $sorted = array();
-
                 foreach ( $this->plugins as $plugin ) {
                     $sorted[] = $plugin['name'];
                 }
-
                 array_multisort( $sorted, SORT_ASC, $this->plugins );
-
                 add_action( 'admin_menu', array( $this, 'admin_menu' ) );
                 add_action( 'admin_head', array( $this, 'dismiss' ) );
                 add_filter( 'install_plugin_complete_actions', array( $this, 'actions' ) );
                 add_action( 'switch_theme', array( $this, 'flush_plugins_cache' ) );
-
                 // Load admin bar in the header to remove flash when installing plugins.
                 if ( $this->is_tgmpa_page() ) {
                     remove_action( 'wp_footer', 'wp_admin_bar_render', 1000 );
@@ -230,14 +200,12 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
                     add_action( 'wp_head', 'wp_admin_bar_render', 1000 );
                     add_action( 'admin_head', 'wp_admin_bar_render', 1000 );
                 }
-
                 if ( $this->has_notices ) {
                     add_action( 'admin_notices', array( $this, 'notices' ) );
                     add_action( 'admin_init', array( $this, 'admin_init' ), 1 );
                     add_action( 'admin_enqueue_scripts', array( $this, 'thickbox' ) );
                     add_action( 'switch_theme', array( $this, 'update_dismiss' ) );
                 }
-
                 // Setup the force activation hook.
                 foreach ( $this->plugins as $plugin ) {
                     if ( isset( $plugin['force_activation'] ) && true === $plugin['force_activation'] ) {
@@ -245,7 +213,6 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
                         break;
                     }
                 }
-
                 // Setup the force deactivation hook.
                 foreach ( $this->plugins as $plugin ) {
                     if ( isset( $plugin['force_deactivation'] ) && true === $plugin['force_deactivation'] ) {
@@ -254,9 +221,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
                     }
                 }
             }
-
         }
-
         /**
          * Handles calls to show plugin information via links in the notices.
          *
@@ -278,26 +243,18 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
          * @return null Returns early if not the TGMPA page.
          */
         public function admin_init() {
-
             if ( ! $this->is_tgmpa_page() ) {
                 return;
             }
-
             if ( isset( $_REQUEST['tab'] ) && 'plugin-information' == $_REQUEST['tab'] ) {
                 require_once ABSPATH . 'wp-admin/includes/plugin-install.php'; // Need for install_plugin_information().
-
                 wp_enqueue_style( 'plugin-install' );
-
                 global $tab, $body_id;
                 $body_id = $tab = 'plugin-information';
-
                 install_plugin_information();
-
                 exit;
             }
-
         }
-
         /**
          * Enqueues thickbox scripts/styles for plugin info.
          *
@@ -310,13 +267,10 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
          * @since 2.1.0
          */
         public function thickbox() {
-
             if ( ! get_user_meta( get_current_user_id(), 'tgmpa_dismissed_notice', true ) ) {
                 add_thickbox();
             }
-
         }
-
         /**
          * Adds submenu page under 'Appearance' tab.
          *
@@ -331,14 +285,11 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
          * @see TGM_Plugin_Activation::install_plugins_page()
          */
         public function admin_menu() {
-
             // Make sure privileges are correct to see the page
             if ( ! current_user_can( 'install_plugins' ) ) {
                 return;
             }
-
             $this->populate_file_path();
-
             foreach ( $this->plugins as $plugin ) {
                 if ( ! is_plugin_active( $plugin['file_path'] ) ) {
                     add_theme_page(
@@ -351,9 +302,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
                 break;
                 }
             }
-
         }
-
         /**
          * Echoes plugin installation form.
          *
@@ -365,21 +314,15 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
          * @return null Aborts early if we're processing a plugin installation action
          */
         public function install_plugins_page() {
-
             // Store new instance of plugin table in object.
             $plugin_table = new TGMPA_List_Table;
-
             // Return early if processing a plugin installation action.
             if ( isset( $_POST['action'] ) && 'tgmpa-bulk-install' == $_POST['action'] && $plugin_table->process_bulk_actions() || $this->do_plugin_install() ) {
                 return;
             }
-
             ?>
             <div class="tgmpa wrap">
 
-                <?php if ( version_compare( $this->wp_version, '3.8', '<' ) ) {
-                    screen_icon( apply_filters( 'tgmpa_default_screen_icon', 'themes' ) );
-                } ?>
                 <h2><?php echo esc_html( get_admin_page_title() ); ?></h2>
                 <?php $plugin_table->prepare_items(); ?>
 
@@ -394,9 +337,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 
             </div>
             <?php
-
         }
-
         /**
          * Installs a plugin or activates a plugin depending on the hover
          * link clicked by the user.
@@ -418,18 +359,14 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
          * @return boolean True on success, false on failure
          */
         protected function do_plugin_install() {
-
             // All plugin information will be stored in an array for processing.
             $plugin = array();
-
             // Checks for actions from hover links to process the installation.
             if ( isset( $_GET['plugin'] ) && ( isset( $_GET['tgmpa-install'] ) && 'install-plugin' == $_GET['tgmpa-install'] ) ) {
                 check_admin_referer( 'tgmpa-install' );
-
                 $plugin['name']   = $_GET['plugin_name']; // Plugin name.
                 $plugin['slug']   = $_GET['plugin']; // Plugin slug.
                 $plugin['source'] = $_GET['plugin_source']; // Plugin source.
-
                 // Pass all necessary information via URL if WP_Filesystem is needed.
                 $url = wp_nonce_url(
                     add_query_arg(
@@ -446,62 +383,47 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
                 );
                 $method = ''; // Leave blank so WP_Filesystem can populate it as necessary.
                 $fields = array( 'tgmpa-install' ); // Extra fields to pass to WP_Filesystem.
-
                 if ( false === ( $creds = request_filesystem_credentials( $url, $method, false, false, $fields ) ) ) {
                     return true;
                 }
-
                 if ( ! WP_Filesystem( $creds ) ) {
                     request_filesystem_credentials( $url, $method, true, false, $fields ); // Setup WP_Filesystem.
                     return true;
                 }
-
                 require_once ABSPATH . 'wp-admin/includes/plugin-install.php'; // Need for plugins_api.
                 require_once ABSPATH . 'wp-admin/includes/class-wp-upgrader.php'; // Need for upgrade classes.
-
                 // Set plugin source to WordPress API link if available.
                 if ( isset( $plugin['source'] ) && 'repo' == $plugin['source'] ) {
                     $api = plugins_api( 'plugin_information', array( 'slug' => $plugin['slug'], 'fields' => array( 'sections' => false ) ) );
-
                     if ( is_wp_error( $api ) ) {
                         wp_die( $this->strings['oops'] . var_dump( $api ) );
                     }
-
                     if ( isset( $api->download_link ) ) {
                         $plugin['source'] = $api->download_link;
                     }
                 }
-
                 // Set type, based on whether the source starts with http:// or https://.
                 $type = preg_match( '|^http(s)?://|', $plugin['source'] ) ? 'web' : 'upload';
-
                 // Prep variables for Plugin_Installer_Skin class.
                 $title = sprintf( $this->strings['installing'], $plugin['name'] );
                 $url   = add_query_arg( array( 'action' => 'install-plugin', 'plugin' => $plugin['slug'] ), 'update.php' );
                 if ( isset( $_GET['from'] ) ) {
                     $url .= add_query_arg( 'from', urlencode( stripslashes( $_GET['from'] ) ), $url );
                 }
-
                 $nonce = 'install-plugin_' . $plugin['slug'];
-
                 // Prefix a default path to pre-packaged plugins.
                 $source = ( 'upload' == $type ) ? $this->default_path . $plugin['source'] : $plugin['source'];
-
                 // Create a new instance of Plugin_Upgrader.
                 $upgrader = new Plugin_Upgrader( $skin = new Plugin_Installer_Skin( compact( 'type', 'title', 'url', 'nonce', 'plugin', 'api' ) ) );
-
                 // Perform the action and install the plugin from the $source urldecode().
                 $upgrader->install( $source );
-
                 // Flush plugins cache so we can make sure that the installed plugins list is always up to date.
                 wp_cache_flush();
-
                 // Only activate plugins if the config option is set to true.
                 if ( $this->is_automatic ) {
                     $plugin_activate = $upgrader->plugin_info(); // Grab the plugin info from the Plugin_Upgrader method.
                     $activate        = activate_plugin( $plugin_activate ); // Activate the plugin.
                     $this->populate_file_path(); // Re-populate the file path now that the plugin has been installed and activated.
-
                     if ( is_wp_error( $activate ) ) {
                         echo '<div id="message" class="error"><p>' . $activate->get_error_message() . '</p></div>';
                         echo '<p><a href="' . add_query_arg( 'page', $this->menu, network_admin_url( 'themes.php' ) ) . '" title="' . esc_attr( $this->strings['return'] ) . '" target="_parent">' . $this->strings['return'] . '</a></p>';
@@ -511,7 +433,6 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
                         echo '<p>' . $this->strings['plugin_activated'] . '</p>';
                     }
                 }
-
                 // Display message based on if all plugins are now active or not.
                 $complete = array();
                 foreach ( $this->plugins as $plugin ) {
@@ -525,32 +446,26 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
                         $complete[] = '';
                     }
                 }
-
                 // Filter out any empty entries.
                 $complete = array_filter( $complete );
-
                 // All plugins are active, so we display the complete string and hide the plugin menu.
                 if ( empty( $complete ) ) {
                     echo '<p>' .  sprintf( $this->strings['complete'], '<a href="' . network_admin_url() . '" title="' . __( 'Return to the Dashboard', 'tgmpa' ) . '">' . __( 'Return to the Dashboard', 'tgmpa' ) . '</a>' ) . '</p>';
                     echo '<style type="text/css">#adminmenu .wp-submenu li.current { display: none !important; }</style>';
                 }
-
                 return true;
             }
             // Checks for actions from hover links to process the activation.
             elseif ( isset( $_GET['plugin'] ) && ( isset( $_GET['tgmpa-activate'] ) && 'activate-plugin' == $_GET['tgmpa-activate'] ) ) {
                 check_admin_referer( 'tgmpa-activate', 'tgmpa-activate-nonce' );
-
                 // Populate $plugin array with necessary information.
                 $plugin['name']   = $_GET['plugin_name'];
                 $plugin['slug']   = $_GET['plugin'];
                 $plugin['source'] = $_GET['plugin_source'];
-
                 $plugin_data = get_plugins( '/' . $plugin['slug'] ); // Retrieve all plugins.
                 $plugin_file = array_keys( $plugin_data ); // Retrieve all plugin files from installed plugins.
                 $plugin_to_activate = $plugin['slug'] . '/' . $plugin_file[0]; // Match plugin slug with appropriate plugin file.
                 $activate = activate_plugin( $plugin_to_activate ); // Activate the plugin.
-
                 if ( is_wp_error( $activate ) ) {
                     echo '<div id="message" class="error"><p>' . $activate->get_error_message() . '</p></div>';
                     echo '<p><a href="' . add_query_arg( 'page', $this->menu, network_admin_url( 'themes.php' ) ) . '" title="' . esc_attr( $this->strings['return'] ) . '" target="_parent">' . $this->strings['return'] . '</a></p>';
@@ -564,11 +479,8 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
                     }
                 }
             }
-
             return false;
-
         }
-
         /**
          * Echoes required plugin notice.
          *
@@ -582,28 +494,22 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
          * @return null Returns early if we're on the Install page.
          */
         public function notices() {
-
             global $current_screen;
-
             // Remove nag on the install page.
             if ( $this->is_tgmpa_page() ) {
                 return;
             }
-
             // Return early if the nag message has been dismissed.
             if ( get_user_meta( get_current_user_id(), 'tgmpa_dismissed_notice', true ) ) {
                 return;
             }
-
             $installed_plugins = get_plugins(); // Retrieve a list of all the plugins
             $this->populate_file_path();
-
             $message             = array(); // Store the messages in an array to be outputted after plugins have looped through.
             $install_link        = false;   // Set to false, change to true in loop if conditions exist, used for action link 'install'.
             $install_link_count  = 0;       // Used to determine plurality of install action link text.
             $activate_link       = false;   // Set to false, change to true in loop if conditions exist, used for action link 'activate'.
             $activate_link_count = 0;       // Used to determine plurality of activate action link text.
-
             foreach ( $this->plugins as $plugin ) {
                 // If the plugin is installed and active, check for minimum version argument before moving forward.
                 if ( is_plugin_active( $plugin['file_path'] ) ) {
@@ -629,7 +535,6 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
                         continue;
                     }
                 }
-
                 // Not installed.
                 if ( ! isset( $installed_plugins[$plugin['file_path']] ) ) {
                     $install_link = true; // We need to display the 'install' action link.
@@ -667,29 +572,23 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
                     }
                 }
             }
-
             // If we have notices to display, we move forward.
             if ( ! empty( $message ) ) {
                 krsort( $message ); // Sort messages.
                 $rendered = ''; // Display all nag messages as strings.
-
                 // If dismissable is false and a message is set, output it now.
                 if ( ! $this->dismissable && ! empty( $this->dismiss_msg ) ) {
                     $rendered .= '<p><strong>' . wp_kses_post( $this->dismiss_msg ) . '</strong></p>';
                 }
-
                 // Grab all plugin names.
                 foreach ( $message as $type => $plugin_groups ) {
                     $linked_plugin_groups = array();
-
                     // Count number of plugins in each message group to calculate singular/plural message.
                     $count = count( $plugin_groups );
-
                     // Loop through the plugin names to make the ones pulled from the .org repo linked.
                     foreach ( $plugin_groups as $plugin_group_single_name ) {
                         $external_url = $this->_get_plugin_data_from_name( $plugin_group_single_name, 'external_url' );
                         $source       = $this->_get_plugin_data_from_name( $plugin_group_single_name, 'source' );
-
                         if ( $external_url && preg_match( '|^http(s)?://|', $external_url ) ) {
                             $linked_plugin_groups[] = '<a href="' . esc_url( $external_url ) . '" title="' . $plugin_group_single_name . '" target="_blank">' . $plugin_group_single_name . '</a>';
                         }
@@ -704,28 +603,22 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
                                 ),
                                 network_admin_url( 'plugin-install.php' )
                             );
-
                             $linked_plugin_groups[] = '<a href="' . esc_url( $url ) . '" class="thickbox" title="' . $plugin_group_single_name . '">' . $plugin_group_single_name . '</a>';
                         }
                         else {
                             $linked_plugin_groups[] = $plugin_group_single_name; // No hyperlink.
                         }
-
                         if ( isset( $linked_plugin_groups ) && (array) $linked_plugin_groups ) {
                             $plugin_groups = $linked_plugin_groups;
                         }
                     }
-
                     $last_plugin = array_pop( $plugin_groups ); // Pop off last name to prep for readability.
                     $imploded    = empty( $plugin_groups ) ? '<em>' . $last_plugin . '</em>' : '<em>' . ( implode( ', ', $plugin_groups ) . '</em> and <em>' . $last_plugin . '</em>' );
-
                     $rendered .= '<p>' . sprintf( translate_nooped_plural( $this->strings[$type], $count, 'tgmpa' ), $imploded, $count ) . '</p>';
                 }
-
                 // Setup variables to determine if action links are needed.
                 $show_install_link  = $install_link ? '<a href="' . add_query_arg( 'page', $this->menu, network_admin_url( 'themes.php' ) ) . '">' . translate_nooped_plural( $this->strings['install_link'], $install_link_count, 'tgmpa' ) . '</a>' : '';
                 $show_activate_link = $activate_link ? '<a href="' . add_query_arg( 'page', $this->menu, network_admin_url( 'themes.php' ) ) . '">' . translate_nooped_plural( $this->strings['activate_link'], $activate_link_count, 'tgmpa' ) . '</a>'  : '';
-
                 // Define all of the action links.
                 $action_links = apply_filters(
                     'tgmpa_notice_action_links',
@@ -735,12 +628,10 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
                         'dismiss'  => $this->dismissable ? '<a class="dismiss-notice" href="' . add_query_arg( 'tgmpa-dismiss', 'dismiss_admin_notices' ) . '" target="_parent">' . $this->strings['dismiss'] . '</a>' : '',
                     )
                 );
-
                 $action_links = array_filter( $action_links ); // Remove any empty array items.
                 if ( $action_links ) {
                     $rendered .= '<p>' . implode( ' | ', $action_links ) . '</p>';
                 }
-
                 // Register the nag messages and prepare them to be processed.
                 $nag_class = version_compare( $this->wp_version, '3.8', '<' ) ? 'updated' : 'update-nag';
                 if ( ! empty( $this->strings['nag_type'] ) ) {
@@ -749,14 +640,11 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
                     add_settings_error( 'tgmpa', 'tgmpa', $rendered, $nag_class );
                 }
             }
-
             // Admin options pages already output settings_errors, so this is to avoid duplication.
             if ( 'options-general' !== $current_screen->parent_base ) {
                 settings_errors( 'tgmpa' );
             }
-
         }
-
         /**
          * Add dismissable admin notices.
          *
@@ -765,13 +653,10 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
          * @since 2.1.0
          */
         public function dismiss() {
-
             if ( isset( $_GET['tgmpa-dismiss'] ) ) {
                 update_user_meta( get_current_user_id(), 'tgmpa_dismissed_notice', 1 );
             }
-
         }
-
         /**
          * Add individual plugin to our collection of plugins.
          *
@@ -783,21 +668,16 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
          * @param array $plugin Array of plugin arguments.
          */
         public function register( $plugin ) {
-
             if ( ! isset( $plugin['slug'] ) || ! isset( $plugin['name'] ) ) {
                 return;
             }
-
             foreach ( $this->plugins as $registered_plugin ) {
                 if ( $plugin['slug'] == $registered_plugin['slug'] ) {
                     return;
                 }
             }
-
             $this->plugins[] = $plugin;
-
         }
-
         /**
          * Amend default configuration settings.
          *
@@ -806,9 +686,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
          * @param array $config Array of config options to pass as class properties.
          */
         public function config( $config ) {
-
             $keys = array( 'default_path', 'has_notices', 'dismissable', 'dismiss_msg', 'menu', 'is_automatic', 'message', 'strings' );
-
             foreach ( $keys as $key ) {
                 if ( isset( $config[$key] ) ) {
                     if ( is_array( $config[$key] ) ) {
@@ -820,9 +698,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
                     }
                 }
             }
-
         }
-
         /**
          * Amend action link after plugin installation.
          *
@@ -832,16 +708,12 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
          * @return array                 Amended array of actions.
          */
         public function actions( $install_actions ) {
-
             // Remove action links on the TGMPA install page.
             if ( $this->is_tgmpa_page() ) {
                 return false;
             }
-
             return $install_actions;
-
         }
-
         /**
          * Flushes the plugins cache on theme switch to prevent stale entries
          * from remaining in the plugin table.
@@ -849,25 +721,19 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
          * @since 2.4.0
          */
         public function flush_plugins_cache() {
-
             wp_cache_flush();
-
         }
-
         /**
          * Set file_path key for each installed plugin.
          *
          * @since 2.1.0
          */
         public function populate_file_path() {
-
             // Add file_path key for all plugins.
             foreach ( $this->plugins as $plugin => $values ) {
                 $this->plugins[$plugin]['file_path'] = $this->_get_plugin_basename_from_slug( $values['slug'] );
             }
-
         }
-
         /**
          * Helper function to extract the file path of the plugin file from the
          * plugin slug, if the plugin is installed.
@@ -878,19 +744,14 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
          * @return string      Either file path for plugin if installed, or just the plugin slug.
          */
         protected function _get_plugin_basename_from_slug( $slug ) {
-
             $keys = array_keys( get_plugins() );
-
             foreach ( $keys as $key ) {
                 if ( preg_match( '|^' . $slug .'/|', $key ) ) {
                     return $key;
                 }
             }
-
             return $slug;
-
         }
-
         /**
          * Retrieve plugin data, given the plugin name.
          *
@@ -904,17 +765,13 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
          * @return string|boolean Plugin slug if found, false otherwise.
          */
         protected function _get_plugin_data_from_name( $name, $data = 'slug' ) {
-
             foreach ( $this->plugins as $plugin => $values ) {
                 if ( $name == $values['name'] && isset( $values[$data] ) ) {
                     return $values[$data];
                 }
             }
-
             return false;
-
         }
-
         /**
          * Determine if we're on the TGMPA Install page.
          *
@@ -923,15 +780,11 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
          * @return boolean True when on the TGMPA page, false otherwise.
          */
         protected function is_tgmpa_page() {
-
             if ( isset( $_GET['page'] ) && $this->menu === $_GET['page'] ) {
                 return true;
             }
-
             return false;
-
         }
-
         /**
          * Delete dismissable nag option when theme is switched.
          *
@@ -941,11 +794,8 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
          * @since 2.1.1
          */
         public function update_dismiss() {
-
             delete_user_meta( get_current_user_id(), 'tgmpa_dismissed_notice' );
-
         }
-
         /**
          * Forces plugin activation if the parameter 'force_activation' is
          * set to true.
@@ -961,12 +811,9 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
          * @since 2.2.0
          */
         public function force_activation() {
-
             // Set file_path parameter for any installed plugins.
             $this->populate_file_path();
-
             $installed_plugins = get_plugins();
-
             foreach ( $this->plugins as $plugin ) {
                 // Oops, plugin isn't there so iterate to next condition.
                 if ( isset( $plugin['force_activation'] ) && $plugin['force_activation'] && ! isset( $installed_plugins[$plugin['file_path']] ) ) {
@@ -977,9 +824,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
                     activate_plugin( $plugin['file_path'] );
                 }
             }
-
         }
-
         /**
          * Forces plugin deactivation if the parameter 'force_deactivation'
          * is set to true.
@@ -993,19 +838,15 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
          * @since 2.2.0
          */
         public function force_deactivation() {
-
             // Set file_path parameter for any installed plugins.
             $this->populate_file_path();
-
             foreach ( $this->plugins as $plugin ) {
                 // Only proceed forward if the paramter is set to true and plugin is active.
                 if ( isset( $plugin['force_deactivation'] ) && $plugin['force_deactivation'] && is_plugin_active( $plugin['file_path'] ) ) {
                     deactivate_plugins( $plugin['file_path'] );
                 }
             }
-
         }
-
         /**
          * Returns the singleton instance of the class.
          *
@@ -1014,22 +855,15 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
          * @return object The TGM_Plugin_Activation object.
          */
         public static function get_instance() {
-
             if ( ! isset( self::$instance ) && ! ( self::$instance instanceof TGM_Plugin_Activation ) ) {
                 self::$instance = new TGM_Plugin_Activation();
             }
-
             return self::$instance;
-
         }
-
     }
-
     // Ensure only one instance of the class is ever invoked.
     $tgmpa = TGM_Plugin_Activation::get_instance();
-
 }
-
 if ( ! function_exists( 'tgmpa' ) ) {
     /**
      * Helper function to register a collection of required plugins.
@@ -1041,18 +875,14 @@ if ( ! function_exists( 'tgmpa' ) ) {
      * @param array $config  Optional. An array of configuration values.
      */
     function tgmpa( $plugins, $config = array() ) {
-
         foreach ( $plugins as $plugin ) {
             TGM_Plugin_Activation::$instance->register( $plugin );
         }
-
         if ( $config ) {
             TGM_Plugin_Activation::$instance->config( $config );
         }
-
     }
 }
-
 /**
  * WP_List_Table isn't always available. If it isn't available,
  * we load it here.
@@ -1062,7 +892,6 @@ if ( ! function_exists( 'tgmpa' ) ) {
 if ( ! class_exists( 'WP_List_Table' ) ) {
     require_once( ABSPATH . 'wp-admin/includes/class-wp-list-table.php' );
 }
-
 if ( ! class_exists( 'TGMPA_List_Table' ) ) {
     /**
      * List table class for handling plugins.
@@ -1082,7 +911,6 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
      * @author  Gary Jones <gamajo@gamajo.com>
      */
     class TGMPA_List_Table extends WP_List_Table {
-
         /**
          * References parent constructor and sets defaults for class.
          *
@@ -1095,9 +923,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
          * @global string $page
          */
         public function __construct() {
-
             global $status, $page;
-
             parent::__construct(
                 array(
                     'singular' => 'plugin',
@@ -1105,9 +931,7 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
                     'ajax'     => false,
                 )
             );
-
         }
-
         /**
          * Gathers and renames all of our plugin information to be used by
          * WP_List_Table to create our table.
@@ -1117,27 +941,21 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
          * @return array $table_data Information for use in table.
          */
         protected function _gather_plugin_data() {
-
             // Load thickbox for plugin links.
             TGM_Plugin_Activation::$instance->admin_init();
             TGM_Plugin_Activation::$instance->thickbox();
-
             // Prep variables for use and grab list of all installed plugins.
             $table_data        = array();
             $i                 = 0;
             $installed_plugins = get_plugins();
-
             foreach ( TGM_Plugin_Activation::$instance->plugins as $plugin ) {
                 if ( is_plugin_active( $plugin['file_path'] ) ) {
                     continue; // No need to display plugins if they are installed and activated.
                 }
-
                 $table_data[$i]['sanitized_plugin'] = $plugin['name'];
                 $table_data[$i]['slug']             = $this->_get_plugin_data_from_name( $plugin['name'] );
-
                 $external_url = $this->_get_plugin_data_from_name( $plugin['name'], 'external_url' );
                 $source       = $this->_get_plugin_data_from_name( $plugin['name'], 'source' );
-
                 if ( $external_url && preg_match( '|^http(s)?://|', $external_url ) ) {
                     $table_data[$i]['plugin'] = '<strong><a href="' . esc_url( $external_url ) . '" title="' . $plugin['name'] . '" target="_blank">' . $plugin['name'] . '</a></strong>';
                 }
@@ -1152,17 +970,14 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
                         ),
                         network_admin_url( 'plugin-install.php' )
                     );
-
                     $table_data[$i]['plugin'] = '<strong><a href="' . esc_url( $url ) . '" class="thickbox" title="' . $plugin['name'] . '">' . $plugin['name'] . '</a></strong>';
                 }
                 else {
                     $table_data[$i]['plugin'] = '<strong>' . $plugin['name'] . '</strong>'; // No hyperlink.
                 }
-
                 if ( isset( $table_data[$i]['plugin'] ) && (array) $table_data[$i]['plugin'] ) {
                     $plugin['name'] = $table_data[$i]['plugin'];
                 }
-
                 if ( ! empty( $plugin['source'] ) ) {
                     // The plugin must be from a private repository.
                     if ( preg_match( '|^http(s)?://|', $plugin['source'] ) ) {
@@ -1176,31 +991,24 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
                 else {
                     $table_data[$i]['source'] = __( 'WordPress Repository', 'tgmpa' );
                 }
-
                 $table_data[$i]['type'] = isset( $plugin['required'] ) && $plugin['required'] ? __( 'Required', 'tgmpa' ) : __( 'Recommended', 'tgmpa' );
-
                 if ( ! isset( $installed_plugins[$plugin['file_path']] ) ) {
                     $table_data[$i]['status'] = sprintf( '%1$s', __( 'Not Installed', 'tgmpa' ) );
                 } elseif ( is_plugin_inactive( $plugin['file_path'] ) ) {
                     $table_data[$i]['status'] = sprintf( '%1$s', __( 'Installed But Not Activated', 'tgmpa' ) );
                 }
-
                 $table_data[$i]['file_path'] = $plugin['file_path'];
                 $table_data[$i]['url']       = isset( $plugin['source'] ) ? $plugin['source'] : 'repo';
-
                 $i++;
             }
-
             // Sort plugins by Required/Recommended type and by alphabetical listing within each type.
             $resort = array();
             $req    = array();
             $rec    = array();
-
             // Grab all the plugin types.
             foreach ( $table_data as $plugin ) {
                 $resort[] = $plugin['type'];
             }
-
             // Sort each plugin by type.
             foreach ( $resort as $type ) {
                 if ( 'Required' == $type ) {
@@ -1209,17 +1017,13 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
                     $rec[] = $type;
                 }
             }
-
             // Sort alphabetically each plugin type array, merge them and then sort in reverse (lists Required plugins first).
             sort( $req );
             sort( $rec );
             array_merge( $resort, $req, $rec );
             array_multisort( $resort, SORT_DESC, $table_data );
-
             return $table_data;
-
         }
-
         /**
          * Retrieve plugin data, given the plugin name. Taken from the
          * TGM_Plugin_Activation class.
@@ -1234,17 +1038,13 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
          * @return string|boolean Plugin slug if found, false otherwise.
          */
         protected function _get_plugin_data_from_name( $name, $data = 'slug' ) {
-
             foreach ( TGM_Plugin_Activation::$instance->plugins as $plugin => $values ) {
                 if ( $name == $values['name'] && isset( $values[$data] ) ) {
                     return $values[$data];
                 }
             }
-
             return false;
-
         }
-
         /**
          * Create default columns to display important plugin information
          * like type, action and status.
@@ -1255,16 +1055,13 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
          * @param string $column_name The name of the column.
          */
         public function column_default( $item, $column_name ) {
-
             switch ( $column_name ) {
                 case 'source':
                 case 'type':
                 case 'status':
                     return $item[$column_name];
             }
-
         }
-
         /**
          * Create default title column along with action links of 'Install'
          * and 'Activate'.
@@ -1275,14 +1072,11 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
          * @return string     The action hover links.
          */
         public function column_plugin( $item ) {
-
             $installed_plugins = get_plugins();
-
             // No need to display any hover links.
             if ( is_plugin_active( $item['file_path'] ) ) {
                 $actions = array();
             }
-
             // We need to display the 'Install' hover link.
             if ( ! isset( $installed_plugins[$item['file_path']] ) ) {
                 $actions = array(
@@ -1325,11 +1119,8 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
                     ),
                 );
             }
-
             return sprintf( '%1$s %2$s', $item['plugin'], $this->row_actions( $actions ) );
-
         }
-
         /**
          * Required for bulk installing.
          *
@@ -1341,12 +1132,9 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
          * @return string     The input checkbox with all necessary info.
          */
         public function column_cb( $item ) {
-
             $value = $item['file_path'] . ',' . $item['url'] . ',' . $item['sanitized_plugin'];
             return sprintf( '<input type="checkbox" name="%1$s[]" value="%2$s" id="%3$s" />', $this->_args['singular'], $value, $item['sanitized_plugin'] );
-
         }
-
         /**
          * Sets default message within the plugins table if no plugins
          * are left for interaction.
@@ -1357,12 +1145,9 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
          * @since 2.2.0
          */
         public function no_items() {
-
             printf( __( 'No plugins to install or activate. <a href="%1$s" title="Return to the Dashboard">Return to the Dashboard</a>', 'tgmpa' ), network_admin_url() );
             echo '<style type="text/css">#adminmenu .wp-submenu li.current { display: none !important; }</style>';
-
         }
-
         /**
          * Output all the column information within the table.
          *
@@ -1371,7 +1156,6 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
          * @return array $columns The column names.
          */
         public function get_columns() {
-
             $columns = array(
                 'cb'     => '<input type="checkbox" />',
                 'plugin' => __( 'Plugin', 'tgmpa' ),
@@ -1379,11 +1163,8 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
                 'type'   => __( 'Type', 'tgmpa' ),
                 'status' => __( 'Status', 'tgmpa' )
             );
-
             return $columns;
-
         }
-
         /**
          * Defines all types of bulk actions for handling
          * registered plugins.
@@ -1393,16 +1174,12 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
          * @return array $actions The bulk actions for the plugin install table.
          */
         public function get_bulk_actions() {
-
             $actions = array(
                 'tgmpa-bulk-install'  => __( 'Install', 'tgmpa' ),
                 'tgmpa-bulk-activate' => __( 'Activate', 'tgmpa' ),
             );
-
             return $actions;
-
         }
-
         /**
          * Processes bulk installation and activation actions.
          *
@@ -1413,17 +1190,14 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
          * @since 2.2.0
          */
         public function process_bulk_actions() {
-
             // Bulk installation process.
             if ( 'tgmpa-bulk-install' === $this->current_action() ) {
                 check_admin_referer( 'bulk-' . $this->_args['plural'] );
-
                 // Prep variables to be populated.
                 $plugins_to_install = array();
                 $plugin_installs    = array();
                 $plugin_path        = array();
                 $plugin_name        = array();
-
                 // Look first to see if information has been passed via WP_Filesystem.
                 if ( isset( $_GET['plugins'] ) ) {
                     $plugins = explode( ',', stripslashes( $_GET['plugins'] ) );
@@ -1436,13 +1210,11 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
                 else {
                     $plugins = array();
                 }
-
                 // Grab information from $_POST if available.
                 if ( isset( $_POST['plugin'] ) ) {
                     foreach ( $plugins as $plugin_data ) {
                         $plugins_to_install[] = explode( ',', $plugin_data );
                     }
-
                     foreach ( $plugins_to_install as $plugin_data ) {
                         $plugin_installs[] = $plugin_data[0];
                         $plugin_path[]     = $plugin_data[1];
@@ -1459,7 +1231,6 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
                         }
                     }
                 }
-
                 // Look first to see if information has been passed via WP_Filesystem.
                 if ( isset( $_GET['plugin_paths'] ) ) {
                     $plugin_paths = explode( ',', stripslashes( $_GET['plugin_paths'] ) );
@@ -1472,7 +1243,6 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
                 else {
                     $plugin_paths = array();
                 }
-
                 // Look first to see if information has been passed via WP_Filesystem.
                 if ( isset( $_GET['plugin_names'] ) ) {
                     $plugin_names = explode( ',', stripslashes( $_GET['plugin_names'] ) );
@@ -1485,39 +1255,32 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
                 else {
                     $plugin_names = array();
                 }
-
                 // Loop through plugin slugs and remove already installed plugins from the list.
                 $i = 0;
                 foreach ( $plugin_installs as $key => $plugin ) {
                     if ( preg_match( '|.php$|', $plugin ) ) {
                         unset( $plugin_installs[$key] );
-
                         // If the plugin path isn't in the $_GET variable, we can unset the corresponding path.
                         if ( ! isset( $_GET['plugin_paths'] ) )
                             unset( $plugin_paths[$i] );
-
                         // If the plugin name isn't in the $_GET variable, we can unset the corresponding name.
                         if ( ! isset( $_GET['plugin_names'] ) )
                             unset( $plugin_names[$i] );
                     }
                     $i++;
                 }
-
                 // No need to proceed further if we have no plugins to install.
                 if ( empty( $plugin_installs ) ) {
                     return false;
                 }
-
                 // Reset array indexes in case we removed already installed plugins.
                 $plugin_installs = array_values( $plugin_installs );
                 $plugin_paths    = array_values( $plugin_paths );
                 $plugin_names    = array_values( $plugin_names );
-
                 // If we grabbed our plugin info from $_GET, we need to decode it for use.
                 $plugin_installs = array_map( 'urldecode', $plugin_installs );
                 $plugin_paths    = array_map( 'urldecode', $plugin_paths );
                 $plugin_names    = array_map( 'urldecode', $plugin_names );
-
                 // Pass all necessary information via URL if WP_Filesystem is needed.
                 $url = wp_nonce_url(
                     add_query_arg(
@@ -1534,147 +1297,112 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
                 );
                 $method = ''; // Leave blank so WP_Filesystem can populate it as necessary.
                 $fields = array( 'action', '_wp_http_referer', '_wpnonce' ); // Extra fields to pass to WP_Filesystem.
-
                 if ( false === ( $creds = request_filesystem_credentials( $url, $method, false, false, $fields ) ) ) {
                     return true;
                 }
-
                 if ( ! WP_Filesystem( $creds ) ) {
                     request_filesystem_credentials( $url, $method, true, false, $fields ); // Setup WP_Filesystem.
                     return true;
                 }
-
                 require_once ABSPATH . 'wp-admin/includes/plugin-install.php'; // Need for plugins_api
                 require_once ABSPATH . 'wp-admin/includes/class-wp-upgrader.php'; // Need for upgrade classes
-
                 // Store all information in arrays since we are processing a bulk installation.
                 $api          = array();
                 $sources      = array();
                 $install_path = array();
-
                 // Loop through each plugin to install and try to grab information from WordPress API, if not create 'tgmpa-empty' scalar.
                 $i = 0;
                 foreach ( $plugin_installs as $plugin ) {
                     $api[$i] = plugins_api( 'plugin_information', array( 'slug' => $plugin, 'fields' => array( 'sections' => false ) ) ) ? plugins_api( 'plugin_information', array( 'slug' => $plugin, 'fields' => array( 'sections' => false ) ) ) : (object) $api[$i] = 'tgmpa-empty';
                     $i++;
                 }
-
                 if ( is_wp_error( $api ) ) {
                     wp_die( TGM_Plugin_Activation::$instance->strings['oops'] . var_dump( $api ) );
                 }
-
                 // Capture download links from $api or set install link to pre-packaged/private repo.
                 $i = 0;
                 foreach ( $api as $object ) {
                     $sources[$i] = isset( $object->download_link ) && 'repo' == $plugin_paths[$i] ? $object->download_link : $plugin_paths[$i];
                     $i++;
                 }
-
                 // Finally, all the data is prepared to be sent to the installer.
                 $url   = add_query_arg( array( 'page' => TGM_Plugin_Activation::$instance->menu ), network_admin_url( 'themes.php' ) );
                 $nonce = 'bulk-plugins';
                 $names = $plugin_names;
-
                 // Create a new instance of TGM_Bulk_Installer.
                 $installer = new TGM_Bulk_Installer( $skin = new TGM_Bulk_Installer_Skin( compact( 'url', 'nonce', 'names' ) ) );
-
                 // Wrap the install process with the appropriate HTML.
                 echo '<div class="tgmpa wrap">';
-                    if ( version_compare( TGM_Plugin_Activation::$instance->wp_version, '3.8', '<' ) ) {
-                        screen_icon( apply_filters( 'tgmpa_default_screen_icon', 'themes' ) );
-                    }
                     echo '<h2>' . esc_html( get_admin_page_title() ) . '</h2>';
                     // Process the bulk installation submissions.
                     $installer->bulk_install( $sources );
                 echo '</div>';
-
                 return true;
             }
-
             // Bulk activation process.
             if ( 'tgmpa-bulk-activate' === $this->current_action() ) {
                 check_admin_referer( 'bulk-' . $this->_args['plural'] );
-
                 // Grab plugin data from $_POST.
                 $plugins             = isset( $_POST['plugin'] ) ? (array) $_POST['plugin'] : array();
                 $plugins_to_activate = array();
-
                 // Split plugin value into array with plugin file path, plugin source and plugin name.
                 foreach ( $plugins as $i => $plugin ) {
                     $plugins_to_activate[] = explode( ',', $plugin );
                 }
-
                 foreach ( $plugins_to_activate as $i => $array ) {
                     if ( ! preg_match( '|.php$|', $array[0] ) ) {
                         unset( $plugins_to_activate[$i] );
                     }
                 }
-
                 // Return early if there are no plugins to activate.
                 if ( empty( $plugins_to_activate ) ) {
                     return;
                 }
-
                 $plugins      = array();
                 $plugin_names = array();
-
                 foreach ( $plugins_to_activate as $plugin_string ) {
                     $plugins[]      = $plugin_string[0];
                     $plugin_names[] = $plugin_string[2];
                 }
-
                 $count       = count( $plugin_names ); // Count so we can use _n function.
                 $last_plugin = array_pop( $plugin_names ); // Pop off last name to prep for readability.
                 $imploded    = empty( $plugin_names ) ? '<strong>' . $last_plugin . '</strong>' : '<strong>' . ( implode( ', ', $plugin_names ) . '</strong> and <strong>' . $last_plugin . '</strong>.' );
-
                 // Now we are good to go - let's start activating plugins.
                 $activate = activate_plugins( $plugins );
-
                 if ( is_wp_error( $activate ) ) {
                     echo '<div id="message" class="error"><p>' . $activate->get_error_message() . '</p></div>';
                 } else {
                     printf( '<div id="message" class="updated"><p>%1$s %2$s</p></div>', _n( 'The following plugin was activated successfully:', 'The following plugins were activated successfully:', $count, 'tgmpa' ), $imploded );
                 }
-
                 // Update recently activated plugins option.
                 $recent = (array) get_option( 'recently_activated' );
-
                 foreach ( $plugins as $plugin => $time ) {
                     if ( isset( $recent[$plugin] ) ) {
                         unset( $recent[$plugin] );
                     }
                 }
-
                 update_option( 'recently_activated', $recent );
-
                 unset( $_POST ); // Reset the $_POST variable in case user wants to perform one action after another.
             }
         }
-
         /**
          * Prepares all of our information to be outputted into a usable table.
          *
          * @since 2.2.0
          */
         public function prepare_items() {
-
             $per_page              = 100; // Set it high so we shouldn't have to worry about pagination.
             $columns               = $this->get_columns(); // Get all necessary column information.
             $hidden                = array(); // No columns to hide, but we must set as an array.
             $sortable              = array(); // No reason to make sortable columns.
             $this->_column_headers = array( $columns, $hidden, $sortable ); // Get all necessary column headers.
-
             // Process our bulk actions here.
             $this->process_bulk_actions();
-
             // Store all of our plugin data into $items array so WP_List_Table can use it.
             $this->items = $this->_gather_plugin_data();
-
         }
-
     }
 }
-
 /**
  * The WP_Upgrader file isn't always available. If it isn't available,
  * we load it here.
@@ -1687,7 +1415,6 @@ if ( ! class_exists( 'TGMPA_List_Table' ) ) {
  */
 if ( ! class_exists( 'WP_Upgrader' ) && ( isset( $_GET['page'] ) && TGM_Plugin_Activation::$instance->menu === $_GET['page'] ) ) {
     require_once ABSPATH . 'wp-admin/includes/class-wp-upgrader.php';
-
     if ( ! class_exists( 'TGM_Bulk_Installer' ) ) {
         /**
          * Installer class to handle bulk plugin installations.
@@ -1702,7 +1429,6 @@ if ( ! class_exists( 'WP_Upgrader' ) && ( isset( $_GET['page'] ) && TGM_Plugin_A
          * @author  Gary Jones <gamajo.com>
          */
         class TGM_Bulk_Installer extends WP_Upgrader {
-
             /**
              * Holds result of bulk plugin installation.
              *
@@ -1711,7 +1437,6 @@ if ( ! class_exists( 'WP_Upgrader' ) && ( isset( $_GET['page'] ) && TGM_Plugin_A
              * @var string
              */
             public $result;
-
             /**
              * Flag to check if bulk installation is occurring or not.
              *
@@ -1720,7 +1445,6 @@ if ( ! class_exists( 'WP_Upgrader' ) && ( isset( $_GET['page'] ) && TGM_Plugin_A
              * @var boolean
              */
             public $bulk = false;
-
             /**
              * Processes the bulk installation of plugins.
              *
@@ -1730,39 +1454,31 @@ if ( ! class_exists( 'WP_Upgrader' ) && ( isset( $_GET['page'] ) && TGM_Plugin_A
              * @return string|boolean Install confirmation messages on success, false on failure.
              */
             public function bulk_install( $packages ) {
-
                 // Pass installer skin object and set bulk property to true.
                 $this->init();
                 $this->bulk = true;
-
                 // Set install strings and automatic activation strings (if config option is set to true).
                 $this->install_strings();
                 if ( TGM_Plugin_Activation::$instance->is_automatic ) {
                     $this->activate_strings();
                 }
-
                 // Run the header string to notify user that the process has begun.
                 $this->skin->header();
-
                 // Connect to the Filesystem.
                 $res = $this->fs_connect( array( WP_CONTENT_DIR, WP_PLUGIN_DIR ) );
                 if ( ! $res ) {
                     $this->skin->footer();
                     return false;
                 }
-
                 // Set the bulk header and prepare results array.
                 $this->skin->bulk_header();
                 $results = array();
-
                 // Get the total number of packages being processed and iterate as each package is successfully installed.
                 $this->update_count   = count( $packages );
                 $this->update_current = 0;
-
                 // Loop through each plugin and process the installation.
                 foreach ( $packages as $plugin ) {
                     $this->update_current++; // Increment counter.
-
                     // Do the plugin install.
                     $result = $this->run(
                         array(
@@ -1774,25 +1490,19 @@ if ( ! class_exists( 'WP_Upgrader' ) && ( isset( $_GET['page'] ) && TGM_Plugin_A
                             'hook_extra'        => array( 'plugin' => $plugin, ), // Pass plugin source as extra data.
                         )
                     );
-
                     // Store installation results in result property.
                     $results[$plugin] = $this->result;
-
                     // Prevent credentials auth screen from displaying multiple times.
                     if ( false === $result ) {
                         break;
                     }
                 }
-
                 // Pass footer skin strings.
                 $this->skin->bulk_footer();
                 $this->skin->footer();
-
                 // Return our results.
                 return $results;
-
             }
-
             /**
              * Performs the actual installation of each plugin.
              *
@@ -1805,7 +1515,6 @@ if ( ! class_exists( 'WP_Upgrader' ) && ( isset( $_GET['page'] ) && TGM_Plugin_A
              * @return null/array Return early if error, array of installation data on success
              */
             public function run( $options ) {
-
                 // Default config options.
                 $defaults = array(
                     'package'           => '',
@@ -1815,30 +1524,24 @@ if ( ! class_exists( 'WP_Upgrader' ) && ( isset( $_GET['page'] ) && TGM_Plugin_A
                     'is_multi'          => false,
                     'hook_extra'        => array(),
                 );
-
                 // Parse default options with config options from $this->bulk_upgrade and extract them.
                 $options = wp_parse_args( $options, $defaults );
                 extract( $options );
-
                 // Connect to the Filesystem.
                 $res = $this->fs_connect( array( WP_CONTENT_DIR, $destination ) );
                 if ( ! $res ) {
                     return false;
                 }
-
                 // Return early if there is an error connecting to the Filesystem.
                 if ( is_wp_error( $res ) ) {
                     $this->skin->error( $res );
                     return $res;
                 }
-
                 // Call $this->header separately if running multiple times.
                 if ( ! $is_multi )
                     $this->skin->header();
-
                 // Set strings before the package is installed.
                 $this->skin->before();
-
                 // Download the package (this just returns the filename of the file if the package is a local file).
                 $download = $this->download_package( $package );
                 if ( is_wp_error( $download ) ) {
@@ -1846,10 +1549,8 @@ if ( ! class_exists( 'WP_Upgrader' ) && ( isset( $_GET['page'] ) && TGM_Plugin_A
                     $this->skin->after();
                     return $download;
                 }
-
                 // Don't accidentally delete a local file.
                 $delete_package = ( $download != $package );
-
                 // Unzip file into a temporary working directory.
                 $working_dir = $this->unpack_package( $download, $delete_package );
                 if ( is_wp_error( $working_dir ) ) {
@@ -1857,7 +1558,6 @@ if ( ! class_exists( 'WP_Upgrader' ) && ( isset( $_GET['page'] ) && TGM_Plugin_A
                     $this->skin->after();
                     return $working_dir;
                 }
-
                 // Install the package into the working directory with all passed config options.
                 $result = $this->install_package(
                     array(
@@ -1868,10 +1568,8 @@ if ( ! class_exists( 'WP_Upgrader' ) && ( isset( $_GET['page'] ) && TGM_Plugin_A
                         'hook_extra'        => $hook_extra,
                     )
                 );
-
                 // Pass the result of the installation.
                 $this->skin->set_result( $result );
-
                 // Set correct strings based on results.
                 if ( is_wp_error( $result ) ) {
                     $this->skin->error( $result );
@@ -1881,19 +1579,15 @@ if ( ! class_exists( 'WP_Upgrader' ) && ( isset( $_GET['page'] ) && TGM_Plugin_A
                 else {
                     $this->skin->feedback( 'process_success' );
                 }
-
                 // Only process the activation of installed plugins if the automatic flag is set to true.
                 if ( TGM_Plugin_Activation::$instance->is_automatic ) {
                     // Flush plugins cache so we can make sure that the installed plugins list is always up to date.
                     wp_cache_flush();
-
                     // Get the installed plugin file and activate it.
                     $plugin_info = $this->plugin_info( $package );
                     $activate    = activate_plugin( $plugin_info );
-
                     // Re-populate the file path now that the plugin has been installed and activated.
                     TGM_Plugin_Activation::$instance->populate_file_path();
-
                     // Set correct strings based on results.
                     if ( is_wp_error( $activate ) ) {
                         $this->skin->error( $activate );
@@ -1904,48 +1598,37 @@ if ( ! class_exists( 'WP_Upgrader' ) && ( isset( $_GET['page'] ) && TGM_Plugin_A
                         $this->skin->feedback( 'activation_success' );
                     }
                 }
-
                 // Flush plugins cache so we can make sure that the installed plugins list is always up to date.
                 wp_cache_flush();
-
                 // Set install footer strings.
                 $this->skin->after();
                 if ( ! $is_multi ) {
                     $this->skin->footer();
                 }
-
                 return $result;
-
             }
-
             /**
              * Sets the correct install strings for the installer skin to use.
              *
              * @since 2.2.0
              */
             public function install_strings() {
-
                 $this->strings['no_package']          = __( 'Install package not available.', 'tgmpa' );
                 $this->strings['downloading_package'] = __( 'Downloading install package from <span class="code">%s</span>&#8230;', 'tgmpa' );
                 $this->strings['unpack_package']      = __( 'Unpacking the package&#8230;', 'tgmpa' );
                 $this->strings['installing_package']  = __( 'Installing the plugin&#8230;', 'tgmpa' );
                 $this->strings['process_failed']      = __( 'Plugin install failed.', 'tgmpa' );
                 $this->strings['process_success']     = __( 'Plugin installed successfully.', 'tgmpa' );
-
             }
-
             /**
              * Sets the correct activation strings for the installer skin to use.
              *
              * @since 2.2.0
              */
             public function activate_strings() {
-
                 $this->strings['activation_failed']  = __( 'Plugin activation failed.', 'tgmpa' );
                 $this->strings['activation_success'] = __( 'Plugin activated successfully.', 'tgmpa' );
-
             }
-
             /**
              * Grabs the plugin file from an installed plugin.
              *
@@ -1954,32 +1637,24 @@ if ( ! class_exists( 'WP_Upgrader' ) && ( isset( $_GET['page'] ) && TGM_Plugin_A
              * @return string|boolean Return plugin file on success, false on failure
              */
             public function plugin_info() {
-
                 // Return false if installation result isn't an array or the destination name isn't set.
                 if ( ! is_array( $this->result ) ) {
                     return false;
                 }
-
                 if ( empty( $this->result['destination_name'] ) ) {
                     return false;
                 }
-
                 /// Get the installed plugin file or return false if it isn't set.
                 $plugin = get_plugins( '/' . $this->result['destination_name'] );
                 if ( empty( $plugin ) ) {
                     return false;
                 }
-
                 // Assume the requested plugin is the first in the list.
                 $pluginfiles = array_keys( $plugin );
-
                 return $this->result['destination_name'] . '/' . $pluginfiles[0];
-
             }
-
         }
     }
-
     if ( ! class_exists( 'TGM_Bulk_Installer_Skin' ) ) {
         /**
          * Installer skin to set strings for the bulk plugin installations..
@@ -1994,7 +1669,6 @@ if ( ! class_exists( 'WP_Upgrader' ) && ( isset( $_GET['page'] ) && TGM_Plugin_A
          * @author  Gary Jones <gamajo.com>
          */
         class TGM_Bulk_Installer_Skin extends Bulk_Upgrader_Skin {
-
             /**
              * Holds plugin info for each individual plugin installation.
              *
@@ -2003,7 +1677,6 @@ if ( ! class_exists( 'WP_Upgrader' ) && ( isset( $_GET['page'] ) && TGM_Plugin_A
              * @var array
              */
             public $plugin_info = array();
-
             /**
              * Holds names of plugins that are undergoing bulk installations.
              *
@@ -2012,7 +1685,6 @@ if ( ! class_exists( 'WP_Upgrader' ) && ( isset( $_GET['page'] ) && TGM_Plugin_A
              * @var array
              */
             public $plugin_names = array();
-
             /**
              * Integer to use for iteration through each plugin installation.
              *
@@ -2021,7 +1693,6 @@ if ( ! class_exists( 'WP_Upgrader' ) && ( isset( $_GET['page'] ) && TGM_Plugin_A
              * @var integer
              */
             public $i = 0;
-
             /**
              * Constructor. Parses default args with new ones and extracts them for use.
              *
@@ -2030,19 +1701,14 @@ if ( ! class_exists( 'WP_Upgrader' ) && ( isset( $_GET['page'] ) && TGM_Plugin_A
              * @param array $args Arguments to pass for use within the class.
              */
             public function __construct( $args = array() ) {
-
                 // Parse default and new args.
                 $defaults = array( 'url' => '', 'nonce' => '', 'names' => array() );
                 $args     = wp_parse_args( $args, $defaults );
-
                 // Set plugin names to $this->plugin_names property.
                 $this->plugin_names = $args['names'];
-
                 // Extract the new args.
                 parent::__construct( $args );
-
             }
-
             /**
              * Sets install skin strings for each individual plugin.
              *
@@ -2052,7 +1718,6 @@ if ( ! class_exists( 'WP_Upgrader' ) && ( isset( $_GET['page'] ) && TGM_Plugin_A
              * @since 2.2.0
              */
             public function add_strings() {
-
                 // Automatic activation strings.
                 if ( TGM_Plugin_Activation::$instance->is_automatic ) {
                     $this->upgrader->strings['skin_upgrade_start']        = __( 'The installation and activation process is starting. This process may take a while on some hosts, so please be patient.', 'tgmpa' );
@@ -2069,28 +1734,21 @@ if ( ! class_exists( 'WP_Upgrader' ) && ( isset( $_GET['page'] ) && TGM_Plugin_A
                     $this->upgrader->strings['skin_upgrade_end']          = __( 'All installations have been completed.', 'tgmpa' );
                     $this->upgrader->strings['skin_before_update_header'] = __( 'Installing Plugin %1$s (%2$d/%3$d)', 'tgmpa' );
                 }
-
             }
-
             /**
              * Outputs the header strings and necessary JS before each plugin installation.
              *
              * @since 2.2.0
              */
             public function before( $title = '' ) {
-
                 // We are currently in the plugin installation loop, so set to true.
                 $this->in_loop = true;
-
                 printf( '<h4>' . $this->upgrader->strings['skin_before_update_header'] . ' <img alt="" src="' . admin_url( 'images/wpspin_light.gif' ) . '" class="hidden waiting-' . $this->upgrader->update_current . '" style="vertical-align:middle;" /></h4>', $this->plugin_names[$this->i], $this->upgrader->update_current, $this->upgrader->update_count );
                 echo '<script type="text/javascript">jQuery(\'.waiting-' . esc_js( $this->upgrader->update_current ) . '\').show();</script>';
                 echo '<div class="update-messages hide-if-js" id="progress-' . esc_attr( $this->upgrader->update_current ) . '"><p>';
-
                 // Flush header output buffer.
                 $this->before_flush_output();
-
             }
-
             /**
              * Outputs the footer strings and necessary JS after each plugin installation.
              *
@@ -2100,10 +1758,8 @@ if ( ! class_exists( 'WP_Upgrader' ) && ( isset( $_GET['page'] ) && TGM_Plugin_A
              * @since 2.2.0
              */
             public function after( $title = '' ) {
-
                 // Close install strings.
                 echo '</p></div>';
-
                 // Output error strings if an error has occurred.
                 if ( $this->error || ! $this->result ) {
                     if ( $this->error ) {
@@ -2111,35 +1767,27 @@ if ( ! class_exists( 'WP_Upgrader' ) && ( isset( $_GET['page'] ) && TGM_Plugin_A
                     } else {
                         echo '<div class="error"><p>' . sprintf( $this->upgrader->strings['skin_update_failed'], $this->plugin_names[$this->i] ) . '</p></div>';
                     }
-
                     echo '<script type="text/javascript">jQuery(\'#progress-' . esc_js( $this->upgrader->update_current ) . '\').show();</script>';
                 }
-
                 // If the result is set and there are no errors, success!
                 if ( ! empty( $this->result ) && ! is_wp_error( $this->result ) ) {
                     echo '<div class="updated"><p>' . sprintf( $this->upgrader->strings['skin_update_successful'], $this->plugin_names[$this->i], 'jQuery(\'#progress-' . esc_js( $this->upgrader->update_current ) . '\').toggle();jQuery(\'span\', this).toggle(); return false;' ) . '</p></div>';
                     echo '<script type="text/javascript">jQuery(\'.waiting-' . esc_js( $this->upgrader->update_current ) . '\').hide();</script>';
                 }
-
                 // Set in_loop and error to false and flush footer output buffer.
                 $this->reset();
                 $this->after_flush_output();
-
             }
-
             /**
              * Outputs links after bulk plugin installation is complete.
              *
              * @since 2.2.0
              */
             public function bulk_footer() {
-
                 // Serve up the string to say installations (and possibly activations) are complete.
                 parent::bulk_footer();
-
                 // Flush plugins cache so we can make sure that the installed plugins list is always up to date.
                 wp_cache_flush();
-
                 // Display message based on if all plugins are now active or not.
                 $complete = array();
                 foreach ( TGM_Plugin_Activation::$instance->plugins as $plugin ) {
@@ -2153,30 +1801,23 @@ if ( ! class_exists( 'WP_Upgrader' ) && ( isset( $_GET['page'] ) && TGM_Plugin_A
                         $complete[] = '';
                     }
                 }
-
                 // Filter out any empty entries.
                 $complete = array_filter( $complete );
-
                 // All plugins are active, so we display the complete string and hide the menu to protect users.
                 if ( empty( $complete ) ) {
                     echo '<p>' .  sprintf( TGM_Plugin_Activation::$instance->strings['complete'], '<a href="' . network_admin_url() . '" title="' . __( 'Return to the Dashboard', 'tgmpa' ) . '">' . __( 'Return to the Dashboard', 'tgmpa' ) . '</a>' ) . '</p>';
                     echo '<style type="text/css">#adminmenu .wp-submenu li.current { display: none !important; }</style>';
                 }
-
             }
-
             /**
              * Flush header output buffer.
              *
              * @since 2.2.0
              */
             public function before_flush_output() {
-
                 wp_ob_end_flush_all();
                 flush();
-
             }
-
             /**
              * Flush footer output buffer and iterate $this->i to make sure the
              * installation strings reference the correct plugin.
@@ -2184,13 +1825,10 @@ if ( ! class_exists( 'WP_Upgrader' ) && ( isset( $_GET['page'] ) && TGM_Plugin_A
              * @since 2.2.0
              */
             public function after_flush_output() {
-
                 wp_ob_end_flush_all();
                 flush();
                 $this->i++;
-
             }
-
         }
     }
 }

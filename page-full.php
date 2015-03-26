@@ -1,12 +1,13 @@
 <?php
 /**
  * page-full.php
+ * @copyright 2014 - 2015
  *
  * The full width page
  *
  * @author pj hampton
  * @link http://codex.wordpress.org/Pages
- * @since BigBooty 0.3.0
+ * @since BigBooty 1.0.0
  */
 ?>
 
