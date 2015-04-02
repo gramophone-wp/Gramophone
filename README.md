@@ -10,7 +10,7 @@ BigBooty
 
 #### Licience
 
-Like WordPress, BitBooty is licenced [General Public Licence v2 or later](https://github.com/pjhampton/BigBooty/blob/master/docs/LICENCE.md). Have fun and build cool stuff with it.
+Like WordPress, BitBooty is licenced [General Public Licence v2 or later](https://github.com/pjhampton/BigBooty/blob/master/licence.txt). Have fun and build cool stuff with it.
 
 #### Version
 
