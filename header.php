@@ -1,12 +1,12 @@
 <?php
 /**
  * header.php
- * @copyright 2014 - 2015
  *
  * The header
  *
  * @author pjh
- * @link http://codex.wordpress.org/
+ * @copyright 2014 - 2015
+ * @link https://codex.wordpress.org/Designing_Headers
  * @since BigBooty 1.0.0
  */
 ?>
