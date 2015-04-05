@@ -1,10 +1,16 @@
 <?php
-
-/*
- * Add your theme menus here!
+/**
+ * header.php
  *
- * http://codex.wordpress.org/Function_Reference/register_nav_menus
-*/
+ * The header
+ *
+ * @author pjh
+ * @copyright 2014 - 2015
+ * @link http://codex.wordpress.org/Function_Reference/register_nav_menus
+ * @since BigBooty 1.0.0
+ */
+
+
 
 function register_bigbooty_menus() 
 {
@@ -12,7 +18,9 @@ function register_bigbooty_menus()
 		array(
 			'primary'	=> __( 'Primary Menu' ),
 			'footer'   => __( 'Footer Menu' ),
+			
 			// 'misc' => __( 'Side Menu' ),
+			// .. add more
 		)
 	);
 }
