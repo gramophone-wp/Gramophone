@@ -1,4 +1,13 @@
 <?php
+/**
+ * enqueue.php
+ *
+ * File that enqueues the scripts and styles
+ *
+ * @author pjh
+ * @copyright 2014 - 2015
+ * @since BigBooty 1.1.0
+ */
 
 
 /*
