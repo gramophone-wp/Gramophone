@@ -1,11 +1,20 @@
 <?php
+/**
+ * header.php
+ *
+ * The header
+ *
+ * @author pjh
+ * @copyright 2014 - 2015
+ * @link https://github.com/thomasgriffin/TGM-Plugin-Activation
+ * @since BigBooty 1.0.0
+ */
 
 /**
  * Register the required plugins for this theme.
  *
  */
 
- 
 add_action( 'tgmpa_register', 'required_plugins' );
  
 function required_plugins() 

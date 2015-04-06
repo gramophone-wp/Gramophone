@@ -1,11 +1,15 @@
 <?php
-
-/*
- * Add your sidebar & widget areas here!
- *
- * http://codex.wordpress.org/Function_Reference/register_sidebar
+/**
+ * Theme Support
  * 
-*/
+ *
+ * @author pjh
+ * @copyright 2014 - 2015
+ * @link http://codex.wordpress.org/Function_Reference/register_sidebar
+ * @todo better documentation, make it easier to create widgets
+ * @since BigBooty 1.0.0
+ */
+
 
 function create_widget( $name, $id, $description ) 
 {
@@ -20,12 +24,11 @@ function create_widget( $name, $id, $description )
     ));
 }
 
-// Register New Widgets Below
-
 create_widget( 'Front Page Left', 'front-left', 'Displays on the side of pages with a sidebar' );
 create_widget( 'Front Page Center', 'front-center', 'Displays on the side of pages with a sidebar' );
 create_widget( 'Front Page Right', 'front-right', 'Displays on the side of pages with a sidebar' );
 create_widget( 'Page Sidebar', 'page', 'Displays on the side of pages with a sidebar' );
 create_widget( 'Blog Sidebar', 'blog', 'Displays on the side of pages in the blog section' );
+// ...add more
 
 ?>

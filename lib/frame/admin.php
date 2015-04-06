@@ -1,12 +1,14 @@
 <?php
 /**
  * Custom Login
- * @copyright 2014 - 2015
+ * 
  *
  * Custom styling for the backend
  *
+ * @author pjh
+ * @copyright 2014 - 2015
  * @link http://codex.wordpress.org/Customizing_the_Login_Form
- * @todo Finish Structure
+ * @todo Finish Structure, better documentation
  * @since BigBooty 1.0.0
  */
 

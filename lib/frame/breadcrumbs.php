@@ -1,10 +1,11 @@
 <?php
 /**
  * Breadcrumbs
- * @copyright 2014 - 2015
  *
  * Custom styling for the backend
  *
+ * @author pjh
+ * @copyright 2014 - 2015
  * @link http://codex.wordpress.org/
  * @todo Finish Structure
  * @since BigBooty 1.0.0
