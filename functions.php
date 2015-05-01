@@ -1,15 +1,14 @@
 <?php
 /**
  * functions.php
- * @copyright 2014 - 2015
  *
  * The functions page
  *
  * @author pjh
+ * @copyright 2014 - 2015
  * @link http://codex.wordpress.org/
  * @since BigBooty 1.0.0
  */
-
 
 // Theme Dependencies
 require_once locate_template('inc/plugins/class-tgm-plugin-activation.php');

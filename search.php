@@ -1,11 +1,11 @@
 <?php
 /**
  * search.php
- * @copyright 2014 - 2015
  *
  * The search results page
  *
  * @author pjh
+ * @copyright 2014 - 2015
  * @link http://codex.wordpress.org/Creating_a_Search_Page
  * @since BigBooty 1.0.0
  */
@@ -62,7 +62,7 @@
 
         </div>
 
-    <?php get_sidebar(); ?>
+        <?php get_sidebar(); ?>
 
     </div>
 </div>
