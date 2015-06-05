@@ -1,11 +1,11 @@
 <?php
 /**
- * Summary
- * @copyright 2014 - 2015
+ * archive.php
  *
  * The template for archives.
  *
  * @author pj hampton
+ * @copyright 2014 - 2015
  * @todo Finish Structure
  * @since BigBooty 1.0.1
  */

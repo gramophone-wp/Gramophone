@@ -1,11 +1,11 @@
 <?php
 /**
  * page.php
- * @copyright 2014 - 2015
  *
  * The Page
  *
  * @author pj hampton
+ * @copyright 2014 - 2015
  * @link http://codex.wordpress.org/Pages
  * @since BigBooty 0.3.0
  */

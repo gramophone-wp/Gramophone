@@ -1,6 +1,6 @@
 <?php
 /**
- * 404
+ * 404.php
  *
  * The 404 template: Something not coming in
  *

@@ -18,6 +18,7 @@
   
         <div class="col-md-9">
 
+            <!-- The WordPress Loop -->
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
             <div class="page-header">
@@ -35,6 +36,7 @@
             <p>No content is appearing for this page!</p>
 
             <?php endif; ?>
+            <!-- End WordPress Loop -->
 
         </div>
   

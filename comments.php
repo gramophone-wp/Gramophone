@@ -1,16 +1,15 @@
 <?php
 /**
- * Summary
- * @copyright 2014 - 2015
+ * comments.php
  *
  * The template for handling the themes comments
  *
  * @author pjh
+ * @copyright 2014 - 2015
  * @link https://codex.wordpress.org/Function_Reference/comments_template
  * @todo Fix up the code from shift
  * @since BigBooty 1.0.0
  */
-
 
 if ( post_password_required() )
     return;
@@ -22,7 +21,7 @@ if ( post_password_required() )
 
         <h2 class="comments-title">
             <?php
-                printf( _n( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'twentytwelve' ),
+                printf( _n( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'BigBooty' ),
                     number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
             ?>
         </h2>
@@ -34,16 +33,18 @@ if ( post_password_required() )
         <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
 
         <nav id="comment-nav-below" class="navigation" role="navigation">
-            <h1 class="assistive-text section-heading"><?php _e( 'Comment navigation', 'twentytwelve' ); ?></h1>
-            <div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'twentytwelve' ) ); ?></div>
-            <div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'twentytwelve' ) ); ?></div>
+            <h1 class="assistive-text section-heading"><?php _e( 'Comment navigation', 'BigBooty' ); ?></h1>
+            <div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'BigBooty' ) ); ?></div>
+            <div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'BigBooty' ) ); ?></div>
         </nav>
 
         <?php endif; ?>
 
         <?php
         if ( ! comments_open() && get_comments_number() ) : ?>
-        <p class="nocomments"><?php _e( 'Comments are closed.' , 'twentytwelve' ); ?></p>
+        <p class="nocomments">
+            <?php _e( 'Comments are closed.' , 'BigBooty' ); ?>
+        </p>
         <?php endif; ?>
 
     <?php endif; // have_comments() ?>
@@ -55,7 +56,9 @@ if ( post_password_required() )
     <div id="respond" class="comment-respond">       
         <h3 id="reply-title" class="comment-reply-title"><?php comment_form_title( 'Leave a Reply', 'Leave a Reply to %s' ); ?></h3>
         <div id="cancel-comment-reply">
-        <p class="small"><?php cancel_comment_reply_link( __("Cancel Reply", "bonestheme") ); ?></p>
+            <p class="small">
+                <?php cancel_comment_reply_link( __("Cancel Reply", "BigBooty") ); ?>
+            </p>
         </div>
         <div class="cancel-comment-reply">
             <?php cancel_comment_reply_link(); ?>
@@ -87,8 +90,9 @@ if ( post_password_required() )
                     <p class="comment-form-comment"><p><label for="comment">Comment <?php if ($req) echo '<span class="required">*</span>'; ?></label>
                     <textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
 
-                    <p class="form-submit"><input class="btn btn-primary" name="submit" type="submit" id="submit" tabindex="5" value="Post Comment" />
-                    <?php comment_id_fields(); ?>
+                    <p class="form-submit">
+                        <input class="btn btn-primary" name="submit" type="submit" id="submit" tabindex="5" value="Post Comment" />
+                        <?php comment_id_fields(); ?>
                     </p>
                     <?php do_action('comment_form', $post->ID); ?>   
 

@@ -1,11 +1,11 @@
 <?php
 /**
- * Summary
- * @copyright 2014 - 2015
+ * author.php
  *
  * The template for displaying Author Related Posts & Content
  *
  * @author pjh
+ * @copyright 2014 - 2015
  * @link http://codex.wordpress.org/Function_Reference/get_the_author_meta
  * @todo Finish Structure + Implement loop + Add Author Social Media Links
  * @since BigBooty 1.0.0
@@ -38,9 +38,10 @@ $user_twitter = get_the_author_meta('twitter');
 	<div class="posts">
 
     <?php 
-
-        $curauth = (isset($_GET['author_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author));
-
+        $curauth = (
+            isset($_GET['author_name'])) 
+            ? get_user_by('slug', $author_name) : get_userdata(intval($author)
+        );
     ?>
 
 	<!-- The WP Loop -->
@@ -55,7 +56,7 @@ $user_twitter = get_the_author_meta('twitter');
     </li>
 
         <?php endwhile; else: ?>
-            <p><?php _e('No posts by this author.'); ?></p>
+            <p><?php _e('No posts by this author.', 'BigBooty'); ?></p>
         <?php endif; ?>
 
     <!-- End Loop -->

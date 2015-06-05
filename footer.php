@@ -1,11 +1,11 @@
 <?php
 /**
  * footer.php
- * @copyright 2014 - 2015
  *
  * The template for the footer.
  *
  * @author pj hampton
+ * @copyright 2014 - 2015
  * @todo Finish Structure
  * @since BigBooty 1.0.1
  */
@@ -14,7 +14,9 @@
 <footer class="footer">
     <div class="container">
         <div class="col-xs-12 col-md-6" id="copyright">
-            <p class="text-muted">&copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?>. All Rights Reserved</p>
+            <p class="text-muted">&copy; <?php bloginfo('name'); ?> 
+                <?php echo date('Y'); ?>. All Rights Reserved
+            </p>
         </div>
     </div>
 </footer>
