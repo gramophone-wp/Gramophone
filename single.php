@@ -32,7 +32,11 @@
                 $thumbnail_meta = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true);                
             ?>
 
-            <p class="featured-image"><img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php echo $thumbnail_meta; ?>"></p>
+            <?php if( has_post_thumbnail() ): ?>
+            <p class="featured-image">
+                <img src="<?php echo $thumbnail_url[0]; ?>" alt="<?php echo $thumbnail_meta; ?>">
+            </p>
+            <?php endif; ?>
 
             <p class="post-meta">
                 By  <span class="vcard author">
