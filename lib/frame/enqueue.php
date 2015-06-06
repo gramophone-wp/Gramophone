@@ -51,6 +51,7 @@ function bigbooty_js()
     wp_enqueue_script( 'theme_js', get_template_directory_uri() . '/lib/js/theme.js', array('jquery', 'bootstrap_js'), '', true );
 
     // Add more...
+    
 }
 
 
