@@ -40,7 +40,7 @@
 
             <p class="post-meta">
                 By  <span class="vcard author">
-                        <span class="fn"><?php the_author_link(); ?></span> 
+                        <span class="fn"><?php the_author_posts_link(); ?></span> 
                     </span>
                 on  <span class="date updated"><?php echo the_time('l, F jS, Y');?></span>
                 in <?php the_category( ', ' ); ?>.
