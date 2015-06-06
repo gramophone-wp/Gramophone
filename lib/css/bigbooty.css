@@ -203,3 +203,9 @@ textarea#comment{
 .form-submit{
     float: right;
 }
+
+
+.profile {
+    min-height: 355px;
+    display: inline-block;
+}
