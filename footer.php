@@ -13,8 +13,11 @@
 
 <footer class="footer">
     <div class="container">
-        <div class="col-xs-12 col-md-6" id="copyright">
-            <p class="text-muted">&copy; <?php bloginfo('name'); ?> 
+        <div class="col-xs-12 col-md-12 text-center" id="copyright">
+            <p class="text-muted">&copy; 
+                <a href="<?php bloginfo( 'url' ); ?>">
+                <?php bloginfo('name'); ?> 
+                </a>
                 <?php echo date('Y'); ?>. All Rights Reserved
             </p>
         </div>
