@@ -209,3 +209,7 @@ textarea#comment{
     min-height: 355px;
     display: inline-block;
 }
+
+.commentlist{
+    list-style: none;
+}
