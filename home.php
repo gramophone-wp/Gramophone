@@ -30,7 +30,9 @@
                 By <?php the_author_posts_link(); ?> 
                 on <?php echo the_time('l, F jS, Y');?>
                 in <?php the_category( ', ' ); ?>.
-                <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a>
+                <span class="pull-right">
+                    <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a>
+                </span>
             </p>            
 
             <?php the_excerpt(); ?>
