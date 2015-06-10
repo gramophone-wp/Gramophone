@@ -5,7 +5,7 @@ BigBooty
 
 - Clone BigBooty into **/wp-content/themes/**
 - Navigate to the theme folder in the terminal and run `bower install`
-- log in `~/wp-admin`
+- log in `http://127.0.0.1/<wordpress_install>/wp-admin`
 - Set Appearance >> Theme >> BigBooty
 - Get busy!
 
