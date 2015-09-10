@@ -4,7 +4,7 @@
  *
  * The template for archives.
  *
- * @author pj hampton
+ * @author pjhampton
  * @copyright 2014 - 2015
  * @todo Finish Structure
  * @since BigBooty 1.0.1

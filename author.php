@@ -4,7 +4,7 @@
  *
  * The template for displaying Author Related Posts & Content
  *
- * @author pjh
+ * @author pjhampton
  * @copyright 2014 - 2015
  * @link http://codex.wordpress.org/Function_Reference/get_the_author_meta
  * @todo Finish Structure + Implement loop + Add Author Social Media Links

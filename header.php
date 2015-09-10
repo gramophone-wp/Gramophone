@@ -4,7 +4,7 @@
  *
  * The header
  *
- * @author pjh
+ * @author pjhampton
  * @copyright 2014 - 2015
  * @link https://codex.wordpress.org/Designing_Headers
  * @since BigBooty 1.0.0

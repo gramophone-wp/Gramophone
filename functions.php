@@ -4,7 +4,7 @@
  *
  * The functions page
  *
- * @author pjh
+ * @author pjhampton
  * @copyright 2014 - 2015
  * @link http://codex.wordpress.org/
  * @since BigBooty 1.0.0

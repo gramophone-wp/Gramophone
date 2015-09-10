@@ -4,7 +4,7 @@
  *
  * The Page
  *
- * @author pj hampton
+ * @author pjhampton
  * @copyright 2014 - 2015
  * @link http://codex.wordpress.org/Pages
  * @since BigBooty 0.3.0
