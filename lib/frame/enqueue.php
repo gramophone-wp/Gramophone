@@ -20,10 +20,9 @@
 function bigbooty_styles() 
 {
 
-    wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/bower_components/bootstrap/dist/css/bootstrap.min.css' );
+    wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/styles/bootstrap.min.css' );
     wp_enqueue_style( 'font_awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' );
     wp_enqueue_style( 'bigbooty_css', get_template_directory_uri() . '/lib/css/bigbooty.css' );	
-    wp_enqueue_style( 'main_css', get_template_directory_uri() . '/style.css' );
 
     // Add more...
 
@@ -47,8 +46,8 @@ function bigbooty_js()
     $wp_scripts->add_data( 'html5_shiv', 'conditional', 'lt IE 9' );
     $wp_scripts->add_data( 'respond_js', 'conditional', 'lt IE 9' );
 
-    wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '//bower_components/bootstrap/dist/js/bootstrap.min.js', array('jquery'), '', true );
-    wp_enqueue_script( 'theme_js', get_template_directory_uri() . '/lib/js/theme.js', array('jquery', 'bootstrap_js'), '', true );
+    wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '', true );
+    wp_enqueue_script( 'theme_js', get_template_directory_uri() . '/js/theme.js', array('jquery', 'bootstrap_js'), '', true );
 
     // Add more...
     
