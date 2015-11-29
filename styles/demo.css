@@ -1,6 +1,6 @@
 /**
  * 
- * bigbooty.css
+ * demo.css
  *
  * These are just some basic styles to
  * get started on.
@@ -25,7 +25,7 @@ body {
         position: absolute;
         background: #222;
         padding: 10px 15px;
-        width: 200px;		
+        width: 200px;       
     }
 
     li:hover .sub-menu {
@@ -48,11 +48,11 @@ body {
 }
 
 .sub-menu a:hover  {
-    color: #fff;	
-}	
+    color: #fff;    
+}   
 
 .current-menu-item > a, .current-menu-parent > a {
-    background: #000;	
+    background: #000;   
 }
 .current-menu-parent li a {
     background: inherit;
