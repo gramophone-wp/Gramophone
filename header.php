@@ -4,13 +4,12 @@
  *
  * The header
  *
- * @author pjhampton
+ * @author pjh
  * @copyright 2014 - 2015
  * @link https://codex.wordpress.org/Designing_Headers
  * @since BigBooty 1.0.0
  */
 ?>
-
 <!doctype html>
 
 <!--[if IEMobile 7 ]> <html <?php language_attributes(); ?>class="no-js iem7"> <![endif]-->
@@ -54,19 +53,15 @@
         </div>
 
         <div class="navbar-collapse collapse">
-            <form method="get" id="search_form" action="<?php bloginfo('home'); ?>" class="navbar-form navbar-right">
-                <input type="text" class="text form-control" name="s">
-                <input type="submit" class="submit btn btn-primary" value="Search">
-            </form>
             <?php
                 wp_nav_menu( array(
                     'menu'             =>  'primary',
                     'theme_location'   =>  'primary',
                     'depth'            =>  2,
-                    'container'        =>  'div',
+                    'container'        =>  '',
                     'container_class'  =>  'collapse navbar-collapse',
-                    'container_id'     =>  'bs-example-navbar-collapse-1',
-                    'menu_class'       =>  'nav navbar-nav',
+                    'container_id'     =>  '',
+                    'menu_class'       =>  'nav navbar-nav navbar-right',
                     'fallback_cb'      =>  'wp_bootstrap_navwalker::fallback',
                     'walker'           =>  new wp_bootstrap_navwalker())
                 );
