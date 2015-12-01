@@ -12,8 +12,8 @@
 
 
 // Theme Dependencies
-require_once locate_template('includes/plugins/class-tgm-plugin-activation.php');
-require_once ( 'includes/plugins/wp_bootstrap_navwalker.php' );
+require_once locate_template('includes/class-tgm-plugin-activation.php');
+require_once ( 'includes/wp_bootstrap_navwalker.php' );
 
 
 // Admin Customisations
