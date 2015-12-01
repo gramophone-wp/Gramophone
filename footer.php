@@ -4,7 +4,7 @@
  *
  * The template for the footer.
  *
- * @author pjhampton
+ * @author pjh
  * @copyright 2014 - 2015
  * @todo Finish Structure
  * @since BigBooty 1.0.1

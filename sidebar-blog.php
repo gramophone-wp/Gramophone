@@ -4,7 +4,7 @@
  *
  * The blog sidebar
  *
- * @author pjhampton
+ * @author pjh
  * @copyright 2014 - 2015
  * @link http://codex.wordpress.org/Function_Reference/get_sidebar
  * @since BigBooty 0.3.0

@@ -4,7 +4,7 @@
  *
  * The search results page
  *
- * @author pjhampton
+ * @author pjh
  * @copyright 2014 - 2015
  * @link http://codex.wordpress.org/Creating_a_Search_Page
  * @since BigBooty 1.0.0

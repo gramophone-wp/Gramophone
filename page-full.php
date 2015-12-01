@@ -4,7 +4,7 @@
  *
  * The full width page
  *
- * @author pjhampton
+ * @author pjh
  * @copyright 2014 - 2015
  * @link http://codex.wordpress.org/Pages
  * @since BigBooty 1.0.0

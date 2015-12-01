@@ -4,7 +4,7 @@
  *
  * The Single Post Page
  *
- * @author pjhampton
+ * @author pjh
  * @copyright 2014 - 2015
  * @link http://codex.wordpress.org/Theme_Development#Single_Post_.28single.php.29
  * @since BigBooty 1.0.0

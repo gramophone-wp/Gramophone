@@ -4,7 +4,7 @@
  *
  * The template for handling the themes comments
  *
- * @author pjhampton
+ * @author pjh
  * @copyright 2014 - 2015
  * @link https://codex.wordpress.org/Function_Reference/comments_template
  * @todo Fix up the code from shift
