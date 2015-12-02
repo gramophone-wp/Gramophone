@@ -35,9 +35,7 @@
                 </span>
             </p>            
 
-            <i class="fa fa-quote-left"></i>
             <?php the_excerpt(); ?>
-            <i class="fa fa-quote-right"></i>
 
             </article>
 
