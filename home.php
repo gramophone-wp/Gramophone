@@ -33,7 +33,7 @@
 
             <article class="post">
 
-            <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+            <h3><a href="<?php the_permalink(); ?>" class="post-title"><?php the_title(); ?></a></h3>
             <p>
                 By <?php the_author_posts_link(); ?> 
                 on <?php echo the_time('l, F jS, Y');?>

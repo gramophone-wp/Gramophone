@@ -11,12 +11,20 @@ body {
     padding-top: 50px;
 }
 
+a.navbar-brand{
+    font-weight: 500
+}
+
 .navbar{
     border: none;
 }
 
 .page-header{
     margin: 40px 0 20px;
+}
+
+a.post-title{
+    color: #303030;
 }
 
 .admin-bar .navbar-fixed-top {
