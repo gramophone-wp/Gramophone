@@ -11,6 +11,10 @@ body {
     padding-top: 50px;
 }
 
+.navbar{
+    border: none;
+}
+
 .page-header{
     margin: 40px 0 20px;
 }
