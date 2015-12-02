@@ -13,13 +13,21 @@
 
 <?php get_header(); ?>
 
+<div class="jumbotron">
+    <div class="container">
+
+    <h1><?php wp_title(''); ?></h1>
+
+    
+    <p>The Bootstrap / WordPress Starter Theme Nicki Minaj would use&#8230; probably.</p>
+
+    
+    </div>
+</div>
+
 <div class="container">   
     <div class="row">
-        <div class="col-md-9">
-
-            <div class="page-header">
-                <h1><?php wp_title(''); ?></h1>
-            </div>
+        <div class="col-md-8">
 
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 

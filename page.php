@@ -13,6 +13,17 @@
 
 <?php get_header(); ?>
 
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+<div class="jumbotron">
+    <div class="container">
+
+    <h1><?php the_title(); ?></h1>
+
+    </div>
+</div>
+
+
 <div class="container">   
     <div class="row row-offcanvas row-offcanvas-right">
         <div class="col-md-9">
@@ -20,12 +31,6 @@
             <p class="pull-right visible-xs">
                 <button type="button" class="btn btn-primary btn-med" data-toggle="offcanvas">View Sidebar</button>
             </p>
-
-            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-            <div class="page-header">
-                <h1><?php the_title(); ?></h1>
-            </div>
 
             <?php the_content(); ?>
 
