@@ -122,12 +122,8 @@ article.post {
 }
 
 .footer {
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    background-color: #f5f5f5;
-    border-top: 2px solid #c6c6c6;
-    padding: 20px 0 10px 0;
+    background-color: #2a2730;
+    padding: 50px 0;
     margin: 40px 0 0 0;
 }
 
@@ -143,10 +139,6 @@ img {
     }
 }
 
-
-.footer {   
-    height: 200px;
-}
 
 .nocomments{
     display: none;
