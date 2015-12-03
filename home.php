@@ -16,11 +16,9 @@
 <div class="jumbotron">
     <div class="container">
 
-    <h1><?php wp_title(''); ?></h1>
+        <h1><?php wp_title(''); ?></h1>
 
-    
-    <p>The Bootstrap / WordPress Starter Theme Nicki Minaj would use&#8230; probably.</p>
-
+        <p>Lorum ipsum dolor sit amet, no nam viris feugiat</p>
     
     </div>
 </div>

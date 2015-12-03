@@ -11,6 +11,13 @@
  */
 ?>
 
+<section class="widgets">
+    <div class="container">
+        <h2>TEST</h2>
+        <p class="lead">This is where the widgets go!</p>
+    </div>
+</section>
+
 <footer class="footer">
     <div class="container">
         <div class="col-xs-12 col-md-12 text-center" id="copyright">

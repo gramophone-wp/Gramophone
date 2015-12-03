@@ -1,5 +1,6 @@
 <?php
 /**
+ * Template Name: Full Page
  * page-full.php
  *
  * The full width page
@@ -19,8 +20,9 @@
 <div class="jumbotron">
     <div class="container">
 
-    <h1><?php the_title(); ?></h1>
-
+        <h1><?php the_title(); ?></h1>
+        <p>Lorum ipsum dolor sit amet, no nam viris feugiat</p>
+    
     </div>
 </div>
 

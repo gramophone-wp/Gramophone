@@ -2,7 +2,7 @@
 /**
  * header.php
  *
- * The header
+ * The primary header
  *
  * @author pjh
  * @copyright 2014 - 2015

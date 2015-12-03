@@ -18,6 +18,15 @@
 
     <h1><?php the_title(); ?></h1>
 
+    <p>Lorum ipsum dolor sit amet, no nam viris feugiat</p>
+
+    </div>
+</div>
+
+
+<div>
+    <div class="container">
+
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
     <?php the_content(); ?>
@@ -26,6 +35,7 @@
 
     </div>
 </div>
+
 
 <div class="container">
     <div class="row">

@@ -21,6 +21,8 @@
 
     <h1><?php the_title(); ?></h1>
 
+    <p>Lorum ipsum dolor sit amet, no nam viris feugiat</p>
+
     </div>
 </div>
 
