@@ -81,9 +81,7 @@ function bigbooty_comment($comment, $args, $depth) {
 		?>
 	</div>
 
-	<i class="fa fa-quote-left"></i>
 	<?php comment_text(); ?>
-	<i class="fa fa-quote-right"></i>
 
 	<div class="reply-buttons pull-right">
 		<button class="reply btn btn-info btn-circle text-uppercase">

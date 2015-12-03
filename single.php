@@ -30,10 +30,6 @@
     <div class="row">
 	<div class="col-md-9">
 
-        <div>
-            <?php bigbooty_breadcrumbs(); ?>
-        </div>
-
         <div class="page-header"> 
 
             <h1><?php the_title(); ?></h1>
