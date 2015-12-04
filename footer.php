@@ -13,8 +13,28 @@
 
 <section class="widgets">
     <div class="container">
-        <h2>TEST</h2>
-        <p class="lead">This is where the widgets go!</p>
+
+	<div class="col-md-4">
+        <?php if ( !dynamic_sidebar( 'footer_left' ) ): ?>
+            <h4 class="text-center">Sidebar (Page)</h4>
+            <p>Oh! No Sidebar?</p>	
+        <?php endif; ?>
+	</div>
+
+	<div class="col-md-4">
+        <?php if ( !dynamic_sidebar( 'footer_center' ) ): ?>
+            <h4 class="text-center">Sidebar (Page)</h4>
+            <p>Oh! No Sidebar?</p>	
+        <?php endif; ?>
+	</div>
+
+	<div class="col-md-4">
+        <?php if ( !dynamic_sidebar( 'footer_right' ) ): ?>
+            <h4 class="text-center">Sidebar (Page)</h4>
+            <p>Oh! No Sidebar?</p>	
+        <?php endif; ?>
+	</div>
+
     </div>
 </section>
 
