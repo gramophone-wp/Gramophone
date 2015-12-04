@@ -19,9 +19,9 @@
 <div class="jumbotron">
     <div class="container">
 
-    <h1><?php the_title(); ?></h1>
+    <h1>BigBooty</h1>
 
-    <p>Lorum ipsum dolor sit amet, no nam viris feugiat</p>
+    <p><?php the_title(); ?></p>
 
     </div>
 </div>
@@ -32,7 +32,6 @@
 
         <div class="page-header"> 
 
-            <h1><?php the_title(); ?></h1>
             <?php
                 $thumbnail_id = get_post_thumbnail_id(); 
                 $thumbnail_url = wp_get_attachment_image_src( $thumbnail_id, 'thumbnail-size', true );
