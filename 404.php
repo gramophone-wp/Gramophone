@@ -13,15 +13,5 @@
 
 <?php get_header(); ?>
 
-<div class="container">   
-    <div class="row">
-        <div class="col-md-12">
-
-            <div>
-                <h1>404</h1>
-	    </div>
-
-        </div>
-    </div>
-</div>
+<h1>404</h1>
 
