@@ -1,12 +1,3 @@
-/**
- * 
- * demo.css
- *
- * These are just some basic styles to
- * get started on.
- *
-**/
-
 body {
     padding-top: 50px;
 }
@@ -86,52 +77,6 @@ a.post-title{
 .current-menu-parent .current-menu-item a {
     color: #fff;
     font-weight: bold;
-}
-
-article.post {
-    margin: 20px 0 40px;
-}
-
-
-@media screen and (max-width: 767px) {
-    .row-offcanvas {
-        position: relative;
-        -webkit-transition: all .25s ease-out;
-        -moz-transition: all .25s ease-out;
-        transition: all .25s ease-out;
-  }
-
-    .row-offcanvas-right {
-        right: 0;
-    }
-
-    .row-offcanvas-left {
-        left: 0;
-    }
-
-    .row-offcanvas-right
-    .sidebar-offcanvas {
-        right: -50%;
-    }
-
-    .row-offcanvas-left
-    .sidebar-offcanvas {
-        left: -50%;
-    }
-
-    .row-offcanvas-right.active {
-        right: 50%; 
-    }
-
-    .row-offcanvas-left.active {
-        left: 50%;
-    }
-
-    .sidebar-offcanvas {
-        position: absolute;
-        top: 0;
-        width: 50%;     
-    }
 }
 
 .footer {
