@@ -19,7 +19,7 @@
 <div class="jumbotron">
     <div class="container">
 
-    <h1>BigBooty</h1>
+    <h1>Blog Post</h1>
 
     <p><?php the_title(); ?></p>
 
@@ -28,7 +28,7 @@
 
 <div class="container">   
     <div class="row">
-	<div class="col-md-9">
+	<div class="col-md-9 text-justify">
 
         <div class="page-header"> 
 
