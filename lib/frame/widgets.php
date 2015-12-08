@@ -24,12 +24,11 @@ function create_widget( $name, $id, $description )
     ));
 }
 
-create_widget( 'Page Sidebar', 'page', 'Displays on the side of pages with a sidebar' );
-create_widget( 'Blog Sidebar', 'blog', 'Displays on the side of pages in the blog section' );
-
 create_widget( 'Footer Left', 'footer_left', 'This is the left footer' );
 create_widget( 'Footer Center', 'footer_center', 'This is the center footer' );
 create_widget( 'Footer Right', 'footer_right', 'This is the right footer' );
+create_widget( 'Page Sidebar', 'page', 'Displays on the side of pages with a sidebar' );
+create_widget( 'Post Sidebar', 'blog', 'Displays on the side of pages in the blog section' );
 // ...add more
 
 ?>
