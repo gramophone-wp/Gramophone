@@ -50,7 +50,7 @@ function bigbooty_admin_colors()
 	wp_admin_css_color(
 		'BigBooty', 
 		__( 'BigBooty' ),
-		admin_url("admin/colors/bigbooty/colors.css"),
+		admin_url("admin/colors/bigbooty.css"),
 		array('#07273E', '#14568A', '#D54E21', '#2683AE')
 	);
 }
