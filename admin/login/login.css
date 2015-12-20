@@ -3,7 +3,7 @@
 */
 
 #login {
-    width: 400px;
+    width: 360px;
     padding: 8% 0 0;
     margin: auto;
 }
@@ -63,22 +63,25 @@ body.login div#login form#loginform input#user_pass:focus {
 .wp-core-ui .button-primary{
     background: none;
     border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 body.login div#login form#loginform p.submit input#wp-submit {
     width: 100%;
-    border: none;
+    border: 1px solid #79589f;
     border-radius: 5px;
     font-size: 17px;
-    color: #fff;
-    background-color: #79589f;
-    background-image: -webkit-gradient(linear,right top,left bottom,color-stop(0,rgba(159,88,150,0)),color-stop(1,rgba(159,88,150,0.6)));
-    background-image: -o-linear-gradient(left bottom,rgba(159,88,150,0) 0,rgba(159,88,150,0.6) 100%);
-    background-image: -moz-linear-gradient(left bottom,rgba(159,88,150,0) 0,rgba(159,88,150,0.6) 100%);
-    background-image: -webkit-linear-gradient(left bottom,rgba(159,88,150,0) 0,rgba(159,88,150,0.6) 100%);
-    background-image: -ms-linear-gradient(left bottom,rgba(159,88,150,0) 0,rgba(159,88,150,0.6) 100%);
-    background-image: linear,to left bottom,rgba(159,88,150,0) 0,rgba(159,88,150,0.6) 100%;
+    color: #79589f;
+    background-color: #fff;
+    text-shadow: none;
+    font-size: 20px;
 }
+
+body.login div#login form#loginform p.submit input#wp-submit:hover {
+    background-color: #efefef;
+}
+
 
 body.login div#login p#nav {
     text-align: center;
