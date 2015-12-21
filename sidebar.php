@@ -16,7 +16,7 @@
     <?php if ( !dynamic_sidebar( 'page' ) ): ?>
 
     <h3>Sidebar (Page)</h3>
-    <p>Oh! No Sidebar?</p>	
+    <p>...</p>	
 
     <?php endif; ?>
 
