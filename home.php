@@ -31,13 +31,16 @@
 
             <article class="post">
 
-            <h3><a href="<?php the_permalink(); ?>" class="post-title"><?php the_title(); ?></a></h3>
+	    <h4><a href="<?php the_permalink(); ?>" class="post-title"><?php the_title(); ?></a></h4>
+
             <p>
                 By <?php the_author_posts_link(); ?> 
                 on <?php echo the_time('l, F jS, Y');?>
                 in <?php the_category( ', ' ); ?>.
                 <span class="pull-right">
-                    <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a>
+		    <a href="<?php comments_link(); ?>">
+			<?php comments_number(); ?>
+                    </a>
                 </span>
             </p>            
 
