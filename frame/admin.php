@@ -30,7 +30,7 @@ add_action( 'login_enqueue_scripts', 'wpse_login_enqueue_scripts', 10 );
 	Custom Logo
 */
 
-function bigbooty_logo() 
+function admin_logo() 
 { ?>
     <style>
         body.login div#login h1 a {
@@ -38,14 +38,14 @@ function bigbooty_logo()
         }
     </style>
 <?php }
-add_action( 'login_enqueue_scripts', 'bigbooty_logo' );
+add_action( 'login_enqueue_scripts', 'admin_logo' );
 
 
 /*
 	Custom Admin Theme
 */
 
-function bigbooty_admin_colors()
+function admin_colors()
 {
 	wp_admin_css_color(
 		'BigBooty', 
@@ -54,17 +54,17 @@ function bigbooty_admin_colors()
 		array('#07273E', '#14568A', '#D54E21', '#2683AE')
 	);
 }
-add_action('admin_init', 'bigbooty_admin_colors');
+add_action('admin_init', 'admin_colors');
 
 
 /*
 	Change this to your theme's footer
 */
 	
-function bigbooty_footer() 
+function admin_footer() 
 {
-	echo "<a href='https://github.com/pjhampton/BigBooty' target='_blank'>BigBooty</a> &hearts;'s You!</p>";
+	echo "Built with <a href='https://github.com/pjhampton/BigBooty' target='_blank'>BigBooty Starter Theme</a>";
 }
-add_filter('admin_footer_text', 'bigbooty_footer');
+add_filter('admin_footer_text', 'admin_footer');
 
 ?>
