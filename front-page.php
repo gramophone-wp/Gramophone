@@ -16,9 +16,9 @@
 <div class="jumbotron">
     <div class="container">
 
-    <h1><?php the_title(); ?></h1>
+    <h1><?php echo get_bloginfo('name'); ?></h1>
 
-    <p>Lorum ipsum dolor sit amet, no nam viris feugiat</p>
+    <p><?php echo get_bloginfo('description'); ?></p>
 
     </div>
 </div>
