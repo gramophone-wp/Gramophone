@@ -1,15 +1,19 @@
 <?php
 /**
+ **********************************************
  * author.php
+ **********************************************
  *
- * The template for displaying Author Related Posts & Content
+ * Author related posts & content.
  *
- * @author pjh
- * @copyright 2014 - 2015
- * @link http://codex.wordpress.org/Function_Reference/get_the_author_meta
- * @todo Finish Structure + Implement loop + Add Author Social Media Links
- * @since BigBooty 1.0.0
- */
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 // User Information
 $user_id = get_the_author_meta('id');

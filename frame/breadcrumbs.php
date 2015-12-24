@@ -1,15 +1,19 @@
 <?php
 /**
- * Breadcrumbs
+ **********************************************
+ * frame/breadcrumbs.php
+ **********************************************
  *
- * Custom styling for the backend
+ * Custom breadcrumbs functionality.
  *
- * @author pjh
- * @copyright 2014 - 2015
- * @link http://codex.wordpress.org/
- * @todo Finish Structure
- * @since BigBooty 1.0.0
- */
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 function bigbooty_breadcrumbs() 
 {

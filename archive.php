@@ -1,14 +1,19 @@
 <?php
 /**
+ **********************************************
  * archive.php
+ **********************************************
  *
- * The template for archives.
+ * The template for post archives.
  *
- * @author pjh
- * @copyright 2014 - 2015
- * @todo Finish Structure
- * @since BigBooty 1.0.1
- */
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 ?>
 
 <?php get_header(); ?>

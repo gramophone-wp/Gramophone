@@ -1,14 +1,19 @@
 <?php
 /**
+ **********************************************
  * header.php
+ **********************************************
  *
- * The primary header
+ * The general header.
  *
- * @author pjh
- * @copyright 2014 - 2015
- * @link https://codex.wordpress.org/Designing_Headers
- * @since BigBooty 1.0.0
- */
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 ?>
 <!doctype html>
 

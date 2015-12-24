@@ -1,16 +1,19 @@
 <?php
 /**
- * Custom Login
- * 
+ **********************************************
+ * frame/admin.php
+ ********************************************** 
  *
- * Custom styling for the backend
+ * Custom styling for the backend.
  *
- * @author pjh
- * @copyright 2014 - 2015
- * @link http://codex.wordpress.org/Customizing_the_Login_Form
- * @todo Finish Structure, better documentation
- * @since BigBooty 1.0.0
- */
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 
 function bigbooty_login_styles() 

@@ -1,14 +1,19 @@
 <?php
 /**
- * header.php
+ **********************************************
+ * frame/required_plugins.php
+ **********************************************
  *
- * The header
+ * Plugins required / recommend by this theme.
  *
- * @author pjh
- * @copyright 2014 - 2015
- * @link https://github.com/thomasgriffin/TGM-Plugin-Activation
- * @since BigBooty 1.0.0
- */
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 /**
  * Register the required plugins for this theme.

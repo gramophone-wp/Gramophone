@@ -1,15 +1,19 @@
 <?php
 /**
- * Theme Support
+ **********************************************
+ * frame/widgets.php
+ **********************************************
  * 
+ * Theme widgets.
  *
- * @author pjh
- * @copyright 2014 - 2015
- * @link http://codex.wordpress.org/Function_Reference/register_sidebar
- * @todo better documentation, make it easier to create widgets
- * @since BigBooty 1.0.0
- */
-
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 function create_widget( $name, $id, $description ) 
 {

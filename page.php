@@ -1,14 +1,19 @@
 <?php
 /**
+ **********************************************
  * page.php
+ **********************************************
  *
- * The Page
+ * The general page.
  *
- * @author pjh
- * @copyright 2014 - 2015
- * @link http://codex.wordpress.org/Pages
- * @since BigBooty 0.3.0
- */
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 ?>
 
 <?php get_header(); ?>
@@ -19,7 +24,6 @@
     <div class="container">
 
         <h1><?php the_title(); ?></h1>
-
         <p>Lorum ipsum dolor sit amet, no nam viris feugiat</p>
 
     </div>

@@ -1,14 +1,19 @@
 <?php
 /**
+ **********************************************
  * footer.php
+ **********************************************
  *
- * The template for the footer.
+ * The general footer.
  *
- * @author pjh
- * @copyright 2014 - 2015
- * @todo Finish Structure
- * @since BigBooty 1.0.1
- */
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 ?>
 
 <section class="widgets">

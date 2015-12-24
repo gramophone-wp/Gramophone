@@ -1,15 +1,19 @@
 <?php
 /**
- * comments.php
+ **********************************************
+ * frame/comments.php
+ **********************************************
  *
  * The callback functions for styling the comments.
  *
- * @author pjh
- * @copyright 2014 - 2015
- * @link http://codex.wordpress.org/
- * @todo Finish Structure
- * @since BigBooty 1.1.0
- */
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 
 

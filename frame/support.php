@@ -1,15 +1,19 @@
 <?php
 /**
- * Theme Support
+ **********************************************
+ * frame/support.php
+ **********************************************
  * 
+ * Theme support.
  *
- * @author pjh
- * @copyright 2014 - 2015
- * @link http://codex.wordpress.org/Function_Reference/add_theme_support
- * @todo better documentation
- * @since BigBooty 1.0.0
- */
-
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 add_theme_support( 'post-thumbnails' );
 add_theme_support( 'menus' );

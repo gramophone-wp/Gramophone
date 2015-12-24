@@ -1,26 +1,29 @@
 <?php
 /**
- * Single.php
+ **********************************************
+ * single.php
+ **********************************************
  *
- * The Single Post Page
+ * The single post.
  *
- * @author pjh
- * @copyright 2014 - 2015
- * @link http://codex.wordpress.org/Theme_Development#Single_Post_.28single.php.29
- * @since BigBooty 1.0.0
- */
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 ?>
 
 <?php get_header(); ?>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-
 <div class="jumbotron">
     <div class="container">
 
     <h1>Blog Post</h1>
-
     <p><?php the_title(); ?></p>
 
     </div>

@@ -1,14 +1,19 @@
 <?php
 /**
+ **********************************************
  * home.php
+ **********************************************
  *
- * The search results page
+ * The blog posts.
  *
- * @author pjh
- * @copyright 2014 - 2015
- * @link http://codex.wordpress.org/
- * @since BigBooty 1.0.0
- */
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 ?>
 
 <?php get_header(); ?>

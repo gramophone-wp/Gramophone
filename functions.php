@@ -1,14 +1,19 @@
 <?php
 /**
+ **********************************************
  * functions.php
+ **********************************************
  *
- * The functions page
+ * The theme functions.
  *
- * @author pjh
- * @copyright 2014 - 2015
- * @link http://codex.wordpress.org/
- * @since BigBooty 1.0.0
- */
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 
 // Theme Dependencies

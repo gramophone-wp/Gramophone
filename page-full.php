@@ -1,19 +1,24 @@
 <?php
 /**
+ **********************************************
  * Template Name: Full Page
+ **********************************************
  * page-full.php
+ **********************************************
  *
- * The full width page
+ * A full width page template.
  *
- * @author pjh
- * @copyright 2014 - 2015
- * @link http://codex.wordpress.org/Pages
- * @since BigBooty 1.0.0
- */
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 ?>
 
 <?php get_header(); ?>
-
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 

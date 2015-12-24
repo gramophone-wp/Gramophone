@@ -1,14 +1,19 @@
 <?php
 /**
- * enqueue.php
+ **********************************************
+ * frame/enqueue.php
+ **********************************************
  *
- * File that enqueues the scripts and styles
+ * Enqueues scripts and styles.
  *
- * @author pjh
- * @copyright 2014 - 2015
- * @link http://codex.wordpress.org/Function_Reference/wp_enqueue_style
- * @since BigBooty 1.1.0
- */
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 
 /*

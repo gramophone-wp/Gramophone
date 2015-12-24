@@ -1,14 +1,19 @@
 <?php
 /**
+ **********************************************
  * comments.php
+ **********************************************
  *
- * The template for handling the themes comments
+ * The comments section.
  *
- * @author pjh
- * @copyright 2014 - 2015
- * @link https://codex.wordpress.org/Function_Reference/comments_template
- * @since BigBooty 1.0.0
- */
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( post_password_required() )
     return;

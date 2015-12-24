@@ -1,16 +1,19 @@
 <?php
 /**
- * header.php
+ **********************************************
+ * frame/menus.php
+ **********************************************
  *
- * The header
+ * The various menus.
  *
- * @author pjh
- * @copyright 2014 - 2015
- * @link http://codex.wordpress.org/Function_Reference/register_nav_menus
- * @since BigBooty 1.0.0
- */
-
-
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 function register_bigbooty_menus() 
 {
