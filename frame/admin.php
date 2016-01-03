@@ -16,25 +16,58 @@
 **/
 
 
-function bigbooty_login_styles() 
+/**
+ **********************************************
+ * login_styles/0 
+ ********************************************** 
+ *
+ * login_styles/0 enqueues the `wp-login` css  
+ * for the WordPress login page.  
+ * 
+**/
+
+function login_styles() 
 {
-    wp_enqueue_style( 'bigbooty-login', get_template_directory_uri() . '/admin/login/login.css' );
+    wp_enqueue_style( 
+        'bigbooty-login', 
+        get_template_directory_uri() . '/admin/login/login.css'
+    );
 }
-add_action( 'login_enqueue_scripts', 'bigbooty_login_styles' );
+add_action( 'login_enqueue_scripts', 'login_styles' );
 
 
+/**
+ **********************************************
+ * admin_logo/0
+ ********************************************** 
+ *
+ * admin_logo/0 replaces the default WordPress
+ * `logo` on the `/wp-login/`. It is set to
+ * `display: none;` by default.
+ * 
+**/
 
 function admin_logo() 
 { ?>
-    <style>
-        body.login div#login h1 a {
-        	display: none;
-        }
-    </style>
+<style>
+    body.login div#login h1 a {
+        display: none;
+    }
+</style>
 <?php }
 add_action( 'login_enqueue_scripts', 'admin_logo' );
 
 
+/**
+ **********************************************
+ * admin_colors/0
+ ********************************************** 
+ *
+ * admin_colors/0 adds a custom color scheme  
+ * to the theme. This color scheme is just
+ * a friendly example.
+ * 
+**/
 
 function admin_colors()
 {
@@ -48,6 +81,15 @@ function admin_colors()
 add_action('admin_init', 'admin_colors');
 
 
+/**
+ **********************************************
+ * admin_footer/0
+ ********************************************** 
+ *
+ * admin_footer/0 is the function that adds a
+ * `message` to the admin footer.
+ * 
+**/
 	
 function admin_footer() 
 {
