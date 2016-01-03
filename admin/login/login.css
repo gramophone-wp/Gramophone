@@ -1,7 +1,3 @@
-/*
-	Login CSS
-*/
-
 #login {
     width: 360px;
     padding: 8% 0 0;
@@ -26,16 +22,13 @@ body.login div#login form#loginform p label {
     font-size: 16px;
 }
 
+body.login div#login form#loginform input#user_pass,
 body.login div#login form#loginform input#user_login {
     border-radius: 4px;
 }
 
-body.login div#login form#loginform input#user_pass {
-    border-radius: 4px;
-}
-
 body.login div#login form#loginform p.forgetmenot {
-    margin-top: 6px;
+    margin: 10px 0;
 }
 
 .wp-core-ui .button-primary{
@@ -47,46 +40,35 @@ body.login div#login form#loginform p.forgetmenot {
 
 body.login div#login form#loginform p.submit input#wp-submit {
     width: 100%;
-    border: 1px solid #79589f;
+    border: 1px solid #563d7c;
     border-radius: 5px;
     font-size: 17px;
-    color: #79589f;
+    color: #563d7c;
     background-color: #fff;
     text-shadow: none;
     font-size: 20px;
 }
 
 body.login div#login form#loginform p.submit input#wp-submit:hover {
-    background-color: #fcfcfc;
-    color: #563d98;
+    background-color: #563d7c;
+    color: #ffffff;
 }
 
+p#backtoblog, 
 body.login div#login p#nav {
     text-align: center;
 }
 
+p#backtoblog a, 
 body.login div#login p#nav a {
     color: #fff;
-    text-decoration: underline;
     font-size: 16px;
-}
-
-body.login div#login p#nav a:hover{
-    text-decoration: none;
-}
-
-body.login div#login p#backtoblog {
-    display: none;
 }
 
 .wp-core-ui .button-group.button-large .button, .wp-core-ui .button.button-large {
     height: 40px;
     line-height: 28px;
     padding: 0 12px 2px;
-}
-
-.forgetmenot{
-    display: none;
 }
 
 .login #login_error {
