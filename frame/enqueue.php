@@ -27,7 +27,7 @@ function bigbooty_styles()
 
     wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/static/styles/bootstrap.min.css' );
     wp_enqueue_style( 'font_awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' );
-    wp_enqueue_style( 'demo_theme_css', get_template_directory_uri() . '/static/styles/demo.css' );	
+    wp_enqueue_style( 'demo_theme_css', get_template_directory_uri() . '/static/styles/app.css' );	
 
     // Add more...
 
