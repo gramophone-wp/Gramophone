@@ -106,4 +106,3 @@ function bigbooty_comment($comment, $args, $depth) {
 }
 
 ?>
-

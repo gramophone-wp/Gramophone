@@ -23,9 +23,6 @@ function bigbooty_login_styles()
 add_action( 'login_enqueue_scripts', 'bigbooty_login_styles' );
 
 
-/*
-	Custom Logo
-*/
 
 function admin_logo() 
 { ?>
@@ -38,9 +35,6 @@ function admin_logo()
 add_action( 'login_enqueue_scripts', 'admin_logo' );
 
 
-/*
-	Custom Admin Theme
-*/
 
 function admin_colors()
 {
@@ -54,15 +48,11 @@ function admin_colors()
 add_action('admin_init', 'admin_colors');
 
 
-/*
-	Change this to your theme's footer
-*/
 	
 function admin_footer() 
 {
-	echo "Built with <a href='https://github.com/pjhampton/BigBooty' target='_blank'>BigBooty Starter Theme</a>";
+    echo "Built with <a href='https://github.com/pjhampton/BigBooty' target='_blank'>BigBooty Starter Theme</a>";
 }
 add_filter('admin_footer_text', 'admin_footer');
 
 ?>
-
