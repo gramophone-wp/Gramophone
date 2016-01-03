@@ -109,3 +109,4 @@ $user_twitter = get_the_author_meta('twitter');
 </div>
 
 <?php get_footer(); ?>
+

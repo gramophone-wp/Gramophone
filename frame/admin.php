@@ -65,3 +65,4 @@ function admin_footer()
 add_filter('admin_footer_text', 'admin_footer');
 
 ?>
+

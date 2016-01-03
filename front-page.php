@@ -21,21 +21,17 @@
 <div class="jumbotron">
     <div class="container">
 
-    <h1><?php echo get_bloginfo('name'); ?></h1>
-
-    <p><?php echo get_bloginfo('description'); ?></p>
+        <h1><?php echo get_bloginfo('name'); ?></h1>
+        <p><?php echo get_bloginfo('description'); ?></p>
 
     </div>
 </div>
-
 
 <div>
     <div class="container">
 
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-    <?php the_content(); ?>
-
+        <?php the_content(); ?>
     <?php endwhile; endif; ?>
 
     </div>
@@ -63,3 +59,4 @@
 </div>
 
 <?php get_footer(); ?>
+

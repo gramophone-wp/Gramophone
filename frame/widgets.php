@@ -36,3 +36,4 @@ create_widget( 'Post Sidebar', 'blog', 'Displays on the side of pages in the blo
 // ...add more
 
 ?>
+
