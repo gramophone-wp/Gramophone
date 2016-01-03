@@ -44,12 +44,12 @@ add_action( 'login_enqueue_scripts', 'admin_logo' );
 
 function admin_colors()
 {
-	wp_admin_css_color(
-		'BigBooty', 
-		__( 'BigBooty' ),
-		admin_url("admin/colors/bigbooty.css"),
-		array('#07273E', '#14568A', '#D54E21', '#2683AE')
-	);
+    wp_admin_css_color(
+        'BigBooty', 
+	__( 'BigBooty' ),
+	admin_url("admin/colors/bigbooty.css"),
+	array('#07273E', '#14568A', '#D54E21', '#2683AE')
+    );
 }
 add_action('admin_init', 'admin_colors');
 
