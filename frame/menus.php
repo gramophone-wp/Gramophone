@@ -20,9 +20,8 @@ function register_bigbooty_menus()
     register_nav_menus(
         array(
 	    'primary' => __( 'Primary Menu' ),
-	    'footer'  => __( 'Footer Menu' ),
-			
-            // 'misc' => __( 'Side Menu' ),
+
+	    // 'footer'  => __( 'Footer Menu' ),		       // 'misc' => __( 'Side Menu' ),
 	    // .. add more
         )
     );
