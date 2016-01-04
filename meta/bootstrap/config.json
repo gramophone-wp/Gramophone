@@ -164,7 +164,7 @@
     "@navbar-default-toggle-border-color": "#ddd",
     "@navbar-inverse-color": "lighten(@gray-light, 15%)",
     "@navbar-inverse-bg": "#fff",
-    "@navbar-inverse-border": "none",
+    "@navbar-inverse-border": "#563D7C",
     "@navbar-inverse-link-color": "#563d7c",
     "@navbar-inverse-link-hover-color": "#563d7c",
     "@navbar-inverse-link-hover-bg": "transparent",
@@ -177,7 +177,7 @@
     "@navbar-inverse-brand-hover-bg": "transparent",
     "@navbar-inverse-toggle-hover-bg": "#efefef",
     "@navbar-inverse-toggle-icon-bar-bg": "#563d7c",
-    "@navbar-inverse-toggle-border-color": "#563d7c",
+    "@navbar-inverse-toggle-border-color": "transparent",
     "@nav-link-padding": "10px 15px",
     "@nav-link-hover-bg": "@gray-lighter",
     "@nav-disabled-link-color": "@gray-light",
@@ -213,7 +213,7 @@
     "@pager-disabled-color": "@pagination-disabled-color",
     "@jumbotron-padding": "30px",
     "@jumbotron-color": "#cdbfe3",
-    "@jumbotron-bg": "#6f5499",
+    "@jumbotron-bg": "#563D7C",
     "@jumbotron-heading-color": "#ffffff",
     "@jumbotron-font-size": "ceil((@font-size-base * 1.5))",
     "@jumbotron-heading-font-size": "ceil((@font-size-base * 4.5))",
@@ -431,5 +431,5 @@
     "scrollspy.js",
     "transition.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=d4771db3a03f612ee053"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=759caa5098dc16a90a7f"
 }
