@@ -8,5 +8,5 @@
 
 ## License
 
-Just like WordPress & Twitter Bootstrap 3, BigBooty is released under the General Public License (GPL).
+BigBooty is released under the [General Public License (GPL) v2](https://github.com/pjhampton/BigBooty/blob/master/licence).
 
