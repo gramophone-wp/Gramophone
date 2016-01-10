@@ -4,7 +4,7 @@
 
   - Clone BigBooty into **/wp-content/themes/**
   - Rename **BigBooty/** to the name of your theme.
-  - Fill out the details of the theme in **BigBooty/style.css"**
+  - Fill out the details of the theme in **BigBooty/style.css/**
 
 ## License
 
