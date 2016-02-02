@@ -15,6 +15,17 @@
  * @version
 **/
 
+/**
+ **********************************************
+ * create_widget/3
+ ********************************************** 
+ *
+ * 
+ *   
+ * 
+**/
+
+
 function create_widget( $name, $id, $description ) 
 {
     register_sidebar( array(

@@ -16,13 +16,15 @@
 **/
 
 
-
-/*
- * change_avatar_css()
+/**
+ **********************************************
+ * change_avatar_css/1
+ ********************************************** 
  *
  * 
- *
-*/
+ *   
+ * 
+**/
 
 function change_avatar_css($class) {
 
@@ -33,12 +35,15 @@ function change_avatar_css($class) {
 add_filter('get_avatar','change_avatar_css');
 
 
-/*
- * bigbooty_comment()
+/**
+ **********************************************
+ * bigbooty_comment/3
+ ********************************************** 
  *
  * 
- *
-*/
+ *   
+ * 
+**/
 
 function bigbooty_comment($comment, $args, $depth) {
 

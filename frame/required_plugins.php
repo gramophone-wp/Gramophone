@@ -16,9 +16,14 @@
 **/
 
 /**
- * Register the required plugins for this theme.
+ **********************************************
+ * required_plugins/0
+ ********************************************** 
  *
- */
+ * 
+ *   
+ * 
+**/
 
 add_action( 'tgmpa_register', 'required_plugins' );
  

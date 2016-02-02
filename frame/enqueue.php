@@ -16,11 +16,15 @@
 **/
 
 
-/*
- * Add your theme stylesheets here!
+/**
+ **********************************************
+ * change_avatar_css/1
+ ********************************************** 
  *
- * http://codex.wordpress.org/Function_Reference/wp_enqueue_style
-*/
+ * 
+ *   
+ * 
+**/
 
 function bigbooty_styles() 
 {
@@ -34,11 +38,15 @@ function bigbooty_styles()
 }
 
 
-/*
- * Add your theme scripts here!
+/**
+ **********************************************
+ * bigbooty_js/1
+ ********************************************** 
  *
- * http://codex.wordpress.org/Function_Reference/wp_enqueue_script
-*/
+ * 
+ *   
+ * 
+**/
 
 function bigbooty_js() 
 {
