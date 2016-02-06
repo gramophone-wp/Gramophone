@@ -1,12 +1,9 @@
 <img src="https://github.com/pjhampton/BigBooty/blob/master/static/images/logos/banner.png" alt="bigbooty">
 
-## Getting Started
+## Framework? 
 
-  - Clone BigBooty into **/wp-content/themes/**
-  - Rename **BigBooty/** to the name of your theme.
-  - Fill out the details of the theme in **BigBooty/style.css/**
+<p align="center">No! It's a **starter theme** to speed up your development.</p>
 
 ## License
 
-BigBooty is released under the [General Public License (GPL) v2](https://github.com/pjhampton/BigBooty/blob/master/licence).
-
+<p align="center">Like WordPress, BigBooty is released under the [General Public License (GPL) v2](https://github.com/pjhampton/BigBooty/blob/master/licence).</p>
