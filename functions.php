@@ -22,20 +22,20 @@ require_once ( 'includes/wp_bootstrap_navwalker.php' );
 
 
 // Admin Customisations
-require_once( 'frame/admin.php' );
+require_once( 'config/admin.php' );
 
 
 // Theme Specific Customisations
-require_once( 'frame/enqueue.php' );
-require_once( 'frame/menus.php' );
-require_once( 'frame/widgets.php' );
-require_once( 'frame/comments.php' );
-require_once( 'frame/support.php' );
-require_once( 'frame/breadcrumbs.php' );
+require_once( 'config/enqueue.php' );
+require_once( 'config/menus.php' );
+require_once( 'config/widgets.php' );
+require_once( 'config/comments.php' );
+require_once( 'config/support.php' );
+require_once( 'config/breadcrumbs.php' );
 
 
 // Theme Recommended & Required Plugins
-require_once( 'frame/required_plugins.php' );
+require_once( 'config/required_plugins.php' );
 
 
 // Theme custom post types
