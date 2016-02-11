@@ -2,7 +2,7 @@
 
 ## Framework? 
 
-<p align="center">Nope! It's a <strong>starter theme</strong> to speed up your development.</p>
+<p align="center">Nope! It's a <strong>starter theme</strong> to <strong>speed up</strong> your <strong>development</strong>.</p>
 
 ## Bootstrap Version?
 
@@ -14,4 +14,4 @@
 
 ## License
 
-<p align="center">Like WordPress, BigBooty is released under the <a href="https://github.com/pjhampton/BigBooty/blob/master/licence">General Public License (GPL) v2</a>.</p>
+<p align="center">BigBooty is released under the <a href="https://github.com/pjhampton/BigBooty/blob/master/licence">General Public License (GPL) v2</a>.</p>
