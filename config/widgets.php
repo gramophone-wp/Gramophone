@@ -15,6 +15,7 @@
  * @version
 **/
 
+
 /**
  **********************************************
  * create_widget/3
@@ -24,7 +25,6 @@
  *   
  * 
 **/
-
 
 function create_widget( $name, $id, $description ) 
 {
@@ -38,6 +38,7 @@ function create_widget( $name, $id, $description )
         'after_title' => '</h4>'
     ));
 }
+
 
 create_widget( 'Footer Left', 'footer_left', 'This is the left footer' );
 create_widget( 'Footer Center', 'footer_center', 'This is the center footer' );
