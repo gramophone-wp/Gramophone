@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * frame/comments.php
+ * config/comments.php
  **********************************************
  *
  * The callback functions for styling the comments.

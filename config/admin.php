@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * frame/admin.php
+ * config/admin.php
  ********************************************** 
  *
  * Custom styling for the backend.

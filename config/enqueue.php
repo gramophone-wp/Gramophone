@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * frame/enqueue.php
+ * config/enqueue.php
  **********************************************
  *
  * Enqueues scripts and styles.

@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * frame/required_plugins.php
+ * config/required_plugins.php
  **********************************************
  *
  * Plugins required / recommend by this theme.
