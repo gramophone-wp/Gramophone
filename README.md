@@ -6,7 +6,7 @@
 
 ## Bootstrap Version?
 
-<p align="center">Bootstrap 3, soon to be Bootstrap 4.</p>
+<p align="center">Bootstrap 3</p>
 
 ## Help? 
 
