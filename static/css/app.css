@@ -1,10 +1,29 @@
-body {
+
+/*****************************
+ ~~ html specific 
+*****************************/
+
+body{
     padding-top: 50px;
 }
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+/*****************************
+ ~~ admin 
+*****************************/
 
 .admin-bar .navbar-fixed-top {
     margin-top: 32px;
 }
+
+/*****************************
+ ~~ widgets 
+*****************************/
 
 .widgets{
     background: #efefef;
@@ -19,8 +38,3 @@ body {
   }
 }
 
-img {
-    display: block;
-    height: auto;
-    max-width: 100%;
-}
