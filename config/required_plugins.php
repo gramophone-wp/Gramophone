@@ -38,7 +38,7 @@ function required_plugins()
         'slug'                  => 'bootstrap-3-shortcodes',
         'source'                => 'http://downloads.wordpress.org/plugin/bootstrap-3-shortcodes.zip',
         'required'              => false,
-        'version'               => '3.2.4',
+        'version'               => '3.3.6',
         'force_activation'      => true,
         'force_deactivation'    => false,
         'external_url'          => '',

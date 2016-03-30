@@ -2,7 +2,6 @@
 
 
 <p align="center">
-
     <a href="https://github.com/pjhampton/BigBooty/blob/master/licence">
         <img src="https://img.shields.io/badge/license-GPL--2.0+-brightgreen.svg?style=flat-square">
     </a>
@@ -14,7 +13,6 @@
     <a href="https://github.com/pjhampton/BigBooty/wiki">
         <img src="https://img.shields.io/badge/docs-github%20wiki-ff69b4.svg?style=flat-square">
     </a>
-
 </p>
 
 

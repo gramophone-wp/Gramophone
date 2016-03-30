@@ -32,7 +32,7 @@ require_once( 'config/widgets.php' );
 require_once( 'config/comments.php' );
 require_once( 'config/support.php' );
 require_once( 'config/breadcrumbs.php' );
-
+require_once( 'config/woocommerce.php' );
 
 // Theme Recommended & Required Plugins
 require_once( 'config/required_plugins.php' );
