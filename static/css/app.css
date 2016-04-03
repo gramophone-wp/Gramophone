@@ -13,6 +13,11 @@ img {
     max-width: 100%;
 }
 
+footer{
+    background: #2a2730;
+    padding-top: 10px;
+}
+
 /*****************************
  ~~ admin 
 *****************************/
@@ -36,5 +41,17 @@ img {
   .widget{
     margin: 40px 0;
   }
+}
+
+/*****************************
+ ~~ footer (widgets) 
+*****************************/
+
+#copyright p{
+    color: #99979c;
+}
+
+#copyright a{
+    color: white;
 }
 
