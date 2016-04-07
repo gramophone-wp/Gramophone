@@ -37,6 +37,11 @@ footer{
     text-align: justify;
 }
 
+.widgets h4{
+    border-bottom: solid 1px #959393;
+    line-height: 50px;
+}
+
 @media (max-width: 767px){
   .widget{
     margin: 40px 0;
