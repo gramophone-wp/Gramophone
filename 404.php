@@ -16,3 +16,16 @@
 **/
 ?>
 
+<?php get_header(); ?>
+
+<div class="col-md-12">
+  <div class="text-center">
+
+    <h1>404 | Not Found</h1>
+
+    <a class="btn btn-primary" href="<?php echo get_home_url(); ?>">
+      Return Home
+    </a>
+
+  </div>
+</div>

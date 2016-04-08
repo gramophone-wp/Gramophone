@@ -60,3 +60,11 @@ footer{
     color: white;
 }
 
+/*****************************
+ ~~ 404 (error)
+*****************************/
+
+body.error404{
+  background: #563D7C;
+  color: #f7f7f7;
+}
