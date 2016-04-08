@@ -22,10 +22,7 @@
 
 <div class="jumbotron">
     <div class="container">
-
-    <h1>Blog Post</h1>
-    <p><?php the_title(); ?></p>
-
+        <h1><?php the_title(); ?></h1>
     </div>
 </div>
 
