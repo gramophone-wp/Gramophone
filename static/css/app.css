@@ -1,21 +1,20 @@
-
 /*****************************
  ~~ html specific 
 *****************************/
 
 body{
-    padding-top: 50px;
+  padding-top: 50px;
 }
 
 img {
-    display: block;
-    height: auto;
-    max-width: 100%;
+  display: block;
+  height: auto;
+  max-width: 100%;
 }
 
 footer{
-    background: #2a2730;
-    padding-top: 10px;
+  background: #2a2730;
+  padding-top: 10px;
 }
 
 /*****************************
@@ -23,7 +22,7 @@ footer{
 *****************************/
 
 .admin-bar .navbar-fixed-top {
-    margin-top: 32px;
+  margin-top: 32px;
 }
 
 /*****************************
@@ -31,15 +30,15 @@ footer{
 *****************************/
 
 .widgets{
-    background: #efefef;
-    margin: 15px 0 0 0;
-    padding: 30px 0;
-    text-align: justify;
+  background: #efefef;
+  margin: 15px 0 0 0;
+  padding: 30px 0;
+  text-align: justify;
 }
 
 .widgets h4{
-    border-bottom: solid 1px #959393;
-    line-height: 50px;
+  border-bottom: solid 1px #959393;
+  line-height: 50px;
 }
 
 @media (max-width: 767px){
@@ -53,11 +52,11 @@ footer{
 *****************************/
 
 #copyright p{
-    color: #99979c;
+  color: #99979c;
 }
 
 #copyright a{
-    color: white;
+  color: white;
 }
 
 /*****************************

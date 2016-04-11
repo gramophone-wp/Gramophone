@@ -21,37 +21,36 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 <div class="jumbotron">
-    <div class="container">
-        <h1><?php the_title(); ?></h1>
-    </div>
+  <div class="container">
+    <h1><?php the_title(); ?></h1>
+  </div>
 </div>
 
-
 <div class="container">   
-    <div class="row row-offcanvas row-offcanvas-right">
-        <div class="col-md-7 text-justify">
+  <div class="row row-offcanvas row-offcanvas-right">
+    <div class="col-md-7 text-justify">
 
-            <p class="pull-right visible-xs">
-                <button type="button" class="btn btn-primary btn-med" data-toggle="offcanvas">View Sidebar</button>
-            </p>
+      <p class="pull-right visible-xs">
+        <button type="button" class="btn btn-primary btn-med" data-toggle="offcanvas">View Sidebar</button>
+      </p>
 
-            <?php the_content(); ?>
+      <?php the_content(); ?>
 
-            <?php endwhile; else: ?>
+      <?php endwhile; else: ?>
               
-            <div class="page-header">
-                <h1>Oh no!</h1>
-            </div>
+      <div class="page-header">
+        <h1>Oh no!</h1>
+      </div>
 
-            <p>No content is appearing for this page!</p>
+      <p>No content is appearing for this page!</p>
 
-            <?php endif; ?>
+      <?php endif; ?>
 
-        </div>
+      </div>
       
-        <?php get_sidebar(); ?>
+      <?php get_sidebar(); ?>
 
-    </div>
+  </div>
 </div>
 
 <?php get_footer(); ?>

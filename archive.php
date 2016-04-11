@@ -26,14 +26,11 @@
 
 <div class="container">   
     <div class="row">
-
         <div class="col-md-9">
-
 
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
             <article class="post">
-
                 <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 	            
                 <p><em>
@@ -46,7 +43,6 @@
                 </em></p>            
 
                 <?php the_excerpt(); ?>
-
             </article>
 			
             <hr>

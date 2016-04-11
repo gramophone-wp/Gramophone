@@ -16,16 +16,16 @@
 **/
 
 $post_formats = array(
-        'aside',
-        'audio',
-        'chat',
-        'gallery',
-        'image',
-        'link',
-        'status',
-        'video',
-        'quote'
-    );
+  'aside',
+  'audio',
+  'chat',
+  'gallery',
+  'image',
+  'link',
+  'status',
+  'video',
+  'quote'
+);
 
 /**
  **********************************************

@@ -17,8 +17,6 @@
 ?>
 
 <div class="col-md-3" id="sidebar">
-
-    <?php if ( ! dynamic_sidebar( 'blog' ) ): ?>
-    <?php endif; ?>
-
+  <?php if ( ! dynamic_sidebar( 'blog' ) ): ?>
+  <?php endif; ?>
 </div>

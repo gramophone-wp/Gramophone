@@ -31,39 +31,38 @@ add_action( 'tgmpa_register', 'required_plugins' );
 function required_plugins() 
 {
 
-    $plugins = array(
+  $plugins = array(
 
     array(
-        'name'                  => 'Bootstrap 3 Shortcodes',
-        'slug'                  => 'bootstrap-3-shortcodes',
-        'source'                => 'http://downloads.wordpress.org/plugin/bootstrap-3-shortcodes.zip',
-        'required'              => false,
-        'version'               => '3.3.6',
-        'force_activation'      => true,
-        'force_deactivation'    => false,
-        'external_url'          => '',
+      'name'                  => 'Bootstrap 3 Shortcodes',
+      'slug'                  => 'bootstrap-3-shortcodes',
+      'source'                => 'http://downloads.wordpress.org/plugin/bootstrap-3-shortcodes.zip',
+      'required'              => false,
+      'version'               => '3.3.6',
+      'force_activation'      => true,
+      'force_deactivation'    => false,
+      'external_url'          => '',
     ),
 
     // add more... 
-
-    );
+  );
  
-	// Change this to your theme text domain, used for internationalising strings
-    $theme_text_domain = 'delicias';
+  // Change this to your theme text domain, used for internationalising strings
+  $theme_text_domain = 'delicias';
  
-    $config = array(
-        'domain'       		=> $theme_text_domain,         	
-        'default_path' 		=> '',                         
-        'parent_menu_slug' 	=> 'themes.php', 				
-        'parent_url_slug' 	=> 'themes.php', 				
-        'menu'         		=> 'install-required-plugins', 	
-        'has_notices'      	=> true,                       	
-        'is_automatic'    	=> false,					   	
-        'message' 			=> '',
-        'strings'      		=> array(
-            'page_title'                            => __( 'Install Required Plugins', $theme_text_domain ),
-            'menu_title'                            => __( 'Install Plugins', $theme_text_domain ),
-            'installing'                            => __( 'Installing Plugin: %s', $theme_text_domain ), // %1$s = plugin name
+  $config = array(
+    'domain'            => $theme_text_domain,         	
+    'default_path' 	=> '',                         
+    'parent_menu_slug' 	=> 'themes.php', 				
+    'parent_url_slug' 	=> 'themes.php', 				
+    'menu'              => 'install-required-plugins', 	
+    'has_notices'      	=> true,                       	
+    'is_automatic'    	=> false,					   	
+    'message' 	        => '',
+    'strings'      	=> array(
+    'page_title'        => __( 'Install Required Plugins', $theme_text_domain ),
+    'menu_title'        => __( 'Install Plugins', $theme_text_domain ),
+    'installing'        => __( 'Installing Plugin: %s', $theme_text_domain ), // %1$s = plugin name
             'oops'                                  => __( 'Something went wrong with the plugin API.', $theme_text_domain ),
             'notice_can_install_required'           => _n_noop( 'BigBooty requires the following plugin: %1$s.', 'BigBooty requires the following plugins: %1$s.' ),
             'notice_can_install_recommended'	    => _n_noop( 'BigBooty recommends the following plugin: %1$s.', 'BigBooty recommends the following plugins: %1$s.' ),

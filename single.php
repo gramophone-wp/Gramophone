@@ -21,13 +21,13 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 <div class="jumbotron">
-    <div class="container">
-        <h1><?php the_title(); ?></h1>
-    </div>
+  <div class="container">
+    <h1><?php the_title(); ?></h1>
+  </div>
 </div>
 
 <div class="container">
-    <?php get_template_part( 'formats/format', get_post_format() ); ?>
+  <?php get_template_part( 'formats/format', get_post_format() ); ?>
 </div>
 
 <?php endwhile; endif; ?>
