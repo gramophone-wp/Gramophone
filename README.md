@@ -20,15 +20,16 @@
 
 <p align="center">Nope! It's a <strong>starter theme</strong> to <strong>speed up</strong> theme <strong>development</strong> in Bootstrap.</p>
 
-## Bootstrap Version?
+<h2 align="center"><em>Bootstrap Version?</em></h2> 
 
 <p align="center">Bootstrap 3</p>
 
-## Help? 
+<h2 align="center"><em>Help</em></h2>
 
 <p align="center">Please open an issue <a href="https://gituhb.com/pjhampton/BigBooty/issues">here</a>.</p>
 
-## License
+
+<h2 align="center"><em>Licence</em></h2>
 
 <p align="center"><a href="https://github.com/pjhampton/BigBooty/blob/master/licence">General Public License (GPL) v2</a>.</p>
 
