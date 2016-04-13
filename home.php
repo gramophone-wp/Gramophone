@@ -28,38 +28,38 @@
   <div class="row">
     <div class="col-md-12">
 
-            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-            <article class="post">
+    <article class="post">
 
-	    <h4><a href="<?php the_permalink(); ?>" class="post-title"><?php the_title(); ?></a></h4>
+      <h4><a href="<?php the_permalink(); ?>" class="post-title"><?php the_title(); ?></a></h4>
 
-            <p>
-                By <?php the_author_posts_link(); ?> 
-                on <?php echo the_time('l, F jS, Y');?>
-                in <?php the_category( ', ' ); ?>.
-                <span class="pull-right">
-		    <a href="<?php comments_link(); ?>">
-			<?php comments_number(); ?>
-                    </a>
-                </span>
-            </p>            
+      <p>
+      By <?php the_author_posts_link(); ?> 
+      on <?php echo the_time('l, F jS, Y');?>
+      in <?php the_category( ', ' ); ?>.
+      <span class="pull-right">
+        <a href="<?php comments_link(); ?>">
+        <?php comments_number(); ?>
+        </a>
+      </span>
+      </p>            
 
-            <?php the_excerpt(); ?>
+      <?php the_excerpt(); ?>
 
-            </article>
+      </article>
 
-            <hr>
+      <hr>
 
-            <?php endwhile; else: ?>
+      <?php endwhile; else: ?>
 
-            <div class="page-header">
-                <h1>Oh no!</h1>
-            </div>
+      <div class="page-header">
+        <h1>Oh no!</h1>
+      </div>
 
-            <p>No content is appearing for this page!</p>
+      <p>No content is appearing for this page!</p>
 
-            <?php endif; ?>
+      <?php endif; ?>
 
     </div>
   </div>
