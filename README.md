@@ -20,10 +20,6 @@
 
 <p align="center">Nope! It's a <strong>starter theme</strong> to <strong>speed up</strong> theme <strong>development</strong> in Bootstrap.</p>
 
-<h2 align="center"><em>Bootstrap Version?</em></h2> 
-
-<p align="center">Bootstrap 3</p>
-
 <h2 align="center"><em>Help</em></h2>
 
 <p align="center">Please open an issue <a href="https://gituhb.com/pjhampton/BigBooty/issues">here</a>.</p>
