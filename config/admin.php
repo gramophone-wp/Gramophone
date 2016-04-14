@@ -65,7 +65,8 @@ add_action( 'login_enqueue_scripts', 'admin_logo' );
  *
  * admin_colors/0 adds a custom color scheme  
  * to the theme. This color scheme is just
- * a friendly example.
+ * a friendly example. The `array` of hex
+ * codes are the colors of the theme.
  * 
 **/
 
@@ -89,7 +90,8 @@ add_action('admin_init', 'admin_colors');
  * WordPress by default comes with a lot of 
  * crud. Let's clean up the admin dashboard.
  * 
-**/
+ **/
+
 function clean_dashboard(){
   global $wp_meta_boxes;
 
