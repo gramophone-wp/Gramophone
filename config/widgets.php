@@ -21,8 +21,11 @@
  * create_widget/3
  ********************************************** 
  *
- * 
- *   
+ * The `create_widget` function takes 3 params-
+ * `$name`, `$id` and `$desciption`. It is 
+ * responsible for defining the cast of a 
+ * widget. It is possible to duplicate this
+ * function into more than one function.
  * 
 **/
 
@@ -40,11 +43,24 @@ function create_widget( $name, $id, $description )
 }
 
 
-create_widget( 'Footer Left', 'footer_left', 'This is the left footer' );
+/**
+ **********************************************
+ * CALL: create_widget/3
+ ********************************************** 
+ *
+ * To create a widget, we call the function 
+ * here. The first param is the name of the
+ * widget is the name, second the name in the
+ * database and the thrid, the description of
+ * the footer.
+ * 
+**/
+
+create_widget( 'Footer Left',   'footer_left',   'This is the left footer' );
 create_widget( 'Footer Center', 'footer_center', 'This is the center footer' );
-create_widget( 'Footer Right', 'footer_right', 'This is the right footer' );
-create_widget( 'Page Sidebar', 'page', 'Displays on the side of pages with a sidebar' );
-create_widget( 'Post Sidebar', 'blog', 'Displays on the side of pages in the blog section' );
+create_widget( 'Footer Right',  'footer_right',  'This is the right footer' );
+create_widget( 'Page Sidebar',  'page',          'Displays on the side of normal pages' );
+create_widget( 'Post Sidebar',  'blog',          'Displays on the side of blog pages' );
 // ...add more
 
 ?>
