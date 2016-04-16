@@ -10,6 +10,10 @@
     <img src="https://img.shields.io/badge/bootstrap-v3.3.6-6f5499.svg?style=flat-square">
   </a>
 
+  <a href="http://wordpress.org/">
+    <img src="https://img.shields.io/badge/WordPress-v3.3+-00A0D2.svg?style=flat-square">
+  </a>
+
   <a href="https://github.com/pjhampton/BigBooty/wiki">
     <img src="https://img.shields.io/badge/docs-github%20wiki-ff69b4.svg?style=flat-square">
   </a>
