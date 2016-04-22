@@ -1,6 +1,5 @@
 <img src="https://github.com/pjhampton/BigBooty/blob/master/static/images/logos/banner.png" alt="bigbooty">
 
-
 <p align="center">
   <a href="https://github.com/pjhampton/BigBooty/blob/master/licence">
     <img src="https://img.shields.io/badge/license-GPL--2.0+-brightgreen.svg?style=flat-square">
@@ -23,7 +22,6 @@
   </a>
 </p>
 
-
 <h2 align="center"><em>Framework?</em></h2> 
 
 <p align="center">Nope! It's a <strong>starter theme</strong> to <strong>speed up</strong> theme <strong>development</strong> in Bootstrap.</p>
@@ -32,8 +30,6 @@
 
 <p align="center">Please open an issue <a href="https://gituhb.com/pjhampton/BigBooty/issues">here</a>.</p>
 
-
 <h2 align="center"><em>Licence</em></h2>
 
 <p align="center"><a href="https://github.com/pjhampton/BigBooty/blob/master/licence">General Public License (GPL) v2</a>.</p>
-
