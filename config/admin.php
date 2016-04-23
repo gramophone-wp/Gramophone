@@ -50,8 +50,8 @@ add_action( 'login_enqueue_scripts', 'login_styles' );
 function admin_logo() 
 { ?>
 <style>
-  body.login div#login h1 a {
-    display: none;
+  #login h1 a {
+    background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/static/images/logos/wordpress.png);
   }
 </style>
 <?php }
