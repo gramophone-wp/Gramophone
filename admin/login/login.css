@@ -1,76 +1,84 @@
-#login {
-    width: 360px;
-    padding: 8% 0 0;
-    margin: auto;
+html,
+body {
+  background-color: #563D7C;
 }
 
-body.login {
-    background-color: #563D7C;
+#login {
+  width: 320px;
+  padding: 1% 0;
+  margin: auto;
+}
+
+.login h1 a {
+  background-size: 250px;
+  height: 210px;
+  width: 184px;
 }
 
 body.login div#login form#loginform {
-    border-radius: 8px;
-    padding: 50px 50px 50px;
+  border-radius: 15px;
+  padding: 40px 50px;
 }
 
 body.login div#login form#loginform p label {
-    color: #666;
-    font-size: 16px;
+  color: #666;
+  font-size: 16px;
 }
 
 body.login div#login form#loginform input#user_pass,
 body.login div#login form#loginform input#user_login {
-    border-radius: 4px;
+  border-radius: 4px;
 }
 
 body.login div#login form#loginform p.forgetmenot {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .wp-core-ui .button-primary{
-    background: none;
-    border: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+  background: none;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 body.login div#login form#loginform p.submit input#wp-submit {
-    width: 100%;
-    border: 1px solid #563d7c;
-    border-radius: 5px;
-    font-size: 17px;
-    color: #563d7c;
-    background-color: #fff;
-    text-shadow: none;
-    font-size: 20px;
+  width: 100%;
+  border: 1px solid #563d7c;
+  border-radius: 5px;
+  font-size: 17px;
+  color: #563d7c;
+  background-color: #fff;
+  text-shadow: none;
+  font-size: 20px;
 }
 
 body.login div#login form#loginform p.submit input#wp-submit:hover {
-    background-color: #563d7c;
-    color: #ffffff;
+  background-color: #563d7c;
+  color: #ffffff;
 }
 
 p#backtoblog, 
 body.login div#login p#nav {
-    text-align: center;
+  text-align: center;
 }
 
 p#backtoblog a, 
 body.login div#login p#nav a {
-    color: #fff;
-    font-size: 16px;
+  color: #fff;
+  font-size: 16px;
 }
 
-.wp-core-ui .button-group.button-large .button, .wp-core-ui .button.button-large {
-    height: 40px;
-    line-height: 28px;
-    padding: 0 12px 2px;
+.wp-core-ui .button-group.button-large .button, 
+.wp-core-ui .button.button-large {
+  height: 40px;
+  line-height: 28px;
+  padding: 0 12px 2px;
 }
 
 .login #login_error {
-    border-left: 4px solid #CF9795;
-    background: #fff;
-    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
-    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
-    border-radius: 0px 8px 8px 0px;
+  border-left: 4px solid #CF9795;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+  border-radius: 0px 8px 8px 0px;
 }
