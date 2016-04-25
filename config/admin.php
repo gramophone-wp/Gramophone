@@ -30,7 +30,7 @@ function login_styles()
 {
   wp_enqueue_style( 
     'bigbooty-login', 
-    get_template_directory_uri() . '/admin/login/login.css'
+    get_template_directory_uri() . '/admin/login.css'
   );
 }
 add_action( 'login_enqueue_scripts', 'login_styles' );
@@ -75,7 +75,7 @@ function admin_colors()
   wp_admin_css_color(
     'BigBooty', 
     __( 'BigBooty' ),
-    admin_url("admin/colors/bigbooty.css"),
+    admin_url("admin/bigbooty.css"),
     array('#07273E', '#14568A', '#D54E21', '#2683AE')
   );
 }

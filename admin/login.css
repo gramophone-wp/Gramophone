@@ -1,3 +1,20 @@
+/**
+ **********************************************
+ * admin/login.css 
+ ********************************************** 
+ *
+ * The styling for the admin login page which
+ * can be found at http://<app_name>/wp-admin
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
+
 html,
 body {
   background-color: #563D7C;
@@ -45,10 +62,10 @@ body.login div#login form#loginform p.submit input#wp-submit {
   width: 100%;
   border: 1px solid #563d7c;
   border-radius: 5px;
-  font-size: 17px;
   color: #563d7c;
   background-color: #fff;
   text-shadow: none;
+  text-transform: uppercase;
   font-size: 20px;
 }
 
