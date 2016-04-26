@@ -51,6 +51,15 @@ body.login div#login form#loginform p.forgetmenot {
   margin: 10px 0;
 }
 
+.login #backtoblog a {
+  color: #83c373;
+  font-size: 15px;
+}
+
+.login #backtoblog a:hover {
+  color: #fff;
+}
+
 .wp-core-ui .button-primary{
   background: none;
   border: none;
