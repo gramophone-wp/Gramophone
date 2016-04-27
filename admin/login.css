@@ -94,6 +94,11 @@ body.login div#login p#nav a {
   font-size: 16px;
 }
 
+p#backtoblog a:hover, 
+body.login div#login p#nav a:hover {
+  color: #83c373;
+}
+
 .wp-core-ui .button-group.button-large .button, 
 .wp-core-ui .button.button-large {
   height: 40px;
