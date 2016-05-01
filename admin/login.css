@@ -88,6 +88,10 @@ body.login div#login p#nav {
   text-align: center;
 }
 
+p#backtoblog {
+  margin: 5px;
+}
+
 p#backtoblog a, 
 body.login div#login p#nav a {
   color: #fff;
