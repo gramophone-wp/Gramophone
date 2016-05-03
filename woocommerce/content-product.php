@@ -48,7 +48,7 @@ if ( 0 === $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 	$classes[] = 'last';
 }
 ?>
-<li <?php post_class( $classes ); ?>>
+<div class="col-md-4" <?php post_class( $classes ); ?>>
 
 	<?php
 	/**
@@ -90,4 +90,4 @@ if ( 0 === $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 	do_action( 'woocommerce_after_shop_loop_item' );
 	?>
 
-</li>
+</div>
