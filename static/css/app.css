@@ -25,6 +25,10 @@ footer{
   margin-top: 32px;
 }
 
+#wpadminbar {
+  background: #333;
+}
+
 /*****************************
  ~~ widgets 
 *****************************/
