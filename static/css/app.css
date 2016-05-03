@@ -48,6 +48,19 @@ footer{
 }
 
 /*****************************
+ ~~ widgets (calendar)
+*****************************/
+
+table#wp-calendar {
+  width: 100%;
+}
+
+table#wp-calendar caption {
+  font-weight: bold;
+  text-align: center;
+}
+
+/*****************************
  ~~ footer (widgets) 
 *****************************/
 
