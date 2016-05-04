@@ -65,6 +65,22 @@ table#wp-calendar caption {
 }
 
 /*****************************
+ ~~ widgets (tag cloud)
+*****************************/
+
+.tagcloud a {
+  background: #563d7c;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.tagcloud a:hover {
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+/*****************************
  ~~ footer (widgets) 
 *****************************/
 
