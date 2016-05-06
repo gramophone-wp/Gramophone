@@ -30,6 +30,10 @@
 
 <p align="center">Please open an issue <a href="https://gituhb.com/pjhampton/BigBooty/issues">here</a>.</p>
 
+<h2 align="center"><em>Boilerplate Loaded</em></h2>
+
+<image src="https://raw.githubusercontent.com/pjhampton/BigBooty/master/delete/admin_interface.png">
+
 <h2 align="center"><em>Licence</em></h2>
 
 <p align="center"><a href="https://github.com/pjhampton/BigBooty/blob/master/licence">General Public License (GPL) v2</a>.</p>
