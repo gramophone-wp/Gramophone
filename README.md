@@ -26,6 +26,8 @@
 
 <p align="center">Nope! It's a <strong>starter theme</strong> to <strong>speed up</strong> theme <strong>development</strong> in Bootstrap.</p>
 
+<image src="https://raw.githubusercontent.com/pjhampton/BigBooty/master/delete/home_page.png">
+
 <h2 align="center"><em>Help</em></h2>
 
 <p align="center">Refer to this projects <a href="https://github.com/pjhampton/BigBooty/wiki">wiki</a> or please open an issue <a href="https://gituhb.com/pjhampton/BigBooty/issues">here</a>.</p>
