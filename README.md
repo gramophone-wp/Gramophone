@@ -32,13 +32,13 @@
 
 <image src="https://raw.githubusercontent.com/pjhampton/BigBooty/master/delete/woocommerce.png">
 
-<h2 align="center"><em>Help</em></h2>
-
-<p align="center">Refer to this projects <a href="https://github.com/pjhampton/BigBooty/wiki">wiki</a> or please open an issue <a href="https://gituhb.com/pjhampton/BigBooty/issues">here</a>.</p>
-
 <h2 align="center"><em>Boilerplate Loaded</em></h2>
 
 <image src="https://raw.githubusercontent.com/pjhampton/BigBooty/master/delete/admin_interface.png">
+
+<h2 align="center"><em>Help</em></h2>
+
+<p align="center">Refer to this projects <a href="https://github.com/pjhampton/BigBooty/wiki">wiki</a> or please open an issue <a href="https://gituhb.com/pjhampton/BigBooty/issues">here</a>.</p>
 
 <h2 align="center"><em>Licence</em></h2>
 
