@@ -28,7 +28,7 @@
 
 <image src="https://raw.githubusercontent.com/pjhampton/BigBooty/master/delete/home_page.png">
 
-<h2 align="center"><em>WooCommerce Ready</em></h2>
+<h2 align="center"><em color="#a46497">WooCommerce Ready</em></h2>
 
 <image src="https://raw.githubusercontent.com/pjhampton/BigBooty/master/delete/woocommerce.png">
 
