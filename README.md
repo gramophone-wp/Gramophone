@@ -28,6 +28,10 @@
 
 <image src="https://raw.githubusercontent.com/pjhampton/BigBooty/master/delete/home_page.png">
 
+<h2 align="center"><em>WooCommerce Ready</em></h2>
+
+<image src="https://raw.githubusercontent.com/pjhampton/BigBooty/master/delete/woocommerce.png">
+
 <h2 align="center"><em>Help</em></h2>
 
 <p align="center">Refer to this projects <a href="https://github.com/pjhampton/BigBooty/wiki">wiki</a> or please open an issue <a href="https://gituhb.com/pjhampton/BigBooty/issues">here</a>.</p>
