@@ -16,8 +16,8 @@
 **/
 ?>
 
-<article>
-  <section>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="entry-content" itemprop="articleBody">
     <?php the_content(); ?>
-  </section>
+  </div>
 </article>
