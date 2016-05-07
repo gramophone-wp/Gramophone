@@ -84,11 +84,11 @@ table#wp-calendar caption {
  ~~ footer (widgets) 
 *****************************/
 
-#copyright p{
+#copyright p {
   color: #99979c;
 }
 
-#copyright a{
+#copyright a {
   color: white;
 }
 
@@ -96,7 +96,28 @@ table#wp-calendar caption {
  ~~ 404 (error)
 *****************************/
 
-body.error404{
+body.error404 {
   background: #563D7C;
   color: #f7f7f7;
 }
+
+/*****************************
+~~ WooCommerce (Catalog)
+*****************************/
+
+.col-item {
+  border: 1px solid #E1E1E1;
+  border-radius: 5px;
+  background: #FFF;
+}
+
+.col-item img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.col-item h3,
+.col-item h5 {
+  text-align: center;
+}
+
