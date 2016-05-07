@@ -25,7 +25,7 @@
 
 <head>
 
-  <meta charset="UTF-8">
+  <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="<?php bloginfo('template_directory');?>/lib/images/favicons/favicon.ico">
@@ -43,34 +43,36 @@
 
 <body <?php body_class(); ?>>
 
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="<?php bloginfo( 'url' ); ?>">
-        <?php bloginfo( 'name' ); ?>
-      </a>
-    </div>
+<header itemscope itemtype="http://schema.org/WPHeader">
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="<?php bloginfo( 'url' ); ?>">
+          <?php bloginfo( 'name' ); ?>
+        </a>
+      </div>
 
-    <div class="navbar-collapse collapse">
-    <?php
-      wp_nav_menu( array(
-        'menu'             =>  'primary',
-        'theme_location'   =>  'primary',
-        'depth'            =>  2,
-        'container'        =>  '',
-        'container_class'  =>  'collapse navbar-collapse',
-        'container_id'     =>  '',
-        'menu_class'       =>  'nav navbar-nav navbar-right',
-        'fallback_cb'      =>  'wp_bootstrap_navwalker::fallback',
-        'walker'           =>  new wp_bootstrap_navwalker())
-      );
-    ?>
+      <div class="navbar-collapse collapse">
+      <?php
+        wp_nav_menu( array(
+          'menu'             =>  'primary',
+          'theme_location'   =>  'primary',
+          'depth'            =>  2,
+          'container'        =>  '',
+          'container_class'  =>  'collapse navbar-collapse',
+          'container_id'     =>  '',
+          'menu_class'       =>  'nav navbar-nav navbar-right',
+          'fallback_cb'      =>  'wp_bootstrap_navwalker::fallback',
+          'walker'           =>  new wp_bootstrap_navwalker())
+        );
+      ?>
+      </div>
     </div>
   </div>
-</div>
+</header>

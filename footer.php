@@ -43,7 +43,7 @@
   </div>
 </section>
 
-<footer class="footer">
+<footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
   <div class="container">
     <div class="col-xs-12 col-md-12 text-center" id="copyright">
       <p class="text-muted">&copy; 
