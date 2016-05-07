@@ -21,3 +21,5 @@
     <?php the_content(); ?>
   </div>
 </article>
+
+<?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?>
