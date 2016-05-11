@@ -1,7 +1,19 @@
 <?php
 /**
+ **********************************************
+ * woocommerce/single-product/rating.php
+ **********************************************
+ *
  * Single Product Rating
- */
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly

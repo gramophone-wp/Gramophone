@@ -1,7 +1,19 @@
 <?php
 /**
+ **********************************************
+ * woocommerce/single-product/add-to-cart/variable.php
+ **********************************************
+ *
  * Variable product add to cart
- */
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

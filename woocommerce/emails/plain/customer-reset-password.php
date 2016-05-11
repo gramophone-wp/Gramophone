@@ -1,7 +1,19 @@
 <?php
 /**
+ **********************************************
+ * woocommerce/emails/plain/customer-reset-password.php
+ **********************************************
+ *
  * Customer Reset Password email
- */
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly

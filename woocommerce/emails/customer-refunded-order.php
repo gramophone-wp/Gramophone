@@ -1,7 +1,19 @@
 <?php
 /**
+ **********************************************
+ * woocommerce/emails/customer-refunded-order.php
+ **********************************************
+ *
  * Customer refunded order email
- */
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

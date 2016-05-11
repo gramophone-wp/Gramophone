@@ -1,7 +1,19 @@
 <?php
 /**
+ **********************************************
+ * woocommerce/product-searchform.php
+ **********************************************
+ *
  * The template for displaying product search form
- */
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 // Exit if accessed directly
 if ( ! defined( 'ABSPATH' ) ) {

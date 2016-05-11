@@ -1,7 +1,19 @@
 <?php
 /**
+ **********************************************
+ * woocommerce/myaccount/form-edit-account.php
+ **********************************************
+ *
  * Edit account form
- */
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly

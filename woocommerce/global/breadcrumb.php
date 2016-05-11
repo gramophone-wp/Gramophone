@@ -1,7 +1,19 @@
 <?php
 /**
+ **********************************************
+ * woocommerce/global/breadcrumps.php
+ **********************************************
+ *
  * Shop breadcrumb
- */
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

@@ -1,7 +1,19 @@
 <?php
 /**
+ **********************************************
+ * woocommerce/loop/sale-flash.php
+ **********************************************
+ *
  * Product loop sale flash
- */
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly

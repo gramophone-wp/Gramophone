@@ -1,7 +1,20 @@
 <?php
 /**
+ **********************************************
+ * woocommerce/order/order-details-customer.php
+ **********************************************
+ *
  * Order Customer Details
- */
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
+
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

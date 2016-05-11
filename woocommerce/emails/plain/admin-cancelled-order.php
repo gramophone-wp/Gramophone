@@ -1,7 +1,19 @@
 <?php
 /**
+ **********************************************
+ * woocommerce/emails/plain/admin-cancelled-order.php
+ **********************************************
+ *
  * Admin cancelled order email (plain text)
- */
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

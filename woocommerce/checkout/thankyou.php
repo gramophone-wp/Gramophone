@@ -1,7 +1,19 @@
 <?php
 /**
+ **********************************************
+ * woocommerce/checkout/thankyou.php
+ **********************************************
+ *
  * Thankyou page
- */
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

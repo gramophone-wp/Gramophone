@@ -1,7 +1,19 @@
 <?php
 /**
+ **********************************************
+ * woocommerce/emails/plain/customer-completed-order.php
+ **********************************************
+ *
  * Customer completed order email (plain text)
- */
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

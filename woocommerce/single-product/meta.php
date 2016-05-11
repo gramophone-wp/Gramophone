@@ -1,7 +1,19 @@
 <?php
 /**
+ **********************************************
+ * woocommerce/single-product/meta.php
+ **********************************************
+ *
  * Single Product Meta
- */
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly

@@ -1,7 +1,21 @@
 <?php
 /**
- * The Template for displaying product archives, including the main shop page which is a post type archive
- */
+ **********************************************
+ * woocommerce/archive-product.php
+ **********************************************
+ *
+ * The Template for displaying product archives, 
+ * including the main shop page which is a post 
+ * type archive.
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly

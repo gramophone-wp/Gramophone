@@ -1,7 +1,19 @@
 <?php
 /**
- * Loop Rating
- */
+ **********************************************
+ * woocommerce/loop/rating.php
+ **********************************************
+ *
+ * Loop rating
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly

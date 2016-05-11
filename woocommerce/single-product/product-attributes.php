@@ -1,9 +1,20 @@
 <?php
 /**
- * Product attributes
+ **********************************************
+ * woocommerce/single-product/product-attributes.php
+ **********************************************
  *
+ * Product attributes
  * Used by list_attributes() in the products class.
- */
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly

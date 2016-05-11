@@ -1,7 +1,19 @@
 <?php
 /**
+ **********************************************
+ * woocommerce/myaccount/form-add-payment-method.php
+ **********************************************
+ *
  * Add payment method form form
- */
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

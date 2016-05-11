@@ -1,7 +1,20 @@
 <?php
 /**
- * The template for displaying product content in the single-product.php template
- */
+ **********************************************
+ * woocommerce/content-single-product.php
+ **********************************************
+ *
+ * The template for displaying product content 
+ * in the single-product.php template
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly

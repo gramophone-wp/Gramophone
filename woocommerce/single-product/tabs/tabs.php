@@ -1,7 +1,19 @@
 <?php
 /**
- * Single Product tabs
- */
+ **********************************************
+ * woocommerce/single-product/tabs/tabs.php
+ **********************************************
+ *
+ * Description tab
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

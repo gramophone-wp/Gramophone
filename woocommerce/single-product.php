@@ -1,7 +1,19 @@
 <?php
 /**
+ **********************************************
+ * woocommerce/single-product.php
+ **********************************************
+ *
  * The Template for displaying all single products
- */
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly

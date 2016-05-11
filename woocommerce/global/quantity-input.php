@@ -1,7 +1,19 @@
 <?php
 /**
+ **********************************************
+ * woocommerce/global/quantity-input.php
+ **********************************************
+ *
  * Product quantity inputs
- */
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly

@@ -1,7 +1,20 @@
 <?php
 /**
+ **********************************************
+ * woocommerce/single-product/add-to-cart/variation-add-to-cart-button.php
+ **********************************************
+ *
  * Single variation cart button
- */
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
+
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }

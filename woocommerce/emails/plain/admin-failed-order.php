@@ -1,7 +1,19 @@
 <?php
 /**
+ **********************************************
+ * woocommerce/emails/plain/admin-failed-order.php
+ **********************************************
+ *
  * Admin failed order email (plain text)
- */
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

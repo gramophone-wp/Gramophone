@@ -1,7 +1,19 @@
 <?php
 /**
- * Show messages
- */
+ **********************************************
+ * woocommerce/notices/success.php
+ **********************************************
+ *
+ * Success notice
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly

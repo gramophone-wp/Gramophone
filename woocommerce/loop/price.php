@@ -1,7 +1,19 @@
 <?php
 /**
- * Loop Price
- */
+ **********************************************
+ * woocommerce/loop/price.php
+ **********************************************
+ *
+ * Loop price
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly

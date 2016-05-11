@@ -1,7 +1,20 @@
 <?php
 /**
- * The template for displaying product category thumbnails within loops
- */
+ **********************************************
+ * woocommerce/content-product_cat.php
+ **********************************************
+ *
+ * The template for displaying product category 
+ * thumbnails within loops
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

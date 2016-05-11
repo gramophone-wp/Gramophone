@@ -1,7 +1,20 @@
 <?php
 /**
- * The template for displaying product widget entries
- */
+ **********************************************
+ * woocommerce/content-widget-product.php
+ **********************************************
+ *
+ * The template for displaying product widget 
+ * entries.
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 // Exit if accessed directly
 if ( ! defined( 'ABSPATH' ) ) {

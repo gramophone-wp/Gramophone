@@ -1,7 +1,19 @@
 <?php
 /**
+ **********************************************
+ * woocommerce/loop/add-to-cart.php
+ **********************************************
+ *
  * Loop Add to Cart
- */
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

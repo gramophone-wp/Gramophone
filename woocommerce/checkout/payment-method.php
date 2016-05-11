@@ -1,7 +1,19 @@
 <?php
 /**
+ **********************************************
+ * woocommerce/checkout/payment-method.php
+ **********************************************
+ *
  * Output a single payment method
- */
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

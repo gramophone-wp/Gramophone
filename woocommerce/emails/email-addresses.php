@@ -1,7 +1,19 @@
 <?php
 /**
- * Email Addresses
- */
+ **********************************************
+ * woocommerce/emails/email-addresses.php
+ **********************************************
+ *
+ * Email addresses.
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

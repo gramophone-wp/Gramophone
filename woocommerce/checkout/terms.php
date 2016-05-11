@@ -1,7 +1,19 @@
 <?php
 /**
+ **********************************************
+ * woocommerce/checkout/terms.php
+ **********************************************
+ *
  * Checkout terms and conditions checkbox
- */
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

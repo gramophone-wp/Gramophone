@@ -1,7 +1,20 @@
 <?php
 /**
- * Pagination - Show numbered pagination for catalog pages
- */
+ **********************************************
+ * woocommerce/loop/pagination.php
+ **********************************************
+ *
+ * Pagination - Show numbered pagination for 
+ * catalog pages
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly

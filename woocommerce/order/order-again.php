@@ -1,7 +1,19 @@
 <?php
 /**
+ **********************************************
+ * woocommerce/order/order-again.php
+ **********************************************
+ *
  * Order again button
- */
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly

@@ -1,5 +1,19 @@
 <?php
-
+/**
+ **********************************************
+ * woocommerce/emails/admin-new-order.php
+ **********************************************
+ *
+ * Admin new order email
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
  if ( ! defined( 'ABSPATH' ) ) {
  	exit;

@@ -1,4 +1,19 @@
 <?php
+/**
+ **********************************************
+ * woocommerce/auth/form-grant-access.php
+ **********************************************
+ *
+ * 
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

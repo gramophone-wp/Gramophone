@@ -1,7 +1,19 @@
 <?php
 /**
+ **********************************************
+ * woocommerce/loop/orderby.php
+ **********************************************
+ *
  * Show options for ordering
- */
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly

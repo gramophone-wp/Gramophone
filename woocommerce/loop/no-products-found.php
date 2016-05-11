@@ -1,7 +1,20 @@
 <?php
 /**
- * Displayed when no products are found matching the current query
- */
+ **********************************************
+ * woocommerce/loop/no-products-found.php
+ **********************************************
+ *
+ * Displayed when no products are found matching 
+ * the current query
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly

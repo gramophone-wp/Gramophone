@@ -1,7 +1,19 @@
 <?php
 /**
+ **********************************************
+ * woocommerce/single-product/tabs/additional-information.php
+ **********************************************
+ *
  * Additional Information tab
- */
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly

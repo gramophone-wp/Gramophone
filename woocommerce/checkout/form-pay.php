@@ -1,4 +1,19 @@
 <?php
+/**
+ **********************************************
+ * woocommerce/checkout/form-pay.php
+ **********************************************
+ *
+ * 
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

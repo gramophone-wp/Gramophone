@@ -1,5 +1,19 @@
 <?php
-
+/**
+ **********************************************
+ * woocommerce/checkout/form-billing.php
+ **********************************************
+ *
+ * 
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly

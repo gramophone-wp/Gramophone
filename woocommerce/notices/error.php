@@ -1,7 +1,19 @@
 <?php
 /**
+ **********************************************
+ * woocommerce/notices/error.php
+ **********************************************
+ *
  * Show error messages
- */
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly

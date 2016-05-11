@@ -1,7 +1,19 @@
 <?php
 /**
+ **********************************************
+ * woocommerce/checkout/review-order.php
+ **********************************************
+ *
  * Review order table
- */
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

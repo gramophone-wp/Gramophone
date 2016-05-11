@@ -1,7 +1,19 @@
 <?php
 /**
- * Login form
- */
+ **********************************************
+ * woocommerce/global/login-form.php
+ **********************************************
+ *
+ * Shop breadcrumb
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly

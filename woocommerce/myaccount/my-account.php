@@ -1,7 +1,19 @@
 <?php
 /**
- * My Account page
- */
+ **********************************************
+ * woocommerce/myaccount/my-account.php
+ **********************************************
+ *
+ * My Account Page
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly

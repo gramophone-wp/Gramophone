@@ -1,4 +1,19 @@
 <?php
+/**
+ **********************************************
+ * woocommerce/cart/cart-totals.php
+ **********************************************
+ *
+ * Shipping Methods Display
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

@@ -1,5 +1,19 @@
 <?php
-
+/**
+ **********************************************
+ * woocommerce/cart/proceed-to-checkout-button.php
+ **********************************************
+ *
+ * Shipping Methods Display
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly

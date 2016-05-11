@@ -1,5 +1,19 @@
 <?php
-
+/**
+ **********************************************
+ * woocommerce/cart/cart-item-data.php
+ **********************************************
+ *
+ * 
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

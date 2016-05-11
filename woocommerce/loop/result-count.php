@@ -1,9 +1,20 @@
 <?php
 /**
- * Result Count
+ **********************************************
+ * woocommerce/loop/result-count.php
+ **********************************************
  *
+ * Result Count
  * Shows text: Showing x - x of x results.
- */
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly

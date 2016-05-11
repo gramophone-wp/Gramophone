@@ -1,7 +1,20 @@
 <?php
 /**
- * The template for displaying product content within loops
- */
+ **********************************************
+ * woocommerce/content-product.php
+ **********************************************
+ *
+ * The template for displaying product content 
+ * within loops
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly

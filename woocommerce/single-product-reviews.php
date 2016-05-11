@@ -1,7 +1,19 @@
 <?php
 /**
- * Display single product reviews (comments)
- */
+ **********************************************
+ * woocommerce/single-product-reviews.php
+ **********************************************
+ *
+ * Display single product reviews (comments).
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 global $product;
 

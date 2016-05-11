@@ -1,7 +1,19 @@
 <?php
 /**
- * Single Product Thumbnails
- */
+ **********************************************
+ * woocommerce/single-product/product-thumbnails.php
+ **********************************************
+ *
+ * Single product thumbnails
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly

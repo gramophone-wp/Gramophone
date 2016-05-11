@@ -1,5 +1,19 @@
 <?php
-
+/**
+ **********************************************
+ * woocommerce/auth/header.php
+ **********************************************
+ *
+ * 
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;

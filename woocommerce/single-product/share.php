@@ -1,9 +1,20 @@
 <?php
 /**
- * Single Product Share
+ **********************************************
+ * woocommerce/single-product/share.php
+ **********************************************
  *
+ * Single Product Share
  * Sharing plugins can hook into here or you can add your own code directly.
- */
+ *
+ * @author
+ * @copyright
+ * @link
+ * @todo
+ * @license
+ * @since
+ * @version
+**/
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
