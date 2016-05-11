@@ -4,7 +4,9 @@
  * woocommerce/loop/sale-flash.php
  **********************************************
  *
- * Product loop sale flash
+ * This is the flash message that is displayed
+ * when there is a sale on, indicated within
+ * the WooCommerce plugin.
  *
  * @author
  * @copyright
@@ -24,6 +26,12 @@ global $post, $product;
 ?>
 <?php if ( $product->is_on_sale() ) : ?>
 
-	<?php echo apply_filters( 'woocommerce_sale_flash', '<span class="onsale">' . __( 'Sale!', 'woocommerce' ) . '</span>', $post, $product ); ?>
+  <?php 
+    echo apply_filters( 
+        'woocommerce_sale_flash', 
+        '<div class="alert alert-info" role="alert">' . __( 'Sale!', 'woocommerce' ) . '</div>', 
+        $post, $product 
+      ); 
+  ?>
 
 <?php endif; ?>
