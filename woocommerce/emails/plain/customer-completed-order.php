@@ -16,7 +16,7 @@
 **/
 
 if ( ! defined( 'ABSPATH' ) ) {
-	exit;
+  exit;
 }
 
 echo "= " . $email_heading . " =\n\n";

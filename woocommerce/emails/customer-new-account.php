@@ -16,7 +16,7 @@
 **/
 
 if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
+  exit; // Exit if accessed directly
 }
 
 ?>
@@ -27,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <?php if ( 'yes' === get_option( 'woocommerce_registration_generate_password' ) && $password_generated ) : ?>
 
-	<p><?php printf( __( "Your password has been automatically generated: <strong>%s</strong>", 'woocommerce' ), esc_html( $user_pass ) ); ?></p>
+  <p><?php printf( __( "Your password has been automatically generated: <strong>%s</strong>", 'woocommerce' ), esc_html( $user_pass ) ); ?></p>
 
 <?php endif; ?>
 
