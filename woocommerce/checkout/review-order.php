@@ -18,7 +18,9 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
+
 ?>
+
 <table class="shop_table woocommerce-checkout-review-order-table">
 	<thead>
 		<tr>
@@ -27,6 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		</tr>
 	</thead>
 	<tbody>
+
 		<?php
 			do_action( 'woocommerce_review_order_before_cart_contents' );
 
@@ -51,6 +54,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 			do_action( 'woocommerce_review_order_after_cart_contents' );
 		?>
+    
 	</tbody>
 	<tfoot>
 
