@@ -32,6 +32,7 @@ $tabs = apply_filters( 'woocommerce_product_tabs', array() );
 
 if ( ! empty( $tabs ) ) : ?>
 
+<div class="col-md-12 tabs">
   <div class="woocommerce-tabs wc-tabs-wrapper">
 
     <ul class="nav nav-tabs nav-justified tabs wc-tabs">
@@ -49,5 +50,6 @@ if ( ! empty( $tabs ) ) : ?>
     <?php endforeach; ?>
 
   </div>
+</div>
 
 <?php endif; ?>

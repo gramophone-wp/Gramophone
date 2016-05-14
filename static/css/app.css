@@ -121,3 +121,11 @@ body.error404 {
   text-align: center;
 }
 
+/*****************************
+~~ WooCommerce (Tabs)
+*****************************/
+
+.tabs {
+  margin-top: 15px;
+}
+

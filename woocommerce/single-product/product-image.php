@@ -23,6 +23,7 @@ global $post, $woocommerce, $product;
 
 ?>
 
+<div class="col-md-6">
 <div class="images">
   <?php
     if ( has_post_thumbnail() ) {
@@ -50,4 +51,5 @@ global $post, $woocommerce, $product;
   ?>
 
   <?php do_action( 'woocommerce_product_thumbnails' ); ?>
+</div>
 </div>
