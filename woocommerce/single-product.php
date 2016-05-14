@@ -4,7 +4,8 @@
  * woocommerce/single-product.php
  **********************************************
  *
- * The Template for displaying all single products
+ * The template for displaying a product, which
+ * is treated as an individual product.
  *
  * @author
  * @copyright

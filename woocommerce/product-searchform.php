@@ -4,7 +4,9 @@
  * woocommerce/product-searchform.php
  **********************************************
  *
- * The template for displaying product search form
+ * This is the search form template for the
+ * WooCommerce plugin. This allows users to
+ * search for certain types of products. 
  *
  * @author
  * @copyright

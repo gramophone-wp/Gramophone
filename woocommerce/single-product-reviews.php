@@ -4,7 +4,11 @@
  * woocommerce/single-product-reviews.php
  **********************************************
  *
- * Display single product reviews (comments).
+ * Displays reviews for single products in the
+ * form of comments. As well as displaying 
+ * product reviews, it's also responsible
+ * for form layout / styling for a user to
+ * input their reivew.
  *
  * @author
  * @copyright
@@ -29,14 +33,14 @@ if ( ! comments_open() ) {
 <div id="reviews">
   <div id="comments">
 
-    <h2>
+    <h4>
     <?php
       if ( get_option( 'woocommerce_enable_review_rating' ) === 'yes' && ( $count = $product->get_review_count() ) )
         printf( _n( '%s review for %s', '%s reviews for %s', $count, 'woocommerce' ), $count, get_the_title() );
       else
         _e( 'Reviews', 'woocommerce' );
     ?>
-    </h2>
+    </h4>
 
     <?php if ( have_comments() ) : ?>
 
@@ -99,7 +103,7 @@ if ( ! comments_open() ) {
             </select></p>';
           }
 
-          $comment_form['comment_field'] .= '<p class="comment-form-comment"><label for="comment">' . __( 'Your Review', 'woocommerce' ) . '</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>';
+          $comment_form['comment_field'] .= '<p class="comment-form-comment"><label for="comment">' . __( 'Your Review', 'woocommerce' ) . '</label><textarea class="form-control" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>';
 
           comment_form( apply_filters( 'woocommerce_product_review_comment_form_args', $comment_form ) );
         ?>

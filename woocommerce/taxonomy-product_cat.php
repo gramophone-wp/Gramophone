@@ -4,7 +4,7 @@
  * woocommerce/taxonomy-product_cat.php
  **********************************************
  *
- * The Template for displaying products in a 
+ * The template for displaying products in a 
  * product category. Simply includes the archive 
  * template.
  *
