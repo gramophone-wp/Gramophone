@@ -63,6 +63,7 @@
       <?php get_sidebar( 'blog' ); ?>
 
     </div>
+    <?php bigbooty_pagination(); ?>
   </div>
 </div>
 

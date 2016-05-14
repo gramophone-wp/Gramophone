@@ -29,6 +29,7 @@ require_once( 'config/widgets.php' );
 require_once( 'config/comments.php' );
 require_once( 'config/support.php' );
 require_once( 'config/breadcrumbs.php' );
+require_once( 'config/pagination.php' );
 require_once( 'config/woocommerce.php' );
 
 // Theme Recommended & Required Plugins

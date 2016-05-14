@@ -62,6 +62,7 @@
       <?php endif; ?>
 
     </div>
+    <?php bigbooty_pagination(); ?>
   </div>
 </div>
 
