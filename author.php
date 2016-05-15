@@ -4,7 +4,7 @@
  * author.php
  **********************************************
  *
- * Author related posts & content.
+ * Author (archives) related posts & content.
  *
  * @author
  * @copyright

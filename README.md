@@ -1,4 +1,4 @@
-<img src="https://github.com/pjhampton/BigBooty/blob/master/static/images/logos/banner.png" alt="bigbooty">
+<img src="http://pjhampton.com/bigbooty/banner.png" alt="bigbooty">
 
 <p align="center">
   <a href="https://github.com/pjhampton/BigBooty/blob/master/licence">
@@ -26,15 +26,15 @@
 
 <p align="center">Nope! It's a <strong>starter theme</strong> to <strong>speed up</strong> theme <strong>development</strong> in Bootstrap.</p>
 
-<image src="https://raw.githubusercontent.com/pjhampton/BigBooty/master/delete/home_page.png">
+<image src="http://pjhampton.com/bigbooty/home_page.png">
 
 <h2 align="center"><em color="#a46497">WooCommerce Ready</em></h2>
 
-<image src="https://raw.githubusercontent.com/pjhampton/BigBooty/master/delete/woocommerce.png">
+<image src="http://pjhampton.com/bigbooty/woocommerce.png">
 
 <h2 align="center"><em>Boilerplate Loaded</em></h2>
 
-<image src="https://raw.githubusercontent.com/pjhampton/BigBooty/master/delete/admin_interface.png">
+<image src="http://pjhampton.com/bigbooty/admin_interface.png">
 
 <h2 align="center"><em>Help</em></h2>
 
