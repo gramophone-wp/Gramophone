@@ -85,7 +85,8 @@ if ( ! comments_open() ) {
             ),
             'label_submit'  => __( 'Submit', 'woocommerce' ),
             'logged_in_as'  => '',
-            'comment_field' => ''
+	    'comment_field' => '',
+	    'class_submit' => 'btn btn-primary'
           );
 
           if ( $account_page_url = wc_get_page_permalink( 'myaccount' ) ) {
