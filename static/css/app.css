@@ -129,3 +129,15 @@ body.error404 {
   margin-top: 15px;
 }
 
+/*****************************
+~~ WooCommerce (Site Wide Notice)
+*****************************/
+
+p.demo_store{
+  margin: 0px 0;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #2a2730;
+  color: #f7f7f7;
+}
+
