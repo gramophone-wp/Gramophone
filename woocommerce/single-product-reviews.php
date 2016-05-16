@@ -79,14 +79,14 @@ if ( ! comments_open() ) {
             'comment_notes_after'  => '',
             'fields'               => array(
               'author' => '<p class="comment-form-author">' . '<label for="author">' . __( 'Name', 'woocommerce' ) . ' <span class="required">*</span></label> ' .
-                          '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" aria-required="true" /></p>',
+                          '<input id="author" class="form-control" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30" aria-required="true" /></p>',
               'email'  => '<p class="comment-form-email"><label for="email">' . __( 'Email', 'woocommerce' ) . ' <span class="required">*</span></label> ' .
-                          '<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30" aria-required="true" /></p>',
+                          '<input id="email" class="form-control" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30" aria-required="true" /></p>',
             ),
             'label_submit'  => __( 'Submit', 'woocommerce' ),
             'logged_in_as'  => '',
 	    'comment_field' => '',
-	    'class_submit' => 'btn btn-primary'
+	    'class_submit' => 'btn btn-block btn-primary pull-right'
           );
 
           if ( $account_page_url = wc_get_page_permalink( 'myaccount' ) ) {
