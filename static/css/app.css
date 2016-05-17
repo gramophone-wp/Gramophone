@@ -69,14 +69,11 @@ table#wp-calendar caption {
 *****************************/
 
 .tagcloud a {
-  background: #563d7c;
-  color: #fff;
-  padding: 5px;
-  border-radius: 5px;
+  color: #563d7c;
 }
 
 .tagcloud a:hover {
-  opacity: 0.9;
+  opacity: 0.8;
   text-decoration: none;
 }
 
