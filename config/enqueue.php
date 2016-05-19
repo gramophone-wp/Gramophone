@@ -18,7 +18,7 @@
 
 /**
  **********************************************
- * bigbooty_styles/0 
+ * theme_styles/0 
  ********************************************** 
  *
  * 
@@ -26,7 +26,7 @@
  * 
 **/
 
-function bigbooty_styles() 
+function theme_styles() 
 {
 
   wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/static/css/bootstrap.min.css' );
@@ -35,11 +35,12 @@ function bigbooty_styles()
 
   // Add more...
 }
+add_action( 'wp_enqueue_scripts', 'theme_styles' );
 
 
 /**
  **********************************************
- * bigbooty_js/0
+ * theme_js/0
  ********************************************** 
  *
  * 
@@ -47,7 +48,7 @@ function bigbooty_styles()
  * 
 **/
 
-function bigbooty_js() 
+function theme_js() 
 {
 
   global $wp_scripts;
@@ -63,9 +64,6 @@ function bigbooty_js()
   // Add more...
     
 }
-
-
-add_action( 'wp_enqueue_scripts', 'bigbooty_styles' );
-add_action( 'wp_enqueue_scripts', 'bigbooty_js' );
+add_action( 'wp_enqueue_scripts', 'theme_js' );
 
 ?>
