@@ -36,9 +36,11 @@
 
       <p>
       By <?php the_author_posts_link(); ?> 
+      <span class="hidden-xs">
       on <?php echo the_time('l, F jS, Y');?>
+      </span>
       in <?php the_category( ', ' ); ?>.
-      <span class="pull-right">
+      <span class="pull-right hidden-xs">
         <a href="<?php comments_link(); ?>">
         <?php comments_number(); ?>
         </a>
