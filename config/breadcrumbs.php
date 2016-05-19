@@ -15,8 +15,9 @@
  * @version
 **/
 
-function bigbooty_breadcrumbs() 
+function theme_breadcrumbs() 
 {
+
   global $post;
 
   echo '<ol class="breadcrumb">';
