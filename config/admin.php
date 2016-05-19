@@ -29,7 +29,7 @@
 function login_styles() 
 {
   wp_enqueue_style( 
-    'bigbooty-login', 
+    'admin-login', 
     get_template_directory_uri() . '/admin/login.css'
   );
 }
