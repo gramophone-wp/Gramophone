@@ -18,7 +18,7 @@
 
 /**
  **********************************************
- * register_bigbooty_menus/0
+ * register_theme_menus/0
  ********************************************** 
  *
  * 
@@ -26,7 +26,7 @@
  * 
 **/
 
-function register_bigbooty_menus() 
+function register_theme_menus() 
 {
   register_nav_menus(
     array(
@@ -38,6 +38,6 @@ function register_bigbooty_menus()
   );
 }
 
-add_action( 'init', 'register_bigbooty_menus' );
+add_action( 'init', 'register_theme_menus' );
 
 ?>
