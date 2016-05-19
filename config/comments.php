@@ -35,7 +35,7 @@ add_filter('get_avatar','change_avatar_css');
 
 /**
  **********************************************
- * bigbooty_comment/3
+ * theme_comment/3
  ********************************************** 
  *
  * 
@@ -43,7 +43,7 @@ add_filter('get_avatar','change_avatar_css');
  * 
 **/
 
-function bigbooty_comment($comment, $args, $depth) {
+function theme_comment($comment, $args, $depth) {
 
   $GLOBALS['comment'] = $comment;
   extract($args, EXTR_SKIP);
