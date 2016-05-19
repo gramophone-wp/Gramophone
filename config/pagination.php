@@ -16,7 +16,7 @@
 **/
 
 
-function bigbooty_pagination() {
+function theme_pagination() {
 
   if( is_singular() )
     return;
