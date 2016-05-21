@@ -42,7 +42,6 @@ function create_widget( $name, $id, $description )
   ));
 }
 
-
 /**
  **********************************************
  * CALL: create_widget/3

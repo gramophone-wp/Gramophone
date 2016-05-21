@@ -32,7 +32,6 @@
 
   <title>
     <?php wp_title( '|', true, 'right' ); ?>
-    <?php esc_url( home_url() ) ?>
   </title>
 
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
@@ -41,7 +40,7 @@
 
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> <?php post_class('title_post group'); ?>>
 
 <header itemscope itemtype="http://schema.org/WPHeader">
   <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
@@ -53,7 +52,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="<?php bloginfo( 'url' ); ?>">
+        <a class="navbar-brand" href="<?php echo esc_url(home_url()); ?>">
           <?php bloginfo( 'name' ); ?>
         </a>
       </div>

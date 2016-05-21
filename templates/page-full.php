@@ -33,6 +33,7 @@
     <div class="col-md-12 text-justify">
 
     <?php the_content(); ?>
+    <?php wp_link_pages(); ?>
 
     <?php endwhile; else: ?>
           

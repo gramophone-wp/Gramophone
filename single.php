@@ -28,7 +28,11 @@
 
 <div class="container">
   <?php get_template_part( 'formats/format', get_post_format() ); ?>
+
+  <hr>
+  <?php the_tags(); ?>
 </div>
+
 
 <?php endwhile; endif; ?>
 

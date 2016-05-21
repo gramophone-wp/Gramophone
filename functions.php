@@ -15,6 +15,10 @@
  * @version
 **/
 
+if( !isset( $content_width ) ) {
+  $content_width = 600;
+}
+
 // Theme Dependencies ~ best not remove these!
 require_once locate_template('includes/class-tgm-plugin-activation.php');
 require_once ( 'includes/wp_bootstrap_navwalker.php' );
