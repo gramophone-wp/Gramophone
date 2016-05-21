@@ -28,11 +28,11 @@
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" href="<?php bloginfo('template_directory');?>/lib/images/favicons/favicon.ico">
+  <link rel="shortcut icon" href="<?php esc_url(get_template_directory_uri()) ?>lib/images/favicons/favicon.ico">
 
   <title>
     <?php wp_title( '|', true, 'right' ); ?>
-    <?php bloginfo( 'name' ); ?>
+    <?php esc_url( home_url() ) ?>
   </title>
 
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
