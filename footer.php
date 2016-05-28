@@ -45,7 +45,7 @@
 
 <footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
   <div class="container">
-    <div class="col-xs-12 col-md-12 text-center" id="copyright">
+    <div class="col-xs-12 text-xs-center" id="copyright">
       <p class="text-muted">&copy; 
         <a href="<?php echo esc_url( home_url() ); ?>">
         <?php bloginfo('name'); ?> 

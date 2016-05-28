@@ -134,10 +134,6 @@ a img.aligncenter {
  ~~ html specific 
 *****************************/
 
-body{
-  padding-top: 50px;
-}
-
 img {
   display: block;
   height: auto;
@@ -230,13 +226,6 @@ body.error404 {
   color: #f7f7f7;
 }
 
-/*****************************
-~~ WooCommerce 
-*****************************/
-
-.jumbotron .woocommerce {
-  background: #a46497;
-}
 
 /*****************************
 ~~ WooCommerce (Catalog)

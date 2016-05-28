@@ -42,6 +42,28 @@
 
 <body <?php body_class(); ?> <?php post_class('title_post group'); ?>>
 
+<header class="navbar navbar-light navbar-static-top bd-navbar" role="banner">
+  <div class="clearfix">
+    <button class="navbar-toggler pull-xs-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
+      &#9776;
+    </button>
+    <a class="navbar-brand hidden-sm-up" href="<?php echo esc_url(home_url()); ?>">
+      <?php bloginfo( 'name' ); ?>
+    </a>
+  </div>
+  <div class="collapse navbar-toggleable-xs" id="bd-main-nav">
+    <nav class="nav navbar-nav">
+      <a class="nav-item nav-link " href="/">Bootstrap</a>
+      <a class="nav-item nav-link active" href="/getting-started/introduction/">Documentation</a>
+      <a class="nav-item nav-link " href="/examples/">Examples</a>
+      <a class="nav-item nav-link" href="http://themes.getbootstrap.com">Themes</a>
+      <a class="nav-item nav-link" href="http://expo.getbootstrap.com">Expo</a>
+      <a class="nav-item nav-link" href="http://blog.getbootstrap.com">Blog</a>
+    </nav>
+  </div>
+</header>
+
+<!--
 <header itemscope itemtype="http://schema.org/WPHeader">
   <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
     <div class="container">
@@ -53,7 +75,7 @@
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="<?php echo esc_url(home_url()); ?>">
-          <?php bloginfo( 'name' ); ?>
+
         </a>
       </div>
 
@@ -75,3 +97,4 @@
     </div>
   </div>
 </header>
+-->

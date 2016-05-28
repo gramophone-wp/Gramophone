@@ -41,5 +41,8 @@ require_once( 'config/required_plugins.php' );
 
 // Theme custom post types
 // require_once( '' );
-
+function add_menuclass($ulclass) {
+   return preg_replace('/<a /', '<a class="nav-item nav-link"', $ulclass);
+}
+add_filter('wp_nav_menu','add_menuclass');
 ?>
