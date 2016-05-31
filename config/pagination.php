@@ -15,6 +15,12 @@
  * @version
 **/
 
+add_filter('next_posts_link_attributes', 'posts_link_attributes');
+add_filter('previous_posts_link_attributes', 'posts_link_attributes');
+
+function posts_link_attributes() {
+    return 'class="page-link"';
+}
 
 function theme_pagination() {
 
@@ -45,42 +51,42 @@ function theme_pagination() {
     $links[] = $paged + 1;
   }
 
-  echo '<div class="navigation text-center"><ul class="pagination">' . "\n";
+  echo '<nav class="navigation text-xs-center"><ul class="pagination">' . "\n";
 
   /** Previous Post Link */
   if ( get_previous_posts_link() )
-    printf( '<li>%s</li>' . "\n", get_previous_posts_link() );
+    printf( '<li class="page-item">%s</li>' . "\n", get_previous_posts_link() );
 
   /** Link to first page, plus ellipses if necessary */
   if ( ! in_array( 1, $links ) ) {
     $class = 1 == $paged ? ' class="active"' : '';
 
-    printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( 1 ) ), '1' );
+    printf( '<li%s class="page-item"><a class="page-link" href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( 1 ) ), '1' );
 
     if ( ! in_array( 2, $links ) )
-      echo '<li>…</li>';
+      echo '<li class="page-item">…</li>';
   }
 
   /** Link to current page, plus 2 pages in either direction if necessary */
   sort( $links );
   foreach ( (array) $links as $link ) {
-    $class = $paged == $link ? ' class="active"' : '';
-    printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $link ) ), $link );
+    $class = $paged == $link ? ' class="active page-item"' : '';
+    printf( '<li%s class="page-item"><a class="page-link" href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $link ) ), $link );
   }
 
   /** Link to last page, plus ellipses if necessary */
   if ( ! in_array( $max, $links ) ) {
     if ( ! in_array( $max - 1, $links ) )
-      echo '<li><a>&#8230;</a></li>' . "\n";
+      echo '<li class="page-item"><a class="page-link">&#8230;</a></li>' . "\n";
 
     $class = $paged == $max ? ' class="active"' : '';
-    printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $max ) ), $max );
+    printf( '<li%s class="page-item"><a class="page-link" href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( $max ) ), $max );
   }
 
   /** Next Post Link */
   if ( get_next_posts_link() )
-    printf( '<li>%s</li>' . "\n", get_next_posts_link() );
+    printf( '<li class="page-item">%s</li>' . "\n", get_next_posts_link() );
 
-  echo '</ul></div>' . "\n";
+  echo '</ul></nav>' . "\n";
 
 }
