@@ -43,3 +43,7 @@
 <h2 align="center"><em>Licence</em></h2>
 
 <p align="center"><a href="https://github.com/pjhampton/BigBooty/blob/master/licence">General Public License (GPL) v2</a>.</p>
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/pjhampton/bigbooty/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
