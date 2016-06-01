@@ -22,7 +22,7 @@
   <div class="text-center">
 
     <h1>404</h1>
-    <a class="btn btn-danger" href="<?php echo get_home_url(); ?>">
+    <a class="btn btn-danger-outline" href="<?php echo get_home_url(); ?>">
       Return Home
     </a>
 
