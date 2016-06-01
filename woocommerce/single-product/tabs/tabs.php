@@ -35,10 +35,10 @@ if ( ! empty( $tabs ) ) : ?>
 <div class="col-md-12 tabs">
   <div class="woocommerce-tabs wc-tabs-wrapper">
 
-    <ul class="nav nav-tabs nav-justified tabs wc-tabs">
+    <ul class="nav nav-tabs nav-justified tabs">
       <?php foreach ( $tabs as $key => $tab ) : ?>
-        <li class="<?php echo esc_attr( $key ); ?>_tab">
-          <a href="#tab-<?php echo esc_attr( $key ); ?>"><?php echo apply_filters( 'woocommerce_product_' . $key . '_tab_title', esc_html( $tab['title'] ), $key ); ?></a>
+        <li class="<?php echo esc_attr( $key ); ?>_tab nav-item">
+          <a href="#tab-<?php echo esc_attr( $key ); ?>" class="nav-link"><?php echo apply_filters( 'woocommerce_product_' . $key . '_tab_title', esc_html( $tab['title'] ), $key ); ?></a>
         </li>
       <?php endforeach; ?>
     </ul>

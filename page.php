@@ -30,10 +30,6 @@
   <div class="row row-offcanvas row-offcanvas-right">
     <div class="col-md-7 text-justify">
 
-      <p class="pull-right visible-xs">
-        <button type="button" class="btn btn-primary btn-med" data-toggle="offcanvas">View Sidebar</button>
-      </p>
-
       <?php the_content(); ?>
 
       <?php endwhile; else: ?>
