@@ -37,9 +37,7 @@
 
     <?php endwhile; else: ?>
           
-    <div class="page-header">
-      <h1>No Booty Here!</h1>
-    </div>
+    <h1>No Booty Here!</h1>
 
     <p>There doesn't seem to be anything here as yet!</p>
 
