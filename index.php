@@ -25,9 +25,7 @@
     <!-- The WordPress Loop -->
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-    <div class="page-header">
-      <h1><?php the_title(); ?></h1>
-    </div>
+    <h1><?php the_title(); ?></h1>
 
     <?php the_content(); ?>
             
