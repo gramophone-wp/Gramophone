@@ -27,15 +27,15 @@
 </div>
 
 <div class="container">
+  <?php the_tags(); ?>
   <?php get_template_part( 'formats/format', get_post_format() ); ?>
 
   <hr>
-  <?php the_tags(); ?>
   <?php
     if ( comments_open() || get_comments_number() ) {
         comments_template();
     }
-    ?>
+  ?>
 </div>
 
 
