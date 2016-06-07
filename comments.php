@@ -25,7 +25,7 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div id="comments" class="comments-area row">
+<div id="comments" class="comments-area col-xs-12">
 
 <?php if ( have_comments() ) : ?>
 

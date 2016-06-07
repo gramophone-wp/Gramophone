@@ -27,7 +27,7 @@
 **/
 
 function change_avatar_css($class) {
-  $class = str_replace("class='avatar", "class='media-object img-circle'", $class) ;
+  $class = str_replace("class='avatar", "class='media-object'", $class) ;
   return $class;
 }
 add_filter('get_avatar','change_avatar_css');

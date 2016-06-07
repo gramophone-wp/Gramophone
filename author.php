@@ -42,7 +42,7 @@ $user_twitter = get_the_author_meta('twitter');
             <hr>
           </div>             
         <div class="col-xs-12 col-sm-4 text-center">
-          <img src="<?php echo get_avatar_url( $user_id ); ?>" alt="" class="img-circle img-fluid">
+          <img src="<?php echo get_avatar_url( $user_id ); ?>" alt="" class="img-fluid">
         </div>
     
         </div>            
