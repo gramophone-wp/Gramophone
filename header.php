@@ -53,7 +53,7 @@
     <nav class="" role="banner">
 
     <!-- Brand -->
-      <a class="navbar-brand" href="<?php echo esc_url(home_url()); ?>"><?php bloginfo( 'name' ); ?></a>
+      <a class="navbar-brand hidden-sm-down" href="<?php echo esc_url(home_url()); ?>"><?php bloginfo( 'name' ); ?></a>
 
       <!-- Links -->
 
