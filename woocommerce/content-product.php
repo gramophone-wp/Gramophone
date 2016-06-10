@@ -49,7 +49,7 @@ if ( 0 === $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
   $classes[] = 'last';
 }
 ?>
-<div class="col-sm-6 col-md-4" <?php post_class( $classes ); ?>>
+<div class="col-xs-12 col-sm-6 col-md-3" <?php post_class( $classes ); ?>>
   <div class="col-item">
 
   <?php
