@@ -42,3 +42,4 @@ $tag_count = sizeof( get_the_terms( $post->ID, 'product_tag' ) );
   <?php do_action( 'woocommerce_product_meta_end' ); ?>
 
 </div>
+</div>
