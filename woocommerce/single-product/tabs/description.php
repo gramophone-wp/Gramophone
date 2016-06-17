@@ -25,9 +25,10 @@ $heading = esc_html( apply_filters( 'woocommerce_product_description_heading', _
 
 ?>
 
+<!-- Uncomment me to see the heading.
 <?php if ( $heading ): ?>
   <h3><?php echo $heading; ?></h3>
 <?php endif; ?>
+-->
 
 <?php the_content(); ?>
-
