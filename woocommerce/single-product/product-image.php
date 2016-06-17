@@ -24,7 +24,7 @@ global $post, $woocommerce, $product;
 ?>
 
 <div class="col-md-6">
-<div class="images">
+<div class="product-images">
   <?php
     if ( has_post_thumbnail() ) {
       $image_caption = get_post( get_post_thumbnail_id() )->post_excerpt;

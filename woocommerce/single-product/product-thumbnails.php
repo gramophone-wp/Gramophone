@@ -27,8 +27,9 @@ if ( $attachment_ids ) {
   $loop     = 0;
   $columns  = apply_filters( 'woocommerce_product_thumbnails_columns', 3 );
   ?>
-  <div class="thumbnails <?php echo 'columns-' . $columns; ?>"><?php
-
+  <div class="thumbnails <?php echo 'columns-' . $columns; ?>">
+    <ul class="hide-bullets">
+<?php
     foreach ( $attachment_ids as $attachment_id ) {
 
       $classes = array( 'zoom' );
@@ -54,11 +55,11 @@ if ( $attachment_ids ) {
 
       $image_class = esc_attr( implode( ' ', $classes ) );
 
-      echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', sprintf( '<a href="%s" class="%s" title="%s" data-rel="prettyPhoto[product-gallery]">%s</a>', $image_link, $image_class, $image_caption, $image ), $attachment_id, $post->ID, $image_class );
+      echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', sprintf( '<li class="col-sm-4"><a href="%s" class="%s" title="%s" data-rel="prettyPhoto[product-gallery]">%s</a></li>', $image_link, $image_class, $image_caption, $image ), $attachment_id, $post->ID, $image_class );
 
       $loop++;
     }
 
-  ?></div>
+  ?></ul></div>
   <?php
 }

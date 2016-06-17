@@ -21,6 +21,10 @@
 .bypostauthor {
 }
 
+.hide-bullets {
+  list-style-type: none;
+}
+
 /*****************************
  ~~ WordPress Generated Classes 
 *****************************/
