@@ -23,6 +23,12 @@
 
 .hide-bullets {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.hide-bullets li.col-sm-4 {
+  padding: 0;
 }
 
 /*****************************
