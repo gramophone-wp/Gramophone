@@ -236,6 +236,13 @@ body.error404 {
   color: #f7f7f7;
 }
 
+/*****************************
+~~ WooCommerce (Catalog)
+*****************************/
+
+#woocommerce {
+  margin-top: 50px;
+}
 
 /*****************************
 ~~ WooCommerce (Catalog)
