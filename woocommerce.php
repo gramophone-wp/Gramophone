@@ -19,11 +19,11 @@
 <?php get_header(); ?>
 
 <div id="woocommerce" class="container">   
-  <div class="row row-offcanvas row-offcanvas-right">
+  <div class="row">
     <div class="col-md-12 text-justify">
-    <?php woocommerce_content(); ?>          
+      <?php woocommerce_content(); ?>          
     </div>
-   </div>
+  </div>
 </div>
 
 <?php get_footer(); ?>
