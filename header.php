@@ -69,6 +69,15 @@
       ) );
       ?>
 
+      <ul class="nav navbar-nav">
+        <li class="nav-item">
+          <?php
+            global $woocommerce; 
+            echo '<a class="nav-link" href="' . $woocommerce->cart->get_cart_url() . '" title="' . __( 'Cart' ) . '">' . __( 'Cart' ) . '</a>';
+          ?>
+        </li>
+      </ul>
+
       <form class="form-inline hidden-xs-down pull-xs-right" method="get" action="<?php echo home_url( '/' ); ?>">
         <input name="s" id="s" class="form-control" type="text" placeholder="Search">
         <button class="btn btn-success-outline" type="submit">Search</button>
