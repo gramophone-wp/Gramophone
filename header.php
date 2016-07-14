@@ -32,7 +32,9 @@
     <?php wp_title( '|', true, 'right' ); ?>
   </title>
 
+  <?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+  <?php endif; ?>
 
   <?php wp_head(); ?>
 
