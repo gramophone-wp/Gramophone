@@ -60,7 +60,7 @@ div.aligncenter {
 }
 
 .alignright {
-  float:right;
+  float: right;
   margin: 5px 0 20px 20px;
 }
 
@@ -166,20 +166,20 @@ a img.aligncenter {
  ~~ widgets 
 *****************************/
 
-.widgets{
+.widgets {
   background: #efefef;
   margin: 15px 0 0 0;
   padding: 30px 0;
   text-align: justify;
 }
 
-.widgets h4{
+.widgets h4 {
   border-bottom: solid 1px #959393;
   line-height: 50px;
 }
 
-@media (max-width: 767px){
-  .widget{
+@media (max-width: 767px) {
+  .widget {
     margin: 40px 0;
   }
 }
@@ -271,7 +271,7 @@ body.error404 {
 ~~ WooCommerce (Site Wide Notice)
 *****************************/
 
-p.demo_store{
+p.demo_store {
   background: #2a2730;
   color: #f7f7f7;
   margin: 0px 0;
@@ -286,4 +286,3 @@ p.demo_store{
 .page-link:hover {
   text-decoration: none;
 }
-
