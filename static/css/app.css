@@ -272,12 +272,12 @@ body.error404 {
 *****************************/
 
 p.demo_store{
+  background: #2a2730;
+  color: #f7f7f7;
   margin: 0px 0;
   padding: 10px 0;
   text-align: center;
-  color: #f7f7f7;
 }
-
 
 /*****************************
 ~~ Pagination
