@@ -28,10 +28,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="<?php esc_url(get_template_directory_uri()) ?>lib/images/favicons/favicon.ico">
 
-  <title>
-    <?php wp_title( '|', true, 'right' ); ?>
-  </title>
-
   <?php if ( is_singular() && pings_open( get_queried_object() ) ) : ?>
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
   <?php endif; ?>
