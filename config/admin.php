@@ -4,7 +4,8 @@
  * config/admin.php
  ********************************************** 
  *
- * Custom styling for the backend.
+ * Custom configuration for the administration
+ * area.
  *
  * @author
  * @copyright
@@ -13,49 +14,7 @@
  * @license
  * @since
  * @version
-**/
-
-
-/**
- **********************************************
- * login_styles/0 
- ********************************************** 
- *
- * login_styles/0 enqueues the `wp-login` css  
- * for the WordPress login page.  
- * 
-**/
-
-function login_styles() 
-{
-  wp_enqueue_style( 
-    'admin-login', 
-    get_template_directory_uri() . '/admin/login.css'
-  );
-}
-add_action( 'login_enqueue_scripts', 'login_styles' );
-
-
-/**
- **********************************************
- * admin_logo/0
- ********************************************** 
- *
- * admin_logo/0 replaces the default WordPress
- * `logo` on the `/wp-login/`. It is set to
- * `display: none;` by default.
- * 
-**/
-
-function admin_logo() 
-{ ?>
-<style>
-  #login h1 a {
-    background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/static/images/logos/wordpress.png);
-  }
-</style>
-<?php }
-add_action( 'login_enqueue_scripts', 'admin_logo' );
+ **/
 
 
 /**
@@ -95,20 +54,20 @@ add_action('admin_init', 'admin_colors');
 function clean_dashboard(){
   global $wp_meta_boxes;
 
-  // unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_right_now']);    // Right Now Widget
-  unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_activity']);        // Activity Widget
-  unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_recent_comments']); // Comments Widget
-  unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_incoming_links']);  // Incoming Links Widget
-  unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_plugins']);         // Plugins Widget
-  // unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_quick_press']);    // Quick Press Widget
-  unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_recent_drafts']);     // Recent Drafts Widget
-  unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_primary']);
-  unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_secondary']);
+  // unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_right_now']);       // Right Now Widget
+  // unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_activity']);        // Activity Widget
+  // unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_recent_comments']); // Comments Widget
+  // unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_incoming_links']);  // Incoming Links Widget
+  // unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_plugins']);         // Plugins Widget
+  // unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_quick_press']);       // Quick Press Widget
+  // unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_recent_drafts']);     // Recent Drafts Widget
+  // unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_primary']);
+  // unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_secondary']);
 
   // remove plugin dashboard boxes
-  unset($wp_meta_boxes['dashboard']['normal']['core']['yoast_db_widget']);           // Yoast's SEO Plugin Widget
-  unset($wp_meta_boxes['dashboard']['normal']['core']['rg_forms_dashboard']);        // Gravity Forms Plugin Widget
-  unset($wp_meta_boxes['dashboard']['normal']['core']['bbp-dashboard-right-now']);   // bbPress Plugin Widget
+  // unset($wp_meta_boxes['dashboard']['normal']['core']['yoast_db_widget']);           // Yoast's SEO Plugin Widget
+  // unset($wp_meta_boxes['dashboard']['normal']['core']['rg_forms_dashboard']);        // Gravity Forms Plugin Widget
+  // unset($wp_meta_boxes['dashboard']['normal']['core']['bbp-dashboard-right-now']);   // bbPress Plugin Widget
 
 }
 add_action( 'wp_dashboard_setup', 'clean_dashboard' );

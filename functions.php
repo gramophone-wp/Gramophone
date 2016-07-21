@@ -25,6 +25,7 @@ require_once ( 'includes/bootstrap_walker.php' );
 
 // Admin Customisations
 require_once( 'config/admin.php' );
+require_once( 'config/login.php' );
 
 // Theme Specific Customisations
 require_once( 'config/enqueue.php' );
