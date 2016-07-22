@@ -18,13 +18,16 @@
 
 <?php get_header(); ?>
 
+<div class="jumbotron">
+  <div class="container">
+    <h3>Results for: <?php echo esc_attr(get_search_query()); ?></h1>
+  </div>
+</div>
+
 <div class="container">
   <div class="row">
-    <div id="main" class="col col-lg-8 clearfix" role="main">
+    <div id="main" class="col col-lg-12" role="main">
 
-      <div class="page-header">
-        <h1>Results for: <?php echo esc_attr(get_search_query()); ?></h1>
-      </div>
 
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
