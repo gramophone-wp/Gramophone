@@ -20,7 +20,7 @@
 
 <div class="jumbotron">
   <div class="container">
-      <h1><?php the_title(''); ?></h1>
+    <h1><?php the_title(''); ?></h1>
   </div>
 </div>
 
@@ -51,12 +51,10 @@
 
       </article>
 
-      <hr>
-
       <?php endwhile; else: ?>
 
       <div class="page-header">
-        <h1>Oh no!</h1>
+        <h1>No posts as yet.</h1>
       </div>
 
       <p>No content is appearing for this page!</p>
