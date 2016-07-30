@@ -255,6 +255,7 @@ body.error404 {
   border: 1px solid #E1E1E1;
   border-radius: 5px;
   background: #FFF;
+  margin-bottom: 25px;
 }
 
 .col-item img {
