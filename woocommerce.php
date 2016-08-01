@@ -1,10 +1,10 @@
 <?php
 /**
  **********************************************
- * page.php
+ * woocommerce.php
  **********************************************
  *
- * The general page.
+ * The woocommerce template.
  *
  * @author
  * @copyright
