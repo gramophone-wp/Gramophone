@@ -40,7 +40,7 @@
       on <?php echo the_time('l, F jS, Y');?>
       </span>
       in <?php the_category( ', ' ); ?>.
-      <span class="pull-right hidden-xs-down">
+      <span class="pull-right hidden-sm-down">
         <a href="<?php comments_link(); ?>">
         <?php comments_number(); ?>
         </a>
