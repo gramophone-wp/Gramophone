@@ -48,8 +48,7 @@
     <div class="col-xs-12 text-xs-center" id="copyright">
       <p class="text-muted">&copy; 
         <a href="<?php echo esc_url( home_url() ); ?>">
-        <?php bloginfo('name'); ?> 
-        </a>
+        <?php bloginfo('name'); ?></a>
         <?php echo date('Y'); ?>. All Rights Reserved
       </p>
     </div>
