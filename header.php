@@ -49,29 +49,31 @@
   </div>
   <div class="collapse navbar-toggleable-xs" id="bd-main-nav">
     <nav class="" role="banner">
+      <div class="container">
 
-    <!-- Brand -->
-      <a class="navbar-brand hidden-sm-down" href="<?php echo esc_url(home_url()); ?>"><?php bloginfo( 'name' ); ?></a>
+        <!-- Brand -->
+          <a class="navbar-brand hidden-sm-down" href="<?php echo esc_url(home_url()); ?>"><?php bloginfo( 'name' ); ?></a>
 
-      <!-- Links -->
+          <!-- Links -->
 
-      <?php
-      wp_nav_menu( array(
-          'menu'           => 'primary',
-          'theme_location' => 'primary',
-          'depth'          => 1,
-          'container'      => "ul",
-          'menu_class'     => "nav navbar-nav",
-          'fallback_cb'    => 'bootstrap_walker::fallback',
-          'walker'         => new Bootstrap_Walker()
-      ) );
-      ?>
+          <?php
+          wp_nav_menu( array(
+              'menu'           => 'primary',
+              'theme_location' => 'primary',
+              'depth'          => 1,
+              'container'      => "ul",
+              'menu_class'     => "nav navbar-nav",
+              'fallback_cb'    => 'bootstrap_walker::fallback',
+              'walker'         => new Bootstrap_Walker()
+          ) );
+          ?>
 
-      <form class="form-inline hidden-xs-down pull-xs-right" method="get" action="<?php echo home_url( '/' ); ?>">
-        <input name="s" id="s" class="form-control" type="text" placeholder="Search">
-        <button class="btn btn-success-outline" type="submit">Search</button>
-      </form>
+          <form class="form-inline hidden-xs-down pull-xs-right" method="get" action="<?php echo home_url( '/' ); ?>">
+            <input name="s" id="s" class="form-control" type="text" placeholder="Search">
+            <button class="btn btn-success-outline" type="submit">Search</button>
+          </form>
 
+      </div>
     </nav>
   </div>
 </header>
