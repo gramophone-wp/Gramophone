@@ -48,7 +48,7 @@ $user_twitter = get_the_author_meta('twitter');
         </div>            
         <div class="col-xs-12 divider text-center">
           <div class="col-xs-12 col-sm-4 emphasis">
-            <h2><strong> <?php echo count_user_posts(); ?> </strong></h2>                    
+            <h2><strong> <?php echo count_user_posts( $user_id ); ?> </strong></h2>                    
             <p><small>Posts</small></p>
             <button class="btn btn-success btn-block"><span class="fa fa-google-plus"></span> Google Plus </button>
           </div>
