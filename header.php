@@ -38,7 +38,7 @@
 
 <body <?php body_class(); ?> <?php post_class('title_post group'); ?>>
 
-<header class="navbar navbar-dark navbar-static-top bg-inverse" role="banner">
+<header class="navbar navbar-full navbar-dark navbar-static-top bg-inverse" role="banner">
   <div class="clearfix">
     <button class="navbar-toggler pull-xs-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
       &#9776;
