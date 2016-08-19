@@ -70,7 +70,7 @@
 
           <form class="form-inline hidden-xs-down pull-xs-right" method="get" action="<?php echo home_url( '/' ); ?>">
             <input name="s" id="s" class="form-control" type="text" placeholder="Search">
-            <button class="btn btn-success-outline" type="submit">Search</button>
+            <button class="btn btn-outline-info" type="submit">Search</button>
           </form>
 
       </div>
