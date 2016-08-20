@@ -6,7 +6,7 @@
   </a>
 
   <a href="http://getbootstrap.com/">
-    <img src="https://img.shields.io/badge/bootstrap-v4.0.0%20(alpha.2)-6f5499.svg?style=flat-square">
+    <img src="https://img.shields.io/badge/bootstrap-v4.0.0%20(alpha.3)-6f5499.svg?style=flat-square">
   </a>
 
   <a href="http://wordpress.org/">
