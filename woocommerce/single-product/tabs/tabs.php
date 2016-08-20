@@ -36,11 +36,26 @@ if ( ! empty( $tabs ) ) : ?>
   <div class="woocommerce-tabs wc-tabs-wrapper">
 
     <ul class="nav nav-tabs nav-justified tabs">
-      <?php foreach ( $tabs as $key => $tab ) : ?>
+      <?php
+          $first = true;
+          foreach ( $tabs as $key => $tab ) :
+
+          if( $first == true ):
+      ?>
+        <li class="<?php echo esc_attr( $key ); ?>_tab nav-item">
+          <a href="#tab-<?php echo esc_attr( $key ); ?>" class="active nav-link"><?php echo apply_filters( 'woocommerce_product_' . $key . '_tab_title', esc_html( $tab['title'] ), $key ); ?></a>
+        </li>
+
+          <?php
+          $first = false;
+          else:
+          ?>
+
         <li class="<?php echo esc_attr( $key ); ?>_tab nav-item">
           <a href="#tab-<?php echo esc_attr( $key ); ?>" class="nav-link"><?php echo apply_filters( 'woocommerce_product_' . $key . '_tab_title', esc_html( $tab['title'] ), $key ); ?></a>
         </li>
-      <?php endforeach; ?>
+       
+      <?php endif; endforeach; ?>
     </ul>
 
     <?php foreach ( $tabs as $key => $tab ) : ?>
