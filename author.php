@@ -27,7 +27,7 @@ $user_twitter = get_the_author_meta('twitter');
 
 <?php get_header(); ?>
 
-<div class="jumbotron">
+<div class="jumbotron jumbotron-fluid">
   <div class="container">
     <div class="col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6">
       <div class="profile">

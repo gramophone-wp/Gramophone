@@ -18,7 +18,7 @@
 
 <?php get_header(); ?>
 
-<div class="jumbotron">
+<div class="jumbotron jumbotron-fluid">
   <div class="container">
     <h3>Results for: <?php echo esc_attr(get_search_query()); ?></h1>
   </div>

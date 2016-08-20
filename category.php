@@ -18,7 +18,7 @@
 
 <?php get_header(); ?>
 
-<div class="jumbotron">
+<div class="jumbotron jumbotron-fluid">
   <div class="container">
     <h1>Category: <?php single_cat_title(); ?></h1>
   </div>
