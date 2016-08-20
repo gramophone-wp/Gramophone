@@ -4,7 +4,7 @@
  * woocommerce.php
  **********************************************
  *
- * The woocommerce template.
+ * The WooCommerce wrapper template.
  *
  * @author
  * @copyright
@@ -20,9 +20,7 @@
 
 <div id="woocommerce" class="container">   
   <div class="row">
-    <div class="col-md-12 text-justify">
-      <?php woocommerce_content(); ?>          
-    </div>
+    <?php woocommerce_content(); ?>          
   </div>
 </div>
 
