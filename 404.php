@@ -4,7 +4,7 @@
  * 404.php
  **********************************************
  *
- * The 404 template: Resource(s) not found.
+ * The 404 template
  *
  * @author
  * @copyright
