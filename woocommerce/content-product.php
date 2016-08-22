@@ -17,7 +17,7 @@
 **/
 
 if ( ! defined( 'ABSPATH' ) ) {
-  exit; // Exit if accessed directly
+  exit; // exit if accessed directly
 }
 
 global $product, $woocommerce_loop;
@@ -50,7 +50,7 @@ if ( 0 === $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 }
 ?>
 <div class="col-xs-12 col-sm-6 col-md-3" <?php post_class( $classes ); ?>>
-  <div class="col-item">
+  <div class="card">
 
   <?php
   /**
