@@ -43,11 +43,14 @@ require_once( 'config/required_plugins.php' );
 // Theme custom post types
 // require_once( '' );
 
-function theme_queue_js(){
-  if (!is_admin()){
-    if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1))
-      wp_enqueue_script( 'comment-reply' );
-  }
+function theme_queue_js()
+{
+    if (!is_admin())
+    {
+        if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1))
+            wp_enqueue_script( 'comment-reply' );
+    }
 }
 add_action('get_header', 'theme_queue_js');
+
 ?>

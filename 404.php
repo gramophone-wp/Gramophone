@@ -17,12 +17,13 @@
 ?>
 
 <div class="col-md-12">
-  <div class="text-center">
+    <div class="text-center">
 
-    <h1>404</h1>
-    <a class="btn btn-danger-outline" href="<?php echo get_home_url(); ?>">
-      Return Home
-    </a>
+        <h1>404</h1>
 
-  </div>
+        <a class="btn btn-danger-outline" href="<?php echo get_home_url(); ?>">
+          Return Home
+        </a>
+
+    </div>
 </div>
