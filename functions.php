@@ -16,7 +16,7 @@
 **/
 
 if( !isset( $content_width ) ) {
-  $content_width = 600;
+    $content_width = 600;
 }
 
 // Theme Dependencies ~ best not remove these!

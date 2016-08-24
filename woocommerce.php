@@ -19,9 +19,9 @@
 <?php get_header(); ?>
 
 <div id="woocommerce" class="container">   
-  <div class="row">
-    <?php woocommerce_content(); ?>          
-  </div>
+    <div class="row">
+        <?php woocommerce_content(); ?>
+    </div>
 </div>
 
 <?php get_footer(); ?>

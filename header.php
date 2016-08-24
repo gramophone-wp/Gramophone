@@ -4,7 +4,7 @@
  * header.php
  **********************************************
  *
- * The general header.
+ * The header.
  *
  * @author
  * @copyright
