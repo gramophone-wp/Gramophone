@@ -24,7 +24,7 @@
 
 <h2 align="center"><em>Framework?</em></h2> 
 
-<p align="center">Nope! It's a <strong>starter theme</strong> to <strong>speed up</strong> theme <strong>development</strong> in Bootstrap.</p>
+<p align="center">Nope! It's a <i>opinionated</i> <strong>starter theme</strong> to <strong>speed up</strong> theme <strong>development</strong> in Bootstrap.</p>
 
 <image src="http://pjhampton.com/bigbooty/home_page.png">
 
