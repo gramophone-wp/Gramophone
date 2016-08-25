@@ -53,10 +53,7 @@
         <nav class="" role="banner">
             <div class="container">
 
-                <!-- Brand -->
                 <a class="navbar-brand hidden-sm-down" href="<?php echo esc_url(home_url()); ?>"><?php bloginfo( 'name' ); ?></a>
-
-                <!-- Links -->
 
                 <?php
                     wp_nav_menu( array(
