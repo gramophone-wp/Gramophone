@@ -16,7 +16,7 @@
 **/
 
 if ( ! defined( 'ABSPATH' ) ) {
-  exit;
+    exit;
 }
 
 ?>
@@ -31,21 +31,21 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <form method="post" class="wc-auth-login">
   
-  <p class="form-row form-row-wide">
-    <label for="username"><?php _e( 'Username or email address', 'woocommerce' ); ?> <span class="required">*</span></label>
-    <input type="text" class="input-text" name="username" id="username" value="<?php echo ( ! empty( $_POST['username'] ) ) ? esc_attr( $_POST['username'] ) : ''; ?>" />
-  </p>
+    <p class="form-row form-row-wide">
+        <label for="username"><?php _e( 'Username or email address', 'woocommerce' ); ?> <span class="required">*</span></label>
+        <input type="text" class="input-text" name="username" id="username" value="<?php echo ( ! empty( $_POST['username'] ) ) ? esc_attr( $_POST['username'] ) : ''; ?>" />
+    </p>
 
-  <p class="form-row form-row-wide">
-    <label for="password"><?php _e( 'Password', 'woocommerce' ); ?> <span class="required">*</span></label>
-    <input class="input-text" type="password" name="password" id="password" />
-  </p>
+    <p class="form-row form-row-wide">
+        <label for="password"><?php _e( 'Password', 'woocommerce' ); ?> <span class="required">*</span></label>
+        <input class="input-text" type="password" name="password" id="password" />
+    </p>
 
-  <p class="wc-auth-actions">
-    <?php wp_nonce_field( 'woocommerce-login' ); ?>
-    <input type="submit" class="button button-large button-primary wc-auth-login-button" name="login" value="<?php esc_attr_e( 'Login', 'woocommerce' ); ?>" />
-    <input type="hidden" name="redirect" value="<?php echo esc_url( $redirect_url ); ?>" />
-  </p>
+    <p class="wc-auth-actions">
+        <?php wp_nonce_field( 'woocommerce-login' ); ?>
+        <input type="submit" class="button button-large button-primary wc-auth-login-button" name="login" value="<?php esc_attr_e( 'Login', 'woocommerce' ); ?>" />
+        <input type="hidden" name="redirect" value="<?php echo esc_url( $redirect_url ); ?>" />
+    </p>
 
 </form>
 

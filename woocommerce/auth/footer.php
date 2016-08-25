@@ -16,10 +16,10 @@
 **/
 
 if ( ! defined( 'ABSPATH' ) ) {
-  exit;
+    exit;
 }
 
 ?>
-    </div>
-  </body>
+        </div>
+    </body>
 </html>
