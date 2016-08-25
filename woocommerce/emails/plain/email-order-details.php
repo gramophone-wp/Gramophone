@@ -15,8 +15,9 @@
  * @version
 **/
 
-if ( ! defined( 'ABSPATH' ) ) {
-  exit;
+if ( ! defined( 'ABSPATH' ) ) 
+{
+    exit;
 }
 
 do_action( 'woocommerce_email_before_order_table', $order, $sent_to_admin, $plain_text, $email );
@@ -24,21 +25,24 @@ do_action( 'woocommerce_email_before_order_table', $order, $sent_to_admin, $plai
 echo strtoupper( sprintf( __( 'Order number: %s', 'woocommerce' ), $order->get_order_number() ) ) . "\n";
 echo date_i18n( __( 'jS F Y', 'woocommerce' ), strtotime( $order->order_date ) ) . "\n";
 echo "\n" . $order->email_order_items_table( array(
-  'show_sku'    => $sent_to_admin,
-  'show_image'  => false,
-  'image_size'  => array( 32, 32 ),
-  'plain_text'  => true
+    'show_sku'    => $sent_to_admin,
+    'show_image'  => false,
+    'image_size'  => array( 32, 32 ),
+    'plain_text'  => true
 ) );
 
 echo "==========\n\n";
 
-if ( $totals = $order->get_order_item_totals() ) {
-  foreach ( $totals as $total ) {
-    echo $total['label'] . "\t " . $total['value'] . "\n";
-  }
+if ( $totals = $order->get_order_item_totals() ) 
+{
+    foreach ( $totals as $total ) 
+    {
+        echo $total['label'] . "\t " . $total['value'] . "\n";
+    }
 }
 
-if ( $sent_to_admin ) {
+if ( $sent_to_admin ) 
+{
     echo "\n" . sprintf( __( 'View order: %s', 'woocommerce'), admin_url( 'post.php?post=' . $order->id . '&action=edit' ) ) . "\n";
 }
 

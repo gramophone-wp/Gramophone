@@ -15,8 +15,9 @@
  * @version
 **/
 
-if ( ! defined( 'ABSPATH' ) ) {
-  exit;
+if ( ! defined( 'ABSPATH' ) ) 
+{
+    exit;
 }
 
 echo "= " . $email_heading . " =\n\n";
