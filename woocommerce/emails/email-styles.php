@@ -15,7 +15,7 @@
  * @version
 **/
 
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) exit; // exit if accessed directly
 
 // Load colours
 $bg              = get_option( 'woocommerce_email_background_color' );
@@ -32,6 +32,7 @@ $text_lighter_20 = wc_hex_lighter( $text, 20 );
 
 // !important; is a gmail hack to prevent styles being stripped if it doesn't like something.
 ?>
+
 #wrapper {
   background-color: <?php echo esc_attr( $bg ); ?>;
   margin: 0;

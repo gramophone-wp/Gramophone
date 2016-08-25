@@ -15,8 +15,9 @@
  * @version
 **/
 
-if ( ! defined( 'ABSPATH' ) ) {
-  exit;
+if ( ! defined( 'ABSPATH' ) ) 
+{
+    exit;
 }
 
 /**
@@ -24,14 +25,18 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
-<p><?php
-  if ( $partial_refund ) {
-    printf( __( 'Hi there. Your order on %s has been partially refunded.', 'woocommerce' ), get_option( 'blogname' ) );
-  }
-  else {
-    printf( __( 'Hi there. Your order on %s has been refunded.', 'woocommerce' ), get_option( 'blogname' ) );
-  }
-?></p>
+<p>
+<?php
+    if ( $partial_refund ) 
+    {
+        printf( __( 'Hi there. Your order on %s has been partially refunded.', 'woocommerce' ), get_option( 'blogname' ) );
+    }
+    else 
+    {
+        printf( __( 'Hi there. Your order on %s has been refunded.', 'woocommerce' ), get_option( 'blogname' ) );
+    }
+?>
+</p>
 
 <?php
 
