@@ -16,16 +16,18 @@
 **/
 
 
-if ( ! defined( 'ABSPATH' ) ) {
-  exit; // Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) 
+{
+    exit; // exit if accessed directly
 }
 
-if ( ! $messages ){
-  return;
+if ( ! $messages )
+{
+    return;
 }
 
 ?>
 
 <?php foreach ( $messages as $message ) : ?>
-  <div class="woocommerce-info alert alert-warning"><?php echo wp_kses_post( $message ); ?></div>
+    <div class="woocommerce-info alert alert-warning"><?php echo wp_kses_post( $message ); ?></div>
 <?php endforeach; ?>
