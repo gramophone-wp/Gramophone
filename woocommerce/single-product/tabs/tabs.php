@@ -18,8 +18,9 @@
  * @version
 **/
 
-if ( ! defined( 'ABSPATH' ) ) {
-  exit;
+if ( ! defined( 'ABSPATH' ) ) 
+{
+    exit;
 }
 
 /**
@@ -33,38 +34,41 @@ $tabs = apply_filters( 'woocommerce_product_tabs', array() );
 if ( ! empty( $tabs ) ) : ?>
 
 <div class="col-md-12 tabs">
-  <div class="woocommerce-tabs wc-tabs-wrapper">
+    <div class="woocommerce-tabs wc-tabs-wrapper">
 
-    <ul class="nav nav-tabs nav-justified tabs">
-      <?php
-          $first = true;
-          foreach ( $tabs as $key => $tab ) :
+        <ul class="nav nav-tabs nav-justified tabs">
+        <?php
+            $first = true;
+            foreach ( $tabs as $key => $tab ) :
 
-          if( $first == true ):
-      ?>
-        <li class="<?php echo esc_attr( $key ); ?>_tab nav-item">
-          <a href="#tab-<?php echo esc_attr( $key ); ?>" class="active nav-link"><?php echo apply_filters( 'woocommerce_product_' . $key . '_tab_title', esc_html( $tab['title'] ), $key ); ?></a>
-        </li>
+                if( $first == true ):
 
-          <?php
-          $first = false;
-          else:
-          ?>
+                    ?>
+                    <li class="<?php echo esc_attr( $key ); ?>_tab nav-item">
+                        <a href="#tab-<?php echo esc_attr( $key ); ?>" class="active nav-link"><?php echo apply_filters( 'woocommerce_product_' . $key . '_tab_title', esc_html( $tab['title'] ), $key ); ?></a>
+                    </li>
 
-        <li class="<?php echo esc_attr( $key ); ?>_tab nav-item">
-          <a href="#tab-<?php echo esc_attr( $key ); ?>" class="nav-link"><?php echo apply_filters( 'woocommerce_product_' . $key . '_tab_title', esc_html( $tab['title'] ), $key ); ?></a>
-        </li>
-       
-      <?php endif; endforeach; ?>
-    </ul>
+                    <?php
+                        $first = false;
+                        else:
+                    ?>
 
-    <?php foreach ( $tabs as $key => $tab ) : ?>
-      <div class="panel entry-content wc-tab" id="tab-<?php echo esc_attr( $key ); ?>">
-        <?php call_user_func( $tab['callback'], $key, $tab ); ?>
-      </div>
-    <?php endforeach; ?>
+                    <li class="<?php echo esc_attr( $key ); ?>_tab nav-item">
+                        <a href="#tab-<?php echo esc_attr( $key ); ?>" class="nav-link"><?php echo apply_filters( 'woocommerce_product_' . $key . '_tab_title', esc_html( $tab['title'] ), $key ); ?></a>
+                    </li>
 
-  </div>
+            <?php endif; endforeach; ?>
+        </ul>
+
+        <?php foreach ( $tabs as $key => $tab ) : ?>
+
+        <div class="panel entry-content wc-tab" id="tab-<?php echo esc_attr( $key ); ?>">
+            <?php call_user_func( $tab['callback'], $key, $tab ); ?>
+        </div>
+        
+        <?php endforeach; ?>
+
+    </div>
 </div>
 
 <?php endif; ?>
