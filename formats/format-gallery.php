@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * formats/format-gallery.php
+ * //formats/format-gallery.php
  ********************************************** 
  *
  * Post format for a gallery post.

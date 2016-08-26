@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * config/login.php
+ * //config/login.php
  ********************************************** 
  *
  * Custom styling for the login page.

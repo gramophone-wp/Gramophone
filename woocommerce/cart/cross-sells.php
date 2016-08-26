@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/cart/cross-sells.php
+ * //woocommerce/cart/cross-sells.php
  **********************************************
  *
  * 

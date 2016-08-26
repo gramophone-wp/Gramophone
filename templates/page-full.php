@@ -3,7 +3,7 @@
  **********************************************
  * Template Name: Full Page
  **********************************************
- * templates/page-full.php
+ * //templates/page-full.php
  **********************************************
  *
  * A full width page template.

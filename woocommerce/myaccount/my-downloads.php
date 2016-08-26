@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/myaccount/my-downloads.php
+ * //woocommerce/myaccount/my-downloads.php
  **********************************************
  *
  * My Downloads

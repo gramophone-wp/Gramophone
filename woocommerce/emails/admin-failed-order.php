@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/emails/admin-failed-order.php
+ * //woocommerce/emails/admin-failed-order.php
  **********************************************
  *
  * Admin failed order email

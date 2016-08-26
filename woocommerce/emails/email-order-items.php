@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/emails/email-order-items.php
+ * //woocommerce/emails/email-order-items.php
  **********************************************
  *
  * Email Order Items

@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/single-product/product-attributes.php
+ * //woocommerce/single-product/product-attributes.php
  **********************************************
  *
  * Product attributes

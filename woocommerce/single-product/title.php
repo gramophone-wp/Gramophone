@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/single-product/title.php
+ * //woocommerce/single-product/title.php
  **********************************************
  *
  * Single Product title

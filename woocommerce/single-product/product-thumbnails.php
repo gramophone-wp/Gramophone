@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/single-product/product-thumbnails.php
+ * //woocommerce/single-product/product-thumbnails.php
  **********************************************
  *
  * Single product thumbnails

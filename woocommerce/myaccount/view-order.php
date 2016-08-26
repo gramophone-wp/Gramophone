@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/myaccount/view-orders.php
+ * //woocommerce/myaccount/view-orders.php
  **********************************************
  *
  * View Order

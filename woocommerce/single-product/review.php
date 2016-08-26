@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/single-product/review.php
+ * //woocommerce/single-product/review.php
  **********************************************
  *
  * The review

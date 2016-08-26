@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/cart/cart-item-data.php
+ * //woocommerce/cart/cart-item-data.php
  **********************************************
  *
  * 

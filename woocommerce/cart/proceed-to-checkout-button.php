@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/cart/proceed-to-checkout-button.php
+ * //woocommerce/cart/proceed-to-checkout-button.php
  **********************************************
  *
  * Shipping Methods Display

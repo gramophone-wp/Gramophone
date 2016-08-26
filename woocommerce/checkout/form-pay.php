@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/checkout/form-pay.php
+ * //woocommerce/checkout/form-pay.php
  **********************************************
  *
  * 

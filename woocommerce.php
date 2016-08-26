@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce.php
+ * //woocommerce.php
  **********************************************
  *
  * The WooCommerce wrapper template.

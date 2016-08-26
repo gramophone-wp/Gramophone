@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/emails/plain/customer-reset-password.php
+ * //woocommerce/emails/plain/customer-reset-password.php
  **********************************************
  *
  * Customer Reset Password email

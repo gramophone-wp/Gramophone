@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/emails/email-styles.php
+ * //woocommerce/emails/email-styles.php
  **********************************************
  *
  * Email Styles

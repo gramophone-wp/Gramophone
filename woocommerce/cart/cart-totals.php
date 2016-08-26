@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/cart/cart-totals.php
+ * //woocommerce/cart/cart-totals.php
  **********************************************
  *
  * Shipping Methods Display

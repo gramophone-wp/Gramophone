@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/global/login-form.php
+ * //woocommerce/global/login-form.php
  **********************************************
  *
  * Shop breadcrumb

@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/archive-product.php
+ * //woocommerce/archive-product.php
  **********************************************
  *
  * The Template for displaying product archives, 
@@ -17,8 +17,9 @@
  * @version
 **/
 
-if ( ! defined( 'ABSPATH' ) ) {
-    exit; // Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) 
+{
+    exit; // exit if accessed directly
 }
 
 get_header( 'shop' ); ?>

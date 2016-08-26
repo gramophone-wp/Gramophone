@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/single-product/tabs/description.php
+ * //woocommerce/single-product/tabs/description.php
  **********************************************
  *
  * Description tab

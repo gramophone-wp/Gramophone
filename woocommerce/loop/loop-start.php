@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/loop/loop-start.php
+ * //woocommerce/loop/loop-start.php
  **********************************************
  *
  * Product Loop Start

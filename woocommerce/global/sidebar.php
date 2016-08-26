@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/global/sidebar.php
+ * //woocommerce/global/sidebar.php
  **********************************************
  *
  * Sidebar

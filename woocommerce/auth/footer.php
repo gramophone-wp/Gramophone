@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/auth/footer.php
+ * //woocommerce/auth/footer.php
  **********************************************
  *
  * The end of the shop template.

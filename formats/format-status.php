@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * formats/format-status.php
+ * //formats/format-status.php
  ********************************************** 
  *
  * Post format for a status based post.

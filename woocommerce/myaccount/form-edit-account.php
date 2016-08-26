@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/myaccount/form-edit-account.php
+ * //woocommerce/myaccount/form-edit-account.php
  **********************************************
  *
  * Edit account form

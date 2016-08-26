@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/notices/error.php
+ * //woocommerce/notices/error.php
  **********************************************
  *
  * Show error messages

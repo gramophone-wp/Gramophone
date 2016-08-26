@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/checkout/cart-errors.php
+ * //woocommerce/checkout/cart-errors.php
  **********************************************
  *
  * 

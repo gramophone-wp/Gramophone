@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/single-product-reviews.php
+ * //woocommerce/single-product-reviews.php
  **********************************************
  *
  * Displays reviews for single products in the
@@ -21,7 +21,8 @@
 
 global $product;
 
-if ( ! defined( 'ABSPATH' ) ) {
+if ( ! defined( 'ABSPATH' ) ) 
+{
     exit; // Exit if accessed directly
 }
 

@@ -3,7 +3,7 @@
  **********************************************
  * Template Name: Example Template 
  **********************************************
- * templates/page-template.php
+ * //templates/page-template.php
  **********************************************
  *
  * An example template for creating custom 

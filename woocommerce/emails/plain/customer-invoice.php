@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/emails/plain/customer-invoice.php
+ * //woocommerce/emails/plain/customer-invoice.php
  **********************************************
  *
  * Customer invoice email (plain text)

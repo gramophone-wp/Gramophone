@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * config/pagination.php
+ * //config/pagination.php
  **********************************************
  *
  * Pagination for the posts.

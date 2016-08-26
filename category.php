@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * category.php
+ * //category.php
  **********************************************
  *
  * The template for category archives.

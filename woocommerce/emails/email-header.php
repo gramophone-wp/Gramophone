@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/emails/email-header.php
+ * //woocommerce/emails/email-header.php
  **********************************************
  *
  * Email Header

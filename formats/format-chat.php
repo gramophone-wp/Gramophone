@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * formats/format-chat.php
+ * //formats/format-chat.php
  ********************************************** 
  *
  * Post format for a chat (dump) post. 

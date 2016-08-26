@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/auth/form-login.php
+ * //woocommerce/auth/form-login.php
  **********************************************
  *
  * 

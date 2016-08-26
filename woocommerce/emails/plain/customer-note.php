@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/emails/plain/customer-note.php
+ * //woocommerce/emails/plain/customer-note.php
  **********************************************
  *
  * Customer note email

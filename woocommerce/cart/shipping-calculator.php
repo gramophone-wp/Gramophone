@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/cart/shipping-calculator.php
+ * //woocommerce/cart/shipping-calculator.php
  **********************************************
  *
  * Shipping Methods Display

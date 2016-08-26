@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * formats/format-image.php
+ * //formats/format-image.php
  ********************************************** 
  *
  * Post format for an image post. 

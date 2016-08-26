@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/single-product/up-sells.php
+ * //woocommerce/single-product/up-sells.php
  **********************************************
  *
  * Single Product Up-Sells

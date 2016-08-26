@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/emails/admin-new-order.php
+ * //woocommerce/emails/admin-new-order.php
  **********************************************
  *
  * Admin new order email

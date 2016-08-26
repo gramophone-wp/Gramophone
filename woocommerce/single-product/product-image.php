@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/single-product/product-image.php
+ * //woocommerce/single-product/product-image.php
  **********************************************
  *
  *

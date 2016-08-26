@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/auth/form-grant-access.php
+ * //woocommerce/auth/form-grant-access.php
  **********************************************
  *
  * 

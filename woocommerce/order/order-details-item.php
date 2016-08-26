@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/order/order-details-item.php
+ * //woocommerce/order/order-details-item.php
  **********************************************
  *
  * Order Item Details

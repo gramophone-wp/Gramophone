@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/single-product/sale-flash.php
+ * //woocommerce/single-product/sale-flash.php
  **********************************************
  *
  * Single Product Sale Flash

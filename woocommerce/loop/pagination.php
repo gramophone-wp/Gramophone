@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/loop/pagination.php
+ * //woocommerce/loop/pagination.php
  **********************************************
  *
  * Pagination - Show numbered pagination for 

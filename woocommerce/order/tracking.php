@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/order/tracking.php
+ * //woocommerce/order/tracking.php
  **********************************************
  *
  * Tracking

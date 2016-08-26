@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/myaccount/form-add-payment-method.php
+ * //woocommerce/myaccount/form-add-payment-method.php
  **********************************************
  *
  * Add payment method form form

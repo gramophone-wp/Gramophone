@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * formats/format-link.php
+ * //formats/format-link.php
  ********************************************** 
  *
  * Post format for link post.

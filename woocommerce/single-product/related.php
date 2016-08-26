@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/single-product/related.php
+ * //woocommerce/single-product/related.php
  **********************************************
  *
  * Related Products

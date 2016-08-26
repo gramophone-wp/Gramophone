@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/emails/customer-refunded-order.php
+ * //woocommerce/emails/customer-refunded-order.php
  **********************************************
  *
  * Customer refunded order email

@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/single-product/price.php
+ * //woocommerce/single-product/price.php
  **********************************************
  *
  * Single Product Price, including microdata for SEO

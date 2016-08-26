@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * formats/format-quote.php
+ * //formats/format-quote.php
  ********************************************** 
  *
  * Post format for quote post.

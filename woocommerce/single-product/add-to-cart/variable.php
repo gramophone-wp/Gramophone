@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/single-product/add-to-cart/variable.php
+ * //woocommerce/single-product/add-to-cart/variable.php
  **********************************************
  *
  * Variable product add to cart
@@ -15,7 +15,8 @@
  * @version
 **/
 
-if ( ! defined( 'ABSPATH' ) ) {
+if ( ! defined( 'ABSPATH' ) ) 
+{
     exit;
 }
 
@@ -71,7 +72,7 @@ do_action( 'woocommerce_before_add_to_cart_form' ); ?>
     */
     do_action( 'woocommerce_after_single_variation' );
     ?>
-    
+
     </div>
 
     <?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>

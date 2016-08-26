@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/notices/success.php
+ * //woocommerce/notices/success.php
  **********************************************
  *
  * Success notice

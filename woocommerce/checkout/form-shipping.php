@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/checkout/form-shipping.php
+ * //woocommerce/checkout/form-shipping.php
  **********************************************
  *
  * 

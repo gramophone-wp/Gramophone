@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/checkout/thankyou.php
+ * //woocommerce/checkout/thankyou.php
  **********************************************
  *
  * Thankyou page

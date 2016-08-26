@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/loop/price.php
+ * //woocommerce/loop/price.php
  **********************************************
  *
  * Loop price

@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/myaccount/my-account.php
+ * //woocommerce/myaccount/my-account.php
  **********************************************
  *
  * My Account Page

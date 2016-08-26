@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/loop/orderby.php
+ * //woocommerce/loop/orderby.php
  **********************************************
  *
  * Show options for ordering

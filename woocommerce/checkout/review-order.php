@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/checkout/review-order.php
+ * //woocommerce/checkout/review-order.php
  **********************************************
  *
  * Review order table

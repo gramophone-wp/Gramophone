@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/notices/notice.php
+ * //woocommerce/notices/notice.php
  **********************************************
  *
  * Show messages

@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/single-product/rating.php
+ * //woocommerce/single-product/rating.php
  **********************************************
  *
  * Single Product Rating

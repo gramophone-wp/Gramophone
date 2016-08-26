@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/emails/plain/customer-new-account.php
+ * //woocommerce/emails/plain/customer-new-account.php
  **********************************************
  *
  * Customer new account email

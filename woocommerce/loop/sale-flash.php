@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/loop/sale-flash.php
+ * //woocommerce/loop/sale-flash.php
  **********************************************
  *
  * This is the flash message that is displayed

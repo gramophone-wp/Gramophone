@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * formats/format.php
+ * //formats/format.php
  ********************************************** 
  *
  * Post format for a regular, plain ol' post.

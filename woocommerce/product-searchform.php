@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/product-searchform.php
+ * //woocommerce/product-searchform.php
  **********************************************
  *
  * This is the search form template for the
@@ -18,8 +18,9 @@
 **/
 
 // Exit if accessed directly
-if ( ! defined( 'ABSPATH' ) ) {
-  exit;
+if ( ! defined( 'ABSPATH' ) ) 
+{
+    exit;
 }
 
 ?>

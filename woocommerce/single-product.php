@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/single-product.php
+ * //woocommerce/single-product.php
  **********************************************
  *
  * The template for displaying a product, which
@@ -16,7 +16,8 @@
  * @version
 **/
 
-if ( ! defined( 'ABSPATH' ) ) {
+if ( ! defined( 'ABSPATH' ) ) 
+{
     exit; // Exit if accessed directly
 }
 

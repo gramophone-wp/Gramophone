@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/emails/plain/email-customer-details.php
+ * //woocommerce/emails/plain/email-customer-details.php
  **********************************************
  *
  * Additional Customer Details (plain)

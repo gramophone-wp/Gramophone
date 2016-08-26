@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/loop/no-products-found.php
+ * //woocommerce/loop/no-products-found.php
  **********************************************
  *
  * Displayed when no products are found matching 

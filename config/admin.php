@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * config/admin.php
+ * //config/admin.php
  ********************************************** 
  *
  * Custom configuration for the administration

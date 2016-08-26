@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/taxonomy-product_cat.php
+ * //woocommerce/taxonomy-product_cat.php
  **********************************************
  *
  * The template for displaying products in a 
@@ -17,7 +17,8 @@
  * @version
 **/
 
-if ( ! defined( 'ABSPATH' ) ) {
+if ( ! defined( 'ABSPATH' ) ) 
+{
     exit; // Exit if accessed directly
 }
 

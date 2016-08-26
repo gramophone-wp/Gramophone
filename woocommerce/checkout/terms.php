@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/checkout/terms.php
+ * //woocommerce/checkout/terms.php
  **********************************************
  *
  * Checkout terms and conditions checkbox

@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/single-product/add-to-cart/simple.php
+ * //woocommerce/single-product/add-to-cart/simple.php
  **********************************************
  *
  * Simple product add to cart

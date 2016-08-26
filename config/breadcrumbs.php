@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * config/breadcrumbs.php
+ * //config/breadcrumbs.php
  **********************************************
  *
  * Custom breadcrumbs functionality.

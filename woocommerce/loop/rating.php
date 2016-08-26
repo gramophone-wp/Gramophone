@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/loop/rating.php
+ * //woocommerce/loop/rating.php
  **********************************************
  *
  * Loop rating

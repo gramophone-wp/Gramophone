@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/single-product/add-to-cart/external.php
+ * //woocommerce/single-product/add-to-cart/external.php
  **********************************************
  *
  * External product add to cart

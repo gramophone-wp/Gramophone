@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/single-product/add-to-cart/grouped.php
+ * //woocommerce/single-product/add-to-cart/grouped.php
  **********************************************
  *
  * Grouped product add to cart

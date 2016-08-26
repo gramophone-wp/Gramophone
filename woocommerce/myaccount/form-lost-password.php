@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/myaccount/form-lost-password.php
+ * //woocommerce/myaccount/form-lost-password.php
  **********************************************
  *
  * Lost password form

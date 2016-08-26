@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/emails/admin-cancelled-order.php
+ * //woocommerce/emails/admin-cancelled-order.php
  **********************************************
  *
  * Admin cancelled order email

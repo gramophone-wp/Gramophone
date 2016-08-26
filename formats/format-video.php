@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * formats/format-video.php
+ * //formats/format-video.php
  ********************************************** 
  *
  * Post format for a video post.

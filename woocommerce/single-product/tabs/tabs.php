@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/single-product/tabs/tabs.php
+ * //woocommerce/single-product/tabs/tabs.php
  **********************************************
  *
  * This is the tabular area under the product

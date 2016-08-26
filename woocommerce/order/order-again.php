@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/order/order-again.php
+ * //woocommerce/order/order-again.php
  **********************************************
  *
  * Order again button

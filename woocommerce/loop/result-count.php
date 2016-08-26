@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/loop/result-count.php
+ * //woocommerce/loop/result-count.php
  **********************************************
  *
  * Result Count

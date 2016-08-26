@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/single-product/meta.php
+ * //woocommerce/single-product/meta.php
  **********************************************
  *
  * Single Product Meta

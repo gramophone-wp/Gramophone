@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/global/quantity-input.php
+ * //woocommerce/global/quantity-input.php
  **********************************************
  *
  * Product quantity inputs

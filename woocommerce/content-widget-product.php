@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/content-widget-product.php
+ * //woocommerce/content-widget-product.php
  **********************************************
  *
  * The template for displaying product widget 
@@ -17,7 +17,8 @@
 **/
 
 // Exit if accessed directly
-if ( ! defined( 'ABSPATH' ) ) {
+if ( ! defined( 'ABSPATH' ) ) 
+{
     exit;
 }
 

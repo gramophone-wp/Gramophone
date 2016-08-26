@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/emails/plain/email-addresses.php
+ * //woocommerce/emails/plain/email-addresses.php
  **********************************************
  *
  * Email Addresses (plain)

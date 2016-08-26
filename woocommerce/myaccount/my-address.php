@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/myaccount/my-address.php
+ * //woocommerce/myaccount/my-address.php
  **********************************************
  *
  * My Addresses

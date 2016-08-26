@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/loop/loop-end.php
+ * //woocommerce/loop/loop-end.php
  **********************************************
  *
  * Product Loop End

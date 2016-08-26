@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * author.php
+ * //author.php
  **********************************************
  *
  * Author (archives) related posts & content.

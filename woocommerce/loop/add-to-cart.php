@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/loop/add-to-cart.php
+ * //woocommerce/loop/add-to-cart.php
  **********************************************
  *
  * Loop Add to Cart

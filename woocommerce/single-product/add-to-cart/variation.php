@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/single-product/add-to-cart/variation.php
+ * //woocommerce/single-product/add-to-cart/variation.php
  **********************************************
  *
  * Single variation display

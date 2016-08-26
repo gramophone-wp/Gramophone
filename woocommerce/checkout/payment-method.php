@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/checkout/payment-method.php
+ * //woocommerce/checkout/payment-method.php
  **********************************************
  *
  * Output a single payment method

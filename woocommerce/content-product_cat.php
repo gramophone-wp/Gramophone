@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/content-product_cat.php
+ * //woocommerce/content-product_cat.php
  **********************************************
  *
  * The template for displaying product category 

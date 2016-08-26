@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/cart/mini-cart.php
+ * //woocommerce/cart/mini-cart.php
  **********************************************
  *
  * 

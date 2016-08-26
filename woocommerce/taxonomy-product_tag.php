@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/taxonomy-product_tag.php
+ * //woocommerce/taxonomy-product_tag.php
  **********************************************
  *
  * The Template for displaying products in a product tag. 
@@ -16,7 +16,8 @@
  * @version
 **/
 
-if ( ! defined( 'ABSPATH' ) ) {
+if ( ! defined( 'ABSPATH' ) ) 
+{
     exit; // Exit if accessed directly
 }
 

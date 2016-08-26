@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/emails/plain/customer-completed-order.php
+ * //woocommerce/emails/plain/customer-completed-order.php
  **********************************************
  *
  * Customer completed order email (plain text)

@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/single-product/share.php
+ * //woocommerce/single-product/share.php
  **********************************************
  *
  * Single Product Share

@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * config/woocommerce.php
+ * //config/woocommerce.php
  **********************************************
  * 
  * Woommerce theme config.

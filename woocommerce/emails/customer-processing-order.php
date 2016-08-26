@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/emails/customer-processing-order.php
+ * //woocommerce/emails/customer-processing-order.php
  **********************************************
  *
  * Customer processing order email

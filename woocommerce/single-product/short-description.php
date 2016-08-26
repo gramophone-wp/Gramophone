@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/single-product/short-description.php
+ * //woocommerce/single-product/short-description.php
  **********************************************
  *
  * Single product short description

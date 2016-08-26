@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/checkout/form-coupon.php
+ * //woocommerce/checkout/form-coupon.php
  **********************************************
  *
  * 

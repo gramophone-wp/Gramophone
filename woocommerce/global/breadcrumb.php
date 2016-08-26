@@ -1,7 +1,7 @@
 <?php
 /**
  **********************************************
- * woocommerce/global/breadcrumps.php
+ * //woocommerce/global/breadcrumps.php
  **********************************************
  *
  * Shop breadcrumb
