@@ -22,6 +22,6 @@
   </a>
 </p>
 
-<h1>Configuration</h1>
+<h1>Post Formats</h1>
 
 
