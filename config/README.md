@@ -22,6 +22,6 @@
   </a>
 </p>
 
-<h1>Admin</h1>
+<h1>Configuration</h1>
 
 
