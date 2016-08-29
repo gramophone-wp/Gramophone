@@ -18,7 +18,7 @@
   </a>
 
   <a href="https://github.com/pjhampton/BigBooty/wiki">
-    <img src="https://img.shields.io/badge/Docs-github%20wiki-ff69b4.svg?style=flat-square">
+    <img src="https://img.shields.io/badge/Docs-Github%20Wiki-ff69b4.svg?style=flat-square">
   </a>
 </p>
 
