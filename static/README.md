@@ -9,4 +9,4 @@ The `static/` sub directory is for static assets. Static assets are <i>assets</i
   - `images/` ~ For images
   - `js/` ~ For files containing Javascript, TypeScript, Elm, etc
 
-To hook the assets to the theme, add / alter `//config/enqueue.php`.
+To hook the assets to the theme, add / alter <a href="https://github.com/pjhampton/BigBooty/blob/master/config/enqueue.php">//config/enqueue.php`</a>.
