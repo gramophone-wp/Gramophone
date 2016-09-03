@@ -1,5 +1,5 @@
 <img src="http://pjhampton.com/bigbooty/banner.png" alt="bigbooty">
 
-<h1>Includes</h1>
+<h1 align="center">Includes</h1>
 
 
