@@ -3,10 +3,10 @@
 <h1 align="center"><i>Configuration</i></h1>
 
 <table>
-    <th>
-        <td>Filename</td>
-        <td>Description</td>
-    </th>
+    <tr>
+        <th>Filename</th>
+        <th>Description</th>
+    </tr>
     <tr>
         <td>admin.php</td>
         <td></td>
