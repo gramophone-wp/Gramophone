@@ -1,5 +1,54 @@
 <img src="http://pjhampton.com/bigbooty/banner.png" alt="bigbooty">
 
-<h1 align="center">Configuration</h1>
+<h1 align="center"><i>Configuration</i></h1>
 
-
+<table>
+    <th>
+        <td>Filename</td>
+        <td>Description</td>
+    </th>
+    <tr>
+        <td>admin.php</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>breadcrumbs.php</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>comments.php</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>enqueue.php</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>login.php</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>menus.php</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>pagination.php</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>required_plugins.php</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>support.php</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>widgets.php</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>woocommerce.php</td>
+        <td></td>
+    </tr>
+</table>
