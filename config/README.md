@@ -6,6 +6,7 @@
     <tr>
         <th>Filename</th>
         <th>Description</th>
+        <th>More</th>
     </tr>
     <tr>
         <td><a href="https://github.com/pjhampton/BigBooty/blob/master/config/admin.php">admin.php</a></td>
