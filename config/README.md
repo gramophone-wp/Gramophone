@@ -30,7 +30,7 @@
     </tr>
     <tr>
         <td><a href="https://github.com/pjhampton/BigBooty/blob/master/config/login.php">login.php</a></td>
-        <td>The styling for the `wp-admin/` login screen.</td>
+        <td>The styling for the <b>wp-admin/</b> login screen.</td>
         <td><a href="#">Read More</a></td>
     </tr>
     <tr>
