@@ -4,7 +4,10 @@
  * //category.php
  *******************************************************************************
  *
- * The template for category archives.
+ * The template for archives organized by a specific category.
+ *
+ * READ MORE
+ * https://codex.wordpress.org/Category_Templates
  *
  * @author
  * @copyright
