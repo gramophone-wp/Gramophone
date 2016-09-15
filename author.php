@@ -6,6 +6,9 @@
  *
  * Author (archives) related posts & content.
  *
+ * READ MORE
+ * https://codex.wordpress.org/Author_Templates
+ *
  * @author
  * @copyright
  * @link
