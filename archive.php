@@ -6,6 +6,9 @@
  *
  * The template for post archives.
  *
+ * READ MORE
+ * https://codex.wordpress.org/Creating_an_Archive_Index
+ *
  * @author
  * @copyright
  * @link
