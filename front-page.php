@@ -6,6 +6,9 @@
  *
  * The front page.
  *
+ * READ MORE
+ * https://developer.wordpress.org/themes/basics/template-hierarchy/#front-page-display
+ *
  * @author
  * @copyright
  * @link
