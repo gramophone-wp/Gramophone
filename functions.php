@@ -6,6 +6,9 @@
  *
  * The theme functions.
  *
+ * READ MORE
+ * https://codex.wordpress.org/Functions_File_Explained
+ *
  * @author
  * @copyright
  * @link

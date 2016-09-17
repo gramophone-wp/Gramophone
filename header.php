@@ -6,6 +6,9 @@
  *
  * The header.
  *
+ * READ MORE
+ * https://codex.wordpress.org/Theme_Development#Document_Head_.28header.php
+ *
  * @author
  * @copyright
  * @link

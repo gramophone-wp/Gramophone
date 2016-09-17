@@ -6,6 +6,9 @@
  *
  * The index page.
  *
+ * READ MORE
+ * https://developer.wordpress.org/themes/basics/template-hierarchy/#home-page-display
+ *
  * @author
  * @copyright
  * @link
