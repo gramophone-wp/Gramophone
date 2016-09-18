@@ -6,6 +6,9 @@
  *
  * The search results.
  *
+ * READ MORE
+ * https://codex.wordpress.org/Creating_a_Search_Page
+ *
  * @author
  * @copyright
  * @link

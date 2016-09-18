@@ -4,9 +4,8 @@
  * //config/admin.php
  *******************************************************************************
  *
- * Custom configuration for the administration
- * area.
- *
+ * Custom configuration for the administration area.
+ * 
  * @author
  * @copyright
  * @link

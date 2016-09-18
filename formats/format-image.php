@@ -5,6 +5,9 @@
  *******************************************************************************
  *
  * Post format for an image post. 
+ *
+ * READ MORE
+ * https://developer.wordpress.org/themes/functionality/post-formats/
  * 
  * @author
  * @copyright

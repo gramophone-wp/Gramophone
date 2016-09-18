@@ -6,6 +6,9 @@
  *
  * The template for tag archives.
  *
+ * READ MORE
+ * https://codex.wordpress.org/Tag_Templates
+ *
  * @author
  * @copyright
  * @link

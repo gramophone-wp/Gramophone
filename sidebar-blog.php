@@ -6,6 +6,9 @@
  *
  * The blogs sidebar.
  *
+ * READ MORE
+ * https://codex.wordpress.org/Customizing_Your_Sidebar
+ *
  * @author
  * @copyright
  * @link

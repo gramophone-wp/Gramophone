@@ -5,6 +5,9 @@
  *******************************************************************************
  *
  * Post format for a regular, plain ol' post.
+ *
+ * READ MORE
+ * https://developer.wordpress.org/themes/functionality/post-formats/
  * 
  * @author
  * @copyright

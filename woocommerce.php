@@ -6,6 +6,9 @@
  *
  * The WooCommerce wrapper template.
  *
+ * READ MORE
+ * https://docs.woocommerce.com/document/template-structure/
+ *
  * @author
  * @copyright
  * @link

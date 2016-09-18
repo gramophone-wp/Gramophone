@@ -6,6 +6,9 @@
  *
  * The single post.
  *
+ * READ MORE
+ * https://codex.wordpress.org/Theme_Development#Single_Post_.28single.php
+ *
  * @author
  * @copyright
  * @link
