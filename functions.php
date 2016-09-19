@@ -6,7 +6,7 @@
  *
  * The theme functions.
  *
- * READ MORE
+ * CODEX REF
  * https://codex.wordpress.org/Functions_File_Explained
  *
  * @author

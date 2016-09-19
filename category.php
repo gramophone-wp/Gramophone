@@ -6,7 +6,7 @@
  *
  * The template for archives organized by a specific category.
  *
- * READ MORE
+ * CODEX REF
  * https://codex.wordpress.org/Category_Templates
  *
  * @author

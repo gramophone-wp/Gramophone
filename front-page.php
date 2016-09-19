@@ -6,7 +6,7 @@
  *
  * The front page.
  *
- * READ MORE
+ * CODEX REF
  * https://developer.wordpress.org/themes/basics/template-hierarchy/#front-page-display
  *
  * @author

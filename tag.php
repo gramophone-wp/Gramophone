@@ -6,7 +6,7 @@
  *
  * The template for tag archives.
  *
- * READ MORE
+ * CODEX REF
  * https://codex.wordpress.org/Tag_Templates
  *
  * @author

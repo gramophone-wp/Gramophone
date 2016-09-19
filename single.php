@@ -6,7 +6,7 @@
  *
  * The single post.
  *
- * READ MORE
+ * CODEX REF
  * https://codex.wordpress.org/Theme_Development#Single_Post_.28single.php
  *
  * @author

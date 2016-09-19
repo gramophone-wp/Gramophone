@@ -6,7 +6,7 @@
  *
  * The general footer.
  *
- * READ MORE
+ * CODEX REF
  * https://codex.wordpress.org/Theme_Development#Footer_.28footer.php
  *
  * @author

@@ -6,7 +6,7 @@
  *
  * Post format for an image post. 
  *
- * READ MORE
+ * CODEX REF
  * https://developer.wordpress.org/themes/functionality/post-formats/
  * 
  * @author

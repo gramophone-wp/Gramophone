@@ -6,7 +6,7 @@
  *
  * The template for post archives.
  *
- * READ MORE
+ * CODEX REF 
  * https://codex.wordpress.org/Creating_an_Archive_Index
  *
  * @author

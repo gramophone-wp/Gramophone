@@ -6,7 +6,7 @@
  *
  * The index page.
  *
- * READ MORE
+ * CODEX REF
  * https://developer.wordpress.org/themes/basics/template-hierarchy/#home-page-display
  *
  * @author

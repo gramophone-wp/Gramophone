@@ -6,7 +6,7 @@
  *
  * Post format for a status based post.
  *
- * READ MORE
+ * CODEX REF
  * https://developer.wordpress.org/themes/functionality/post-formats/
  * 
  * @author

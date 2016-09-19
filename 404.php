@@ -6,7 +6,7 @@
  *
  * The 404 template (Not found)
  *
- * READ MORE
+ * CODEX REF 
  * https://codex.wordpress.org/Creating_an_Error_404_Page
  *
  * @author

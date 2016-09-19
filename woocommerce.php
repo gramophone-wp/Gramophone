@@ -6,7 +6,7 @@
  *
  * The WooCommerce wrapper template.
  *
- * READ MORE
+ * CODEX REF
  * https://docs.woocommerce.com/document/template-structure/
  *
  * @author

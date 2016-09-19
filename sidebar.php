@@ -6,7 +6,7 @@
  *
  * The general siderbar.
  *
- * READ MORE
+ * CODEX REF
  * https://codex.wordpress.org/Customizing_Your_Sidebar
  *
  * @author

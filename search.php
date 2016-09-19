@@ -6,7 +6,7 @@
  *
  * The search results.
  *
- * READ MORE
+ * CODEX REF
  * https://codex.wordpress.org/Creating_a_Search_Page
  *
  * @author
