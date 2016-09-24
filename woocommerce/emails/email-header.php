@@ -26,7 +26,7 @@ if ( ! defined( 'ABSPATH' ) )
 <html dir="<?php echo is_rtl() ? 'rtl' : 'ltr'?>">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title><?php echo get_bloginfo( 'name', 'display' ); ?></title>
+    <!-- We may want to put in an email <title> tag in here. -->
 </head>
 <body <?php echo is_rtl() ? 'rightmargin' : 'leftmargin'; ?>="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
 
