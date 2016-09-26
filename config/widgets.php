@@ -41,6 +41,7 @@ function create_widget( $name, $id, $description )
         'after_title' => '</h4>'
     ));
 }
+// add_action( 'widgets_init', 'create_widget' );
 
 /**
  *******************************************************************************
