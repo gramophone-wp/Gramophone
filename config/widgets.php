@@ -15,52 +15,80 @@
  * @version
 **/
 
-
-/**
- *******************************************************************************
- * create_widget/3
- *******************************************************************************
- *
- * The `create_widget` function takes 3 params-
- * `$name`, `$id` and `$desciption`. It is 
- * responsible for defining the cast of a 
- * widget. It is possible to duplicate this
- * function into more than one function.
- * 
-**/
-
-function create_widget( $name, $id, $description ) 
+function create_left_footer_widget() 
 {
     register_sidebar( array(
-        'name' => __( $name ),	 
-        'id' => $id, 
-        'description' => __( $description ),
+        'name' => __( "Footer Left" ),	 
+        'id' => __("footer_left"), 
+        'description' => __( "The left footer widget" ),
         'before_widget' => '<div class="widget">',
         'after_widget' => '</div>',
         'before_title' => '<h4 class="text-center" id="widget-title">',
         'after_title' => '</h4>'
     ));
 }
-// add_action( 'widgets_init', 'create_widget' );
+add_action( 'widgets_init', 'create_left_footer_widget' );
 
-/**
- *******************************************************************************
- * CALL: create_widget/3
- *******************************************************************************
- *
- * To create a widget, we call the function 
- * here. The first param is the name of the
- * widget is the name, second the name in the
- * database and the thrid, the description of
- * the footer.
- * 
-**/
 
-create_widget( 'Footer Left',   'footer_left',   'This is the left footer' );
-create_widget( 'Footer Center', 'footer_center', 'This is the center footer' );
-create_widget( 'Footer Right',  'footer_right',  'This is the right footer' );
-create_widget( 'Page Sidebar',  'page',          'Displays on the side of normal pages' );
-create_widget( 'Post Sidebar',  'blog',          'Displays on the side of blog pages' );
+function create_center_footer_widget() 
+{
+    register_sidebar( array(
+        'name' => __( "Footer Center" ),
+        'id' => __("footer_center"), 
+        'description' => __( "The center footer widget" ),
+        'before_widget' => '<div class="widget">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4 class="text-center" id="widget-title">',
+        'after_title' => '</h4>'
+    ));
+}
+add_action( 'widgets_init', 'create_center_footer_widget' );
+
+
+function create_right_footer_widget() 
+{
+    register_sidebar( array(
+        'name' => __( "Footer Right" ),
+        'id' => __("footer_right"), 
+        'description' => __( "The right footer widget" ),
+        'before_widget' => '<div class="widget">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4 class="text-center" id="widget-title">',
+        'after_title' => '</h4>'
+    ));
+}
+add_action( 'widgets_init', 'create_right_footer_widget' );
+
+
+function create_page_widget() 
+{
+    register_sidebar( array(
+        'name' => __( "Page Widget" ),
+        'id' => __("page"), 
+        'description' => __( "The page widget container" ),
+        'before_widget' => '<div class="widget">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4 class="text-center" id="widget-title">',
+        'after_title' => '</h4>'
+    ));
+}
+add_action( 'widgets_init', 'create_page_widget' );
+
+
+function create_post_widget() 
+{
+    register_sidebar( array(
+        'name' => __( "Post Widget" ),
+        'id' => __("post"), 
+        'description' => __( "The post widget container" ),
+        'before_widget' => '<div class="widget">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4 class="text-center" id="widget-title">',
+        'after_title' => '</h4>'
+    ));
+}
+add_action( 'widgets_init', 'create_page_widget' );
+
 // ...add more
 
 ?>
