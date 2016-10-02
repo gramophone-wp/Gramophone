@@ -18,10 +18,10 @@
 
 /**
  *******************************************************************************
- * login_styles/0 
+ * login_styles 
  *******************************************************************************
  *
- * login_styles/0 enqueues the `wp-login` css  
+ * login_styles enqueues the `wp-login` css  
  * for the WordPress login page.  
  * 
 **/
@@ -38,10 +38,10 @@ add_action( 'login_enqueue_scripts', 'login_styles' );
 
 /**
  *******************************************************************************
- * admin_logo/0
+ * admin_logo
  *******************************************************************************
  *
- * admin_logo/0 replaces the default WordPress
+ * admin_logo replaces the default WordPress
  * `logo` on the `/wp-login/`. It is set to
  * `display: none;` by default.
  * 

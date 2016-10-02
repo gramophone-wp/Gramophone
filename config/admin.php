@@ -18,10 +18,10 @@
 
 /**
  *******************************************************************************
- * admin_colors/0
+ * admin_colors
  *******************************************************************************
  *
- * admin_colors/0 adds a custom color scheme  
+ * admin_colors adds a custom color scheme  
  * to the theme. This color scheme is just
  * a friendly example. The `array` of hex
  * codes are the colors of the theme.
@@ -42,7 +42,7 @@ add_action('admin_init', 'admin_colors');
 
 /**
  *******************************************************************************
- * clean_dashboard/0
+ * clean_dashboard
  *******************************************************************************
  *
  * WordPress by default comes with a lot of 
@@ -74,10 +74,10 @@ add_action( 'wp_dashboard_setup', 'clean_dashboard' );
 
 /**
  *******************************************************************************
- * admin_footer/0
+ * admin_footer
  *******************************************************************************
  *
- * admin_footer/0 is the function that adds a
+ * admin_footer is the function that adds a
  * `message` to the admin footer.
  * 
 **/
