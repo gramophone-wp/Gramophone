@@ -30,7 +30,7 @@
 </div>
 
 <div class="container">   
-    <div class="row row-offcanvas row-offcanvas-right">
+    <div class="row">
         <div class="col-md-7 text-justify">
 
             <?php the_content(); ?>
