@@ -310,6 +310,14 @@ p.demo_store {
     margin-bottom: 30px;
 }
 
+@media (max-width: 543px) {
+
+    .card {
+        padding: 20px;
+    }
+
+}
+
 .card .alert {
     position: absolute;
     top: 0;
@@ -317,8 +325,34 @@ p.demo_store {
     border-radius: 0;
     background: #a94442;
     color: #fff;
+    border: 0;
+}
+
+@media (max-width: 543px) {
+
+    .card .alert {
+        width: 300px;
+    }
+
 }
 
 .card h3 {
     margin-top: 15px;
+}
+
+.price-text-color {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+@media (max-width: 543px) {
+
+    .page-title, .woocommerce-result-count {
+        margin-left: 20px;
+    }
+
+    .woocommerce-ordering {
+        margin-right: 20px;
+    }
+
 }
