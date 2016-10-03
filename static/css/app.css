@@ -1,5 +1,5 @@
 /*****************************
- ~~ html specific 
+ ~~ html specific
 *****************************/
 
 img {
@@ -14,10 +14,10 @@ footer {
 }
 
 /*****************************
- ~~ WordPress Config Specific 
+ ~~ WordPress Config Specific
 *****************************/
 
-.size-auto, 
+.size-auto,
 .size-full,
 .size-large,
 .size-medium,
@@ -46,7 +46,7 @@ ul.hide-bullets li.col-sm-4 {
 }
 
 /*****************************
- ~~ WordPress Generated Classes 
+ ~~ WordPress Generated Classes
 *****************************/
 
 .alignnone {
@@ -92,7 +92,7 @@ a img.aligncenter {
 .wp-caption {
     background: #fff;
     border: 1px solid #f0f0f0;
-    max-width: 96%; 
+    max-width: 96%;
     padding: 5px 3px 10px;
     text-align: center;
 }
@@ -155,7 +155,7 @@ a img.aligncenter {
 }
 
 /*****************************
- ~~ Blog (home) 
+ ~~ Blog (home)
 *****************************/
 
 article.post {
@@ -163,7 +163,7 @@ article.post {
 }
 
 /*****************************
- ~~ admin 
+ ~~ admin
 *****************************/
 
 .admin-bar .navbar-fixed-top {
@@ -171,7 +171,7 @@ article.post {
 }
 
 /*****************************
- ~~ widgets 
+ ~~ widgets
 *****************************/
 
 .widgets {
@@ -219,7 +219,7 @@ table#wp-calendar caption {
 }
 
 /*****************************
- ~~ footer (widgets) 
+ ~~ footer (widgets)
 *****************************/
 
 #copyright p {
@@ -294,4 +294,65 @@ p.demo_store {
 
 .page-link:hover {
     text-decoration: none;
+}
+
+.woocommerce-ordering {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+/*****************************
+~~ Product grid
+*****************************/
+
+.card {
+    border: 0;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 543px) {
+
+    .card {
+        padding: 20px;
+    }
+
+}
+
+.card .alert {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-radius: 0;
+    background: #a94442;
+    color: #fff;
+    border: 0;
+}
+
+@media (max-width: 543px) {
+
+    .card .alert {
+        width: 300px;
+    }
+
+}
+
+.card h3 {
+    margin-top: 15px;
+}
+
+.price-text-color {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+@media (max-width: 543px) {
+
+    .page-title, .woocommerce-result-count {
+        margin-left: 20px;
+    }
+
+    .woocommerce-ordering {
+        margin-right: 20px;
+    }
+
 }

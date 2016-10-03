@@ -4,7 +4,7 @@
  * //woocommerce/content-product.php
  *******************************************************************************
  *
- * The template for displaying product content 
+ * The template for displaying product content
  * within loops
  *
  * @author
@@ -16,7 +16,7 @@
  * @version
 **/
 
-if ( ! defined( 'ABSPATH' ) ) 
+if ( ! defined( 'ABSPATH' ) )
 {
     exit; // exit if accessed directly
 }
@@ -43,7 +43,7 @@ $woocommerce_loop['loop']++;
 
 // Extra post classes
 $classes = array();
-if ( 0 === ( $woocommerce_loop['loop'] - 1 ) % $woocommerce_loop['columns'] || 1 === $woocommerce_loop['columns'] ) 
+if ( 0 === ( $woocommerce_loop['loop'] - 1 ) % $woocommerce_loop['columns'] || 1 === $woocommerce_loop['columns'] )
 {
     $classes[] = 'first';
 }
@@ -75,11 +75,32 @@ if ( 0 === $woocommerce_loop['loop'] % $woocommerce_loop['columns'] )
         do_action( 'woocommerce_before_shop_loop_item_title' );
 
         /**
+        * woocommerce_close_item_link.
+        *
+        * @hooked woocommerce_template_loop_category_link_close - 10
+        */
+        do_action( 'woocommerce_close_item_link' );
+
+        /**
+        * woocommerce_before_shop_loop_item hook.
+        *
+        * @hooked woocommerce_template_loop_product_link_open - 10
+        */
+        do_action( 'woocommerce_before_shop_loop_item' );
+
+        /**
         * woocommerce_shop_loop_item_title hook.
         *
         * @hooked woocommerce_template_loop_product_title - 10
         */
         do_action( 'woocommerce_shop_loop_item_title' );
+
+        /**
+        * woocommerce_close_item_link.
+        *
+        * @hooked woocommerce_template_loop_category_link_close - 10
+        */
+        do_action( 'woocommerce_close_item_link' );
 
         /**
         * woocommerce_after_shop_loop_item_title hook.
