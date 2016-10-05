@@ -187,11 +187,6 @@ blockquote p {
   display: inline;
 }
 
-blockquote cite{
-    font-weight: bold;
-    display:block;
-}
-
 /*****************************
  ~~ admin
 *****************************/
