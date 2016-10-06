@@ -21,7 +21,9 @@
 
 <article>
     <section>
-        <?php the_content(); ?>
+      <blockquote>
+        <cite><?php the_content(); ?></cite>
+      </blockquote> 
     </section>
 </article>
 
