@@ -390,3 +390,25 @@ p.demo_store {
     }
 
 }
+
+.video-wrapper {
+    width: 100%;
+    max-width: 720px;
+    float: none;
+    display: block;
+    margin: 0 auto;
+}
+
+.video-wrapper .video-inner {
+    width: 100%;
+    padding: 0 0 56.25% 0;
+    position: relative;
+}
+
+.video-wrapper .video-inner iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
