@@ -188,6 +188,15 @@ blockquote p {
 }
 
 /*****************************
+ ~~ Post Format: image
+*****************************/
+
+.post_format-post-format-image img {
+    border: 1px solid #ccc;
+    padding: 0.5em 10px;
+}
+
+/*****************************
  ~~ admin
 *****************************/
 
