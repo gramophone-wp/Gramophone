@@ -65,7 +65,7 @@ function theme_pagination() {
         printf( '<li%s class="page-item"><a class="page-link" href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( 1 ) ), '1' );
 
         if ( ! in_array( 2, $links ) )
-        echo '<li class="page-item">…</li>';
+        echo '<li class="page-item"><a class="page-link">…</a></li>';
     }
 
     /** Link to current page, plus 2 pages in either direction if necessary */
