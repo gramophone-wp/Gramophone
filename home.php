@@ -27,18 +27,18 @@
     </div>
 </div>
 
-<div class="container">   
+<div class="container">
     <div class="row">
         <div class="col-md-12">
 
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-            <article class="post">
+            <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
                 <h4><a href="<?php the_permalink(); ?>" class="post-title"><?php the_title(); ?></a></h4>
 
                 <p>
-                    By <?php the_author_posts_link(); ?> 
+                    By <?php the_author_posts_link(); ?>
                     <span class="hidden-xs-down">
                     on <?php echo the_time('l, F jS, Y');?>
                     </span>
@@ -48,7 +48,7 @@
                     <?php comments_number(); ?>
                     </a>
                     </span>
-                </p>            
+                </p>
 
                 <?php the_excerpt(); ?>
 
@@ -67,7 +67,7 @@
         </div>
 
     <?php theme_pagination(); ?>
-    
+
     </div>
 </div>
 
