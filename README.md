@@ -24,7 +24,7 @@
 
 <h2 align="center"><em>Framework?</em></h2> 
 
-<p align="center">Nope! It's an <i>opinionated</i> <strong>starter theme</strong> to <strong>speed up</strong> theme <strong>development</strong> in Bootstrap.</p>
+<p align="center">Nope! It's yet another <strong>starter theme</strong> to <strong>speed up</strong> theme <strong>development</strong> in Bootstrap 4.</p>
 
 <image src="http://pjhampton.com/bigbooty/home_page.png">
 
@@ -35,6 +35,10 @@
 <h2 align="center"><em>Boilerplate Loaded</em></h2>
 
 <image src="http://pjhampton.com/bigbooty/admin_interface.png">
+
+<h2 align="center"><em>Support</em></h2>
+
+<p align="center">Please star :sparkles: this repository or <em>contribute</em>.</p>
 
 <h2 align="center"><em>Help</em></h2>
 
