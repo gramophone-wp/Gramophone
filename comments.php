@@ -87,6 +87,11 @@ if ( post_password_required() ) {
 
         <?php
 
+				$commenter = wp_get_current_commenter();
+				$req = get_option( 'require_name_email' );
+				$aria_req = ( $req ? " aria-required='true'" : '' );
+				$required_text = sprintf( ' ' . __( 'Required fields are marked %s' ), '<span class="required">*</span>' );
+
         $args = array(
             
             'id_form'           => 'commentform',
