@@ -4,11 +4,11 @@
  * //formats/format-chat.php
  *******************************************************************************
  *
- * Post format for a chat (dump) post. 
+ * Post format for a chat (dump) post.
  *
  * CODEX REF
  * https://developer.wordpress.org/themes/functionality/post-formats/
- * 
+ *
  * @author
  * @copyright
  * @link
@@ -19,7 +19,7 @@
 **/
 ?>
 
-<article>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <section>
         <?php the_content(); ?>
     </section>

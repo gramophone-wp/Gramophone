@@ -198,6 +198,15 @@ blockquote p {
 }
 
 /*****************************
+ ~~ Post Format: chat
+*****************************/
+
+.post_format-post-format-chat {
+    background: #f9f9f9;
+	font-family:monospace;
+}
+
+/*****************************
  ~~ admin
 *****************************/
 
