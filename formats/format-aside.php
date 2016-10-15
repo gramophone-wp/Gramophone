@@ -21,7 +21,9 @@
 
 <article>
     <section>
-        <?php the_content(); ?>
+    	<blockquote id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+        	<?php the_content(); ?>
+        </blockquote>
     </section>
 </article>
 
