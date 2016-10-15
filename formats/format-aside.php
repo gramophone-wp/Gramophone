@@ -20,8 +20,10 @@
 ?>
 
 <article>
-    <section>
-        <?php the_content(); ?>
+    <section >
+    	<blockquote id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+        	<?php the_content(); ?>
+        </blockquote>
     </section>
 </article>
 
