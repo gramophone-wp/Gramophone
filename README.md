@@ -40,6 +40,10 @@
 
 <p align="center">Please star :sparkles: this repository or <em>contribute</em>.</p>
 
+<h2 align="center"><em>Versioning</em></h2>
+
+<p align="center">The versioning representing YY.MM (YY = Year, MM = Month)</p>
+
 <h2 align="center"><em>Help</em></h2>
 
 <p align="center">Refer to this projects <a href="https://github.com/pjhampton/BigBooty/wiki">wiki</a> or please open an issue <a href="https://gituhb.com/pjhampton/BigBooty/issues">here</a>.</p>
