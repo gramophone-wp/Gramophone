@@ -239,6 +239,35 @@ blockquote p {
 }
 
 /*****************************
+ ~~ Post Format: Gallery
+*****************************/
+
+@media (max-width:768px){
+    .post_format-post-format-gallery > div > dl.gallery-item {
+        width: 100% !important;
+    }    
+}
+
+@media (min-width:768px){
+    .post_format-post-format-gallery > div > dl.gallery-item {
+        width: 33% !important;
+    }    
+}
+
+.post_format-post-format-gallery > div > dl.gallery-item > dt > a > img {
+    background-color: #fff;
+    border: 1px solid #ddd !important;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.post_format-post-format-gallery > div > dl.gallery-item:hover > dt > a > img,
+.post_format-post-format-gallery > div > dl.gallery-item:focus > dt > a > img,
+.post_format-post-format-gallery > div > dl.gallery-item:active > dt > a > img {
+    border-color: #337ab7;
+}
+
+/*****************************
  ~~ admin
 *****************************/
 
