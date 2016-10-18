@@ -207,6 +207,38 @@ blockquote p {
 }
 
 /*****************************
+ ~~ Post Format: Aside
+*****************************/
+
+.post_format-post-format-aside {
+    background: #fff;
+    padding: 20px 20px 20px 50px;
+    -webkit-box-shadow: 0 2px 2px rgba(0,0,0,0.15);
+    box-shadow: 0 2px 2px rgba(0,0,0,0.15);
+    overflow: hidden;
+}
+
+/*****************************
+ ~~ Post Format: link
+*****************************/
+
+.post_format-post-format-link a {
+    color: #5bc0de;
+}
+
+.post_format-post-format-link a:visited {
+    color: #348aa3;
+}
+
+.post_format-post-format-link a:hover  {
+    color: #4bacc9;
+    text-decoration: underline;
+}
+
+.post_format-post-format-link a:active {
+}
+
+/*****************************
  ~~ admin
 *****************************/
 
