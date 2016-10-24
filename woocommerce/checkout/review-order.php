@@ -21,7 +21,6 @@ if ( ! defined( 'ABSPATH' ) )
 }
 
 ?>
-
 <table class="shop_table woocommerce-checkout-review-order-table table">
     <thead class="thead-inverse">
         <tr>
