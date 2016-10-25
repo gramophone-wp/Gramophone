@@ -21,11 +21,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 ?>
 
-<div class="cart_totals <?php if ( WC()->customer->has_calculated_shipping() ) echo 'calculated_shipping'; ?> col-md-6">
+<div class="cart_totals <?php if ( WC()->customer->has_calculated_shipping() ) echo 'calculated_shipping'; ?>">
 
     <?php do_action( 'woocommerce_before_cart_totals' ); ?>
 
-    <h3><?php _e( 'Cart Totals', 'woocommerce' ); ?></h3>
+    <h2><?php _e( 'Cart Totals', 'woocommerce' ); ?></h2>
 
     <table cellspacing="0" class="table shop_table">
 
