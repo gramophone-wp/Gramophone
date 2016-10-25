@@ -42,9 +42,9 @@
 <body <?php body_class(); ?> <?php post_class('title_post group'); ?>>
 
 <header class="navbar navbar-full navbar-dark navbar-static-top bg-inverse" role="banner">
-    
+
     <div class="clearfix">
-        <button class="navbar-toggler pull-xs-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
+        <button class="navbar-toggler pull-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
         &#9776;
         </button>
         <a class="navbar-brand hidden-sm-up" href="<?php echo esc_url(home_url()); ?>">
@@ -70,7 +70,7 @@
                     ) );
                 ?>
 
-                <form class="form-inline hidden-xs-down pull-xs-right" method="get" action="<?php echo home_url( '/' ); ?>">
+                <form class="form-inline hidden-xs-down pull-right" method="get" action="<?php echo home_url( '/' ); ?>">
                     <input name="s" id="s" class="form-control" type="text" placeholder="Search">
                     <button class="btn btn-outline-info" type="submit">Search</button>
                 </form>

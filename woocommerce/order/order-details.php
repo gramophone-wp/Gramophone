@@ -26,11 +26,12 @@ $show_purchase_note    = $order->has_status( apply_filters( 'woocommerce_purchas
 $show_customer_details = is_user_logged_in() && $order->get_user_id() === get_current_user_id();
 
 ?>
-<div class="col-sm-12">
-<h4><?php _e( 'Order Details', 'woocommerce' ); ?></h4>
-<table class="shop_table order_details table table-hover">
 
-    <thead class="thead-inverse">
+<h2><?php _e( 'Order Details', 'woocommerce' ); ?></h2>
+
+<table class="shop_table order_details">
+
+    <thead>
         <tr>
             <th class="product-name"><?php _e( 'Product', 'woocommerce' ); ?></th>
             <th class="product-total"><?php _e( 'Total', 'woocommerce' ); ?></th>
@@ -72,7 +73,7 @@ $show_customer_details = is_user_logged_in() && $order->get_user_id() === get_cu
     </tfoot>
 
 </table>
-</div>
+
 <?php do_action( 'woocommerce_order_details_after_order_table', $order ); ?>
 
 <?php if ( $show_customer_details ) : ?>
