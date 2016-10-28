@@ -245,13 +245,13 @@ blockquote p {
 @media (max-width:768px){
     .post_format-post-format-gallery > div > dl.gallery-item {
         width: 100% !important;
-    }    
+    }
 }
 
 @media (min-width:768px){
     .post_format-post-format-gallery > div > dl.gallery-item {
         width: 33% !important;
-    }    
+    }
 }
 
 .post_format-post-format-gallery > div > dl.gallery-item > dt > a > img {
@@ -416,11 +416,9 @@ p.demo_store {
 }
 
 @media (max-width: 543px) {
-
     .card {
         padding: 20px;
     }
-
 }
 
 .card .alert {
@@ -434,11 +432,9 @@ p.demo_store {
 }
 
 @media (max-width: 543px) {
-
     .card .alert {
         width: 300px;
     }
-
 }
 
 .card h3 {
@@ -451,7 +447,6 @@ p.demo_store {
 }
 
 @media (max-width: 543px) {
-
     .page-title, .woocommerce-result-count {
         margin-left: 20px;
     }
@@ -459,8 +454,11 @@ p.demo_store {
     .woocommerce-ordering {
         margin-right: 20px;
     }
-
 }
+
+/*****************************
+~~ Video (Post format)
+*****************************/
 
 .video-wrapper {
     width: 100%;
