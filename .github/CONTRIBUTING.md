@@ -4,7 +4,7 @@ Developer patches are essential for improving this code base. We simply can't th
 
 ### Got a question or problem?
 
-If you have a question how you should / could use BigBooty, checkout this projects wiki which is open to external collaboration. Otherwise, please feel free to open up an issue.
+If you have a question how you should / could use Gramophone, checkout this projects wiki which is open to external collaboration. Otherwise, please feel free to open up an issue.
 
 ### Getting Started 
 
@@ -25,9 +25,9 @@ git checkout -b my-new-branch
 - Create you patch. Make sure it works with the test data
 - Follow adopted conventions
 - Commit your messages using a descriptive commit message
-- In Github, send a pull request to `bigbooty:master`
+- In Github, send a pull request to `gramophone:master`
 - If the PR gets too outdated we may ask you to rebase and force push your PR
 
 ### The GPL v2 and above.
 
-Both WordPress and Bootstrap licence their projects under this licence, and therefore BigBooty inherits it. Any contributions you make to this project will also fall into this licence (GNU General Public Licence v2). If there is an issue with this, please consider withholding your pull request... but we'd still love you to contribute!
+Both WordPress and Bootstrap licence their projects under this licence, and therefore Gramophone inherits it. Any contributions you make to this project will also fall into this licence (GNU General Public Licence v2). If there is an issue with this, please consider withholding your pull request... but we'd still love you to contribute!

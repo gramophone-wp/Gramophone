@@ -1,4 +1,4 @@
-<img src="http://pjhampton.com/bigbooty/banner.png" alt="bigbooty">
+<img src="http://pjhampton.com/bigbooty/banner.png" alt="gramophone wordpress">
 
 <p align="center">
   <a href="https://github.com/pjhampton/BigBooty/blob/master/licence">
@@ -17,7 +17,7 @@
     <img src="https://img.shields.io/badge/WooCommerce-v2.6.7-A46497.svg?style=flat-square">
   </a>
 
-  <a href="https://github.com/pjhampton/BigBooty/wiki">
+  <a href="https://github.com/pjhampton/Gramophone/wiki">
     <img src="https://img.shields.io/badge/Docs-Github%20Wiki-ff69b4.svg?style=flat-square">
   </a>
 </p>
@@ -42,7 +42,7 @@
 
 <h2 align="center"><em>Help</em></h2>
 
-<p align="center">Refer to this projects <a href="https://github.com/pjhampton/BigBooty/wiki">wiki</a> or please open an issue <a href="https://gituhb.com/pjhampton/BigBooty/issues">here</a>.</p>
+<p align="center">Refer to this projects <a href="https://github.com/pjhampton/Gramophone/wiki">wiki</a> or please open an issue <a href="https://gituhb.com/pjhampton/Gramophone/issues">here</a>.</p>
 
 <h2 align="center"><em>Contributing</em></h2>
 
@@ -57,4 +57,4 @@
 
 <h2 align="center"><em>Licence</em></h2>
 
-<p align="center"><a href="https://github.com/pjhampton/BigBooty/blob/master/licence.md">General Public License (GPL) v2</a>.</p>
+<p align="center"><a href="https://github.com/pjhampton/Gramophone/blob/master/licence.md">General Public License (GPL) v2</a>.</p>
