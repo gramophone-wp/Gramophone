@@ -9,12 +9,21 @@ If you have a question how you should / could use Gramophone, checkout this proj
 ### Getting Started 
 
 - Read this documentation
-- Submit a ticket for your issue, assuming one does not already exist.
-  - Clearly describe the issue including steps to reproduce when it is a bug.
-  - Make sure you fill in the earliest version that you know has the issue.
+- Submit a ticket for your issue, assuming one does not already exist
+  - Clearly describe the issue including steps to reproduce when it is a bug
+  - Make sure you fill in the earliest version that you know has the issue
+  - If you are working on a bug, comment and let us know about it.
 - Fork the repository on GitHub
 - Make your changes in a new branch
 - Push your changes and make a PR
+
+### Setting up
+
+- Set up clean WordPress installation
+- Clone the theme in *wp-content/* folder and activate it
+- Import the [Theme Unit Test](https://codex.wordpress.org/Theme_Unit_Test) XML file 
+- Work on your code and submit a pull request
+- Reference any existing issues related to your pull request
 
 ### Submitting a Pull Request
 
@@ -31,3 +40,4 @@ git checkout -b my-new-branch
 ### The GPL v2 and above.
 
 Both WordPress and Bootstrap licence their projects under this licence, and therefore Gramophone inherits it. Any contributions you make to this project will also fall into this licence (GNU General Public Licence v2). If there is an issue with this, please consider withholding your pull request... but we'd still love you to contribute!
+

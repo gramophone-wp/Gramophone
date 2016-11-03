@@ -46,14 +46,7 @@
 
 <h2 align="center"><em>Contributing</em></h2>
 
-<ul>
-	<li>Set up clean WordPress installation</li>
-	<li>Clone the theme in `wp-content` folder and activate it</li>
-	<li>Import the XML file from https://codex.wordpress.org/Theme_Unit_Test</li>
-	<li>If you're working on an open issue write a comment to let others know you're working on it</li>
-	<li>Work on your code and submit a pull request</li>
-	<li>Reference any existing issues related to your pull request</li>
-</ul>
+<p align="center">Check out the <a href="https://github.com/pjhampton/Gramophone/tree/master/.github/CONTRIBUTING.md">Contributing Guide</a></p>
 
 <h2 align="center"><em>Licence</em></h2>
 
