@@ -1,10 +1,6 @@
-# You're Awesome!
+# Want to contribute? You're Awesome!
 
-Developer patches are essential for improving this code base. We simply can't thank you enough. I want to keep it as easy as possible to contribute changes that get things working in your environment. There are a few guidelines that are recommended for contributors to follow so that I have a chance of keeping on top of things and merging your Pull Request.
-
-### Got a question or problem?
-
-If you have a question how you should / could use Gramophone, checkout this projects wiki which is open to external collaboration. Otherwise, please feel free to open up an issue.
+Developer patches are essential for improving this code base. We simply can't thank you enough. I want to keep it as easy as possible to contribute changes that get things working in your environment. There are a few guidelines that are recommended for contributors to follow so that we have a chance of keeping on top of things and merging your Pull Request.
 
 ### Getting Started 
 
@@ -14,16 +10,13 @@ If you have a question how you should / could use Gramophone, checkout this proj
   - Make sure you fill in the earliest version that you know has the issue
   - If you are working on a bug, comment and let us know about it.
 - Fork the repository on GitHub
-- Make your changes in a new branch
-- Push your changes and make a PR
 
 ### Setting up
 
 - Set up clean WordPress installation
 - Clone the theme in *wp-content/* folder and activate it
 - Import the [Theme Unit Test](https://codex.wordpress.org/Theme_Unit_Test) XML file 
-- Work on your code and submit a pull request
-- Reference any existing issues related to your pull request
+- Import the [WooCommerce dummy data](https://plugins.svn.wordpress.org/woocommerce/tags/2.6.4/dummy-data/dummy-data.xml?dl=1)
 
 ### Submitting a Pull Request
 
