@@ -38,15 +38,11 @@
 
 <h2 align="center"><em>Support</em></h2>
 
-<p align="center">Please star :sparkles: this repository or <em>contribute</em>.</p>
+<p align="center">Please :sparkles: star :sparkles: this repository or contribute. Check out the <a href="https://github.com/pjhampton/Gramophone/tree/master/.github/CONTRIBUTING.md">Contributing Guide</a></p>
 
 <h2 align="center"><em>Help</em></h2>
 
 <p align="center">Refer to this projects <a href="https://github.com/pjhampton/Gramophone/wiki">wiki</a> or please open an issue <a href="https://gituhb.com/pjhampton/Gramophone/issues">here</a>.</p>
-
-<h2 align="center"><em>Contributing</em></h2>
-
-<p align="center">Check out the <a href="https://github.com/pjhampton/Gramophone/tree/master/.github/CONTRIBUTING.md">Contributing Guide</a></p>
 
 <h2 align="center"><em>Licence</em></h2>
 
