@@ -28,7 +28,7 @@
     </div>
 </div>
 
-<div class="container">   
+<div class="container">
     <div class="row">
         <div class="col-md-12 text-justify">
 
@@ -36,8 +36,8 @@
             <?php wp_link_pages(); ?>
 
             <?php endwhile; else: ?>
-              
-            <h1>No Booty Here!</h1>
+
+            <h1>No content here!</h1>
 
             <p>There doesn't seem to be anything here as yet!</p>
 
