@@ -1,12 +1,12 @@
 <?php
 /**
  *******************************************************************************
- * Template Name: Example Template 
+ * Template Name: Example Template
  *******************************************************************************
  * //templates/page-template.php
  *******************************************************************************
  *
- * An example template for creating custom 
+ * An example template for creating custom
  * theme templates.
  *
  * @author
@@ -29,12 +29,11 @@
     </div>
 </div>
 
-<div class="container">   
+<div class="container">
     <div class="row">
         <div class="col-md-12 text-justify">
 
             <?php the_content(); ?>
-            <?php wp_link_pages(); ?>
 
             <?php endwhile; else: ?>
 
