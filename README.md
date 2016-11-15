@@ -1,7 +1,7 @@
 <img src="http://pjhampton.com/bigbooty/banner.png" alt="gramophone wordpress">
 
 <p align="center">
-  <a href="https://github.com/pjhampton/BigBooty/blob/master/licence">
+  <a href="https://github.com/pjhampton/Gramophone/blob/master/licence">
     <img src="https://img.shields.io/badge/License-GPL--2.0+-brightgreen.svg?style=flat-square">
   </a>
 
