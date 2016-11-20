@@ -35,7 +35,11 @@
 
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
+            <?php if( get_the_title() ): ?>
                 <h4><a href="<?php the_permalink(); ?>" class="post-title"><?php the_title(); ?></a></h4>
+            <?php else: ?>
+                <h4><a href="<?php the_permalink(); ?>">READ MORE</a></h4>
+            <?php endif; ?>
 
                 <p>
                     By <?php the_author_posts_link(); ?>
