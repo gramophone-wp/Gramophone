@@ -14,7 +14,7 @@
   </a>
 
   <a href="https://woothemes.com/woocommerce">
-    <img src="https://img.shields.io/badge/WooCommerce-v2.6.7-A46497.svg?style=flat-square">
+    <img src="https://img.shields.io/badge/WooCommerce-v2.6.9-A46497.svg?style=flat-square">
   </a>
 
   <a href="https://github.com/pjhampton/Gramophone/wiki">
