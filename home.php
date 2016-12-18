@@ -28,6 +28,18 @@
 </div>
 
 <div class="container">
+
+    <div class="container">
+      	<div class="card pull-right">
+            <strong>Display</strong>
+            <div class="btn-group">
+                <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
+                </span>List</a> <a href="#" id="grid" class="btn btn-default btn-sm"><span
+                    class="glyphicon glyphicon-th"></span>Grid</a>
+            </div>
+        </div>
+    </div>
+
     <div class="row">
         <div class="col-md-12">
 
