@@ -22,19 +22,19 @@
   </a>
 </p>
 
-<h2 align="center"><em>Framework?</em></h2> 
+<h2 align="center"><em>Framework?</em></h2>
 
 <p align="center">Nope! It's yet another <strong>starter theme</strong> to <strong>speed up</strong> theme <strong>development</strong> in Bootstrap 4.</p>
 
-<image src="http://pjhampton.com/bigbooty/home_page.png">
+<image src="https://github.com/pjhampton/assets/blob/master/gramophone/gramophone_home_1.png">
 
 <h2 align="center"><em color="#a46497">WooCommerce Ready</em></h2>
 
-<image src="http://pjhampton.com/bigbooty/woocommerce.png">
+<image src="https://github.com/pjhampton/assets/blob/master/gramophone/gramophone_home_2.png">
 
 <h2 align="center"><em>Boilerplate Loaded</em></h2>
 
-<image src="http://pjhampton.com/bigbooty/admin_interface.png">
+<image src="https://github.com/pjhampton/assets/blob/master/gramophone/gramophone_home_3.png">
 
 <h2 align="center"><em>Support</em></h2>
 
