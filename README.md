@@ -10,7 +10,7 @@
   </a>
 
   <a href="http://wordpress.org/">
-    <img src="https://img.shields.io/badge/WordPress-v4.6-00A0D2.svg?style=flat-square">
+    <img src="https://img.shields.io/badge/WordPress-v4.7-00A0D2.svg?style=flat-square">
   </a>
 
   <a href="https://woothemes.com/woocommerce">
