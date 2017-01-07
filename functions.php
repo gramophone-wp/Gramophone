@@ -58,6 +58,11 @@ function theme_queue_js()
 add_action('get_header', 'theme_queue_js');
 
 
+add_filter( "the_excerpt", "add_class_to_excerpt" );
+
+function add_class_to_excerpt( $excerpt ) {
+    return str_replace('<p', '<p class="card-title"', $excerpt);
+}
 
 
 ?>

@@ -480,3 +480,13 @@ p.demo_store {
     top: 0;
     left: 0;
 }
+
+/*****************************
+~~ Posts List (list item)
+*****************************/
+
+.list-item
+{
+  float: none;
+  width: 100%;
+}
