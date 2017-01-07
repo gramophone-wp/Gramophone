@@ -29,13 +29,12 @@
 
 <div class="container">
 
-    <div class="container display">
+    <div class="container" id="display">
       	<div class="pull-right">
             <strong>Display</strong>
             <div class="btn-group">
-                <a href="#" id="list" class="btn btn-default btn-sm"><span class="fa fa-list">
-                </span> List</a> <a href="#" id="grid" class="btn btn-default btn-sm"><span
-                    class="fa fa-square"></span> Grid</a>
+                <a href="#" id="grid" class="btn btn-default btn-sm"><span class="fa fa-square"></span> Grid</a>
+                <a href="#" id="list" class="btn btn-default btn-sm"><span class="fa fa-list"></span> List</a>
             </div>
         </div>
     </div>
