@@ -481,12 +481,11 @@ p.demo_store {
     left: 0;
 }
 
-/*****************************
-~~ Posts List (list item)
+*****************************
+~~ Posts display (list / grid)
 *****************************/
 
-.list-item
-{
-  float: none;
-  width: 100%;
+.display {
+    margin: 10px;
 }
+
