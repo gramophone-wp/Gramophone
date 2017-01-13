@@ -30,25 +30,27 @@
 <div class="container">
 
     <div class="container" id="display">
-      	<div class="pull-right">
-            <strong>Display</strong>
-            <div class="btn-group">
-                <a href="#" id="grid" class="btn btn-default btn-sm"><span class="fa fa-square"></span> Grid</a>
-                <a href="#" id="list" class="btn btn-default btn-sm"><span class="fa fa-list"></span> List</a>
+        <div class="col-sm-12">
+          	<div class="float-right">
+                <strong>Display</strong>
+                <div class="btn-group">
+                    <a href="#" id="grid" class="btn btn-default btn-sm"><span class="fa fa-square"></span> Grid</a>
+                    <a href="#" id="list" class="btn btn-default btn-sm"><span class="fa fa-list"></span> List</a>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="container">
 
-        <div id="posts" class="row list-group">
+        <div id="posts" class="list-group">
 
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-            <!-- this is a good example -->
-            <article class="item  col-xs-12 col-lg-4" id="post-<?php the_ID(); ?>">
+
+            <article class="item col-12 col-sm-4 mb-3" id="post-<?php the_ID(); ?>">
                 <div class="card">
-                    <img class="group list-group-image" src="http://placehold.it/400x220/000/fff" alt="" id="post-image" />
+                    <img class="group list-group-image" src="http://placehold.it/400x300/ECEEEF/373q3c" alt="" id="post-image" />
                     <div <?php post_class(); ?>>
                         <div class="card-block">
                         <?php if( get_the_title() ): ?>
@@ -59,7 +61,7 @@
 
                             <?php the_excerpt(); ?>
 
-        <a href="<?php the_permalink(); ?>" class="btn btn-primary">View Article</a>
+                            <a href="<?php the_permalink(); ?>" class="btn btn-primary">View Article</a>
                         </div>
                     </div>
                 </div>
