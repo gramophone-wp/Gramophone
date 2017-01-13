@@ -48,12 +48,14 @@
 
 <footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
     <div class="container">
-        <div class="col-xs-12 text-xs-center" id="copyright">
-            <p class="text-muted">&copy; 
-            <a href="<?php echo esc_url( home_url() ); ?>">
-            <?php bloginfo('name'); ?></a>
-            <?php echo date('Y'); ?>. All Rights Reserved
-            </p>
+        <div vlass="row">
+            <div class="col-12 text-center" id="copyright">
+                <p class="text-muted">&copy; 
+                <a href="<?php echo esc_url( home_url() ); ?>">
+                <?php bloginfo('name'); ?></a>
+                <?php echo date('Y'); ?>. All Rights Reserved
+                </p>
+            </div>
         </div>
     </div>
 </footer>
