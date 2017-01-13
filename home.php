@@ -42,13 +42,13 @@
     </div>
 
     <div class="container">
-
+        
         <div id="posts" class="list-group">
-
+            <div class="row">
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+            
 
-
-            <article class="item col-12 col-sm-4 mb-3" id="post-<?php the_ID(); ?>">
+            <article class="item col-12 col-sm-4" id="post-<?php the_ID(); ?>">
                 <div class="card">
                     <img class="group list-group-image" src="http://placehold.it/400x300/ECEEEF/373q3c" alt="" id="post-image" />
                     <div <?php post_class(); ?>>
@@ -67,8 +67,9 @@
                 </div>
             </article>
 
-            <?php endwhile; else: ?>
 
+            <?php endwhile; else: ?>
+            </div>
                 <div class="page-header">
                 <h1>No posts as yet.</h1>
                 </div>
