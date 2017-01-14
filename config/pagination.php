@@ -51,7 +51,7 @@ function theme_pagination() {
         $links[] = $paged + 1;
     }
 
-    echo '<nav class="navigation text-xs-center"><ul class="pagination">' . "\n";
+    echo '<div class="row justify-content-md-center"><nav class="navigation"><ul class="pagination">' . "\n";
 
     /** Previous Post Link */
     if ( get_previous_posts_link() )
@@ -89,6 +89,6 @@ function theme_pagination() {
     if ( get_next_posts_link() )
         printf( '<li class="page-item">%s</li>' . "\n", get_next_posts_link() );
 
-        echo '</ul></nav>' . "\n";
+        echo '</ul></nav></div>' . "\n";
 
 }
