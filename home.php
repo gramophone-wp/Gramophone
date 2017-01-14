@@ -50,7 +50,10 @@
 
             <article class="item col-12 col-sm-4" id="post-<?php the_ID(); ?>">
                 <div class="card">
-                    <img class="group list-group-image" src="http://placehold.it/400x300/ECEEEF/373q3c" alt="" id="post-image" />
+                    <a href="<?php the_permalink(); ?>">
+                        <img class="group list-group-image" src="http://placehold.it/400x300/ECEEEF/373q3c" alt="" id="post-image" />    
+                    </a>
+                    
                     <div <?php post_class(); ?>>
                         <div class="card-block">
                         <?php if( get_the_title() ): ?>
