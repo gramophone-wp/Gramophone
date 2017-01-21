@@ -42,18 +42,18 @@
     </div>
 
     <div class="container">
-        
+
         <div id="posts" class="list-group">
             <div class="row">
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-            
+
 
             <article class="item col-12 col-sm-4" id="post-<?php the_ID(); ?>">
                 <div class="card">
                     <a href="<?php the_permalink(); ?>">
-                        <img class="group list-group-image" src="http://placehold.it/400x300/ECEEEF/373q3c" alt="" id="post-image" />    
+                        <img class="group list-group-image" src="http://placehold.it/400x300/ECEEEF/373q3c" alt="" id="post-image" />
                     </a>
-                    
+
                     <div <?php post_class(); ?>>
                         <div class="card-block">
                         <?php if( get_the_title() ): ?>
@@ -61,6 +61,21 @@
                         <?php else: ?>
                             <h4 class="card-title"><a href="<?php the_permalink(); ?>">READ MORE</a></h4>
                         <?php endif; ?>
+
+                        <div id="post-metadata">
+                            <p>
+                                By <?php the_author_posts_link(); ?>
+                                <span class="hidden-xs-down">
+                                on <?php echo the_time('l, F jS, Y');?>
+                                </span>
+                                in <?php the_category( ', ' ); ?>.
+                                <span class="pull-right hidden-sm-down">
+                                <a href="<?php comments_link(); ?>">
+                                <?php comments_number(); ?>
+                                </a>
+                                </span>
+                            </p>
+                        </div>
 
                             <?php the_excerpt(); ?>
 

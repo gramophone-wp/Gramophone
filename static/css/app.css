@@ -493,3 +493,6 @@ p.demo_store {
     font-size: 16px;
 }
 
+div#post-metadata {
+    display: none;
+}
