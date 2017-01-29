@@ -48,7 +48,7 @@
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 
-            <article class="item col-12 col-sm-4" id="post-<?php the_ID(); ?>">
+            <article class="item col-12 col-sm-6 col-md-4" id="post-<?php the_ID(); ?>">
                 <div class="card">
                     <a href="<?php the_permalink(); ?>">
                         <img class="group list-group-image" src="http://placehold.it/400x300/ECEEEF/373q3c" alt="" id="post-image" />
