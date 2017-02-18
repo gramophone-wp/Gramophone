@@ -30,7 +30,7 @@
 <div class="container">
 
     <div class="container" id="display">
-        <div class="col-sm-12">
+        <div class="hidden-xs-down col-sm-12">
           	<div class="float-right">
                 <strong>Display</strong>
                 <div class="btn-group">
