@@ -15,7 +15,7 @@
  * @version
 **/
 
-if ( ! defined( 'ABSPATH' ) ) 
+if ( ! defined( 'ABSPATH' ) )
 {
     exit; // Exit if accessed directly
 }
@@ -27,7 +27,7 @@ global $post, $woocommerce, $product;
 <div class="col-md-5">
     <div class="product-images">
     <?php
-        if ( has_post_thumbnail() ) 
+        if ( has_post_thumbnail() )
         {
             $image_caption = get_post( get_post_thumbnail_id() )->post_excerpt;
             $image_link    = wp_get_attachment_url( get_post_thumbnail_id() );
@@ -37,11 +37,11 @@ global $post, $woocommerce, $product;
 
             $attachment_count = count( $product->get_gallery_attachment_ids() );
 
-            if ( $attachment_count > 0 ) 
+            if ( $attachment_count > 0 )
             {
                 $gallery = '[product-gallery]';
-            } 
-            else 
+            }
+            else
             {
                 $gallery = '';
             }
@@ -49,7 +49,7 @@ global $post, $woocommerce, $product;
             echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<a href="%s" itemprop="image" class="woocommerce-main-image zoom" title="%s" data-rel="prettyPhoto' . $gallery . '">%s</a>', $image_link, $image_caption, $image ), $post->ID );
 
         }
-        else 
+        else
         {
 
         echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<img src="%s" alt="%s" />', wc_placeholder_img_src(), __( 'Placeholder', 'woocommerce' ) ), $post->ID );

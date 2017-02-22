@@ -4,8 +4,8 @@
  * //woocommerce/archive-product.php
  *******************************************************************************
  *
- * The Template for displaying product archives, 
- * including the main shop page which is a post 
+ * The Template for displaying product archives,
+ * including the main shop page which is a post
  * type archive.
  *
  * @author
@@ -17,7 +17,7 @@
  * @version
 **/
 
-if ( ! defined( 'ABSPATH' ) ) 
+if ( ! defined( 'ABSPATH' ) )
 {
     exit; // exit if accessed directly
 }
@@ -35,7 +35,7 @@ get_header( 'shop' ); ?>
     ?>
 
     <?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
-
+<p>Page</p>
     <h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
 
     <?php endif; ?>
