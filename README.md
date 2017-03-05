@@ -13,10 +13,6 @@
     <img src="https://img.shields.io/badge/WordPress-v4.7-00A0D2.svg?style=flat-square">
   </a>
 
-  <a href="https://woothemes.com/woocommerce">
-    <img src="https://img.shields.io/badge/WooCommerce-v2.6.11-A46497.svg?style=flat-square">
-  </a>
-
   <a href="https://github.com/pjhampton/Gramophone/wiki">
     <img src="https://img.shields.io/badge/Docs-Github%20Wiki-ff69b4.svg?style=flat-square">
   </a>
