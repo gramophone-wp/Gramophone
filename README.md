@@ -24,10 +24,6 @@
 
 <image src="https://github.com/pjhampton/assets/blob/master/gramophone/gramophone_home_1.png">
 
-<h2 align="center"><em color="#a46497">WooCommerce Ready</em></h2>
-
-<image src="https://github.com/pjhampton/assets/blob/master/gramophone/gramophone_home_2.png">
-
 <h2 align="center"><em>Boilerplate Loaded</em></h2>
 
 <image src="https://github.com/pjhampton/assets/blob/master/gramophone/gramophone_home_3.png">
