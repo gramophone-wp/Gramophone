@@ -1,4 +1,3 @@
-<img src="http://pjhampton.com/bigbooty/banner.png" alt="gramophone wordpress">
 
 <p align="center">
   <a href="https://github.com/pjhampton/Gramophone/blob/master/licence">
@@ -26,7 +25,7 @@
 
 <h2 align="center"><em>Boilerplate Loaded</em></h2>
 
-<image src="https://github.com/pjhampton/assets/blob/master/gramophone/gramophone_home_3.png">
+<image src="https://github.com/pjhampton/assets/blob/master/gramophone/gramophone_home_2.png">
 
 <h2 align="center"><em>Support</em></h2>
 
