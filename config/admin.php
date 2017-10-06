@@ -74,6 +74,41 @@ add_action( 'wp_dashboard_setup', 'clean_dashboard' );
 
 /**
  *******************************************************************************
+ * change logo link from wordpress.org to user site
+ *******************************************************************************
+ *
+ * function changes url of the admin logo
+ *
+**/
+
+function login_url () {  return home_url(); }
+
+/**
+ *******************************************************************************
+ * change logo alt-text to show user site name
+ *******************************************************************************
+ *
+ * function changes the alt-text of the admin logo to user site name
+ *
+**/
+
+function login_title () {  return get_option('blogname'); }
+
+/**
+ *******************************************************************************
+ * call logo url redirect to user site name on on login
+ *******************************************************************************
+ *
+ * function will only call url change on the login page
+ *
+**/
+
+add_filter('login_headerurl', 'login_url');
+add_filter('login_headertitle', 'login_title');
+
+
+/**
+ *******************************************************************************
  * admin_footer
  *******************************************************************************
  *
