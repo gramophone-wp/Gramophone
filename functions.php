@@ -24,7 +24,7 @@ if( !isset( $content_width ) ) {
 
 // Theme Dependencies ~ best not remove these!
 require_once locate_template('includes/class-tgm-plugin-activation.php');
-require_once ( 'includes/bootstrap_walker.php' );
+require_once( 'includes/bootstrap_walker.php' );
 
 // Admin Customisations
 require_once( 'config/admin.php' );
@@ -46,12 +46,11 @@ require_once( 'config/required_plugins.php' );
 // Theme custom post types
 // require_once( '' );
 
-function theme_queue_js()
-{
-    if (!is_admin())
-    {
-        if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1))
-            wp_enqueue_script( 'comment-reply' );
+function theme_queue_js() {
+    if (!is_admin()) {
+        if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
+            wp_enqueue_script( 'comment-reply' );   
+        }
     }
 }
 add_action('get_header', 'theme_queue_js');
@@ -62,6 +61,5 @@ add_filter( "the_excerpt", "add_class_to_excerpt" );
 function add_class_to_excerpt( $excerpt ) {
     return str_replace('<p', '<p class="card-title"', $excerpt);
 }
-
 
 ?>
