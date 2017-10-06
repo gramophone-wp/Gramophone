@@ -1,4 +1,4 @@
-jQuery(document).ready(function() {
+jQuery(document).ready(function($) {
 
     jQuery('#list').click(function(event){
         event.preventDefault();
@@ -15,4 +15,7 @@ jQuery(document).ready(function() {
         jQuery("[id=post-image]").show();
      });
 
+    $("select[name='archive-dropdown']").addClass('form-control');
+    $('li.widget-li').closest('ul').addClass('list-group');
+    $('.widget li').addClass('list-group-item').parent().addClass('list-group');
 });
