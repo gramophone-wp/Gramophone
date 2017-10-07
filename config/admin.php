@@ -81,7 +81,10 @@ add_action( 'wp_dashboard_setup', 'clean_dashboard' );
  *
 **/
 
-function login_url () {  return home_url(); }
+function login_url ()
+{
+    return home_url();
+}
 
 /**
  *******************************************************************************
@@ -92,7 +95,10 @@ function login_url () {  return home_url(); }
  *
 **/
 
-function login_title () {  return get_option('blogname'); }
+function login_title ()
+{
+    return get_option('blogname');
+}
 
 /**
  *******************************************************************************
