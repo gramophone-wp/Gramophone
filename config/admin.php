@@ -28,8 +28,7 @@
  *
 **/
 
-function admin_colors()
-{
+function admin_colors() {
     wp_admin_css_color(
         'Gramophone',
         __( 'Gramophone' ),
@@ -50,7 +49,7 @@ add_action('admin_init', 'admin_colors');
  *
  **/
 
-function clean_dashboard(){
+function clean_dashboard() {
     global $wp_meta_boxes;
 
     // unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_right_now']);       // Right Now Widget
@@ -81,8 +80,7 @@ add_action( 'wp_dashboard_setup', 'clean_dashboard' );
  *
 **/
 
-function login_url ()
-{
+function login_url() {
     return home_url();
 }
 
@@ -95,8 +93,7 @@ function login_url ()
  *
 **/
 
-function login_title ()
-{
+function login_title() {
     return get_option('blogname');
 }
 
@@ -123,8 +120,7 @@ add_filter('login_headertitle', 'login_title');
  *
 **/
 
-function admin_footer()
-{
+function admin_footer() {
     echo "Built with <a href='https://github.com/pjhampton/BigBooty' target='_blank'>BigBooty</a>, the Bootstrap starter theme.";
 }
 add_filter('admin_footer_text', 'admin_footer');
