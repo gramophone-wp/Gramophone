@@ -11,7 +11,7 @@ Tested up to: WordPress 4.8-trunk
 Version: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: blog, left-sidebar, custom-background, custom-menu, editor-style, featured-images, microformats, post-formats,sticky-post, threaded-comments
+Tags: blog, left-sidebar, custom-background, custom-menu, editor-style, featured-images, microformats, post-formats, sticky-post, threaded-comments
 
 == Description ==
 
