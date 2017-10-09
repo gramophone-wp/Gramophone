@@ -33,7 +33,7 @@ add_filter( 'the_password_form', 'bootstrap_password_form' );
 add_filter( 'get_search_form', 'gramophone_search_form' );
 
 function gramophone_search_form( $form_html ) {
-    //Removing the check for html5 format as nothing html5 specific or that would break xhtml  
+    //Removing the check for html5 format as nothing html5 specific or that would break xhtml
     $search_form_template = locate_template( 'searchform.php' );
     if ( '' != $search_form_template ) {
         //This makes sure we don't mess with anyone's child theme implementation
