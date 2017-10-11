@@ -41,22 +41,24 @@
 
 <body <?php body_class(); ?> <?php post_class('title_post group'); ?>>
 
-<header class="navbar navbar-full navbar-dark navbar-static-top bg-inverse" role="banner">
-    
-    <div class="clearfix">
-        <button class="navbar-toggler pull-xs-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav">
-        &#9776;
-        </button>
-        <a class="navbar-brand hidden-sm-up" href="<?php echo esc_url(home_url()); ?>">
-        <?php bloginfo( 'name' ); ?>
-        </a>
-    </div>
+<header class="navbar navbar-light navbar-toggleable-md bd-navbar">
+    <nav class="container">
 
-    <div class="collapse navbar-toggleable-xs" id="bd-main-nav">
-        <nav class="" role="banner">
-            <div class="container">
+        <div class="d-flex justify-content-between hidden-lg-up">
+            <a class="navbar-brand" href="<?php echo esc_url(home_url()); ?>">
+            <?php bloginfo( 'name' ); ?>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bd-main-nav" aria-controls="bd-main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
 
-                <a class="navbar-brand hidden-sm-down" href="<?php echo esc_url(home_url()); ?>"><?php bloginfo( 'name' ); ?></a>
+        <div class="collapse navbar-collapse" id="bd-main-nav">
+            <ul class="nav navbar-nav mr-auto">
+
+                <li class="nav-item active hidden-md-down">
+                    <a class="nav-item nav-link active" href="<?php echo esc_url(home_url()); ?>"><?php bloginfo( 'name' ); ?></a>
+                </li>
 
                 <?php
                     wp_nav_menu( array(
@@ -64,19 +66,18 @@
                         'theme_location' => 'primary',
                         'depth'          => 1,
                         'container'      => "ul",
-                        'menu_class'     => "nav navbar-nav",
+                        'menu_class'     => "navbar-nav mr-auto",
                         'fallback_cb'    => 'bootstrap_walker::fallback',
                         'walker'         => new Bootstrap_Walker()
                     ) );
                 ?>
 
-                <form class="form-inline hidden-xs-down pull-xs-right" method="get" action="<?php echo home_url( '/' ); ?>">
-                    <input name="s" id="s" class="form-control" type="text" placeholder="Search">
-                    <button class="btn btn-outline-info" type="submit">Search</button>
-                </form>
+            </ul>
 
-            </div>
-        </nav>
-    </div>
-
+            <form class="form-inline float-right hidden-md-down" method="get" action="<?php echo home_url( '/' ); ?>">
+                <input name="s" id="s" class="form-control" type="text" placeholder="Search">
+                <button class="btn btn-outline-info" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
 </header>

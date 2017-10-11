@@ -1,0 +1,16 @@
+web:
+  image: wordpress
+  links:
+    - mysql
+  environment:
+    - WORDPRESS_DB_PASSWORD=password
+  ports:
+    - "8080:80"
+  working_dir: /var/www/html
+  volumes:
+    - ./:/var/www/html/wp-content/themes/Gramophone/
+mysql:
+  image: mysql
+  environment:
+    - MYSQL_ROOT_PASSWORD=password
+    - MYSQL_DATABASE=wordpress

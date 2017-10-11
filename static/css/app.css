@@ -10,7 +10,7 @@ img {
 
 footer {
     background: #2a2730;
-    padding-top: 10px;
+    padding: 20px 0;
 }
 
 /*****************************
@@ -160,7 +160,7 @@ a img.aligncenter {
 *****************************/
 
 article.post {
-    padding: 20px;
+    padding-top: 20px;
 }
 
 
@@ -236,6 +236,35 @@ blockquote p {
 }
 
 .post_format-post-format-link a:active {
+}
+
+/*****************************
+ ~~ Post Format: Gallery
+*****************************/
+
+@media (max-width:768px){
+    .post_format-post-format-gallery > div > dl.gallery-item {
+        width: 100% !important;
+    }
+}
+
+@media (min-width:768px){
+    .post_format-post-format-gallery > div > dl.gallery-item {
+        width: 33% !important;
+    }
+}
+
+.post_format-post-format-gallery > div > dl.gallery-item > dt > a > img {
+    background-color: #fff;
+    border: 1px solid #ddd !important;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.post_format-post-format-gallery > div > dl.gallery-item:hover > dt > a > img,
+.post_format-post-format-gallery > div > dl.gallery-item:focus > dt > a > img,
+.post_format-post-format-gallery > div > dl.gallery-item:active > dt > a > img {
+    border-color: #337ab7;
 }
 
 /*****************************
@@ -382,16 +411,13 @@ p.demo_store {
 *****************************/
 
 .card {
-    border: 0;
     margin-bottom: 30px;
 }
 
 @media (max-width: 543px) {
-
     .card {
         padding: 20px;
     }
-
 }
 
 .card .alert {
@@ -405,11 +431,9 @@ p.demo_store {
 }
 
 @media (max-width: 543px) {
-
     .card .alert {
         width: 300px;
     }
-
 }
 
 .card h3 {
@@ -422,7 +446,6 @@ p.demo_store {
 }
 
 @media (max-width: 543px) {
-
     .page-title, .woocommerce-result-count {
         margin-left: 20px;
     }
@@ -430,8 +453,11 @@ p.demo_store {
     .woocommerce-ordering {
         margin-right: 20px;
     }
-
 }
+
+/*****************************
+~~ Video (Post format)
+*****************************/
 
 .video-wrapper {
     width: 100%;
@@ -453,4 +479,20 @@ p.demo_store {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+/*****************************
+~~ Posts display (list / grid)
+*****************************/
+
+#display {
+    margin: 0 0 40px 8px;
+}
+
+#display a {
+    font-size: 16px;
+}
+
+div#post-metadata {
+    display: none;
 }

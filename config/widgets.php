@@ -18,7 +18,7 @@
 function create_left_footer_widget() 
 {
     register_sidebar( array(
-        'name' => __( "Footer Left" ),	 
+        'name' => __( "Footer Left" ),   
         'id' => __("footer_left"), 
         'description' => __( "The left footer widget" ),
         'before_widget' => '<div class="widget">',
@@ -90,5 +90,14 @@ function create_post_widget()
 add_action( 'widgets_init', 'create_page_widget' );
 
 // ...add more
+
+add_filter( 'widget_archives_args', 'gramophone_bootstrap_override' );
+
+function gramophone_bootstrap_override( $args ) {
+    $args['format'] = 'custom';
+    $args['before'] = '<li class="list-group-item widget-li">';
+    $args['after'] = '</li>';
+    return $args;
+}
 
 ?>

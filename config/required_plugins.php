@@ -21,14 +21,14 @@
  * required_plugins
  *******************************************************************************
  *
- * 
- *   
- * 
+ *
+ *
+ *
 **/
 
 add_action( 'tgmpa_register', 'required_plugins' );
- 
-function required_plugins() 
+
+function required_plugins()
 {
 
     $plugins = array(
@@ -46,18 +46,18 @@ function required_plugins()
 
         // add more...
     );
- 
+
     // Change this to your theme text domain, used for internationalising strings
     $theme_text_domain = 'delicias';
- 
+
     $config = array(
-        'domain'            => $theme_text_domain,         	
-        'default_path' 	    => '',                         
-        'parent_menu_slug' 	=> 'themes.php', 				
-        'parent_url_slug' 	=> 'themes.php', 				
-        'menu'              => 'install-required-plugins', 	
-        'has_notices'      	=> true,                       	
-        'is_automatic'    	=> false,					   	
+        'domain'            => $theme_text_domain,
+        'default_path' 	    => '',
+        'parent_menu_slug' 	=> 'themes.php',
+        'parent_url_slug' 	=> 'themes.php',
+        'menu'              => 'install-required-plugins',
+        'has_notices'      	=> true,
+        'is_automatic'    	=> false,
         'message' 	        => '',
 
         'strings'      	=> array(
@@ -65,8 +65,8 @@ function required_plugins()
             'menu_title'                        => __( 'Install Plugins', $theme_text_domain ),
             'installing'                        => __( 'Installing Plugin: %s', $theme_text_domain ), // %1$s = plugin name
             'oops'                              => __( 'Something went wrong with the plugin API.', $theme_text_domain ),
-            'notice_can_install_required'       => _n_noop( 'BigBooty requires the following plugin: %1$s.', 'BigBooty requires the following plugins: %1$s.' ),
-            'notice_can_install_recommended'    => _n_noop( 'BigBooty recommends the following plugin: %1$s.', 'BigBooty recommends the following plugins: %1$s.' ),
+            'notice_can_install_required'       => _n_noop( 'Gramophone requires the following plugin: %1$s.', 'Gramophone requires the following plugins: %1$s.' ),
+            'notice_can_install_recommended'    => _n_noop( 'Gramophone recommends the following plugin: %1$s.', 'Gramophone recommends the following plugins: %1$s.' ),
             'notice_cannot_install'             => _n_noop( 'Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed.', 'Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed.' ), // %1$s = plugin name(s)
             'notice_can_activate_required'      => _n_noop( 'The following required plugin is currently inactive: %1$s.', 'The following required plugins are currently inactive: %1$s.' ), // %1$s = plugin name(s)
             'notice_can_activate_recommended'	=> _n_noop( 'The following recommended plugin is currently inactive: %1$s.', 'The following recommended plugins are currently inactive: %1$s.' ), // %1$s = plugin name(s)
@@ -81,9 +81,9 @@ function required_plugins()
             'nag_type'                          => 'updated'
         )
     );
- 
+
     tgmpa( $plugins, $config );
- 
+
 }
 
 ?>

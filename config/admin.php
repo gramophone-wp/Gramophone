@@ -5,7 +5,7 @@
  *******************************************************************************
  *
  * Custom configuration for the administration area.
- * 
+ *
  * @author
  * @copyright
  * @link
@@ -21,19 +21,18 @@
  * admin_colors
  *******************************************************************************
  *
- * admin_colors adds a custom color scheme  
+ * admin_colors adds a custom color scheme
  * to the theme. This color scheme is just
  * a friendly example. The `array` of hex
  * codes are the colors of the theme.
- * 
+ *
 **/
 
-function admin_colors()
-{
+function admin_colors() {
     wp_admin_css_color(
-        'BigBooty', 
-        __( 'BigBooty' ),
-        admin_url("admin/bigbooty.css"),
+        'Gramophone',
+        __( 'Gramophone' ),
+        admin_url("admin/gramophone.css"),
         array('#07273E', '#14568A', '#D54E21', '#2683AE')
     );
 }
@@ -45,12 +44,12 @@ add_action('admin_init', 'admin_colors');
  * clean_dashboard
  *******************************************************************************
  *
- * WordPress by default comes with a lot of 
+ * WordPress by default comes with a lot of
  * crud. Let's clean up the admin dashboard.
- * 
+ *
  **/
 
-function clean_dashboard(){
+function clean_dashboard() {
     global $wp_meta_boxes;
 
     // unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_right_now']);       // Right Now Widget
@@ -74,16 +73,54 @@ add_action( 'wp_dashboard_setup', 'clean_dashboard' );
 
 /**
  *******************************************************************************
+ * change logo link from wordpress.org to user site
+ *******************************************************************************
+ *
+ * function changes url of the admin logo
+ *
+**/
+
+function login_url() {
+    return home_url();
+}
+
+/**
+ *******************************************************************************
+ * change logo alt-text to show user site name
+ *******************************************************************************
+ *
+ * function changes the alt-text of the admin logo to user site name
+ *
+**/
+
+function login_title() {
+    return get_option('blogname');
+}
+
+/**
+ *******************************************************************************
+ * call logo url redirect to user site name on on login
+ *******************************************************************************
+ *
+ * function will only call url change on the login page
+ *
+**/
+
+add_filter('login_headerurl', 'login_url');
+add_filter('login_headertitle', 'login_title');
+
+
+/**
+ *******************************************************************************
  * admin_footer
  *******************************************************************************
  *
  * admin_footer is the function that adds a
  * `message` to the admin footer.
- * 
+ *
 **/
-	
-function admin_footer() 
-{
+
+function admin_footer() {
     echo "Built with <a href='https://github.com/pjhampton/BigBooty' target='_blank'>BigBooty</a>, the Bootstrap starter theme.";
 }
 add_filter('admin_footer_text', 'admin_footer');
