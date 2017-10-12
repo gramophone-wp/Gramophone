@@ -324,6 +324,18 @@ table#wp-calendar caption {
 }
 
 /*****************************
+ ~~ footer menu
+*****************************/
+
+.footer-menu {
+    background: #4D4857;
+    padding: 20px 0;
+}
+
+.footer-menu a {
+  color: #fff;
+}
+/*****************************
  ~~ footer (widgets)
 *****************************/
 

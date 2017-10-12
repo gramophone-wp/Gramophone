@@ -21,17 +21,17 @@
  * register_theme_menus
  *******************************************************************************
  *
- * 
- *   
- * 
+ *
+ *
+ *
 **/
 
-function register_theme_menus() 
+function register_theme_menus()
 {
     register_nav_menus(
         array(
             'primary' => __( 'Primary Menu' ),
-            // 'footer'  => __( 'Footer Menu' ),
+            'footer'  => __( 'Footer Menu' ),
             // 'misc' => __( 'Side Menu' ),
             // .. add more
         )

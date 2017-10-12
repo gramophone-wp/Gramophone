@@ -25,32 +25,45 @@
             <div class="col-12 col-sm-4">
                 <?php if ( !dynamic_sidebar( 'footer_left' ) ): ?>
                 <h4 class="text-center">Sidebar (Page)</h4>
-                <p>Oh! No Sidebar?</p>	
+                <p>Oh! No Sidebar?</p>
                 <?php endif; ?>
             </div>
 
             <div class="col-12 col-sm-4">
                 <?php if ( !dynamic_sidebar( 'footer_center' ) ): ?>
                 <h4 class="text-center">Sidebar (Page)</h4>
-                <p>Oh! No Sidebar?</p>	
+                <p>Oh! No Sidebar?</p>
                 <?php endif; ?>
             </div>
 
             <div class="col-12 col-sm-4">
                 <?php if ( !dynamic_sidebar( 'footer_right' ) ): ?>
                 <h4 class="text-center">Sidebar (Page)</h4>
-                <p>Oh! No Sidebar?</p>	
+                <p>Oh! No Sidebar?</p>
                 <?php endif; ?>
             </div>
         </div>
     </div>
 </section>
 
+<section class="footer-menu">
+  <?php
+      wp_nav_menu( array(
+          'menu'           => 'footer',
+          'theme_location' => 'footer',
+          'depth'          => 1,
+          'container'      => "ul",
+          'menu_class'     => "nav justify-content-center",
+          'fallback_cb'    => 'bootstrap_walker::fallback',
+          'walker'         => new Bootstrap_Walker()
+      ) );
+  ?>
+</section>
 <footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
     <div class="container">
         <div vlass="row">
             <div class="col-12 text-center" id="copyright">
-                <p class="text-muted">&copy; 
+                <p class="text-muted">&copy;
                 <a href="<?php echo esc_url( home_url() ); ?>">
                 <?php bloginfo('name'); ?></a>
                 <?php echo date('Y'); ?>. All Rights Reserved
