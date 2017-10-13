@@ -37,12 +37,12 @@ if ( post_password_required() ) {
             <?php
                 $comments_number = get_comments_number();
 
-                if ( 1 === $comments_number ) 
+                if ( 1 === $comments_number )
                 {
                     /* translators: %s: post title */
                     printf( _x( 'One thought on &ldquo;%s&rdquo;', 'comments title', 'twentysixteen' ), get_the_title() );
-                } 
-                else 
+                }
+                else
                 {
                     printf(
                     /* translators: 1: number of comments, 2: post title */
@@ -69,6 +69,7 @@ if ( post_password_required() ) {
                 'style'       => 'ul',
                 'short_ping'  => true,
                 'avatar_size' => 42,
+                'callback' => 'gramophone_comments'
                 ) );
             ?>
         </ul>
@@ -93,7 +94,7 @@ if ( post_password_required() ) {
 				$required_text = sprintf( ' ' . __( 'Required fields are marked %s' ), '<span class="required">*</span>' );
 
         $args = array(
-            
+
             'id_form'           => 'commentform',
             'class_form'        => 'comment-form',
             'id_submit'         => 'submit',
