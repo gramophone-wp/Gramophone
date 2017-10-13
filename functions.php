@@ -25,6 +25,7 @@ if( !isset( $content_width ) ) {
 // Theme Dependencies ~ best not remove these!
 require_once locate_template('includes/class-tgm-plugin-activation.php');
 require_once( 'includes/bootstrap_walker.php' );
+require_once( 'includes/comments.php' );
 
 // Admin Customisations
 require_once( 'config/admin.php' );
