@@ -51,7 +51,7 @@
             <article class="item col-12 col-md-6 col-lg-4 <?php if (isset($_COOKIE['display-type']) && 'list' === $_COOKIE['display-type']) echo 'col-lg-12'; ?>" id="post-<?php the_ID(); ?>">
                 <div class="card">
                     <a href="<?php the_permalink(); ?>">
-                        <img class="group list-group-image <?php if (isset($_COOKIE['display-type']) && 'list' === $_COOKIE['display-type']) echo 'hidden'; ?>" src= "<?php echo get_the_post_thumbnail_url() ? get_the_post_thumbnail_url() : 'http://placehold.it/400x300/ECEEEF/373q3c'; ?>" alt="" id="post-image" />
+                        <img class="group list-group-image <?php if (isset($_COOKIE['display-type']) && 'list' === $_COOKIE['display-type']) echo 'hidden'; ?>" src="<?php echo get_the_post_thumbnail_url() ? get_the_post_thumbnail_url() : 'http://placehold.it/400x300/ECEEEF/373q3c'; ?>" alt="" id="post-image" />
                     </a>
 
                     <div <?php post_class(); ?>>
