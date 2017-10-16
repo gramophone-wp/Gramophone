@@ -16,7 +16,6 @@ Developer patches are essential for improving this code base. We simply can't th
 - Set up clean WordPress installation
 - Clone the theme in *wp-content/* folder and activate it
 - Import the [Theme Unit Test](https://codex.wordpress.org/Theme_Unit_Test) XML file 
-- Import the [WooCommerce dummy data](https://plugins.svn.wordpress.org/woocommerce/tags/2.6.4/dummy-data/dummy-data.xml?dl=1)
 
 ### Submitting a Pull Request
 
