@@ -23,7 +23,7 @@
 
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
-        <h1><?php the_title(''); ?></h1>
+        <h1>Page <?php echo get_query_var('paged'); ?></h1>
     </div>
 </div>
 
