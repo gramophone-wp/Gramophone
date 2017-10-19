@@ -25,10 +25,6 @@
 
 <image src="https://github.com/pjhampton/assets/blob/master/gramophone/gramophone_home_1.png">
 
-<h2 align="center"><em>Boilerplate Loaded</em></h2>
-
-<image src="https://github.com/pjhampton/assets/blob/master/gramophone/gramophone_home_2.png">
-
 <h2 align="center"><em>Support</em></h2>
 
 <p align="center">Please :sparkles: star :sparkles: this repository or contribute. Check out the <a href="https://github.com/pjhampton/Gramophone/tree/master/.github/CONTRIBUTING.md">Contributing Guide</a></p>
