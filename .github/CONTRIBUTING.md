@@ -1,10 +1,9 @@
 # Want to contribute? You're Awesome!
 
-Developer patches are essential for improving this code base. We simply can't thank you enough. I want to keep it as easy as possible to contribute changes that get things working in your environment. There are a few guidelines that are recommended for contributors to follow so that we have a chance of keeping on top of things and merging your Pull Request.
+Developer patches are essential for improving Gramophone. We simply can't thank you enough. I want to keep it as easy as possible to contribute changes that get things working in your environment. There are a few guidelines that are recommended for contributors to follow so that we have a chance of keeping on top of things and merging your Pull Request.
 
 ### Getting Started 
 
-- Read this documentation
 - Submit a ticket for your issue, assuming one does not already exist
   - Clearly describe the issue including steps to reproduce when it is a bug
   - Make sure you fill in the earliest version that you know has the issue
@@ -13,7 +12,7 @@ Developer patches are essential for improving this code base. We simply can't th
 
 ### Setting up
 
-- Set up clean WordPress installation
+- Set up clean WordPress installation or have an existing on at hand
 - Clone the theme in *wp-content/* folder and activate it
 - Import the [Theme Unit Test](https://codex.wordpress.org/Theme_Unit_Test) XML file 
 
