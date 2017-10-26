@@ -63,4 +63,50 @@ function add_class_to_excerpt( $excerpt ) {
     return str_replace('<p', '<p class="card-title"', $excerpt);
 }
 
+add_filter('post_gallery','format_gallery_bootstrap',10,3);
+function format_gallery_bootstrap( $output, $atts, $instance ){
+
+    $atts = shortcode_atts( array(
+    	'columns' => 3,
+        'link' => 'attachment',
+        'size' => 'thumbnail'
+    ), $atts);
+
+    $output = '<div id="container" class="container">';
+    $posts = get_posts(array('include' => $atts['ids'],'post_type' => 'attachment','orderby'=>$atts['orderby']));
+
+    $post_chuncks = array_chunk( $posts, $atts[ 'columns' ] );
+
+    foreach( $post_chuncks as $post_chunk ){
+        $output .= '<div class="row">';
+        foreach( $post_chunk as $post ){
+
+            $src = wp_get_attachment_image_src($post->ID, $atts['size'])[0];
+
+            $link = false;
+            if( 'attachment' == $atts[ 'link' ] ){
+                $link = get_attachment_link($post->ID);
+            } elseif( 'file' == $atts[ 'link' ] ){
+                $link = $src;
+            }
+
+            $class = ( 'thumbnail' == $atts[ 'size' ] ) ? 'img-thumbnail' : 'img-fluid';
+
+            $output .= '<div class="col-sm">';
+                if( $link ) $output .= '<a href="'.$link.'" style="display:block;">';
+                    $output .= '<div class="text-center">';
+                        $output .= '<img alt="'.$post->post_title.'" src="'.$src.'" class="'.$class.'" style="margin:auto;" />';
+                        $output .= '</div>';
+                if( $link ) $output .= '</a>';
+                $output .= '<div class="text-muted text-center">'.$post->post_excerpt.'</div>';
+            $output .= '</div>';
+        }
+        $output .= '</div>';
+    }
+
+    $output .= "</div>";
+
+    return $output;
+}
+
 ?>
