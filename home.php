@@ -80,12 +80,11 @@
 
                             <?php the_excerpt(); ?>
 
-                            <a href="<?php the_permalink(); ?>" class="btn btn-primary">View Article</a>
+                            <a href="<?php the_permalink(); ?>" class="btn btn-outline-primary">View Article</a>
                         </div>
                     </div>
                 </div>
             </article>
-
 
             <?php endwhile; else: ?>
             </div>
