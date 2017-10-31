@@ -155,6 +155,12 @@ a img.aligncenter {
     z-index: 100000;
 }
 
+@media (max-width:600px){
+    .wp-post-image {
+        width: 100%;
+    }
+}
+
 /*****************************
  ~~ Blog (home)
 *****************************/
