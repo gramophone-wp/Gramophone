@@ -169,6 +169,10 @@ article.post {
     padding-top: 20px;
 }
 
+img#post-image {
+    width: 100%;
+}
+
 
 /*****************************
  ~~ Post Format: quote
