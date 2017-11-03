@@ -76,7 +76,7 @@
 
             <form class="form-inline float-right hidden-md-down" method="get" action="<?php echo home_url( '/' ); ?>">
                 <input name="s" id="s" class="form-control" type="text" placeholder="Search">
-                <button class="btn btn-outline-info" type="submit">Search</button>
+                <button class="btn btn-outline-info btn-search" type="submit">Search</button>
             </form>
         </div>
     </nav>

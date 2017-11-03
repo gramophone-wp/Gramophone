@@ -173,11 +173,17 @@ img#post-image {
     width: 100%;
 }
 
+/*****************************
+ ~~ widgets (calendar)
+*****************************/
+
+.btn-search {
+  margin-left: 5px;
+}
 
 /*****************************
  ~~ Post Format: quote
 *****************************/
-
 
 blockquote {
   background: #f9f9f9;
