@@ -6,7 +6,7 @@
  *
  * The template for post archives.
  *
- * CODEX REF 
+ * CODEX REF
  * https://codex.wordpress.org/Creating_an_Archive_Index
  *
  * @author
@@ -27,8 +27,8 @@
     </div>
 </div>
 
-<div itemscope itemtype="http://schema.org/CollectionPage">
-    <div class="container">   
+<div itemscope itemtype="http://schema.org/CollectionPage" id="archive">
+    <div class="container">
         <div class="row">
             <div class="col-md-9">
 
@@ -36,23 +36,23 @@
 
                 <article class="post">
                     <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                    
+
                     <p><em>
-                    By <?php the_author(); ?> 
+                    By <?php the_author(); ?>
                     on <?php echo the_time('l, F jS, Y');?>
                     in <?php the_category( ', ' ); ?>.
                     <a href="<?php comments_link(); ?>">
                       <?php comments_number(); ?>
                     </a>
-                    </em></p>            
+                    </em></p>
 
                     <?php the_excerpt(); ?>
                 </article>
-  			
+
                 <hr>
 
                 <?php endwhile; else: ?>
-            
+
                 <div class="page-header">
                     <h1>Oh no!</h1>
                 </div>
@@ -62,7 +62,7 @@
                 <?php endif; ?>
 
             </div>
-        
+
         <?php get_sidebar( 'blog' ); ?>
 
         </div>

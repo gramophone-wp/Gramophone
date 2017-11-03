@@ -27,8 +27,8 @@
     </div>
 </div>
 
-<div itemscope itemtype="http://schema.org/CollectionPage">
-    <div class="container">   
+<div itemscope itemtype="http://schema.org/CollectionPage" id="category">
+    <div class="container">
         <div class="row">
             <div class="col-md-9">
 
@@ -36,19 +36,19 @@
 
                 <article class="post" >
                     <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                            
+
                     <p><em>
-                    By <?php the_author(); ?> 
+                    By <?php the_author(); ?>
                     on <?php echo the_time('l, F jS, Y');?>
                     in <?php the_category( ', ' ); ?>.
                     <a href="<?php comments_link(); ?>">
                     <?php comments_number(); ?>
                     </a>
-                    </em></p>            
+                    </em></p>
 
                     <?php the_excerpt(); ?>
                 </article>
-                	
+
                 <hr>
 
                 <?php endwhile; else: ?>

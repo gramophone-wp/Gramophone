@@ -29,13 +29,13 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container" id="single">
     <?php the_tags(); ?>
 
     <?php get_template_part( 'formats/format', get_post_format() ); ?>
 
     <hr>
-    
+
     <?php
         if ( comments_open() || get_comments_number() ) {
             comments_template();

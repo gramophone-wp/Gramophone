@@ -29,7 +29,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="home">
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <?php the_content(); ?>
         <?php endwhile; endif; ?>
@@ -42,7 +42,7 @@
             <?php if ( dynamic_sidebar( 'front-left' ) ); ?>
             </div>
 
-            <!-- widget area 2 -->	
+            <!-- widget area 2 -->
             <div class="col-md-4">
             <?php if ( dynamic_sidebar( 'front-center' ) ); ?>
             </div>

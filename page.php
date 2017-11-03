@@ -29,14 +29,14 @@
     </div>
 </div>
 
-<div class="container">   
+<div class="container" id="page">
     <div class="row">
         <div class="col-md-12 text-justify">
 
             <?php the_content(); ?>
 
             <?php endwhile; else: ?>
-                  
+
             <div class="page-header">
                 <h1>Oh no!</h1>
             </div>
@@ -46,7 +46,7 @@
             <?php endif; ?>
 
         </div>
-        
+
     <?php get_sidebar(); ?>
     </div>
 </div>
