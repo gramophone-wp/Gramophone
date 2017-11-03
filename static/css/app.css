@@ -230,16 +230,12 @@ blockquote p {
 *****************************/
 
 .post_format-post-format-link a {
-    color: #5bc0de;
 }
 
 .post_format-post-format-link a:visited {
-    color: #348aa3;
 }
 
 .post_format-post-format-link a:hover  {
-    color: #4bacc9;
-    text-decoration: underline;
 }
 
 .post_format-post-format-link a:active {
