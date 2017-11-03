@@ -69,9 +69,9 @@
         <div vlass="row">
             <div class="col-12 text-center" id="copyright">
                 <p class="text-muted">&copy;
-                <a href="<?php echo esc_url( home_url() ); ?>">
-                <?php bloginfo('name'); ?></a>
-                <?php echo date('Y'); ?>. All Rights Reserved
+                    <a href="<?php echo esc_url( home_url() ); ?>">
+                    <?php bloginfo('name') ?></a>
+                    <?php echo date('Y'); ?>
                 </p>
             </div>
         </div>
