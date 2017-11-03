@@ -28,7 +28,7 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container" id="home">
 
     <div class="container" id="display">
         <div class="hidden-xs-down col-sm-12">
