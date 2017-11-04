@@ -1,7 +1,7 @@
 <?php
 /**
  *******************************************************************************
- * //home.php
+ * ./home.php
  *******************************************************************************
  *
  * The blog posts.
@@ -48,15 +48,14 @@
             <div class="row">
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-
             <article class="item col-12 col-md-6 col-lg-4 <?php if (isset($_COOKIE['display-type']) && 'list' === $_COOKIE['display-type']) echo 'col-lg-12'; ?>" id="post-<?php the_ID(); ?>">
                 <div class="card">
                     <a href="<?php the_permalink(); ?>">
-                        <img class="group list-group-image <?php if (isset($_COOKIE['display-type']) && 'list' === $_COOKIE['display-type']) echo 'hidden'; ?>" src="<?php echo get_the_post_thumbnail_url() ? get_the_post_thumbnail_url() : get_template_directory_uri() . '/static/images/logos/gramophone_placeholder.png'; ?>" alt="" id="post-image" />
+                        <img class="card-img-top <?php if (isset($_COOKIE['display-type']) && 'list' === $_COOKIE['display-type']) echo 'hidden'; ?>" src="<?php echo get_the_post_thumbnail_url() ? get_the_post_thumbnail_url() : get_template_directory_uri() . '/static/images/logos/gramophone_placeholder.png'; ?>" alt="" id="post-image" />
                     </a>
 
                     <div <?php post_class(); ?>>
-                        <div class="card-block">
+                        <div class="card-body">
                         <?php if( get_the_title() ): ?>
                             <h4 class="card-title"><a href="<?php the_permalink(); ?>" class="post-title"><?php the_title(); ?></a></h4>
                         <?php else: ?>
