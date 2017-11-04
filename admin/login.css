@@ -10,7 +10,7 @@
 
 html,
 body {
-    background-color: #B2B2B2;
+    background-color: #e9ecef;
 }
 input[type=text], input[type=password] {
     background: #fff !important;
@@ -33,13 +33,12 @@ body.login div#login form#loginform {
     border-radius: 8px;
     padding: 40px 50px;
     text-align:center;
-    box-shadow: -6px 6px #8E8E8E;
 }
 
 body.login div#login form#loginform p label {
     color: #989898;
     font-size:15px;
-    font-family: "HelveticaNeueThin", "HelveticaNeue-Thin", "Helvetica Neue Thin", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Arial", sans-serif;  
+    font-family: "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Arial", sans-serif;  
     font-stretch:normal;
 }
 
