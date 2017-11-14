@@ -46,24 +46,6 @@
     </div>
 </section>
 
-<?php
-    $nav_check = wp_nav_menu( array('echo' => FALSE, 'fallback_cb' => '') );
-    if (!empty($nav_check)) {
-?>
-<section class="footer-menu">
-<?php
-    wp_nav_menu( array(
-        'menu'           => 'footer',
-        'theme_location' => 'footer',
-        'depth'          => 1,
-        'container'      => "ul",
-        'menu_class'     => "nav justify-content-center",
-        'fallback_cb'    => 'bootstrap_walker::fallback',
-        'walker'         => new Bootstrap_Walker()
-    ) );
-?>
-</section>
-<?php } ?>
 <footer class="footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
     <div class="container">
         <div vlass="row">
