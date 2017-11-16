@@ -3,7 +3,7 @@ web:
   links:
     - mysql
   environment:
-    - WORDPRESS_DB_PASSWORD=password
+    - WORDPRESS_DB_PASSWORD=gramophone
   ports:
     - "8080:80"
   working_dir: /var/www/html
@@ -12,5 +12,5 @@ web:
 mysql:
   image: mysql
   environment:
-    - MYSQL_ROOT_PASSWORD=password
-    - MYSQL_DATABASE=wordpress
+    - MYSQL_ROOT_PASSWORD=changeme
+    - MYSQL_DATABASE=gramophone
