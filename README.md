@@ -21,9 +21,17 @@
 
 <h2 align="center"><em>Framework?</em></h2>
 
-<p align="center">Nope! It's yet another <strong>starter theme</strong> to <strong>speed up</strong> theme <strong>development</strong> in Bootstrap 4. Unlike other starter themes, Gramophone is <strong>top-down</strong> and exhaustive. That mean that you install and <strong>remove stuff you don't need</strong> rather than adding annoying stuff that you probably need that WordPress supports.</p>
+<p align="center">Nope! It's yet another <strong>starter theme</strong> to <strong>speed up</strong> theme <strong>development</strong> in Bootstrap 4. Unlike other starter themes, Gramophone is <strong>top-down</strong> and exhaustive.</p>
 
-<image src="https://github.com/pjhampton/assets/blob/master/gramophone/gramophone_home_1.png">
+<image src="https://github.com/pjhampton/assets/blob/master/gramophone/gramophone_index.png">
+
+<h2 align="center"><em>Predefined Styles</em></h2>
+
+<image src="https://github.com/pjhampton/assets/blob/master/gramophone/gramophone_blog.png">
+
+<h2 align="center"><em>Boilerplate loaded</em></h2>
+
+<image src="https://github.com/pjhampton/assets/blob/master/gramophone/gramophone_admin.png">
 
 <h2 align="center"><em>Support</em></h2>
 
