@@ -11,10 +11,10 @@ declare -a remove_files=(
 )
 
 echo "Removing files."
-for i in "${remove_files[@]}"
+for file in "${remove_files[@]}"
 do
-  echo "Removing $i"
-  rm -rf "./gramophone/$i"
+  echo "Removing $file"
+  rm -rf "./gramophone/$file"
 done
 
 echo "Making the theme"
