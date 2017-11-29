@@ -5,9 +5,13 @@ mv ../stage ./gramophone
 
 declare -a remove_files=(
   ".git"
+  ".github"
+  ".gitignore"
+  ".editorconfig"
   "docker-compose.yml"
   "README.md"
   "eject.sh"
+  "dist/"
 )
 
 echo "Removing files."
