@@ -4,6 +4,7 @@ cp -R . ./../stage
 mv ../stage ./gramophone
 
 declare -a remove_files=(
+  ".DS_STORE"
   ".git"
   ".github"
   ".gitignore"
