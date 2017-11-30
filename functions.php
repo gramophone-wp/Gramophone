@@ -36,7 +36,6 @@ require_once( 'config/enqueue.php' );
 require_once( 'config/menus.php' );
 require_once( 'config/widgets.php' );
 require_once( 'config/comments.php' );
-require_once( 'config/support.php' );
 require_once( 'config/breadcrumbs.php' );
 require_once( 'config/pagination.php' );
 require_once( 'config/styling.php' );
@@ -51,7 +50,7 @@ require_once( 'config/required_plugins.php' );
  **********************************************
  * add_theme_support
  **********************************************
-**/
+ */
 
 add_theme_support( 'automatic-feed-links' );
 add_theme_support( 'custom-background' );
