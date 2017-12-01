@@ -22,7 +22,7 @@ do
   rm -rf "./gramophone/$file"
 done
 
-echo "Making the theme"
+echo "[`date`] Making the theme"
 mkdir dist
 zip dist/gramophone.zip ./gramophone/*
 rm -rf ./gramophone
