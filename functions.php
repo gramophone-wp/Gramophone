@@ -34,7 +34,6 @@ require_once( 'config/login.php' );
 // Theme Specific Customisations
 require_once( 'config/enqueue.php' );
 require_once( 'config/menus.php' );
-require_once( 'config/widgets.php' );
 require_once( 'config/comments.php' );
 require_once( 'config/breadcrumbs.php' );
 require_once( 'config/pagination.php' );
