@@ -1,8 +1,6 @@
 <?php
 /**
- *******************************************************************************
- * //config/required_plugins.php
- *******************************************************************************
+ * config/required_plugins.php
  *
  * Plugins required / recommend by this theme.
  *
@@ -15,21 +13,7 @@
  * @version
 **/
 
-
-/**
- *******************************************************************************
- * required_plugins
- *******************************************************************************
- *
- *
- *
- *
-**/
-
-add_action( 'tgmpa_register', 'required_plugins' );
-
-function required_plugins()
-{
+function required_plugins() {
 
     $plugins = array(
 
@@ -85,5 +69,6 @@ function required_plugins()
     tgmpa( $plugins, $config );
 
 }
+add_action( 'tgmpa_register', 'required_plugins' );
 
 ?>

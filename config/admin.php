@@ -1,8 +1,6 @@
 <?php
 /**
- *******************************************************************************
- * //config/admin.php
- *******************************************************************************
+ * config/admin.php
  *
  * Custom configuration for the administration area.
  *
@@ -15,11 +13,8 @@
  * @version
  **/
 
-
 /**
- *******************************************************************************
  * admin_colors
- *******************************************************************************
  *
  * admin_colors adds a custom color scheme
  * to the theme. This color scheme is just
@@ -39,9 +34,7 @@ function admin_colors() {
 add_action('admin_init', 'admin_colors');
 
 /**
- *******************************************************************************
  * clean_dashboard
- *******************************************************************************
  *
  * WordPress by default comes with a lot of
  * crud. Let's clean up the admin dashboard.
@@ -71,9 +64,7 @@ add_action( 'wp_dashboard_setup', 'clean_dashboard' );
 
 
 /**
- *******************************************************************************
  * change logo link from wordpress.org to user site
- *******************************************************************************
  *
  * function changes url of the admin logo
  *
@@ -84,9 +75,7 @@ function login_url() {
 }
 
 /**
- *******************************************************************************
  * change logo alt-text to show user site name
- *******************************************************************************
  *
  * function changes the alt-text of the admin logo to user site name
  *
@@ -97,9 +86,7 @@ function login_title() {
 }
 
 /**
- *******************************************************************************
  * call logo url redirect to user site name on on login
- *******************************************************************************
  *
  * function will only call url change on the login page
  *
@@ -110,9 +97,7 @@ add_filter('login_headertitle', 'login_title');
 
 
 /**
- *******************************************************************************
  * admin_footer
- *******************************************************************************
  *
  * admin_footer is the function that adds a
  * `message` to the admin footer.

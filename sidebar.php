@@ -1,10 +1,6 @@
 <?php
 /**
- *******************************************************************************
- * //sidebar.php
- *******************************************************************************
- *
- * The general siderbar.
+ * The general siderbar
  *
  * CODEX REF
  * https://codex.wordpress.org/Customizing_Your_Sidebar

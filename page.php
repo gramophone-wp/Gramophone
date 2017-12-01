@@ -1,10 +1,6 @@
 <?php
 /**
- *******************************************************************************
- * //page.php
- *******************************************************************************
- *
- * The general page.
+ * The general page
  *
  * CODEX REF
  * https://developer.wordpress.org/themes/template-files-section/page-template-files/page-templates/

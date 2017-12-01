@@ -1,10 +1,6 @@
 <?php
 /**
- *******************************************************************************
- * //tag.php
- *******************************************************************************
- *
- * The template for tag archives.
+ * The template for tag archives
  *
  * CODEX REF
  * https://codex.wordpress.org/Tag_Templates
@@ -28,7 +24,7 @@
 </div>
 
 <div itemscope itemtype="http://schema.org/CollectionPage">
-    <div class="container">   
+    <div class="container">
         <div class="row">
             <div class="col-md-9">
 
@@ -36,9 +32,9 @@
 
                     <article class="post" >
                         <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                            
+
                         <p><em>
-                        By <?php the_author(); ?> 
+                        By <?php the_author(); ?>
                         on <?php echo the_time('l, F jS, Y');?>
                         in <?php the_category( ', ' ); ?>.
                         <a href="<?php comments_link(); ?>">
@@ -66,7 +62,7 @@
             <?php get_sidebar( 'blog' ); ?>
 
         </div>
-        
+
     <?php theme_pagination(); ?>
     </div>
 </div>

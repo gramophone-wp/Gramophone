@@ -1,8 +1,6 @@
 <?php
 /**
- *******************************************************************************
- * //config/comments.php
- *******************************************************************************
+ * config/comments.php
  *
  * The callback functions for styling the comments.
  *
@@ -17,44 +15,24 @@
 
 
 /**
- *******************************************************************************
  * change_avatar_css
- *******************************************************************************
- *
- * 
- *   
- * 
-**/
-
+ */
 function change_avatar_css($class) {
   $class = str_replace("class='avatar", "class='media-object'", $class) ;
   return $class;
 }
 add_filter('get_avatar','change_avatar_css');
 
-
-/**
- *******************************************************************************
- * theme_comment
- *******************************************************************************
- *
- * 
- *   
- * 
-**/
-
 function theme_comment($comment, $args, $depth) {
 
   $GLOBALS['comment'] = $comment;
   extract($args, EXTR_SKIP);
 
-  if ( 'div' == $args['style'] ) 
-  {
+  if ( 'div' == $args['style'] ) {
     $tag = 'div';
     $add_below = 'comment';
-  } 
-  else 
-  {
+  }
+  else {
     $tag = 'li';
     $add_below = 'div-comment';
   }
@@ -95,7 +73,7 @@ function theme_comment($comment, $args, $depth) {
             <?php comment_reply_link( array_merge( $args, array( 'add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
 	  </button>
           <a class="btn btn-danger btn-circle text-uppercase" href="#" id="reply">
-            <span class="glyphicon glyphicon-remove-circle"></span> 
+            <span class="glyphicon glyphicon-remove-circle"></span>
             Hide
           </a>
 	    <?php edit_comment_link( __( 'Edit' ), '<div class="btn btn-success btn-circle text-uppercase"><span class="glyphicon glyphicon-wrench"></span>', '</div>' ); ?>

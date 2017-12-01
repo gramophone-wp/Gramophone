@@ -1,4 +1,5 @@
 <?php
+
 function gramophone_comments( $comment, $args, $depth ) {
 	global $post;
 	$author_id = $post->post_author;
@@ -22,7 +23,7 @@ function gramophone_comments( $comment, $args, $depth ) {
           <?php comment_author_link(); ?>
           <?php
           // $string = '<a href="%1$s"><time datetime="%2$s">%3$s</time></a>';
-          // Developer's note: 
+          // Developer's note:
           // replace the $string var below with the one above to add a link to the specific comment
           $string = '<time datetime="%2$s">%3$s</time>';
           printf( $string,

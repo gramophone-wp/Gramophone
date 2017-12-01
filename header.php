@@ -1,10 +1,6 @@
 <?php
 /**
- *******************************************************************************
- * ./header.php
- *******************************************************************************
- *
- * The header.
+ * The header
  *
  * CODEX REF
  * https://codex.wordpress.org/Theme_Development#Document_Head_.28header.php

@@ -1,10 +1,6 @@
 <?php
 /**
- *******************************************************************************
- * //single.php
- *******************************************************************************
- *
- * The single post.
+ * The single post
  *
  * CODEX REF
  * https://codex.wordpress.org/Theme_Development#Single_Post_.28single.php

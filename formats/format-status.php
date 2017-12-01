@@ -1,14 +1,12 @@
 <?php
 /**
- *******************************************************************************
- * //formats/format-status.php
- *******************************************************************************
+ * formats/format-status.php
  *
  * Post format for a status based post.
  *
  * CODEX REF
  * https://developer.wordpress.org/themes/functionality/post-formats/
- * 
+ *
  * @author
  * @copyright
  * @link

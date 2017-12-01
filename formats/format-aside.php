@@ -1,14 +1,12 @@
 <?php
 /**
- *******************************************************************************
- * //formats/format-aside.php
- *******************************************************************************
+ * formats/format-aside.php
  *
  * Post format for an aside post.
  *
  * CODEX REF
  * https://developer.wordpress.org/themes/functionality/post-formats/
- * 
+ *
  * @author
  * @copyright
  * @link

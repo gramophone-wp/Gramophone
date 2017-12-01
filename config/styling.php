@@ -1,8 +1,6 @@
 <?php
 /**
- *******************************************************************************
- * //config/styling.php
- *******************************************************************************
+ * config/styling.php
  *
  * Custom styling functionality.
  *
@@ -56,3 +54,4 @@ function gramophone_search_form( $form_html ) {
     }
     return $form_html;
 }
+

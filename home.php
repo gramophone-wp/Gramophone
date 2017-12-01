@@ -1,10 +1,6 @@
 <?php
 /**
- *******************************************************************************
- * ./home.php
- *******************************************************************************
- *
- * The blog posts.
+ * The blog posts
  *
  * CODEX REF
  * https://developer.wordpress.org/themes/basics/template-hierarchy/#home-page-display

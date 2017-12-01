@@ -1,10 +1,6 @@
 <?php
 /**
- *******************************************************************************
- * //search.php
- *******************************************************************************
- *
- * The search results.
+ * The search results
  *
  * CODEX REF
  * https://codex.wordpress.org/Creating_a_Search_Page
@@ -46,7 +42,7 @@
                     <?php the_excerpt(); ?>
                 </article>
 
-            <?php endwhile; ?>	
+            <?php endwhile; ?>
 
             <?php if (function_exists('wp_bootstrap_page_navi')): ?>
 

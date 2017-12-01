@@ -1,14 +1,12 @@
 <?php
 /**
- *******************************************************************************
- * //formats/format.php
- *******************************************************************************
+ * formats/format.php
  *
  * Post format for a regular, plain ol' post.
  *
  * CODEX REF
  * https://developer.wordpress.org/themes/functionality/post-formats/
- * 
+ *
  * @author
  * @copyright
  * @link

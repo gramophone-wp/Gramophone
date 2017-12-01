@@ -1,10 +1,6 @@
 <?php
 /**
- *******************************************************************************
- * //index.php
- *******************************************************************************
- *
- * The index page.
+ * The index page
  *
  * CODEX REF
  * https://developer.wordpress.org/themes/basics/template-hierarchy/#home-page-display

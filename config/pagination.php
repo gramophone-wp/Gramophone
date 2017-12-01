@@ -1,8 +1,6 @@
 <?php
 /**
- *******************************************************************************
- * //config/pagination.php
- *******************************************************************************
+ * config/pagination.php
  *
  * Pagination for the posts.
  *
@@ -58,7 +56,7 @@ function theme_pagination() {
         printf( '<li class="page-item">%s</li>' . "\n", get_previous_posts_link() );
 
     /** Link to first page, plus ellipses if necessary */
-    if ( ! in_array( 1, $links ) ) 
+    if ( ! in_array( 1, $links ) )
     {
         $class = 1 == $paged ? ' class="active"' : '';
 
@@ -76,7 +74,7 @@ function theme_pagination() {
     }
 
     /** Link to last page, plus ellipses if necessary */
-    if ( ! in_array( $max, $links ) ) 
+    if ( ! in_array( $max, $links ) )
     {
         if ( ! in_array( $max - 1, $links ) )
             echo '<li class="page-item"><a class="page-link">&#8230;</a></li>' . "\n";
@@ -90,5 +88,4 @@ function theme_pagination() {
         printf( '<li class="page-item">%s</li>' . "\n", get_next_posts_link() );
 
         echo '</ul></nav></div>' . "\n";
-
 }

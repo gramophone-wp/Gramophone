@@ -1,14 +1,12 @@
 <?php
 /**
- *******************************************************************************
- * //formats/format-quote.php
- *******************************************************************************
+ * formats/format-quote.php
  *
  * Post format for quote post.
  *
  * CODEX REF
  * https://developer.wordpress.org/themes/functionality/post-formats/
- * 
+ *
  * @author
  * @copyright
  * @link
@@ -23,7 +21,7 @@
     <section>
       <blockquote>
         <cite><?php the_content(); ?></cite>
-      </blockquote> 
+      </blockquote>
     </section>
 </article>
 

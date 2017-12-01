@@ -1,14 +1,12 @@
 <?php
 /**
- *******************************************************************************
- * //formats/format-video.php
- *******************************************************************************
+ * formats/format-video.php
  *
  * Post format for a video post.
  *
  * CODEX REF
  * https://developer.wordpress.org/themes/functionality/post-formats/
- * 
+ *
  * @author
  * @copyright
  * @link

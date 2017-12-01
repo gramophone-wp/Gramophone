@@ -1,14 +1,12 @@
 <?php
 /**
- *******************************************************************************
- * //formats/format-gallery.php
- *******************************************************************************
+ * formats/format-gallery.php
  *
  * Post format for a gallery post.
  *
  * CODEX REF
  * https://developer.wordpress.org/themes/functionality/post-formats/
- * 
+ *
  * @author
  * @copyright
  * @link
