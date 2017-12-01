@@ -37,11 +37,13 @@
     <hr>
 
     <?php wp_link_pages( array(
-        'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentyfourteen' ) . '</span>',
+        'before'      => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'twentysixteen' ) . '</span>',
         'after'       => '</div>',
         'link_before' => '<span>',
         'link_after'  => '</span>',
         ) );
+
+        the_posts_navigation();
 
         if ( comments_open() || get_comments_number() ) {
             comments_template();
