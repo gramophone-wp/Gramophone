@@ -38,7 +38,6 @@ function admin_colors() {
 }
 add_action('admin_init', 'admin_colors');
 
-
 /**
  *******************************************************************************
  * clean_dashboard
@@ -121,7 +120,7 @@ add_filter('login_headertitle', 'login_title');
 **/
 
 function admin_footer() {
-    echo "Built with <a href='https://github.com/pjhampton/BigBooty' target='_blank'>BigBooty</a>, the Bootstrap starter theme.";
+    echo "Built with <a href='https://github.com/pjhampton/Gramophone' target='_blank'>Gramophone</a>, the Bootstrap starter theme.";
 }
 add_filter('admin_footer_text', 'admin_footer');
 
