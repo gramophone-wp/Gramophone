@@ -16,8 +16,8 @@
 function register_theme_menus() {
     register_nav_menus(
         array(
-            'primary' => __( 'Primary Menu' ),
-            // 'misc' => __( 'Side Menu' ),
+            'primary' => __( 'Primary Menu', 'gramophone' ),
+            // 'misc' => __( 'Side Menu', 'gramophone' ),
             // .. add more
         )
     );

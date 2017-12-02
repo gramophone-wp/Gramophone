@@ -87,7 +87,7 @@ if ( post_password_required() ) {
 				$commenter = wp_get_current_commenter();
 				$req = get_option( 'require_name_email' );
 				$aria_req = ( $req ? " aria-required='true'" : '' );
-				$required_text = sprintf( ' ' . __( 'Required fields are marked %s' ), '<span class="required">*</span>' );
+				$required_text = sprintf( ' ' . __( 'Required fields are marked %s', 'gramophone' ), '<span class="required">*</span>' );
 
         $args = array(
 
@@ -96,13 +96,13 @@ if ( post_password_required() ) {
             'id_submit'         => 'submit',
             'class_submit'      => 'submit btn btn-block',
             'name_submit'       => 'submit',
-            'title_reply'       => __( 'Leave a Reply'       ),
-            'title_reply_to'    => __( 'Leave a Reply to %s' ),
-            'cancel_reply_link' => __( 'Cancel Reply'        ),
-            'label_submit'      => __( 'Post Comment'        ),
+            'title_reply'       => __( 'Leave a Reply', 'gramophone' ),
+            'title_reply_to'    => __( 'Leave a Reply to %s', 'gramophone' ),
+            'cancel_reply_link' => __( 'Cancel Reply', 'gramophone' ),
+            'label_submit'      => __( 'Post Comment', 'gramophone' ),
             'format'            => 'html',
 
-            'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun' ) . '</label><textarea class="form-control" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>',
+            'comment_field' => '<p class="comment-form-comment"><label for="comment">' . __( 'Comment', 'gramophone' ) . '</label><textarea class="form-control" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>',
             'fields' => apply_filters( 'comment_form_default_fields', array(
             'author' =>
             '<p class="comment-form-author">' .
@@ -141,12 +141,12 @@ if ( post_password_required() ) {
             ) . '</p>',
 
             'comment_notes_before' => '<p class="comment-notes">' .
-            __( 'Your email address will not be published.' ) . ( $req ? $required_text : '' ) .
+            __( 'Your email address will not be published.', 'gramophone' ) . ( $req ? $required_text : '' ) .
             '</p>',
 
             'comment_notes_after' => '<p class="form-allowed-tags">' .
             sprintf(
-            __( 'You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes: %s' ),
+            __( 'You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes: %s', 'gramophone' ),
             ' <code>' . allowed_tags() . '</code>'
             ) . '</p>',
 

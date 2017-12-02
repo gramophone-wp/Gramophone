@@ -76,7 +76,7 @@ function theme_comment($comment, $args, $depth) {
             <span class="glyphicon glyphicon-remove-circle"></span>
             Hide
           </a>
-	    <?php edit_comment_link( __( 'Edit' ), '<div class="btn btn-success btn-circle text-uppercase"><span class="glyphicon glyphicon-wrench"></span>', '</div>' ); ?>
+	    <?php edit_comment_link( __( 'Edit', 'gramophone' ), '<div class="btn btn-success btn-circle text-uppercase"><span class="glyphicon glyphicon-wrench"></span>', '</div>' ); ?>
 	</div>
 
 	<?php if ( 'div' != $args['style'] ) : ?>
