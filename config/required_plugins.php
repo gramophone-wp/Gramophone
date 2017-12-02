@@ -32,7 +32,7 @@ function required_plugins() {
     );
 
     // Change this to your theme text domain, used for internationalising strings
-    $theme_text_domain = 'delicias';
+    $theme_text_domain = 'gramophone';
 
     $config = array(
         'domain'            => $theme_text_domain,

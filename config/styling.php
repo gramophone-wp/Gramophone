@@ -19,7 +19,7 @@ function bootstrap_password_form() {
     $label = 'pwbox-' . ( empty($post->ID) ? rand() : $post->ID );
     $output = '<form action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" class="post-password-form form-control" method="post">
     <p>' . __( 'This content is password protected. To view it please enter your password below:' ) . '</p>
-    <div class="form-group"><p><label for="' . $label . '">' . __( 'Password:' ) . ' <input name="post_password" class="form-control" id="' . $label . '" type="password" size="20" /></label> <input type="submit" class="btn btn-primary" name="Submit" value="' . esc_attr_x( 'Enter', 'post password form' ) . '" /></p></div></form>
+    <div class="form-group"><p><label for="' . $label . '">' . __( 'Password:' ) . ' <input name="post_password" class="form-control" id="' . $label . '" type="password" size="20" /></label> <input type="submit" class="btn btn-primary" name="Submit" value="' . esc_attr_x( 'Enter', 'post password form', "gramophone" ) . '" /></p></div></form>
     ';
     return $output;
 };
@@ -43,10 +43,10 @@ function gramophone_search_form( $form_html ) {
         $btn_classes = apply_filters( 'gramophone_bootstrap_search_button_classes', array( 'btn', 'btn-primary' ) );
             $form_html = '<form role="search" method="get" class="search-form" action="' . esc_url( home_url( '/' ) ) . '">
                 <div class="input-group col-md-12">
-                    <input type="text" class="' . implode( ' ', $input_classes ) . '" name="s" placeholder="' . esc_attr_x( 'Search &hellip;', 'placeholder' ) . '" />
+                    <input type="text" class="' . implode( ' ', $input_classes ) . '" name="s" placeholder="' . esc_attr_x( 'Search &hellip;', 'placeholder', 'gramophone' ) . '" />
                     <span class="input-group-btn">
                         <button class="' . implode( ' ', $btn_classes ) . '"  type="submit">
-                            ' . esc_attr_x( 'Search', 'submit button' ) . '
+                            ' . esc_attr_x( 'Search', 'submit button', 'gramophone' ) . '
                         </button>
                     </span>
                 </div>

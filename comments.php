@@ -47,7 +47,7 @@ if ( post_password_required() ) {
                         '%1$s thoughts on &ldquo;%2$s&rdquo;',
                         $comments_number,
                         'comments title',
-                        'twentysixteen'
+                        'gramophone'
                         ),
                         number_format_i18n( $comments_number ),
                         get_the_title()
@@ -106,20 +106,20 @@ if ( post_password_required() ) {
             'fields' => apply_filters( 'comment_form_default_fields', array(
             'author' =>
             '<p class="comment-form-author">' .
-            '<label for="author">' . __( 'Name', 'domainreference' ) . '</label> ' .
+            '<label for="author">' . __( 'Name', 'gramophone' ) . '</label> ' .
             ( $req ? '<span class="required">*</span>' : '' ) .
             '<input class="form-control" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) .
             '" size="30"' . $aria_req . ' /></p>',
 
             'email' =>
-            '<p class="comment-form-email"><label for="email">' . __( 'Email', 'domainreference' ) . '</label> ' .
+            '<p class="comment-form-email"><label for="email">' . __( 'Email', 'gramophone' ) . '</label> ' .
             ( $req ? '<span class="required">*</span>' : '' ) .
             '<input class="form-control" id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) .
             '" size="30"' . $aria_req . ' /></p>',
 
             'url' =>
             '<p class="comment-form-url"><label for="url">' .
-            __( 'Website', 'domainreference' ) . '</label>' .
+            __( 'Website', 'gramophone' ) . '</label>' .
             '<input class="form-control" id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) .
             '" size="30" /></p>'
 

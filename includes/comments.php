@@ -9,7 +9,7 @@ function gramophone_comments( $comment, $args, $depth ) {
 		case 'trackback' :
 		// Display trackbacks differently than normal comments. ?>
 	<li id="comment-<?php comment_ID(); ?>" <?php comment_class(); ?>>
-		<div class="pingback-entry"><span class="pingback-heading"><?php esc_html_e( 'Pingback:', 'twenties' ); ?></span> <?php comment_author_link(); ?></div>
+		<div class="pingback-entry"><span class="pingback-heading"><?php esc_html_e( 'Pingback:', 'gramophone' ); ?></span> <?php comment_author_link(); ?></div>
 	<?php
 		break;
 		default :
@@ -29,18 +29,18 @@ function gramophone_comments( $comment, $args, $depth ) {
           printf( $string,
 						esc_url( get_comment_link( $comment->comment_ID ) ),
 						get_comment_time( 'c' ),
-						sprintf( _x( '%1$s', '1: date', 'twenties' ), get_comment_date() )
-					); ?> <?php esc_html_e( 'at', 'twenties' ); ?> <?php comment_time(); ?>
+						sprintf( _x( '%1$s', '1: date', 'gramophone' ), get_comment_date() )
+					); ?> <?php esc_html_e( 'at', 'gramophone' ); ?> <?php comment_time(); ?>
 
         </h6>
         <div class="comment-body">
           <?php if ( '0' == $comment->comment_approved ) : ?>
-  					<p class="comment-awaiting-moderation alert alert-warning"><?php esc_html_e( 'Your comment is awaiting moderation.', 'twenties' ); ?></p>
+  					<p class="comment-awaiting-moderation alert alert-warning"><?php esc_html_e( 'Your comment is awaiting moderation.', 'gramophone' ); ?></p>
   				<?php endif; ?>
           <p>
             <?php comment_text(); ?>
             <?php comment_reply_link( array_merge( $args, array(
-  						'reply_text' => '<span class="small">' . esc_html__( 'Reply to this message', 'twenties' ) . '</span>',
+  						'reply_text' => '<span class="small">' . esc_html__( 'Reply to this message', 'gramophone' ) . '</span>',
   						'depth'      => $depth,
   						'max_depth'	 => $args['max_depth'] )
   					) ); ?>
