@@ -36,7 +36,7 @@ if ( post_password_required() ) {
                 if ( 1 === $comments_number )
                 {
                     /* translators: %s: post title */
-                    printf( _x( 'One thought on &ldquo;%s&rdquo;', 'comments title', 'twentysixteen' ), get_the_title() );
+                    printf( _x( 'One thought on &ldquo;%s&rdquo;', 'comments title', 'gramophone' ), get_the_title() );
                 }
                 else
                 {
@@ -79,7 +79,7 @@ if ( post_password_required() ) {
             if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
         ?>
 
-        <p class="no-comments"><?php _e( 'Comments are closed.', 'twentysixteen' ); ?></p>
+        <p class="no-comments"><?php _e( 'Comments are closed.', 'gramophone' ); ?></p>
         <?php endif; ?>
 
         <?php
