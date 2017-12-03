@@ -45,7 +45,7 @@ function required_plugins() {
             'page_title'                        => __( 'Install Required Plugins', 'gramophone' ),
             'menu_title'                        => __( 'Install Plugins', 'gramophone' ),
             'installing'                        => __( 'Installing Plugin: %s', 'gramophone' ), // %1$s = plugin name
-            'oops'                              => __( 'Something went wrong with the plugin API.', $theme_text_domain ),
+            'oops'                              => __( 'Something went wrong with the plugin API.', 'gramophone' ),
             'notice_can_install_required'       => _n_noop( 'Gramophone requires the following plugin: %1$s.', 'Gramophone requires the following plugins: %1$s.', 'gramophone' ),
             'notice_can_install_recommended'    => _n_noop( 'Gramophone recommends the following plugin: %1$s.', 'Gramophone recommends the following plugins: %1$s.', 'gramophone' ),
             'notice_cannot_install'             => _n_noop( 'Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed.', 'Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed.', 'gramophone' ), // %1$s = plugin name(s)
