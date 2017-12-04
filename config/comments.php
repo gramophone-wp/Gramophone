@@ -52,17 +52,17 @@ function theme_comment($comment, $args, $depth) {
       <?php endif; ?>
 
       <div class="comment-author vcard">
-	<?php printf( __( '<h4 class="media-heading text-uppercase reviews">%s</h4>' ), get_comment_author_link() ); ?>
+	<?php printf( '<h4 class="media-heading text-uppercase reviews">%s</h4>', get_comment_author_link() ); ?>
       </div>
 
        <?php if ( $comment->comment_approved == '0' ) : ?>
-       <em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.' ); ?></em>
+       <em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'gramophone' ); ?></em>
        <br>
        <?php endif; ?>
 
 	<div class="comment-meta commentmetadata">
         <?php
-          printf( __('%1$s at %2$s'), get_comment_date(),  get_comment_time() );
+          printf( __('%1$s at %2$s', 'gramophone'), get_comment_date(),  get_comment_time() );
          ?>
 	</div>
 

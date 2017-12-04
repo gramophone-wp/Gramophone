@@ -128,13 +128,13 @@ if ( post_password_required() ) {
 
             'must_log_in' => '<label class="info must-log-in">' .
             sprintf(
-            __( 'You must be <a href="%s">logged in</a> to post a comment.' ),
+            __( 'You must be <a href="%s">logged in</a> to post a comment.', 'gramophone' ),
             wp_login_url( apply_filters( 'the_permalink', get_permalink() ) )
             ) . '</label>',
 
             'logged_in_as' => '<p class="logged-in-as">' .
             sprintf(
-            __( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>' ),
+            __( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out of this account">Log out?</a>', 'gramophone' ),
             admin_url( 'profile.php' ),
             $user_identity,
             wp_logout_url( apply_filters( 'the_permalink', get_permalink( ) ) )

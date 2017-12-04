@@ -14,26 +14,6 @@
  **/
 
 /**
- * admin_colors
- *
- * admin_colors adds a custom color scheme
- * to the theme. This color scheme is just
- * a friendly example. The `array` of hex
- * codes are the colors of the theme.
- *
-**/
-
-function admin_colors() {
-    wp_admin_css_color(
-        'Gramophone',
-        __( 'Gramophone' ),
-        admin_url("admin/gramophone.css"),
-        array('#07273E', '#14568A', '#D54E21', '#2683AE')
-    );
-}
-add_action('admin_init', 'admin_colors');
-
-/**
  * clean_dashboard
  *
  * WordPress by default comes with a lot of
