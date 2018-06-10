@@ -44,7 +44,7 @@
             <div class="row">
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-            <article class="item col-12 col-md-6 col-lg-4 <?php if (isset($_COOKIE['display-type']) && 'list' === $_COOKIE['display-type']) echo 'col-lg-12'; ?>" id="post-<?php the_ID(); ?>">
+            <article class="grid-item item col-12 col-md-6 col-lg-4 <?php if (isset($_COOKIE['display-type']) && 'list' === $_COOKIE['display-type']) echo 'col-lg-12'; ?>" id="post-<?php the_ID(); ?>">
                 <div class="card">
                     <a href="<?php the_permalink(); ?>">
                         <img class="card-img-top <?php if (isset($_COOKIE['display-type']) && 'list' === $_COOKIE['display-type']) echo 'hidden'; ?>" src="<?php echo get_the_post_thumbnail_url() ? get_the_post_thumbnail_url() : get_template_directory_uri() . '/static/images/logos/gramophone_placeholder.png'; ?>" alt="" id="post-image" />
