@@ -5,12 +5,7 @@
  * CODEX REF
  * https://codex.wordpress.org/Theme_Development#Document_Head_.28header.php
  *
- * @author
- * @copyright
- * @link
- * @todo
  * @license
- * @since
  * @version
 **/
 ?>
@@ -34,7 +29,6 @@
     <?php wp_head(); ?>
 
 </head>
-
 <body <?php body_class(); ?> <?php post_class('title_post group'); ?>>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-ligh">
@@ -58,9 +52,9 @@
                         ) );
                     ?>
                 </ul>
-                <form class="form-inline my-2 my-lg-0" method="get" action="<?php echo home_url( '/' ); ?>" style="float: right">
+                <form class="form-inline my-2 my-lg-0" method="get" action="<?php echo home_url( '/' ); ?>">
                     <input name="s" id="s" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+                    <button class="btn btn-outline-info search-btn my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </div>
         </div>
