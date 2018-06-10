@@ -15,9 +15,10 @@ jQuery(document).ready(function($) {
         jQuery('.post-metadata').hide();
         jQuery("[id=post-image]").show();
         Cookies.set('display-type', 'grid');
-     });
+    });
 
     $("select[name='archive-dropdown']").addClass('form-control');
     $('li.widget-li').closest('ul').addClass('list-group');
     $('.widget li').addClass('list-group-item').parent().addClass('list-group');
 });
+
