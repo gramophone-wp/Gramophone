@@ -5,8 +5,8 @@
  * CODEX REF
  * https://codex.wordpress.org/Creating_an_Archive_Index
  *
- * @license
- * @version
+ * @license GPL-2
+ * @version 1.0.0
 **/
 ?>
 

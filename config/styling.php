@@ -4,8 +4,8 @@
  *
  * Custom styling functionality.
  *
- * @license
- * @version
+ * @license GPL-2
+ * @version 1.0.0
 **/
 
 // Add Bootstrap Styling to Password Protected form

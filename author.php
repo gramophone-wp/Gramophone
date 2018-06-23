@@ -5,8 +5,8 @@
  * CODEX REF
  * https://codex.wordpress.org/Author_Templates
  *
- * @license
- * @version
+ * @license GPL-2
+ * @version 1.0.0
 **/
 
 // User Information

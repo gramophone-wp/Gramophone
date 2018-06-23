@@ -4,13 +4,8 @@
  *
  * Pagination for the posts.
  *
- * @author
- * @copyright
- * @link
- * @todo
- * @license
- * @since
- * @version
+ * @license GPL-2
+ * @version 1.0.0
 **/
 
 add_filter('next_posts_link_attributes', 'posts_link_attributes');

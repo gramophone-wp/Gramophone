@@ -3,11 +3,10 @@
  * Template Name: Example Template
  * templates/page-template.php
  *
- * An example template for creating custom
- * theme templates.
+ * An example template for creating custom theme templates.
  *
- * @license
- * @version
+ * @license GPL-2
+ * @version 1.0.0
 **/
 ?>
 

@@ -5,8 +5,8 @@
  * CODEX REF
  * https://codex.wordpress.org/Customizing_Your_Sidebar
  *
- * @license
- * @version
+ * @license GPL-2
+ * @version 1.0.0
 **/
 ?>
 

@@ -5,8 +5,8 @@
  * CODEX REF
  * https://developer.wordpress.org/themes/basics/template-hierarchy/#home-page-display
  *
- * @license
- * @version
+ * @license GPL-2
+ * @version 1.0.0
 **/
 ?>
 

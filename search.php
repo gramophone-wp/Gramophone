@@ -5,8 +5,8 @@
  * CODEX REF
  * https://codex.wordpress.org/Creating_a_Search_Page
  *
- * @license
- * @version
+ * @license GPL-2
+ * @version 1.0.0
 **/
 ?>
 

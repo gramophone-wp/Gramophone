@@ -5,8 +5,8 @@
  * CODEX REF
  * https://codex.wordpress.org/Theme_Development#Document_Head_.28header.php
  *
- * @license
- * @version
+ * @license GPL-2
+ * @version 1.0.0
 **/
 ?>
 <!DOCTYPE html>

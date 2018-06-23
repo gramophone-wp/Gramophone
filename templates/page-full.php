@@ -5,8 +5,8 @@
  *
  * A full width page template.
  *
- * @license
- * @version
+ * @license GPL-2
+ * @version 1.0.0
 **/
 ?>
 

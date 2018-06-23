@@ -5,8 +5,8 @@
  * CODEX REF
  * https://codex.wordpress.org/Functions_File_Explained
  *
- * @license
- * @version
+ * @license GPL-2
+ * @version 1.0.0
 **/
 
 if( !isset( $content_width ) ) {

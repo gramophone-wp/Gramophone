@@ -4,8 +4,8 @@
  *
  * Custom configuration for the administration area.
  *
- * @license
- * @version
+ * @license GPL-2
+ * @version 1.0.0
  **/
 
 /**

@@ -5,8 +5,8 @@
  * CODEX REF
  * https://developer.wordpress.org/themes/template-files-section/page-template-files/page-templates/
  *
- * @license
- * @version
+ * @license GPL-2
+ * @version 1.0.0
 **/
 ?>
 

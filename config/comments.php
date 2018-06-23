@@ -4,8 +4,8 @@
  *
  * The callback functions for styling the comments.
  *
- * @license
- * @version
+ * @license GPL-2
+ * @version 1.0.0
 **/
 
 /**

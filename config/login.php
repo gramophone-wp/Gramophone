@@ -4,8 +4,8 @@
  *
  * Custom styling for the login page.
  *
- * @license
- * @version
+ * @license GPL-2
+ * @version 1.0.0
 **/
 
 /**
