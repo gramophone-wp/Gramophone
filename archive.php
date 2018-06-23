@@ -5,12 +5,7 @@
  * CODEX REF
  * https://codex.wordpress.org/Creating_an_Archive_Index
  *
- * @author
- * @copyright
- * @link
- * @todo
  * @license
- * @since
  * @version
 **/
 ?>

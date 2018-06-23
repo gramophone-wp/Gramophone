@@ -5,12 +5,7 @@
  * CODEX REF
  * https://codex.wordpress.org/Tag_Templates
  *
- * @author
- * @copyright
- * @link
- * @todo
  * @license
- * @since
  * @version
 **/
 ?>

@@ -5,12 +5,7 @@
  * CODEX REF
  * https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @author
- * @copyright
- * @link
- * @todo
  * @license
- * @since
  * @version
 **/
 ?>

@@ -5,12 +5,7 @@
  * CODEX REF
  * https://codex.wordpress.org/Customizing_Your_Sidebar
  *
- * @author
- * @copyright
- * @link
- * @todo
  * @license
- * @since
  * @version
 **/
 ?>

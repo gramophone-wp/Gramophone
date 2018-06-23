@@ -5,12 +5,7 @@
  * CODEX REF
  * https://developer.wordpress.org/themes/basics/template-hierarchy/#front-page-display
  *
- * @author
- * @copyright
- * @link
- * @todo
  * @license
- * @since
  * @version
 **/
 ?>

@@ -5,12 +5,7 @@
  * CODEX REF
  * https://codex.wordpress.org/Functions_File_Explained
  *
- * @author
- * @copyright
- * @link
- * @todo
  * @license
- * @since
  * @version
 **/
 
