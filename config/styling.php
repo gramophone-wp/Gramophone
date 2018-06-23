@@ -4,12 +4,7 @@
  *
  * Custom styling functionality.
  *
- * @author
- * @copyright
- * @link
- * @todo
  * @license
- * @since
  * @version
 **/
 

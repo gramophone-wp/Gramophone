@@ -4,12 +4,7 @@
  *
  * Plugins required / recommend by this theme.
  *
- * @author
- * @copyright
- * @link
- * @todo
  * @license
- * @since
  * @version
 **/
 

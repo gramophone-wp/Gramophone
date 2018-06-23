@@ -4,15 +4,9 @@
  *
  * The callback functions for styling the comments.
  *
- * @author
- * @copyright
- * @link
- * @todo
  * @license
- * @since
  * @version
 **/
-
 
 /**
  * change_avatar_css

@@ -4,45 +4,34 @@
  *
  * Custom breadcrumbs functionality.
  *
- * @author
- * @copyright
- * @link
- * @todo
  * @license
- * @since
  * @version
 **/
 
-function theme_breadcrumbs()
-{
+function theme_breadcrumbs() {
 
     global $post;
 
     echo '<ol class="breadcrumb">';
-    if (!is_home())
-    {
+    if (!is_home()) {
         echo '<li><a href="';
         echo home_url('/');
         echo '">';
         echo 'Home';
         echo '</a></li>';
-        if (is_category() || is_single())
-        {
+        if (is_category() || is_single()) {
 
             echo '<li>';
             the_category(' </li><li class="separator"> / </li><li> ');
 
-            if (is_single())
-            {
+            if (is_single()) {
                 echo '</li><li>';
                 the_title();
                 echo '</li>';
             }
         }
-        elseif (is_page())
-        {
-            if($post->post_parent)
-            {
+        elseif (is_page()) {
+            if($post->post_parent) {
                 $anc = get_post_ancestors( $post->ID );
                 $title = get_the_title();
                 foreach ( $anc as $ancestor ) {
@@ -53,8 +42,7 @@ function theme_breadcrumbs()
             echo $output;
             echo '<strong title="'.$title.'"> '.$title.'</strong>';
         }
-        else
-        {
+        else {
             echo '<li><strong> '.get_the_title().'</strong></li>';
         }
         }

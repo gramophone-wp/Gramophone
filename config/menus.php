@@ -4,12 +4,7 @@
  *
  * The various menus.
  *
- * @author
- * @copyright
- * @link
- * @todo
  * @license
- * @since
  * @version
 **/
 

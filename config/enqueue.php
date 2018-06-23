@@ -4,12 +4,7 @@
  *
  * Enqueues scripts and styles.
  *
- * @author
- * @copyright
- * @link
- * @todo
  * @license
- * @since
  * @version
 **/
 

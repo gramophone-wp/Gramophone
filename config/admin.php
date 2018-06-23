@@ -4,12 +4,7 @@
  *
  * Custom configuration for the administration area.
  *
- * @author
- * @copyright
- * @link
- * @todo
  * @license
- * @since
  * @version
  **/
 
@@ -42,7 +37,6 @@ function clean_dashboard() {
 }
 add_action( 'wp_dashboard_setup', 'clean_dashboard' );
 
-
 /**
  * change logo link from wordpress.org to user site
  *
@@ -74,7 +68,6 @@ function login_title() {
 
 add_filter('login_headerurl', 'login_url');
 add_filter('login_headertitle', 'login_title');
-
 
 /**
  * admin_footer

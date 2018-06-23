@@ -56,8 +56,7 @@ function theme_pagination() {
         printf( '<li class="page-item">%s</li>' . "\n", get_previous_posts_link() );
 
     /** Link to first page, plus ellipses if necessary */
-    if ( ! in_array( 1, $links ) )
-    {
+    if ( ! in_array( 1, $links ) ) {
         $class = 1 == $paged ? ' class="active"' : '';
 
         printf( '<li%s class="page-item"><a class="page-link" href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( 1 ) ), '1' );
