@@ -9,12 +9,7 @@
  * CODEX REF
  * https://developer.wordpress.org/themes/functionality/post-formats/
  *
- * @author
- * @copyright
- * @link
- * @todo
  * @license
- * @since
  * @version
 **/
 ?>
