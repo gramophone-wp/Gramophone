@@ -5,12 +5,7 @@
  *
  * A full width page template.
  *
- * @author
- * @copyright
- * @link
- * @todo
  * @license
- * @since
  * @version
 **/
 ?>

@@ -6,12 +6,7 @@
  * An example template for creating custom
  * theme templates.
  *
- * @author
- * @copyright
- * @link
- * @todo
  * @license
- * @since
  * @version
 **/
 ?>
