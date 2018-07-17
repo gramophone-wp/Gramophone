@@ -6,8 +6,7 @@
  * A full width page template.
  *
  * @license GPL-2
- * @version 1.0.0
-**/
+ */
 ?>
 
 <?php get_header(); ?>

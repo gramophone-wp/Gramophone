@@ -8,7 +8,6 @@
  * https://developer.wordpress.org/themes/functionality/post-formats/
  *
  * @license GPL-2
- * @version 1.0.0
 **/
 ?>
 

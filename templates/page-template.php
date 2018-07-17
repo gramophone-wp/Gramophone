@@ -6,8 +6,7 @@
  * An example template for creating custom theme templates.
  *
  * @license GPL-2
- * @version 1.0.0
-**/
+ */
 ?>
 
 <?php get_header(); ?>

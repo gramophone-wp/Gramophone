@@ -1,8 +1,6 @@
 <?php
 /**
- *******************************************************************************
- * //formats/format-image.php
- *******************************************************************************
+ * formats/format-image.php
  *
  * Post format for an image post.
  *
@@ -10,13 +8,11 @@
  * https://developer.wordpress.org/themes/functionality/post-formats/
  *
  * @license GPL-2
- * @version 1.0.0
-**/
-?>
+ */
 
-<?php
-  $post_content = get_the_content();
-  $img_url = wp_extract_urls($post_content);
+$post_content = get_the_content();
+$img_url = wp_extract_urls($post_content);
+
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

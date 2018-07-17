@@ -8,8 +8,7 @@
  * https://developer.wordpress.org/themes/functionality/post-formats/
  *
  * @license GPL-2
- * @version 1.0.0
-**/
+ */
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemscope itemtype="http://schema.org/BlogPosting">

@@ -1,8 +1,6 @@
 <?php
 /**
- *******************************************************************************
- * //formats/format-link.php
- *******************************************************************************
+ * formats/format-link.php
  *
  * Post format for link post.
  *
@@ -10,22 +8,20 @@
  * https://developer.wordpress.org/themes/functionality/post-formats/
  *
  * @license GPL-2
- * @version 1.0.0
-**/
-?>
+ */
 
-<?php
-    $post_content = get_the_content();
-    $link_url = wp_extract_urls($post_content);
+$post_content = get_the_content();
+$link_url = wp_extract_urls($post_content);
 
-    $url_host = parse_url($link_url[0], PHP_URL_HOST);
-    $base_url_host = parse_url(home_url(), PHP_URL_HOST);
+$url_host = parse_url($link_url[0], PHP_URL_HOST);
+$base_url_host = parse_url(home_url(), PHP_URL_HOST);
 
-    $external = true;
+$external = true;
 
-    if($url_host == $base_url_host || empty($url_host)) {
-        $external = false;
-    }
+if($url_host == $base_url_host || empty($url_host)) {
+    $external = false;
+}
+
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
