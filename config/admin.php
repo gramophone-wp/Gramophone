@@ -5,8 +5,7 @@
  * Custom configuration for the administration area.
  *
  * @license GPL-2
- * @version 1.0.0
- **/
+ */
 
 /**
  * clean_dashboard
@@ -14,7 +13,7 @@
  * WordPress by default comes with a lot of
  * crud. Let's clean up the admin dashboard.
  *
- **/
+ */
 
 function clean_dashboard() {
     global $wp_meta_boxes;
@@ -42,7 +41,7 @@ add_action( 'wp_dashboard_setup', 'clean_dashboard' );
  *
  * function changes url of the admin logo
  *
-**/
+ */
 
 function login_url() {
     return home_url();
@@ -53,7 +52,7 @@ function login_url() {
  *
  * function changes the alt-text of the admin logo to user site name
  *
-**/
+ */
 
 function login_title() {
     return get_option('blogname');
@@ -75,7 +74,7 @@ add_filter('login_headertitle', 'login_title');
  * admin_footer is the function that adds a
  * `message` to the admin footer.
  *
-**/
+ */
 
 function admin_footer() {
     echo "Built with <a href='https://github.com/pjhampton/Gramophone' target='_blank'>Gramophone</a>, the Bootstrap starter theme.";

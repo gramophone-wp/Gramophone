@@ -5,8 +5,7 @@
  * The callback functions for styling the comments.
  *
  * @license GPL-2
- * @version 1.0.0
-**/
+ */
 
 /**
  * change_avatar_css
@@ -25,8 +24,7 @@ function theme_comment($comment, $args, $depth) {
   if ( 'div' == $args['style'] ) {
     $tag = 'div';
     $add_below = 'comment';
-  }
-  else {
+  } else {
     $tag = 'li';
     $add_below = 'div-comment';
   }

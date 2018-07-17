@@ -4,11 +4,8 @@
  *
  * Custom breadcrumbs functionality.
  *
- * @license
- * @version
  * @license GPL-2
- * @version 1.0.0
-**/
+ */
 
 function theme_breadcrumbs() {
 

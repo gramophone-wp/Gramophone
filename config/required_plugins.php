@@ -5,8 +5,7 @@
  * Plugins required / recommend by this theme.
  *
  * @license GPL-2
- * @version 1.0.0
-**/
+ */
 
 function required_plugins() {
 

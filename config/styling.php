@@ -5,8 +5,7 @@
  * Custom styling functionality.
  *
  * @license GPL-2
- * @version 1.0.0
-**/
+ */
 
 // Add Bootstrap Styling to Password Protected form
 function bootstrap_password_form() {

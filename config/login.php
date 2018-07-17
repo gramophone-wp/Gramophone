@@ -5,8 +5,7 @@
  * Custom styling for the login page.
  *
  * @license GPL-2
- * @version 1.0.0
-**/
+ */
 
 /**
  * login_styles
@@ -14,7 +13,7 @@
  * login_styles enqueues the `wp-login` css
  * for the WordPress login page.
  *
-**/
+ */
 
 function login_styles() {
     wp_enqueue_style(
@@ -32,7 +31,7 @@ add_action( 'login_enqueue_scripts', 'login_styles' );
  * `logo` on the `/wp-login/`. It is set to
  * `display: none;` by default.
  *
-**/
+ */
 
 function admin_logo() { ?>
     <style>

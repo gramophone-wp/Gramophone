@@ -5,8 +5,7 @@
  * Pagination for the posts.
  *
  * @license GPL-2
- * @version 1.0.0
-**/
+ */
 
 add_filter('next_posts_link_attributes', 'posts_link_attributes');
 add_filter('previous_posts_link_attributes', 'posts_link_attributes');
