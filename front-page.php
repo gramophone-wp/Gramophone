@@ -6,7 +6,6 @@
  * https://developer.wordpress.org/themes/basics/template-hierarchy/#front-page-display
  *
  * @license GPL-2
- * @version 1.0.0
 **/
 ?>
 

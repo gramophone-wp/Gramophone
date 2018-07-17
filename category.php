@@ -6,7 +6,6 @@
  * https://codex.wordpress.org/Category_Templates
  *
  * @license GPL-2
- * @version 1.0.0
 **/
 ?>
 

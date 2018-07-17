@@ -6,7 +6,6 @@
  * https://developer.wordpress.org/themes/template-files-section/partial-and-miscellaneous-template-files/comments/
  *
  * @license GPL-2
- * @version 1.0.0
 **/
 
 /*

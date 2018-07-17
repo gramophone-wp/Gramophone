@@ -6,7 +6,6 @@
  * https://codex.wordpress.org/Theme_Development#Footer_.28footer.php
  *
  * @license GPL-2
- * @version 1.0.0
 **/
 ?>
 
