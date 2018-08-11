@@ -4,7 +4,7 @@
  *
  * Plugins required / recommend by this theme.
  *
- * @license GPL-2
+ * @package gramophone
  */
 
 function required_plugins() {

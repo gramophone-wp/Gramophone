@@ -4,7 +4,7 @@
  *
  * Custom styling for the login page.
  *
- * @license GPL-2
+ * @package gramophone
  */
 
 /**

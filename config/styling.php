@@ -4,7 +4,7 @@
  *
  * Custom styling functionality.
  *
- * @license GPL-2
+ * @package gramophone
  */
 
 // Add Bootstrap Styling to Password Protected form

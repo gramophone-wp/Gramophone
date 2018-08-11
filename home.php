@@ -5,7 +5,7 @@
  * CODEX REF
  * https://developer.wordpress.org/themes/basics/template-hierarchy/#home-page-display
  *
- * @license GPL-2
+ * @package gramophone
  **/
 ?>
 
@@ -42,7 +42,7 @@
 					the_post();
 					?>
 
-			<article class="grid-item item col-12 col-md-6 col-lg-4 
+			<article class="grid-item item col-12 col-md-6 col-lg-4
 					<?php
 					if ( isset( $_COOKIE['display-type'] ) && 'list' === $_COOKIE['display-type'] ) {
 						echo 'col-lg-12';}
@@ -50,7 +50,7 @@
 			" id="post-<?php the_ID(); ?>">
 				<div class="card">
 					<a href="<?php the_permalink(); ?>">
-						<img class="card-img-top 
+						<img class="card-img-top
 						<?php
 						if ( isset( $_COOKIE['display-type'] ) && 'list' === $_COOKIE['display-type'] ) {
 							echo 'hidden';}
@@ -66,7 +66,7 @@
 							<h4 class="card-title"><a href="<?php the_permalink(); ?>">READ MORE</a></h4>
 						<?php endif; ?>
 
-						<div class="post-metadata 
+						<div class="post-metadata
 						<?php
 						if ( isset( $_COOKIE['display-type'] ) && 'grid' === $_COOKIE['display-type'] ) {
 							echo 'hidden';}

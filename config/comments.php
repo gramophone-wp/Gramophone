@@ -4,7 +4,7 @@
  *
  * The callback functions for styling the comments.
  *
- * @license GPL-2
+ * @package gramophone
  */
 
 /**

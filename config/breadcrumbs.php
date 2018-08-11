@@ -4,7 +4,7 @@
  *
  * Custom breadcrumbs functionality.
  *
- * @license GPL-2
+ * @package gramophone
  */
 
 function theme_breadcrumbs() {

@@ -4,7 +4,7 @@
  *
  * Pagination for the posts.
  *
- * @license GPL-2
+ * @package gramophone
  */
 
 add_filter( 'next_posts_link_attributes', 'posts_link_attributes' );

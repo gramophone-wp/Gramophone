@@ -5,7 +5,7 @@
  *
  * An example template for creating custom theme templates.
  *
- * @license GPL-2
+ * @package gramophone
  */
 ?>
 

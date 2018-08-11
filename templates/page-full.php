@@ -5,7 +5,7 @@
  *
  * A full width page template.
  *
- * @license GPL-2
+ * @package gramophone
  */
 ?>
 

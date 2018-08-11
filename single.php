@@ -5,7 +5,7 @@
  * CODEX REF
  * https://codex.wordpress.org/Theme_Development#Single_Post_.28single.php
  *
- * @license GPL-2
+ * @package gramophone
  **/
 ?>
 

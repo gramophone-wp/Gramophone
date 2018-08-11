@@ -5,7 +5,7 @@
  * CODEX REF
  * https://codex.wordpress.org/Customizing_Your_Sidebar
  *
- * @license GPL-2
+ * @package gramophone
  **/
 ?>
 

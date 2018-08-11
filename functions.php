@@ -5,7 +5,7 @@
  * CODEX REF
  * https://codex.wordpress.org/Functions_File_Explained
  *
- * @license GPL-2
+ * @package gramophone
  **/
 
 if ( ! isset( $content_width ) ) {

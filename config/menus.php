@@ -4,7 +4,7 @@
  *
  * The various menus.
  *
- * @license GPL-2
+ * @package gramophone
  */
 
 function register_theme_menus() {

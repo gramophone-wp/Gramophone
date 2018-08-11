@@ -5,7 +5,7 @@
  * CODEX REF
  * https://developer.wordpress.org/themes/basics/template-hierarchy/#home-page-display
  *
- * @license GPL-2
+ * @package gramophone
  **/
 ?>
 

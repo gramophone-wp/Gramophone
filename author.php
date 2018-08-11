@@ -5,7 +5,7 @@
  * CODEX REF
  * https://codex.wordpress.org/Author_Templates
  *
- * @license GPL-2
+ * @package gramophone
  **/
 
 // User Information

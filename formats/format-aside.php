@@ -7,7 +7,7 @@
  * CODEX REF
  * https://developer.wordpress.org/themes/functionality/post-formats/
  *
- * @license GPL-2
+ * @package gramophone
  **/
 ?>
 

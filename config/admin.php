@@ -4,7 +4,7 @@
  *
  * Custom configuration for the administration area.
  *
- * @license GPL-2
+ * @package gramophone
  */
 
 /**

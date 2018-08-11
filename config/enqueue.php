@@ -4,7 +4,7 @@
  *
  * Enqueues scripts and styles.
  *
- * @license GPL-2
+ * @package gramophone
  **/
 
 function theme_styles() {
