@@ -7,24 +7,22 @@
 **/
 
 body {
-  background-image: linear-gradient(to top, #9455a6 40%, #5682be 100%);
+  background-image: linear-gradient(to top, rgba(148, 85, 166, 0.5) 40%, rgba(86, 130, 190, 0.96) 100%);
 }
 
 .wp-core-ui
-.button-group.button-large
-.button,
-.wp-core-ui
 .button.button-large {
-  background: #4aa3df;
-  border: #4aa3df;
+  backgound: #5682be;
+  border: #5682be;
   box-shadow: none;
-  height: 30px;
+  height: 38px;
   line-height: 28px;
   padding: 0 12px 2px;
   text-decoration: none;
   text-shadow: none;
   width: 100%;
   font-size: 15px;
+  margin-top: 10px;
 }
 
 .login #nav {
@@ -35,7 +33,14 @@ body {
 }
 
 .login #nav a {
+  border: 3px solid #fff;
+  padding: 10px 15px;
   color: #fff;
+}
+
+.login #nav a:hover {
+  background: #fff;
+  color: #5682be;
 }
 
 .login #backtoblog a {
