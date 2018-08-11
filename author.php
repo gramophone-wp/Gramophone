@@ -2,9 +2,7 @@
 /**
  * Author (archives) related posts & content.
  *
- * CODEX REF
- * https://codex.wordpress.org/Author_Templates
- *
+ * @link https://codex.wordpress.org/Author_Templates
  * @package gramophone
  **/
 

@@ -2,11 +2,10 @@
 /**
  * The general footer.
  *
- * CODEX REF
- * https://codex.wordpress.org/Theme_Development#Footer_.28footer.php
- *
+ * @link https://codex.wordpress.org/Theme_Development#Footer_.28footer.php
  * @package gramophone
  **/
+
 ?>
 
 <section class="widgets">
@@ -43,7 +42,7 @@
 				<p class="text-muted">&copy;
 					<a href="<?php echo esc_url( home_url() ); ?>">
 					<?php bloginfo( 'name' ); ?></a>
-					<?php echo date( 'Y' ); ?>
+					<?php echo esc_url( date( 'Y' ) ); ?>
 				</p>
 			</div>
 		</div>

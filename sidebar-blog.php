@@ -2,11 +2,10 @@
 /**
  * The blogs sidebar.
  *
- * CODEX REF
- * https://codex.wordpress.org/Customizing_Your_Sidebar
- *
+ * @link https://codex.wordpress.org/Customizing_Your_Sidebar
  * @package gramophone
  **/
+
 ?>
 
 <div class="col-md-3" id="sidebar">

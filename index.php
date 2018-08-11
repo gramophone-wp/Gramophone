@@ -2,11 +2,10 @@
 /**
  * The index page
  *
- * CODEX REF
- * https://developer.wordpress.org/themes/basics/template-hierarchy/#home-page-display
- *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#home-page-display
  * @package gramophone
  **/
+
 ?>
 
 <?php
@@ -52,4 +51,6 @@
 	</div>
 </div>
 
-<?php get_footer(); ?>
+<?php 
+	get_footer(); 
+?>

@@ -2,9 +2,7 @@
 /**
  * The theme functions.
  *
- * CODEX REF
- * https://codex.wordpress.org/Functions_File_Explained
- *
+ * @link https://codex.wordpress.org/Functions_File_Explained
  * @package gramophone
  **/
 

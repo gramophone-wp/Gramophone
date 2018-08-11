@@ -2,9 +2,7 @@
 /**
  * The comments section.
  *
- * CODEX REF
- * https://developer.wordpress.org/themes/template-files-section/partial-and-miscellaneous-template-files/comments/
- *
+ * @link https://developer.wordpress.org/themes/template-files-section/partial-and-miscellaneous-template-files/comments/
  * @package gramophone
  **/
 

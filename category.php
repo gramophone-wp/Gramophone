@@ -2,11 +2,10 @@
 /**
  * The template for archives organized by a specific category.
  *
- * CODEX REF
- * https://codex.wordpress.org/Category_Templates
- *
+ * @link https://codex.wordpress.org/Category_Templates
  * @package gramophone
  **/
+
 ?>
 
 <?php get_header(); ?>

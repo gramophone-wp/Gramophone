@@ -1,14 +1,11 @@
 <?php
 /**
- * formats/format.php
- *
  * Post format for a regular, plain ol' post.
  *
- * CODEX REF
- * https://developer.wordpress.org/themes/functionality/post-formats/
- *
+ * @link https://developer.wordpress.org/themes/functionality/post-formats/
  * @package gramophone
  */
+
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?> itemscope itemtype="http://schema.org/BlogPosting">

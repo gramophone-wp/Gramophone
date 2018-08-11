@@ -7,6 +7,7 @@
  *
  * @package gramophone
  */
+
 ?>
 
 <?php get_header(); ?>

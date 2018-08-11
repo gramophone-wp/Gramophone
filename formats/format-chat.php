@@ -4,9 +4,7 @@
  *
  * Post format for a chat (dump) post.
  *
- * CODEX REF
- * https://developer.wordpress.org/themes/functionality/post-formats/
- *
+ * @link https://developer.wordpress.org/themes/functionality/post-formats/
  * @package gramophone
  **/
 ?>

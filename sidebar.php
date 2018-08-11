@@ -2,11 +2,10 @@
 /**
  * The general siderbar
  *
- * CODEX REF
- * https://codex.wordpress.org/Customizing_Your_Sidebar
- *
+ * @link https://codex.wordpress.org/Customizing_Your_Sidebar
  * @package gramophone
  **/
+
 ?>
 
 <div class="col-md-offset-1 col-md-4" id="sidebar">

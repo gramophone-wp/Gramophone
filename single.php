@@ -2,11 +2,10 @@
 /**
  * The single post
  *
- * CODEX REF
- * https://codex.wordpress.org/Theme_Development#Single_Post_.28single.php
- *
+ * @link https://codex.wordpress.org/Theme_Development#Single_Post_.28single.php
  * @package gramophone
  **/
+
 ?>
 
 <?php get_header(); ?>

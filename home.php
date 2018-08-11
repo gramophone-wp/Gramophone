@@ -2,11 +2,10 @@
 /**
  * The blog posts
  *
- * CODEX REF
- * https://developer.wordpress.org/themes/basics/template-hierarchy/#home-page-display
- *
+ * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#home-page-display
  * @package gramophone
  **/
+
 ?>
 
 <?php get_header(); ?>
@@ -14,7 +13,7 @@
 <div class="jumbotron jumbotron-fluid">
 	<div class="container">
 		<?php $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1; ?>
-		<h1>Page <?php echo $paged; ?></h1>
+		<h1>Page <?php echo sanitize_title( $paged ); ?></h1>
 	</div>
 </div>
 

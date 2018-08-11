@@ -1,0 +1,8 @@
+.woocommerce button.button.alt {
+	background-color: #007bff;
+}
+
+.woocommerce button.button.alt:hover {
+	background-color: #ffffff;
+	color: #007bff;
+}

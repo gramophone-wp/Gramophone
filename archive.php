@@ -2,11 +2,10 @@
 /**
  * The template for post archives.
  *
- * CODEX REF
- * https://codex.wordpress.org/Creating_an_Archive_Index
- *
+ * @link https://codex.wordpress.org/Creating_an_Archive_Index
  * @package gramophone
  **/
+
 ?>
 
 <?php get_header(); ?>

@@ -2,11 +2,10 @@
 /**
  * The general page
  *
- * CODEX REF
- * https://developer.wordpress.org/themes/template-files-section/page-template-files/page-templates/
- *
+ * @link https://developer.wordpress.org/themes/template-files-section/page-template-files/page-templates/
  * @package gramophone
  **/
+
 ?>
 
 <?php get_header(); ?>

@@ -2,11 +2,10 @@
 /**
  * The template for tag archives
  *
- * CODEX REF
- * https://codex.wordpress.org/Tag_Templates
- *
+ * @link https://codex.wordpress.org/Tag_Templates
  * @package gramophone
  **/
+
 ?>
 
 <?php get_header(); ?>

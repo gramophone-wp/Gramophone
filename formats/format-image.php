@@ -4,9 +4,7 @@
  *
  * Post format for an image post.
  *
- * CODEX REF
- * https://developer.wordpress.org/themes/functionality/post-formats/
- *
+ * @link https://developer.wordpress.org/themes/functionality/post-formats/
  * @package gramophone
  */
 

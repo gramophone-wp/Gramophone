@@ -2,11 +2,10 @@
 /**
  * The search results
  *
- * CODEX REF
- * https://codex.wordpress.org/Creating_a_Search_Page
- *
+ * @link https://codex.wordpress.org/Creating_a_Search_Page
  * @package gramophone
  **/
+
 ?>
 
 <?php get_header(); ?>
