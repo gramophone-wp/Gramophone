@@ -9,3 +9,35 @@
 body {
   background-image: linear-gradient(to top, #9455a6 40%, #5682be 100%);
 }
+
+.wp-core-ui
+.button-group.button-large
+.button,
+.wp-core-ui
+.button.button-large {
+  background: #4aa3df;
+  border: #4aa3df;
+  box-shadow: none;
+  height: 30px;
+  line-height: 28px;
+  padding: 0 12px 2px;
+  text-decoration: none;
+  text-shadow: none;
+  width: 100%;
+  font-size: 15px;
+}
+
+.login #nav {
+  margin: 24px 0 0;
+  text-align: center;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.login #nav a {
+  color: #fff;
+}
+
+.login #backtoblog a {
+  display: none;
+}
