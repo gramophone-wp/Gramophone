@@ -6,3 +6,6 @@
  *
 **/
 
+body {
+  background-image: linear-gradient(to top, #9455a6 40%, #5682be 100%);
+}

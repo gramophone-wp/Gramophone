@@ -6,48 +6,50 @@
  * https://developer.wordpress.org/themes/basics/template-hierarchy/#home-page-display
  *
  * @license GPL-2
-**/
+ **/
 ?>
 
 <?php
-    get_header();
+	get_header();
 ?>
 
 <div class="container" id="index">
-    <div class="row">
-        <div class="col-md-9">
+	<div class="row">
+		<div class="col-md-9">
 
-            <!-- The WordPress Loop -->
-            <?php
-                if ( have_posts() ) : while ( have_posts() ) : the_post();
-            ?>
+			<!-- The WordPress Loop -->
+			<?php
+			if ( have_posts() ) :
+				while ( have_posts() ) :
+					the_post();
+					?>
 
-            <h1>
-                <?php the_title(); ?>
-            </h1>
+			<h1>
+					<?php the_title(); ?>
+			</h1>
 
-            <?php
-                the_content();
-            ?>
+					<?php
+					the_content();
+					?>
 
-            <?php
-                endwhile; else:
-            ?>
+					<?php
+				endwhile; else :
+					?>
 
-            <div class="page-header">
-                <h1>Oh no!</h1>
-            </div>
+			<div class="page-header">
+				<h1>Oh no!</h1>
+			</div>
 
-            <p>No content is appearing for this page!</p>
+			<p>No content is appearing for this page!</p>
 
-            <?php endif; ?>
-            <!-- End WordPress Loop -->
+			<?php endif; ?>
+			<!-- End WordPress Loop -->
 
-        </div>
+		</div>
 
-    <?php get_sidebar(); ?>
+	<?php get_sidebar(); ?>
 
-    </div>
+	</div>
 </div>
 
 <?php get_footer(); ?>

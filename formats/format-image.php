@@ -11,14 +11,14 @@
  */
 
 $post_content = get_the_content();
-$img_url = wp_extract_urls($post_content);
+$img_url      = wp_extract_urls( $post_content );
 
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-    <section>
-        <img src="<?php echo $img_url[0]; ?>" alt="<?php the_title(); ?>"/>
-    </section>
+	<section>
+		<img src="<?php echo $img_url[0]; ?>" alt="<?php the_title(); ?>"/>
+	</section>
 </article>
 
 <?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?>

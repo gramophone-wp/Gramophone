@@ -6,17 +6,17 @@
  * https://codex.wordpress.org/Creating_an_Error_404_Page
  *
  * @license GPL-2
-**/
+ **/
 ?>
 
 <div class="col-md-12">
-    <div class="text-center">
+	<div class="text-center">
 
-        <h1>404</h1>
+		<h1>404</h1>
 
-        <a class="btn btn-danger-outline" href="<?php echo get_home_url(); ?>">
-          Return Home
-        </a>
+		<a class="btn btn-danger-outline" href="<?php echo get_home_url(); ?>">
+		  Return Home
+		</a>
 
-    </div>
+	</div>
 </div>

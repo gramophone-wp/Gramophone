@@ -3,14 +3,14 @@
 *****************************/
 
 img {
-    display: block;
-    height: auto;
-    max-width: 100%;
+	display: block;
+	height: auto;
+	max-width: 100%;
 }
 
 footer {
-    background: #2a2730;
-    padding: 20px 0;
+	background: #2a2730;
+	padding: 20px 0;
 }
 
 /*****************************
@@ -22,8 +22,8 @@ footer {
 .size-large,
 .size-medium,
 .size-thumbnail {
-    max-width: 100%;
-    height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 .sticky {
@@ -35,13 +35,13 @@ footer {
 .bypostauthor {}
 
 .hide-bullets {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 ul.hide-bullets li.col-sm-4 {
-    padding: 0;
+	padding: 0;
 }
 
 /*****************************
@@ -49,114 +49,114 @@ ul.hide-bullets li.col-sm-4 {
 *****************************/
 
 .alignnone {
-    margin: 5px 20px 20px 0;
+	margin: 5px 20px 20px 0;
 }
 
 .aligncenter,
 div.aligncenter {
-    display: block;
-    margin: 5px auto 5px auto;
+	display: block;
+	margin: 5px auto 5px auto;
 }
 
 .alignright {
-    float: right;
-    margin: 5px 0 20px 20px;
+	float: right;
+	margin: 5px 0 20px 20px;
 }
 
 .alignleft {
-    float: left;
-    margin: 5px 20px 20px 0;
+	float: left;
+	margin: 5px 20px 20px 0;
 }
 
 a img.alignright {
-    float: right;
-    margin: 5px 0 20px 20px;
+	float: right;
+	margin: 5px 0 20px 20px;
 }
 
 a img.alignnone {
-    margin: 5px 20px 20px 0;
+	margin: 5px 20px 20px 0;
 }
 
 a img.alignleft {
-    float: left;
-    margin: 5px 20px 20px 0;
+	float: left;
+	margin: 5px 20px 20px 0;
 }
 
 a img.aligncenter {
-    display: block;
-    margin-left: auto;
-    margin-right: auto
+	display: block;
+	margin-left: auto;
+	margin-right: auto
 }
 
 .wp-caption {
-    background: #fff;
-    border: 1px solid #f0f0f0;
-    max-width: 96%;
-    padding: 5px 3px 10px;
-    text-align: center;
+	background: #fff;
+	border: 1px solid #f0f0f0;
+	max-width: 96%;
+	padding: 5px 3px 10px;
+	text-align: center;
 }
 
 .wp-caption.alignnone {
-    margin: 5px 20px 20px 0;
+	margin: 5px 20px 20px 0;
 }
 
 .wp-caption.alignleft {
-    margin: 5px 20px 20px 0;
+	margin: 5px 20px 20px 0;
 }
 
 .wp-caption.alignright {
-    margin: 5px 0 20px 20px;
+	margin: 5px 0 20px 20px;
 }
 
 .wp-caption img {
-    border: 0 none;
-    height: auto;
-    margin: 0;
-    max-width: 98.5%;
-    padding: 0;
-    width: auto;
+	border: 0 none;
+	height: auto;
+	margin: 0;
+	max-width: 98.5%;
+	padding: 0;
+	width: auto;
 }
 
 .wp-caption p.wp-caption-text {
-    font-size: 11px;
-    line-height: 17px;
-    margin: 0;
-    padding: 0 4px 5px;
+	font-size: 11px;
+	line-height: 17px;
+	margin: 0;
+	padding: 0 4px 5px;
 }
 
 /* Text meant only for screen readers. */
 .screen-reader-text {
-    clip: rect(1px, 1px, 1px, 1px);
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
 }
 
 .screen-reader-text:focus {
-    background-color: #f1f1f1;
-    border-radius: 3px;
-    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-    clip: auto !important;
-    color: #21759b;
-    display: block;
-    font-size: 14px;
-    font-size: 0.875rem;
-    font-weight: bold;
-    height: auto;
-    left: 5px;
-    line-height: normal;
-    padding: 15px 23px 14px;
-    text-decoration: none;
-    top: 5px;
-    width: auto;
-    z-index: 100000;
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
 }
 
 @media (max-width:600px){
-    .wp-post-image {
-        width: 100%;
-    }
+	.wp-post-image {
+		width: 100%;
+	}
 }
 
 /*****************************
@@ -164,9 +164,9 @@ a img.aligncenter {
 *****************************/
 
 @media (max-width:600px){
-    nav button.search-btn {
-      width: 100%
-    }
+	nav button.search-btn {
+	  width: 100%
+	}
 }
 
 /*****************************
@@ -174,11 +174,11 @@ a img.aligncenter {
 *****************************/
 
 article.post {
-    padding-top: 20px;
+	padding-top: 20px;
 }
 
 img#post-image {
-    width: 100%;
+	width: 100%;
 }
 
 /*****************************
@@ -219,8 +219,8 @@ blockquote p {
 *****************************/
 
 .post_format-post-format-image img {
-    border: 1px solid #ccc;
-    padding: 0.5em 10px;
+	border: 1px solid #ccc;
+	padding: 0.5em 10px;
 }
 
 /*****************************
@@ -228,7 +228,7 @@ blockquote p {
 *****************************/
 
 .post_format-post-format-chat {
-    background: #f9f9f9;
+	background: #f9f9f9;
 	font-family:monospace;
 }
 
@@ -237,8 +237,8 @@ blockquote p {
 *****************************/
 
 .post_format-post-format-aside {
-    background: #fff;
-    overflow: hidden;
+	background: #fff;
+	overflow: hidden;
 }
 
 /*****************************
@@ -262,28 +262,28 @@ blockquote p {
 *****************************/
 
 @media (max-width:768px){
-    .post_format-post-format-gallery > div > dl.gallery-item {
-        width: 100% !important;
-    }
+	.post_format-post-format-gallery > div > dl.gallery-item {
+		width: 100% !important;
+	}
 }
 
 @media (min-width:768px){
-    .post_format-post-format-gallery > div > dl.gallery-item {
-        width: 33% !important;
-    }
+	.post_format-post-format-gallery > div > dl.gallery-item {
+		width: 33% !important;
+	}
 }
 
 .post_format-post-format-gallery > div > dl.gallery-item > dt > a > img {
-    background-color: #fff;
-    border: 1px solid #ddd !important;
-    border-radius: 4px;
-    padding: 4px;
+	background-color: #fff;
+	border: 1px solid #ddd !important;
+	border-radius: 4px;
+	padding: 4px;
 }
 
 .post_format-post-format-gallery > div > dl.gallery-item:hover > dt > a > img,
 .post_format-post-format-gallery > div > dl.gallery-item:focus > dt > a > img,
 .post_format-post-format-gallery > div > dl.gallery-item:active > dt > a > img {
-    border-color: #337ab7;
+	border-color: #337ab7;
 }
 
 /*****************************
@@ -291,7 +291,7 @@ blockquote p {
 *****************************/
 
 .admin-bar .navbar-fixed-top {
-    margin-top: 32px;
+	margin-top: 32px;
 }
 
 /*****************************
@@ -299,21 +299,21 @@ blockquote p {
 *****************************/
 
 .widgets {
-    background: #efefef;
-    margin: 15px 0 0 0;
-    padding: 30px 0;
-    text-align: justify;
+	background: #efefef;
+	margin: 15px 0 0 0;
+	padding: 30px 0;
+	text-align: justify;
 }
 
 .widgets h4 {
-    border-bottom: solid 1px #959393;
-    line-height: 50px;
+	border-bottom: solid 1px #959393;
+	line-height: 50px;
 }
 
 @media (max-width: 767px) {
-    .widget {
-        margin: 40px 0;
-    }
+	.widget {
+		margin: 40px 0;
+	}
 }
 
 /*****************************
@@ -321,12 +321,12 @@ blockquote p {
 *****************************/
 
 table#wp-calendar {
-    width: 100%;
+	width: 100%;
 }
 
 table#wp-calendar caption {
-    font-weight: bold;
-    text-align: center;
+	font-weight: bold;
+	text-align: center;
 }
 
 /*****************************
@@ -334,12 +334,12 @@ table#wp-calendar caption {
 *****************************/
 
 .tagcloud a {
-    color: #563d7c;
+	color: #563d7c;
 }
 
 .tagcloud a:hover {
-    opacity: 0.8;
-    text-decoration: none;
+	opacity: 0.8;
+	text-decoration: none;
 }
 
 /*****************************
@@ -347,8 +347,8 @@ table#wp-calendar caption {
 *****************************/
 
 .footer-menu {
-    background: #4D4857;
-    padding: 20px 0;
+	background: #4D4857;
+	padding: 20px 0;
 }
 
 .footer-menu a {
@@ -359,11 +359,11 @@ table#wp-calendar caption {
 *****************************/
 
 #copyright p {
-    color: #99979c;
+	color: #99979c;
 }
 
 #copyright a {
-    color: white;
+	color: white;
 }
 
 /*****************************
@@ -371,8 +371,8 @@ table#wp-calendar caption {
 *****************************/
 
 body.error404 {
-    background: #563D7C;
-    color: #f7f7f7;
+	background: #563D7C;
+	color: #f7f7f7;
 }
 
 /*****************************
@@ -380,7 +380,7 @@ body.error404 {
 *****************************/
 
 #woocommerce {
-    margin-top: 50px;
+	margin-top: 50px;
 }
 
 /*****************************
@@ -388,20 +388,20 @@ body.error404 {
 *****************************/
 
 .col-item {
-    border: 1px solid #E1E1E1;
-    border-radius: 5px;
-    background: #FFF;
-    margin-bottom: 25px;
+	border: 1px solid #E1E1E1;
+	border-radius: 5px;
+	background: #FFF;
+	margin-bottom: 25px;
 }
 
 .col-item img {
-    margin: 0 auto;
-    width: 100%;
+	margin: 0 auto;
+	width: 100%;
 }
 
 .col-item h3,
 .col-item h5 {
-    text-align: center;
+	text-align: center;
 }
 
 /*****************************
@@ -409,7 +409,7 @@ body.error404 {
 *****************************/
 
 .tabs {
-    margin-top: 15px;
+	margin-top: 15px;
 }
 
 /*****************************
@@ -417,11 +417,11 @@ body.error404 {
 *****************************/
 
 p.demo_store {
-    background: #2a2730;
-    color: #f7f7f7;
-    margin: 0px 0;
-    padding: 10px 0;
-    text-align: center;
+	background: #2a2730;
+	color: #f7f7f7;
+	margin: 0px 0;
+	padding: 10px 0;
+	text-align: center;
 }
 
 /*****************************
@@ -429,12 +429,12 @@ p.demo_store {
 *****************************/
 
 .page-link:hover {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .woocommerce-ordering {
-    margin-bottom: 20px;
-    text-align: right;
+	margin-bottom: 20px;
+	text-align: right;
 }
 
 /*****************************
@@ -442,48 +442,48 @@ p.demo_store {
 *****************************/
 
 .card {
-    margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 @media (max-width: 543px) {
-    .card {
-        padding: 20px;
-    }
+	.card {
+		padding: 20px;
+	}
 }
 
 .card .alert {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    border-radius: 0;
-    background: #a94442;
-    color: #fff;
-    border: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	border-radius: 0;
+	background: #a94442;
+	color: #fff;
+	border: 0;
 }
 
 @media (max-width: 543px) {
-    .card .alert {
-        width: 300px;
-    }
+	.card .alert {
+		width: 300px;
+	}
 }
 
 .card h3 {
-    margin-top: 15px;
+	margin-top: 15px;
 }
 
 .price-text-color {
-    font-weight: bold;
-    font-size: 1.5em;
+	font-weight: bold;
+	font-size: 1.5em;
 }
 
 @media (max-width: 543px) {
-    .page-title, .woocommerce-result-count {
-        margin-left: 20px;
-    }
+	.page-title, .woocommerce-result-count {
+		margin-left: 20px;
+	}
 
-    .woocommerce-ordering {
-        margin-right: 20px;
-    }
+	.woocommerce-ordering {
+		margin-right: 20px;
+	}
 }
 
 /*****************************
@@ -491,25 +491,25 @@ p.demo_store {
 *****************************/
 
 .video-wrapper {
-    width: 100%;
-    max-width: 720px;
-    float: none;
-    display: block;
-    margin: 0 auto;
+	width: 100%;
+	max-width: 720px;
+	float: none;
+	display: block;
+	margin: 0 auto;
 }
 
 .video-wrapper .video-inner {
-    width: 100%;
-    padding: 0 0 56.25% 0;
-    position: relative;
+	width: 100%;
+	padding: 0 0 56.25% 0;
+	position: relative;
 }
 
 .video-wrapper .video-inner iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
 /*****************************
@@ -517,13 +517,13 @@ p.demo_store {
 *****************************/
 
 #display {
-    margin: 0 0 40px 8px;
+	margin: 0 0 40px 8px;
 }
 
 #display a {
-    font-size: 16px;
+	font-size: 16px;
 }
 
 .hidden {
-    display: none;
+	display: none;
 }

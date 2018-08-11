@@ -2,56 +2,66 @@
 
 function gramophone_comments( $comment, $args, $depth ) {
 	global $post;
-	$author_id = $post->post_author;
+	$author_id          = $post->post_author;
 	$GLOBALS['comment'] = $comment;
 	switch ( $comment->comment_type ) :
-		case 'pingback' :
-		case 'trackback' :
-		// Display trackbacks differently than normal comments. ?>
+		case 'pingback':
+		case 'trackback':
+			// Display trackbacks differently than normal comments. ?>
 	<li id="comment-<?php comment_ID(); ?>" <?php comment_class(); ?>>
 		<div class="pingback-entry"><span class="pingback-heading"><?php esc_html_e( 'Pingback:', 'gramophone' ); ?></span> <?php comment_author_link(); ?></div>
-	<?php
-		break;
-		default :
-		// Proceed with normal comments. ?>
-    <div class="comment mb-2 row" id="comment-<?php comment_ID(); ?>" <?php comment_class('clr'); ?>>
-      <div class="comment-avatar col-md-1 col-sm-2 text-center pr-1">
-        <?php echo get_gramophone_avatar( $comment ); ?>
-      </div>
-      <div class="comment-content col-md-11 col-sm-10">
-        <h6 class="small comment-meta">
-          <?php comment_author_link(); ?>
-          <?php
-          // $string = '<a href="%1$s"><time datetime="%2$s">%3$s</time></a>';
-          // Developer's note:
-          // replace the $string var below with the one above to add a link to the specific comment
-          $string = '<time datetime="%2$s">%3$s</time>';
-          printf( $string,
-						esc_url( get_comment_link( $comment->comment_ID ) ),
-						get_comment_time( 'c' ),
-						sprintf( _x( '%1$s', '1: date', 'gramophone' ), get_comment_date() )
-					); ?> <?php esc_html_e( 'at', 'gramophone' ); ?> <?php comment_time(); ?>
+			<?php
+			break;
+		default:
+			// Proceed with normal comments.
+			?>
+	<div class="comment mb-2 row" id="comment-<?php comment_ID(); ?>" <?php comment_class( 'clr' ); ?>>
+	  <div class="comment-avatar col-md-1 col-sm-2 text-center pr-1">
+			<?php echo get_gramophone_avatar( $comment ); ?>
+	  </div>
+	  <div class="comment-content col-md-11 col-sm-10">
+		<h6 class="small comment-meta">
+			<?php comment_author_link(); ?>
+			<?php
+			// $string = '<a href="%1$s"><time datetime="%2$s">%3$s</time></a>';
+			// Developer's note:
+			// replace the $string var below with the one above to add a link to the specific comment
+			$string = '<time datetime="%2$s">%3$s</time>';
+			printf(
+				$string,
+				esc_url( get_comment_link( $comment->comment_ID ) ),
+				get_comment_time( 'c' ),
+				sprintf( _x( '%1$s', '1: date', 'gramophone' ), get_comment_date() )
+			);
+			?>
+					 <?php esc_html_e( 'at', 'gramophone' ); ?> <?php comment_time(); ?>
 
-        </h6>
-        <div class="comment-body">
-          <?php if ( '0' == $comment->comment_approved ) : ?>
-  					<p class="comment-awaiting-moderation alert alert-warning"><?php esc_html_e( 'Your comment is awaiting moderation.', 'gramophone' ); ?></p>
-  				<?php endif; ?>
-          <p>
-            <?php comment_text(); ?>
-            <?php comment_reply_link( array_merge( $args, array(
-  						'reply_text' => '<span class="small">' . esc_html__( 'Reply to this message', 'gramophone' ) . '</span>',
-  						'depth'      => $depth,
-  						'max_depth'	 => $args['max_depth'] )
-  					) ); ?>
-          </p>
-        </div>
-      </div>
-    </div>
+		</h6>
+		<div class="comment-body">
+			<?php if ( '0' == $comment->comment_approved ) : ?>
+					  <p class="comment-awaiting-moderation alert alert-warning"><?php esc_html_e( 'Your comment is awaiting moderation.', 'gramophone' ); ?></p>
+				<?php endif; ?>
+		  <p>
+			<?php comment_text(); ?>
+			<?php
+			comment_reply_link(
+				array_merge(
+					$args, array(
+						'reply_text' => '<span class="small">' . esc_html__( 'Reply to this message', 'gramophone' ) . '</span>',
+						'depth'      => $depth,
+						'max_depth'  => $args['max_depth'],
+					)
+				)
+			);
+			?>
+		  </p>
+		</div>
+	  </div>
+	</div>
 
 
-	<?php
-		break;
+			<?php
+			break;
 	endswitch; // End comment_type check.
 }
 
@@ -77,7 +87,7 @@ function get_gramophone_avatar( $id_or_email, $size = null, $default = '', $alt 
 	$args['size']    = (int) $size;
 	$args['default'] = $default;
 	$args['alt']     = $alt;
-	$args = wp_parse_args( $args, $defaults );
+	$args            = wp_parse_args( $args, $defaults );
 	if ( empty( $args['height'] ) ) {
 		$args['height'] = $args['size'];
 	}
@@ -109,8 +119,8 @@ function get_gramophone_avatar( $id_or_email, $size = null, $default = '', $alt 
 		return false;
 	}
 	$url2x = get_avatar_url( $id_or_email, array_merge( $args, array( 'size' => $args['size'] * 2 ) ) );
-	$args = get_avatar_data( $id_or_email, $args );
-	$url = $args['url'];
+	$args  = get_avatar_data( $id_or_email, $args );
+	$url   = $args['url'];
 	if ( ! $url || is_wp_error( $url ) ) {
 		return false;
 	}
@@ -125,19 +135,19 @@ function get_gramophone_avatar( $id_or_email, $size = null, $default = '', $alt 
 			$class[] = $args['class'];
 		}
 	}
-  $class[] = "mx-auto rounded-circle img-fluid";
+	$class[] = 'mx-auto rounded-circle img-fluid';
 
-  $string = "<img alt='%s' src='%s' srcset='%s' class='%s' %s height='%d' width='%d' />";
-  if($size == null) {
-    $string = "<img alt='%s' src='%s' srcset='%s' class='%s' %s />";
-  }
+	$string = "<img alt='%s' src='%s' srcset='%s' class='%s' %s height='%d' width='%d' />";
+	if ( $size == null ) {
+		$string = "<img alt='%s' src='%s' srcset='%s' class='%s' %s />";
+	}
 	$avatar = sprintf(
 		$string,
 		esc_attr( $args['alt'] ),
 		esc_url( $url ),
 		esc_url( $url2x ) . ' 2x',
 		esc_attr( join( ' ', $class ) ),
-    $args['extra_attr'],
+		$args['extra_attr'],
 		(int) $args['height'],
 		(int) $args['width']
 	);
