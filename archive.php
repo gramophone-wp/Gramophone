@@ -35,7 +35,7 @@
 					on <?php echo the_time( 'l, F jS, Y' ); ?>
 					in <?php the_category( ', ' ); ?>.
 					<a href="<?php comments_link(); ?>">
-					  <?php comments_number(); ?>
+						<?php comments_number(); ?>
 					</a>
 					</em></p>
 

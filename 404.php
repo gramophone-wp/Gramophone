@@ -14,7 +14,7 @@
 		<h1>404</h1>
 
 		<a class="btn btn-danger-outline" href="<?php echo esc_url( get_home_url() ); ?>">
-		  Return Home
+			Return Home
 		</a>
 
 	</div>

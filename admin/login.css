@@ -1,5 +1,5 @@
 /**
- * admin/login.css
+ * File admin/login.css
  *
  * The styling for the admin login page which
  * can be found at http://<app_name>/wp-admin
@@ -7,42 +7,42 @@
  */
 
 body {
-  background-image: linear-gradient(to top, rgba(148, 85, 166, 0.5) 40%, rgba(86, 130, 190, 0.96) 100%);
+	background-image: linear-gradient(to top, rgba(148, 85, 166, 0.5) 40%, rgba(86, 130, 190, 0.96) 100%);
 }
 
 .wp-core-ui
 .button.button-large {
-  backgound: #5682be;
-  border: #5682be;
-  box-shadow: none;
-  height: 38px;
-  line-height: 28px;
-  padding: 0 12px 2px;
-  text-decoration: none;
-  text-shadow: none;
-  width: 100%;
-  font-size: 15px;
-  margin-top: 10px;
+	background: #5682be;
+	border: #5682be;
+	box-shadow: none;
+	height: 38px;
+	line-height: 28px;
+	padding: 0 12px 2px;
+	text-decoration: none;
+	text-shadow: none;
+	width: 100%;
+	font-size: 15px;
+	margin-top: 10px;
 }
 
 .login #nav {
-  margin: 24px 0 0;
-  text-align: center;
-  font-size: 11px;
-  text-transform: uppercase;
+	margin: 24px 0 0;
+	text-align: center;
+	font-size: 11px;
+	text-transform: uppercase;
 }
 
 .login #nav a {
-  border: 3px solid #fff;
-  padding: 10px 15px;
-  color: #fff;
+	border: 3px solid #fff;
+	padding: 10px 15px;
+	color: #fff;
 }
 
 .login #nav a:hover {
-  background: #fff;
-  color: #5682be;
+	background: #fff;
+	color: #5682be;
 }
 
 .login #backtoblog a {
-  display: none;
+	display: none;
 }

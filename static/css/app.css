@@ -1,3 +1,10 @@
+/**
+ * File app.css
+ *
+ * All of your apps custom css goes here
+ *
+ */
+
 /*****************************
  ~~ html specific
 *****************************/
@@ -27,7 +34,7 @@ footer {
 }
 
 .sticky {
-  background-color: #FFEBCD;
+	background-color: #FFEBCD;
 }
 
 .gallery-caption {}
@@ -165,7 +172,7 @@ a img.aligncenter {
 
 @media (max-width:600px){
 	nav button.search-btn {
-	  width: 100%
+		width: 100%
 	}
 }
 
@@ -186,7 +193,7 @@ img#post-image {
 *****************************/
 
 .btn-search {
-  margin-left: 5px;
+	margin-left: 5px;
 }
 
 /*****************************
@@ -194,24 +201,24 @@ img#post-image {
 *****************************/
 
 blockquote {
-  background: #f9f9f9;
-  border-left: 10px solid #ccc;
-  margin: 1.5em 10px;
-  padding: 0.5em 10px;
-  quotes: "\201C""\201D""\2018""\2019";
+	background: #f9f9f9;
+	border-left: 10px solid #ccc;
+	margin: 1.5em 10px;
+	padding: 0.5em 10px;
+	quotes: "\201C""\201D""\2018""\2019";
 }
 
 blockquote:before {
-  color: #ccc;
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
+	color: #ccc;
+	content: open-quote;
+	font-size: 4em;
+	line-height: 0.1em;
+	margin-right: 0.25em;
+	vertical-align: -0.4em;
 }
 
 blockquote p {
-  display: inline;
+	display: inline;
 }
 
 /*****************************

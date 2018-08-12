@@ -10,16 +10,27 @@ if ( ! isset( $content_width ) ) {
 	$content_width = 600;
 }
 
+add_theme_support( 'automatic-feed-links' );
+add_theme_support( 'custom-background' );
+add_theme_support( 'custom-header' );
+add_theme_support( 'menus' );
+add_theme_support( 'post-thumbnails' );
+add_theme_support( 'post-formats', $post_formats );
+add_theme_support( 'title-tag' );
+add_theme_support( 'editor-style' );
+add_theme_support( 'html5' );
+add_theme_support( 'widgets' );
+
 // Theme Dependencies ~ best not remove these!
 require_once locate_template( 'includes/class-tgm-plugin-activation.php' );
 require_once 'includes/bootstrap_walker.php';
 require_once 'includes/comments.php';
 
-// Admin Customisations
+// Admin Customisations.
 require_once 'config/admin.php';
 require_once 'config/login.php';
 
-// Theme Specific Customisations
+// Gramophone Specific Customisations.
 require_once 'config/enqueue.php';
 require_once 'config/menus.php';
 require_once 'config/comments.php';
@@ -27,14 +38,8 @@ require_once 'config/breadcrumbs.php';
 require_once 'config/pagination.php';
 require_once 'config/styling.php';
 
-// Theme Recommended & Required Plugins
+// Theme Recommended & Required Plugins.
 require_once 'config/required_plugins.php';
-
-// Theme custom post types
-// require_once( '' );
-/*
- * Widgets
- */
 
 function create_left_footer_widget() {
 	register_sidebar(
@@ -115,22 +120,7 @@ function create_post_widget() {
 }
 add_action( 'widgets_init', 'create_page_widget' );
 
-/**
- **********************************************
- * add_theme_support
- **********************************************
- */
-add_theme_support( 'automatic-feed-links' );
-add_theme_support( 'custom-background' );
-add_theme_support( 'custom-header' );
-add_theme_support( 'menus' );
-add_theme_support( 'post-thumbnails' );
-add_theme_support( 'post-formats', $post_formats );
-add_theme_support( 'title-tag' );
-// add_theme_support( 'editor-style' );
-// add_theme_support( 'html5' );
-// add_theme_support( 'widgets' );
-// add_theme_support( 'woocommerce' );
+
 function theme_queue_js() {
 	if ( ! is_admin() ) {
 		if ( is_singular() and comments_open() and ( get_option( 'thread_comments' ) == 1 ) ) {
@@ -202,5 +192,3 @@ function format_gallery_bootstrap( $output, $atts, $instance ) {
 	return $output;
 }
 add_filter( 'post_gallery', 'format_gallery_bootstrap', 10, 3 );
-
-

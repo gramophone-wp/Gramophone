@@ -13,7 +13,7 @@
 <div class="jumbotron jumbotron-fluid">
 	<div class="container">
 		<?php $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1; ?>
-		<h1>Page <?php echo sanitize_title( $paged ); ?></h1>
+		<h1>Page <?php echo esc_html( $paged ); ?></h1>
 	</div>
 </div>
 
@@ -21,7 +21,7 @@
 
 	<div class="container" id="display">
 		<div class="hidden-xs-down col-sm-12">
-			  <div class="float-right">
+			<div class="float-right">
 				<strong>Display</strong>
 				<div class="btn-group">
 					<a href="#" id="grid" class="btn btn-default btn-sm"><span class="fa fa-square"></span> Grid</a>
@@ -54,7 +54,7 @@
 						if ( isset( $_COOKIE['display-type'] ) && 'list' === $_COOKIE['display-type'] ) {
 							echo 'hidden';}
 						?>
-						" src="<?php echo get_the_post_thumbnail_url() ? get_the_post_thumbnail_url() : get_template_directory_uri() . '/static/images/logos/gramophone_placeholder.png'; ?>" alt="" id="post-image" />
+						" src="<?php echo esc_html( get_the_post_thumbnail_url() ) ? esc_html( get_the_post_thumbnail_url() ) : get_template_directory_uri() . '/static/images/logos/gramophone_placeholder.png'; ?>" alt="" id="post-image" />
 					</a>
 
 					<div <?php post_class(); ?>>
