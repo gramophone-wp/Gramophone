@@ -1,12 +1,13 @@
 <?php
 /**
- * formats/format-chat.php
+ * File formats/format-chat.php
  *
  * Post format for a chat (dump) post.
  *
  * @link https://developer.wordpress.org/themes/functionality/post-formats/
  * @package gramophone
  **/
+
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

@@ -1,6 +1,6 @@
 <?php
 /**
- * The theme functions.
+ * Theme functions.
  *
  * @link https://codex.wordpress.org/Functions_File_Explained
  * @package gramophone
@@ -123,7 +123,7 @@ add_action( 'widgets_init', 'create_page_widget' );
 
 function theme_queue_js() {
 	if ( ! is_admin() ) {
-		if ( is_singular() and comments_open() and ( get_option( 'thread_comments' ) == 1 ) ) {
+		if ( is_singular() && comments_open() && ( get_option( 'thread_comments' ) === 1 ) ) {
 			wp_enqueue_script( 'comment-reply' );
 		}
 	}
@@ -163,13 +163,13 @@ function format_gallery_bootstrap( $output, $atts, $instance ) {
 			$src = wp_get_attachment_image_src( $post->ID, $atts['size'] )[0];
 
 			$link = false;
-			if ( 'attachment' == $atts['link'] ) {
+			if ( 'attachment' === $atts['link'] ) {
 				$link = get_attachment_link( $post->ID );
-			} elseif ( 'file' == $atts['link'] ) {
+			} elseif ( 'file' === $atts['link'] ) {
 				$link = $src;
 			}
 
-			$class = ( 'thumbnail' == $atts['size'] ) ? 'img-thumbnail' : 'img-fluid';
+			$class = ( 'thumbnail' === $atts['size'] ) ? 'img-thumbnail' : 'img-fluid';
 
 			$output .= '<div class="col-sm">';
 			if ( $link ) {

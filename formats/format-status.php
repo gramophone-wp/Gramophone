@@ -1,12 +1,13 @@
 <?php
 /**
- * formats/format-status.php
+ * File formats/format-status.php
  *
  * Post format for a status based post.
  *
  * @link https://developer.wordpress.org/themes/functionality/post-formats/
  * @package gramophone
  */
+
 ?>
 
 <article>

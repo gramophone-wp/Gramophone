@@ -1,18 +1,17 @@
 <?php
 /**
- * config/pagination.php
+ * File config/pagination.php
  *
  * Pagination for the posts.
  *
  * @package gramophone
  */
 
-add_filter( 'next_posts_link_attributes', 'posts_link_attributes' );
-add_filter( 'previous_posts_link_attributes', 'posts_link_attributes' );
-
 function posts_link_attributes() {
 	return 'class="page-link"';
 }
+add_filter( 'next_posts_link_attributes', 'posts_link_attributes' );
+add_filter( 'previous_posts_link_attributes', 'posts_link_attributes' );
 
 function theme_pagination() {
 
@@ -55,7 +54,7 @@ function theme_pagination() {
 
 	/** Link to first page, plus ellipses if necessary */
 	if ( ! in_array( 1, $links ) ) {
-		$class = 1 == $paged ? ' class="active"' : '';
+		$class = 1 === $paged ? ' class="active"' : '';
 
 		printf( '<li%s class="page-item"><a class="page-link" href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( 1 ) ), '1' );
 
@@ -86,5 +85,5 @@ function theme_pagination() {
 		printf( '<li class="page-item">%s</li>' . "\n", get_next_posts_link() );
 	}
 
-		echo '</ul></nav></div>' . "\n";
+	echo '</ul></nav></div>' . "\n";
 }

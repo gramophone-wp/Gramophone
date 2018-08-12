@@ -54,7 +54,7 @@
 						if ( isset( $_COOKIE['display-type'] ) && 'list' === $_COOKIE['display-type'] ) {
 							echo 'hidden';}
 						?>
-						" src="<?php echo esc_html( get_the_post_thumbnail_url() ) ? esc_html( get_the_post_thumbnail_url() ) : get_template_directory_uri() . '/static/images/logos/gramophone_placeholder.png'; ?>" alt="" id="post-image" />
+						" src="<?php echo esc_html( get_the_post_thumbnail_url() ) ? esc_html( get_the_post_thumbnail_url() ) : esc_html( get_template_directory_uri() ) . '/static/images/logos/gramophone_placeholder.png'; ?>" alt="" id="post-image" />
 					</a>
 
 					<div <?php post_class(); ?>>

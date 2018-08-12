@@ -1,12 +1,13 @@
 <?php
 /**
- * formats/format-gallery.php
+ * File formats/format-gallery.php
  *
  * Post format for a gallery post.
  *
  * @link https://developer.wordpress.org/themes/functionality/post-formats/
  * @package gramophone
  **/
+
 ?>
 
 <article>

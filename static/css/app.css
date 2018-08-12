@@ -3,10 +3,10 @@
  *
  * All of your apps custom css goes here
  *
- */
+ **/
 
 /*****************************
- ~~ html specific
+	~~ html specific
 *****************************/
 
 img {
@@ -21,7 +21,7 @@ footer {
 }
 
 /*****************************
- ~~ WordPress Config Specific
+	~~ WordPress Config Specific
 *****************************/
 
 .size-auto,
@@ -52,7 +52,7 @@ ul.hide-bullets li.col-sm-4 {
 }
 
 /*****************************
- ~~ WordPress Generated Classes
+	~~ WordPress Generated Classes
 *****************************/
 
 .alignnone {
@@ -167,7 +167,7 @@ a img.aligncenter {
 }
 
 /*****************************
- ~~ Header
+	~~ Header
 *****************************/
 
 @media (max-width:600px){
@@ -177,7 +177,7 @@ a img.aligncenter {
 }
 
 /*****************************
- ~~ Blog (home)
+	~~ Blog (home)
 *****************************/
 
 article.post {
@@ -189,7 +189,7 @@ img#post-image {
 }
 
 /*****************************
- ~~ widgets (calendar)
+	~~ widgets (calendar)
 *****************************/
 
 .btn-search {
@@ -197,7 +197,7 @@ img#post-image {
 }
 
 /*****************************
- ~~ Post Format: quote
+	~~ Post Format: quote
 *****************************/
 
 blockquote {
@@ -222,7 +222,7 @@ blockquote p {
 }
 
 /*****************************
- ~~ Post Format: image
+	~~ Post Format: image
 *****************************/
 
 .post_format-post-format-image img {
@@ -231,7 +231,7 @@ blockquote p {
 }
 
 /*****************************
- ~~ Post Format: chat
+	~~ Post Format: chat
 *****************************/
 
 .post_format-post-format-chat {
@@ -240,7 +240,7 @@ blockquote p {
 }
 
 /*****************************
- ~~ Post Format: aside
+	~~ Post Format: aside
 *****************************/
 
 .post_format-post-format-aside {
@@ -249,7 +249,7 @@ blockquote p {
 }
 
 /*****************************
- ~~ Post Format: link
+	~~ Post Format: link
 *****************************/
 
 .post_format-post-format-link a {
@@ -265,7 +265,7 @@ blockquote p {
 }
 
 /*****************************
- ~~ Post Format: Gallery
+	~~ Post Format: Gallery
 *****************************/
 
 @media (max-width:768px){
@@ -294,7 +294,7 @@ blockquote p {
 }
 
 /*****************************
- ~~ admin
+	~~ admin
 *****************************/
 
 .admin-bar .navbar-fixed-top {
@@ -302,7 +302,7 @@ blockquote p {
 }
 
 /*****************************
- ~~ widgets
+	~~ widgets
 *****************************/
 
 .widgets {
@@ -324,7 +324,7 @@ blockquote p {
 }
 
 /*****************************
- ~~ widgets (calendar)
+	~~ widgets (calendar)
 *****************************/
 
 table#wp-calendar {
@@ -337,7 +337,7 @@ table#wp-calendar caption {
 }
 
 /*****************************
- ~~ widgets (tag cloud)
+	~~ widgets (tag cloud)
 *****************************/
 
 .tagcloud a {
@@ -350,7 +350,7 @@ table#wp-calendar caption {
 }
 
 /*****************************
- ~~ footer menu
+	~~ footer menu
 *****************************/
 
 .footer-menu {
@@ -359,10 +359,10 @@ table#wp-calendar caption {
 }
 
 .footer-menu a {
-  color: #fff;
+	color: #fff;
 }
 /*****************************
- ~~ footer (widgets)
+	~~ footer (widgets)
 *****************************/
 
 #copyright p {
@@ -374,7 +374,7 @@ table#wp-calendar caption {
 }
 
 /*****************************
- ~~ 404 (error)
+	~~ 404 (error)
 *****************************/
 
 body.error404 {
@@ -383,7 +383,7 @@ body.error404 {
 }
 
 /*****************************
-~~ WooCommerce
+	~~ WooCommerce
 *****************************/
 
 #woocommerce {
@@ -391,7 +391,7 @@ body.error404 {
 }
 
 /*****************************
-~~ WooCommerce (Catalog)
+	~~ WooCommerce (Catalog)
 *****************************/
 
 .col-item {
@@ -412,7 +412,7 @@ body.error404 {
 }
 
 /*****************************
-~~ WooCommerce (Tabs)
+	~~ WooCommerce (Tabs)
 *****************************/
 
 .tabs {
@@ -420,7 +420,7 @@ body.error404 {
 }
 
 /*****************************
-~~ WooCommerce (Site Wide Notice)
+	~~ WooCommerce (Site Wide Notice)
 *****************************/
 
 p.demo_store {
@@ -432,7 +432,7 @@ p.demo_store {
 }
 
 /*****************************
-~~ Pagination
+	~~ Pagination
 *****************************/
 
 .page-link:hover {
@@ -445,7 +445,7 @@ p.demo_store {
 }
 
 /*****************************
-~~ Product grid
+	~~ Product grid
 *****************************/
 
 .card {
@@ -494,7 +494,7 @@ p.demo_store {
 }
 
 /*****************************
-~~ Video (Post format)
+	~~ Video (Post format)
 *****************************/
 
 .video-wrapper {
@@ -520,7 +520,7 @@ p.demo_store {
 }
 
 /*****************************
-~~ Posts display (list / grid)
+	~~ Posts display (list / grid)
 *****************************/
 
 #display {

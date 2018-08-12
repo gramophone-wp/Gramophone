@@ -1,12 +1,13 @@
 <?php
 /**
- * formats/format-aside.php
+ * File formats/format-aside.php
  *
  * Post format for an aside post.
  *
  * @link https://developer.wordpress.org/themes/functionality/post-formats/
  * @package gramophone
  **/
+
 ?>
 
 <article>

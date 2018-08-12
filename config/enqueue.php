@@ -7,16 +7,16 @@
  * @package gramophone
  **/
 
-function theme_styles() {
+function gramophone_styles() {
 
 	wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/static/css/bootstrap.min.css' );
 	wp_enqueue_style( 'demo_theme_css', get_template_directory_uri() . '/static/css/app.css' );
 
 	// Add more...
 }
-add_action( 'wp_enqueue_scripts', 'theme_styles' );
+add_action( 'wp_enqueue_scripts', 'gramophone_styles' );
 
-function theme_js() {
+function gramophone_js() {
 
 	global $wp_scripts;
 
@@ -32,6 +32,6 @@ function theme_js() {
 
 	// Add more...
 }
-add_action( 'wp_enqueue_scripts', 'theme_js' );
+add_action( 'wp_enqueue_scripts', 'gramophone_js' );
 
 

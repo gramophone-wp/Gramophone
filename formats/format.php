@@ -1,6 +1,6 @@
 <?php
 /**
- * Post format for a regular, plain ol' post.
+ * File Post format for a regular, plain ol' post.
  *
  * @link https://developer.wordpress.org/themes/functionality/post-formats/
  * @package gramophone

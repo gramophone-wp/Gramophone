@@ -6,11 +6,11 @@
  * @package gramophone
  **/
 
-// User Information
+// User Information.
 $user_id   = get_the_author_meta( 'id' );
 $biography = get_the_author_meta( 'description' );
 
-// Social Media
+// Social Media.
 $user_gplus   = get_the_author_meta( 'googleplus' );
 $user_twitter = get_the_author_meta( 'twitter' );
 
@@ -27,7 +27,7 @@ $user_twitter = get_the_author_meta( 'twitter' );
 						<h2><?php the_author(); ?></h2>
 
 						<p><i class="fa fa-quote-left"></i>
-						<?php echo $biography; ?>
+						<?php echo esc_attr( $biography ); ?>
 						<i class="fa fa-quote-right"></i></p>
 
 						<hr>
@@ -35,14 +35,14 @@ $user_twitter = get_the_author_meta( 'twitter' );
 					</div>
 
 					<div class="col-xs-12 col-sm-4 text-center">
-						<img src="<?php echo get_avatar_url( $user_id ); ?>" alt="" class="img-fluid">
+						<img src="<?php echo esc_url( get_avatar_url( $user_id ) ); ?>" alt="" class="img-fluid">
 					</div>
 
 				</div>
 				<div class="col-xs-12 divider text-center">
 					<div class="col-xs-12 col-sm-4 emphasis">
 
-						<h2><strong> <?php echo count_user_posts( $user_id ); ?> </strong></h2>
+						<h2><strong> <?php echo esc_attr( count_user_posts( $user_id ) ); ?> </strong></h2>
 						<p><small>Posts</small></p>
 						<button class="btn btn-success btn-block"><span class="fa fa-google-plus"></span> Google Plus </button>
 

@@ -1,12 +1,13 @@
 <?php
 /**
- * formats/format-video.php
+ * File formats/format-video.php
  *
  * Post format for a video post.
  *
  * @link https://developer.wordpress.org/themes/functionality/post-formats/
  * @package gramophone
  */
+
 ?>
 
 <article>

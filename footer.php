@@ -42,7 +42,7 @@
 				<p class="text-muted">&copy;
 					<a href="<?php echo esc_url( home_url() ); ?>">
 					<?php bloginfo( 'name' ); ?></a>
-					<?php echo esc_url( date( 'Y' ) ); ?>
+					<?php echo esc_attr( date( 'Y' ) ); ?>
 				</p>
 			</div>
 		</div>

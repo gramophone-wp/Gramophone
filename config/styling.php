@@ -1,33 +1,41 @@
 <?php
 /**
- * config/styling.php
+ * File config/styling.php
  *
  * Custom styling functionality.
  *
  * @package gramophone
  */
 
-// Add Bootstrap Styling to Password Protected form
-function bootstrap_password_form() {
+/**
+ * Gramophone Password Form
+ *
+ * Adds Bootstrap 4 styling to password protected form.
+ */
+function gramophone_password_form() {
 	global $post;
-	$label  = 'pwbox-' . ( empty( $post->ID ) ? rand() : $post->ID );
+	$label  = 'pwbox-' . ( empty( $post->ID ) ? wp_rand() : $post->ID );
 	$output = '<form action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" class="post-password-form form-control" method="post">
     <p>' . __( 'This content is password protected. To view it please enter your password below:', 'gramophone' ) . '</p>
     <div class="form-group"><p><label for="' . $label . '">' . __( 'Password:', 'gramophone' ) . ' <input name="post_password" class="form-control" id="' . $label . '" type="password" size="20" /></label> <input type="submit" class="btn btn-primary" name="Submit" value="' . esc_attr_x( 'Enter', 'post password form', 'gramophone' ) . '" /></p></div></form>
     ';
 	return $output;
-};
+}
+add_filter( 'the_password_form', 'gramophone_password_form' );
 
-add_filter( 'the_password_form', 'bootstrap_password_form' );
 
-// Add bootstrap styling to search form
-add_filter( 'get_search_form', 'gramophone_search_form' );
-
+/**
+ * Gramophone Search Form
+ *
+ * Adds Bootstrap 4 styling to the search form.
+ * 
+ * @param $form_html The html content that is being manipulated
+ */
 function gramophone_search_form( $form_html ) {
-	// Removing the check for html5 format as nothing html5 specific or that would break xhtml
+	// Removing the check for html5 format as nothing html5 specific or that would break xhtml.
 	$search_form_template = locate_template( 'searchform.php' );
-	if ( '' != $search_form_template ) {
-		// This makes sure we don't mess with anyone's child theme implementation
+	if ( '' !== $search_form_template ) {
+		// This makes sure we don't mess with anyone's child theme implementation.
 		ob_start();
 		require $search_form_template;
 		$form_html = ob_get_clean();
@@ -47,4 +55,4 @@ function gramophone_search_form( $form_html ) {
 	}
 	return $form_html;
 }
-
+add_filter( 'get_search_form', 'gramophone_search_form' );

@@ -13,6 +13,8 @@ declare -a remove_files=(
   "README.md"
   "eject.sh"
   "dist/"
+  ".travis.yml"
+  ".jscsrc"
 )
 
 echo "Removing files."

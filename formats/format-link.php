@@ -1,6 +1,6 @@
 <?php
 /**
- * formats/format-link.php
+ * File formats/format-link.php
  *
  * Post format for link post.
  *
