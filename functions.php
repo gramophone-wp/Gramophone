@@ -22,24 +22,24 @@ add_theme_support( 'html5' );
 add_theme_support( 'widgets' );
 
 // Theme Dependencies ~ best not remove these!
-require_once locate_template( 'includes/class-tgm-plugin-activation.php' );
-require_once 'includes/bootstrap_walker.php';
-require_once 'includes/comments.php';
+require_once locate_template( 'externals/class-tgm-plugin-activation.php' );
+require_once 'externals/bootstrap_walker.php';
+require_once 'externals/comments.php';
 
 // Admin Customisations.
-require_once 'config/admin.php';
-require_once 'config/login.php';
+require_once 'includes/admin.php';
+require_once 'includes/login.php';
 
 // Gramophone Specific Customisations.
-require_once 'config/enqueue.php';
-require_once 'config/menus.php';
-require_once 'config/comments.php';
-require_once 'config/breadcrumbs.php';
-require_once 'config/pagination.php';
-require_once 'config/styling.php';
+require_once 'includes/enqueue.php';
+require_once 'includes/menus.php';
+require_once 'includes/comments.php';
+require_once 'includes/breadcrumbs.php';
+require_once 'includes/pagination.php';
+require_once 'includes/styling.php';
 
 // Theme Recommended & Required Plugins.
-require_once 'config/required_plugins.php';
+require_once 'includes/required_plugins.php';
 
 function create_left_footer_widget() {
 	register_sidebar(
