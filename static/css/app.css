@@ -377,10 +377,24 @@ table#wp-calendar caption {
 	~~ 404 (error)
 *****************************/
 
-body.error404 {
-	background: #563D7C;
-	color: #f7f7f7;
+.error-page {
+	padding: 40px 15px;
+	text-align: center;
 }
+
+.error-actions {
+	margin-top:15px;
+	margin-bottom: 15px;
+}
+
+.error-actions .btn { 
+	margin-right: 10px; 
+}
+
+h1.404error { 
+	font-size :100px !important; 
+}
+
 
 /*****************************
 	~~ WooCommerce
