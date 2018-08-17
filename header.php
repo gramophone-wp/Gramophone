@@ -43,11 +43,12 @@
 							array(
 								'menu'           => 'primary',
 								'theme_location' => 'primary',
-								'depth'          => 1,
-								'container'      => 'ul',
+								'depth'          => 2,
+								'container'       => 'div',
+								'container_class' => 'collapse navbar-collapse',
 								'menu_class'     => 'navbar-nav mr-auto',
-								'fallback_cb'    => 'bootstrap_walker::fallback',
-								'walker'         => new Bootstrap_Walker(),
+								'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+								'walker'          => new WP_Bootstrap_Navwalker(),
 							)
 						);
 						?>

@@ -15,15 +15,16 @@ add_theme_support( 'custom-background' );
 add_theme_support( 'custom-header' );
 add_theme_support( 'menus' );
 add_theme_support( 'post-thumbnails' );
-add_theme_support( 'post-formats', $post_formats );
+add_theme_support( 'post-formats' );
 add_theme_support( 'title-tag' );
 add_theme_support( 'editor-style' );
 add_theme_support( 'html5' );
 add_theme_support( 'widgets' );
 
-// Theme Dependencies ~ best not remove these!
+// Theme Dependencies
 require_once locate_template( 'externals/class-tgm-plugin-activation.php' );
-require_once 'externals/bootstrap_walker.php';
+// require_once 'externals/bootstrap_walker.php';
+require_once 'externals/class-wp-bootstrap-navwalker.php';
 require_once 'externals/comments.php';
 
 // Admin Customisations.
