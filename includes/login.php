@@ -31,6 +31,7 @@ add_action( 'login_enqueue_scripts', 'login_styles' );
  * `display: none;` by default.
  */
 
+
 function admin_logo() { ?>
 	<style>
 	#login h1 a {
@@ -40,5 +41,6 @@ function admin_logo() { ?>
 	<?php
 }
 add_action( 'login_enqueue_scripts', 'admin_logo' );
+
 
 ?>
