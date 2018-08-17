@@ -17,7 +17,7 @@
 function login_styles() {
 	wp_enqueue_style(
 		'admin-login',
-		get_template_directory_uri() . '/admin/login.css'
+		get_template_directory_uri() . '/static/css/admin.css'
 	);
 }
 add_action( 'login_enqueue_scripts', 'login_styles' );
@@ -31,7 +31,6 @@ add_action( 'login_enqueue_scripts', 'login_styles' );
  * `display: none;` by default.
  */
 
-
 function admin_logo() { ?>
 	<style>
 	#login h1 a {
@@ -41,6 +40,5 @@ function admin_logo() { ?>
 	<?php
 }
 add_action( 'login_enqueue_scripts', 'admin_logo' );
-
 
 ?>
