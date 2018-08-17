@@ -27,11 +27,8 @@ function gramophone_js() {
 	wp_enqueue_script( 'popper_js', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js' );
 	wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/static/js/bootstrap.min.js', array( 'jquery', 'tether_js' ), '', true );
 	wp_enqueue_script( 'js_cookie_js', get_template_directory_uri() . '/static/js/js.cookie.js', array(), '2.1.4', true );
-	wp_enqueue_script( 'masonary', get_template_directory_uri() . '/static/js/masonry.pkgd.min.js', array(), '', true );
 	wp_enqueue_script( 'app_js', get_template_directory_uri() . '/static/js/app.js', array( 'jquery', 'js_cookie_js' ), '', true );
 
 	// Add more...
 }
 add_action( 'wp_enqueue_scripts', 'gramophone_js' );
-
-
