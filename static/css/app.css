@@ -548,3 +548,7 @@ p.demo_store {
 .hidden {
 	display: none;
 }
+
+#sidebar {
+	border-left: 1px solid #eee;
+}

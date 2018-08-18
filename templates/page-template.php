@@ -24,9 +24,9 @@ if ( have_posts() ) :
 	</div>
 </div>
 
-<div class="container">
-	<div class="row">
-		<div class="col-md-12 text-justify">
+<div class="container-fluid">
+	<div class="row flex-xl-nowrap">
+		<div class="col-md-8 text-justify">
 
 			<?php the_content(); ?>
 
@@ -40,6 +40,10 @@ if ( have_posts() ) :
 
 			<?php endif; ?>
 
+		</div>
+
+		<div class="col-md-4 text-justify">
+			<?php get_sidebar(); ?>
 		</div>
 	</div>
 </div>

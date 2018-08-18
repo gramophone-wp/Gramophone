@@ -8,7 +8,9 @@
 
 ?>
 
-<?php get_header(); ?>
+<?php 
+	get_header(); 
+?>
 
 <?php
 if ( have_posts() ) :
@@ -22,26 +24,28 @@ if ( have_posts() ) :
 	</div>
 </div>
 
-<div class="container" id="page">
-	<div class="row">
-		<div class="col-md-12 text-justify">
+<div class="container">
+	<div class="row flex-xl-nowrap">
+		<div class="col-md-8 text-justify">
 
 			<?php the_content(); ?>
 
 			<?php endwhile; else : ?>
 
 			<div class="page-header">
-				<h1>Oh no!</h1>
+			<h1>No Booty Here!</h1>
 			</div>
 
-			<p>No content is appearing for this page!</p>
+			<p>There doesn't seem to be anything here as yet!</p>
 
 			<?php endif; ?>
 
 		</div>
 
-	<?php get_sidebar(); ?>
+		<?php get_sidebar(); ?>
 	</div>
 </div>
 
-<?php get_footer(); ?>
+<?php 
+	get_footer(); 
+?>
