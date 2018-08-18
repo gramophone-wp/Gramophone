@@ -7,7 +7,7 @@
  */
 
 body {
-	background-image: linear-gradient(to top, rgba(148, 85, 166, 0.5) 40%, rgba(86, 130, 190, 0.96) 100%);
+	background-image: linear-gradient(to top, rgba(148, 85, 166, 0.5) 20%, rgba(86, 130, 190, 0.96) 100%);
 }
 
 #login {
@@ -66,4 +66,9 @@ body {
     text-indent: -9999px;
     outline: 0;
     display: block;
+}
+
+.login form {
+    padding: 35px 24px 35px;
+    border-radius: 4px;
 }
