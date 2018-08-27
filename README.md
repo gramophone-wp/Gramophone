@@ -7,7 +7,7 @@
   </a>
 
   <a href="http://getbootstrap.com/">
-    <img src="https://img.shields.io/badge/Bootstrap-v4.1.1-6f5499.svg?style=flat-square">
+    <img src="https://img.shields.io/badge/Bootstrap-v4.1.3-6f5499.svg?style=flat-square">
   </a>
 
   <a href="http://wordpress.org/">
@@ -35,11 +35,11 @@
 
 <h2 align="center"><em>Support</em></h2>
 
-<p align="center">Please :sparkles: star :sparkles: this repository or contribute. Check out the <a href="https://github.com/pjhampton/Gramophone/tree/master/.github/CONTRIBUTING.md">Contributing Guide</a></p>
+<p align="center">Please considering contributing or :sparkles: staring :sparkles: this repository. Check out the <a href="https://github.com/pjhampton/Gramophone/tree/master/.github/CONTRIBUTING.md">Contributing Guide</a></p>
 
 <h2 align="center"><em>Help</em></h2>
 
-<p align="center">Refer to this projects <a href="https://github.com/pjhampton/Gramophone/wiki">wiki</a> or please open an issue <a href="https://gituhb.com/pjhampton/Gramophone/issues">here</a>.</p>
+<p align="center">Refer to <a href="https://github.com/pjhampton/Gramophone/wiki">this wiki</a> or please <a href="https://gituhb.com/pjhampton/Gramophone/issues">open an issue</a>.</p>
 
 <h2 align="center"><em>Licence</em></h2>
 
