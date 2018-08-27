@@ -35,7 +35,7 @@
 
 <h2 align="center"><em>Support</em></h2>
 
-<p align="center">Please considering contributing or :sparkles: staring :sparkles: this repository. Check out the <a href="https://github.com/pjhampton/Gramophone/tree/master/.github/CONTRIBUTING.md">Contributing Guide</a></p>
+<p align="center">Please consider contributing or :sparkles: staring :sparkles: this repository. Check out the <a href="https://github.com/pjhampton/Gramophone/tree/master/.github/CONTRIBUTING.md">Contributing Guide</a></p>
 
 <h2 align="center"><em>Help</em></h2>
 
