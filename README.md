@@ -1,5 +1,5 @@
 
-<img src="https://raw.githubusercontent.com/richtepa/Gramophone/1d5bf67eb5c8c4e2924bb0f99a1653324056fa42/static/images/screenshot.png" alt="wp gramophone">
+<img src="https://github.com/pjhampton/assets/blob/master/gramophone/gramophone.png" alt="wp gramophone">
 
 <p align="center">
   <a href="https://github.com/pjhampton/Gramophone/blob/master/licence">
