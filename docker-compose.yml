@@ -1,23 +1,17 @@
 web:
-	image: wordpress
+  image: wordpress
+  links:
+    - mysql
+  environment:
+    - WORDPRESS_DB_PASSWORD=gramophone
+  ports:
+    - "8080:80"
+  working_dir: /var/www/html
+  volumes:
+    - ./:/var/www/html/wp-content/themes/Gramophone/
 
-	links:
-		- mysql
-
-	environment:
-		- WORDPRESS_DB_PASSWORD=gramophone
-
-	ports:
-		- "8080:80"
-
-	working_dir: /var/www/html
-
-	volumes:
-		- ./:/var/www/html/wp-content/themes/Gramophone/
-		
 mysql:
-	image: mysql
-	
-	environment:
-		- MYSQL_ROOT_PASSWORD=changeme
-		- MYSQL_DATABASE=gramophone
+  image: mysql
+  environment:
+    - MYSQL_ROOT_PASSWORD=changeme
+    - MYSQL_DATABASE=gramophone
