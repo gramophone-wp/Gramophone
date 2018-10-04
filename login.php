@@ -1,11 +1,15 @@
 
+		
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login</title>
+	</head>
+	<body>
 		<div class="container">
 		    <div class="row">
 		    	<div class="col-md-4"></div>
 		        <div class="col-md-4">
-		        	<div id="notifications">
-						<?php echo $this->session->flashdata('msg'); ?>
-					</div> 
 		            <div id="box" class="panel panel-default" style="margin-top: 120px;">
 		                <div class="panel-heading">
 		                    <span class="glyphicon glyphicon-lock"></span> Login
@@ -54,7 +58,8 @@
 		        <div class="col-md-4"></div>
 		    </div>
 		</div>
-
+	</body>
+</html>
 
 
 		
