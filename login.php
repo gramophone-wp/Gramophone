@@ -10,7 +10,7 @@
 		                <div class="panel-heading">
 		                    <span class="glyphicon glyphicon-lock"></span> Login
 		                </div>
-		                <form method="post" id="form-login" action="<?php echo base_url(); ?>Login/ceklogin">
+		                <form method="post" id="form-login" action="">
 		                	<div class="panel-body">
 			                    <div class="form-group">
 			                        <label for="inputEmail3" class="col-sm-3 control-label">Username</label>
@@ -45,7 +45,7 @@
 		               		</div>
 	               		</form>
 	               		<div class="panel-footer">
-                    		<span class="link">Belum Registrasi? <a href="<?php echo base_url(); ?>register">Register Disini</a></span>
+                    		<span class="link">Belum Registrasi? <a href="">Register Disini</a></span>
                     		<span class="link_1"><a href="home">Kembali</a></span>
                     	</div>
 		            </div>
