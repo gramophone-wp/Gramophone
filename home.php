@@ -41,20 +41,10 @@
 					the_post();
 					?>
 
-			<article class="grid-item item col-12 col-md-6 col-lg-4
-					<?php
-					if ( isset( $_COOKIE['display-type'] ) && 'list' === $_COOKIE['display-type'] ) {
-						echo 'col-lg-12';}
-					?>
-			" id="post-<?php the_ID(); ?>">
+			<article class="grid-item item col-12 col-md-6 col-lg-4" id="post-<?php the_ID(); ?>">
 				<div class="card">
 					<a href="<?php the_permalink(); ?>">
-						<img class="card-img-top
-						<?php
-						if ( isset( $_COOKIE['display-type'] ) && 'list' === $_COOKIE['display-type'] ) {
-							echo 'hidden';}
-						?>
-						" src="<?php echo esc_html( get_the_post_thumbnail_url() ) ? esc_html( get_the_post_thumbnail_url() ) : esc_html( get_template_directory_uri() ) . '/static/images/logos/gramophone_placeholder.png'; ?>" alt="" id="post-image" />
+						<img class="card-img-top" src="<?php echo esc_html( get_the_post_thumbnail_url() ) ? esc_html( get_the_post_thumbnail_url() ) : esc_html( get_template_directory_uri() ) . '/static/images/logos/gramophone_placeholder.png'; ?>" alt="" id="post-image" />
 					</a>
 
 					<div <?php post_class(); ?>>
@@ -65,12 +55,7 @@
 							<h4 class="card-title"><a href="<?php the_permalink(); ?>">READ MORE</a></h4>
 						<?php endif; ?>
 
-						<div class="post-metadata
-						<?php
-						if ( isset( $_COOKIE['display-type'] ) && 'grid' === $_COOKIE['display-type'] ) {
-							echo 'hidden';}
-						?>
-						">
+						<div class="post-metadata">
 							<p>
 								By <?php the_author_posts_link(); ?>
 								<span class="hidden-xs-down">
