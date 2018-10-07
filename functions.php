@@ -25,7 +25,7 @@ add_theme_support( 'widgets' );
 require_once locate_template( 'externals/class-tgm-plugin-activation.php' );
 // require_once 'externals/bootstrap_walker.php';
 require_once 'externals/class-wp-bootstrap-navwalker.php';
-require_once 'externals/comments.php';
+require_once 'internals/comments.php';
 
 // Admin Customisations.
 require_once 'includes/admin.php';
