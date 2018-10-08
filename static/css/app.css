@@ -380,8 +380,22 @@ table#wp-calendar caption {
 .error-page {
 	padding: 40px 15px;
 	text-align: center;
+	color: #fff;
 }
-
+.error404{
+        background-color: #3A4F68;
+	background: -moz-radial-gradient(center, ellipse cover, #4D6077 0%, #3A4F68 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #4D6077), color-stop(100%, #3A4F68));
+	background: -webkit-radial-gradient(center, ellipse cover, #4D6077 0%, #3A4F68 100%);
+	background: -o-radial-gradient(center, ellipse cover, #4D6077 0%, #3A4F68 100%);
+	background: -ms-radial-gradient(center, ellipse cover, #4D6077 0%, #3A4F68 100%);
+	background: radial-gradient(ellipse at center, #4D6077 0%, #3A4F68 100%);
+	color: #cecdcb;
+	padding-top: 10%;
+}
+nav.error404{
+	visibility:hidden;
+}
 .error-actions {
 	margin-top:15px;
 	margin-bottom: 15px;
