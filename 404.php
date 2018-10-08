@@ -8,8 +8,7 @@
 
 ?>
 
-<?php get_header(); ?>
-
+<?php get_header('nonnav'); ?>
 <div class="error-page">
 <h2>Oops!</h2>
 <h1 class="404error"> 404 </h1>
@@ -26,4 +25,5 @@
 </div>
 </div>
 
+</body>
 
