@@ -149,9 +149,7 @@ function format_gallery_bootstrap( $output, $atts, $instance ) {
 	$output = '<div id="container" class="container">';
 	$posts  = get_posts(
 		array(
-			'include'   => $atts['ids'],
 			'post_type' => 'attachment',
-			'orderby'   => $atts['orderby'],
 		)
 	);
 
