@@ -10,7 +10,7 @@
 
 ?>
 
-<article>
+<article class="video-wrapper ">
 	<section>
 		<?php the_content(); ?>
 	</section>
