@@ -293,6 +293,25 @@ blockquote p {
 	border-color: #337ab7;
 }
 
+.post_format-post-format-gallery  .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin-bottom: 10px !important;
+}
+
+/* Create four equal columns that sits next to each other */
+.post_format-post-format-gallery  .col-sm {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.post_format-post-format-gallery  .col-sm img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
 /*****************************
 	~~ admin
 *****************************/
