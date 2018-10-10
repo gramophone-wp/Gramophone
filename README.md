@@ -25,10 +25,6 @@
 
 <image src="https://github.com/pjhampton/assets/blob/master/gramophone/gramophone_index.png">
 
-<h2 align="center"><em>Predefined Styles</em></h2>
-
-<image src="https://github.com/pjhampton/assets/blob/master/gramophone/gramophone_blog.png">
-
 <h2 align="center"><em>Boilerplate loaded</em></h2>
 
 <image src="https://github.com/pjhampton/assets/blob/master/gramophone/gramophone_admin.png">
