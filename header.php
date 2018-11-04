@@ -45,7 +45,7 @@
 				'walker'            => new WP_Bootstrap_Navwalker(),
 			) );
 			?>
-			<form class="form-inline my-2 my-lg-0 d-none d--block" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+			<form class="form-inline my-2 my-lg-0 hidden-md-down" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>">
 				<input name="s" id="s" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 				<button class="btn btn-outline-info search-btn my-2 my-sm-0" type="submit">Search</button>
 			</form>
