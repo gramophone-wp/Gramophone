@@ -11,7 +11,7 @@
   </a>
 
   <a href="http://wordpress.org/">
-    <img src="https://img.shields.io/badge/WordPress-v4.9-00A0D2.svg?style=flat-square">
+    <img src="https://img.shields.io/badge/WordPress-v5.0-00A0D2.svg?style=flat-square">
   </a>
 
   <a href="https://github.com/pjhampton/Gramophone/wiki">
