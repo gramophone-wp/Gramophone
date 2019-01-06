@@ -159,7 +159,8 @@ function format_gallery_bootstrap( $output, $atts, $instance ) {
 		$output .= '<div class="row">';
 		foreach ( $post_chunk as $post ) {
 
-			$src = wp_get_attachment_image_src( $post->ID, $atts['size'] )[0];
+			$image_metadata = wp_get_attachment_image_src( $post->ID, $atts['size'] );
+			$src = $image_metadata[0];
 
 			$link = false;
 			if ( 'attachment' === $atts['link'] ) {
