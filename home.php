@@ -69,7 +69,7 @@
           </div>
 
             <?php the_excerpt(); ?>
-            <a href="<?php the_permalink(); ?>" class="btn btn-outline-primary">View <?php echo ucfirst( get_post_format() ) ? : 'Article'; ?></a>
+            <a href="<?php the_permalink(); ?>" class="btn btn-outline-primary">View <?php echo ucfirst( get_post_format() ) ? '' : 'Article'; ?></a>
           </div>
         </div>
       </div>
